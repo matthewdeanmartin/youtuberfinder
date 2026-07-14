@@ -1,0 +1,101 @@
+name: Deploy to GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/deploy-pages.yml"
+      - "content/**"
+      - "data/**"
+      - "static/**"
+      - "themes/**"
+      - "scripts/**"
+      - "pipeline/**"
+      - "generate_pages.py"
+      - "generate_review_stubs.py"
+      - "pelicanconf.py"
+      - "publishconf.py"
+      - "pyproject.toml"
+      - "uv.lock"
+      - "package.json"
+      - "package-lock.json"
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@fac544c07dec837d0ccb6301d7b5580bf5edae39 # v8.2.0
+        with:
+          enable-cache: true
+
+      - name: Set up Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version-file: "pyproject.toml"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install Python dependencies
+        run: uv sync --locked
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Generate pages from data
+        run: uv run python generate_pages.py
+
+      - name: Build production site
+        run: uv run pelican content -o output -s publishconf.py
+
+      - name: Copy hand-crafted static pages into output
+        # static/ holds pages with complex client-side JS (e.g. the PKCE Mastodon
+        # follow tool) that are not Pelican content.  publishconf.py sets
+        # DELETE_OUTPUT_DIRECTORY=True, so we must copy these AFTER Pelican runs.
+        # {{SITEURL}} placeholders in HTML are substituted with the production base
+        # URL so CSS and nav links resolve correctly under the /youtuberfinder/ prefix.
+        run: uv run python scripts/copy_static.py /youtuberfinder
+
+      - name: Run Python quality gates
+        run: |
+          uv run python scripts/check_pelican_artifacts.py --site-dir output --siteurl /youtuberfinder
+          uv run python scripts/check_links.py --site-dir output --internal-only --siteurl /youtuberfinder
+
+      - name: Run Node quality gates
+        run: npm run quality
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: ./output
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0

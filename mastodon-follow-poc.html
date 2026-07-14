@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Mastodon Follow List POC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    body {
+      max-width: 980px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    label {
+      display: block;
+      font-weight: 650;
+      margin-top: 1rem;
+    }
+    input, textarea, button {
+      font: inherit;
+    }
+    input, textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.65rem;
+      border-radius: 0.5rem;
+      border: 1px solid currentColor;
+    }
+    textarea {
+      min-height: 11rem;
+      resize: vertical;
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+    }
+    button {
+      padding: 0.55rem 0.8rem;
+      border-radius: 0.5rem;
+      border: 1px solid currentColor;
+      cursor: pointer;
+      margin: 0.25rem 0.25rem 0.25rem 0;
+    }
+    button:disabled {
+      cursor: not-allowed;
+      opacity: 0.55;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+      margin-top: 0.75rem;
+    }
+    .card {
+      border: 1px solid currentColor;
+      border-radius: 0.75rem;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    .muted {
+      opacity: 0.75;
+    }
+    .ok {
+      color: #0a7a2f;
+    }
+    .warn {
+      color: #a15c00;
+    }
+    .bad {
+      color: #b00020;
+    }
+    .acct {
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+    }
+    #log {
+      white-space: pre-wrap;
+      background: color-mix(in srgb, CanvasText 8%, Canvas);
+      padding: 1rem;
+      border-radius: 0.75rem;
+      min-height: 6rem;
+      overflow-wrap: anywhere;
+    }
+    .account-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.75rem;
+      align-items: center;
+      border-top: 1px solid color-mix(in srgb, CanvasText 20%, Canvas);
+      padding-top: 0.75rem;
+      margin-top: 0.75rem;
+    }
+    .small {
+      font-size: 0.9rem;
+    }
+    code {
+      background: color-mix(in srgb, CanvasText 8%, Canvas);
+      padding: 0.1rem 0.25rem;
+      border-radius: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mastodon Follow List POC</h1>
+
+  <p class="muted">
+    Single-file proof of concept. It registers an OAuth app on your home instance,
+    stores <code>client_id</code>, <code>client_secret</code>, and access token in
+    <code>localStorage</code>, then resolves and follows remote accounts through your instance.
+    Requested scopes: <code>profile read:accounts read:search read:follows write:follows</code>.
+  </p>
+
+  <p class="warn">
+    Security note: storing OAuth secrets/tokens in <code>localStorage</code> is acceptable for a toy
+    POC, not for a serious public app. Anyone who can run script in this origin can read them.
+  </p>
+
+  <section class="card">
+    <h2>1. Instance</h2>
+
+    <label for="instance">Your home Mastodon instance</label>
+    <input id="instance" placeholder="mastodon.social" autocomplete="off" />
+
+    <div class="row">
+      <button id="saveInstance">Save instance</button>
+      <button id="registerApp">Register app on instance</button>
+      <button id="login">Log in / authorize</button>
+      <button id="logout">Forget local credentials</button>
+    </div>
+
+    <p id="authStatus" class="small muted">Not checked yet.</p>
+  </section>
+
+  <section class="card">
+    <h2>2. Accounts to follow</h2>
+
+    <label for="accounts">One account per line</label>
+    <textarea id="accounts" spellcheck="false">@Gargron@mastodon.social
+@Mastodon@mastodon.social</textarea>
+
+    <div class="row">
+      <button id="renderList">Render follow buttons</button>
+      <button id="resolveAll">Resolve all</button>
+      <button id="followAllSlowly">Follow all slowly</button>
+    </div>
+
+    <div id="accountList"></div>
+  </section>
+
+  <section class="card">
+    <h2>Log</h2>
+    <div id="log"></div>
+  </section>
+
+<script>
+(() => {
+  "use strict";
+
+  const APP_NAME = "Static Follow List POC";
+  const APP_WEBSITE = location.origin === "null" ? "https://example.invalid" : location.origin;
+  const DEFAULT_SCOPES = "profile read:accounts read:search read:follows write:follows";
+  const REDIRECT_URI = location.origin === "null"
+    ? location.href.split("#")[0].split("?")[0]
+    : location.origin + location.pathname;
+
+  const els = {
+    instance: document.getElementById("instance"),
+    accounts: document.getElementById("accounts"),
+    saveInstance: document.getElementById("saveInstance"),
+    registerApp: document.getElementById("registerApp"),
+    login: document.getElementById("login"),
+    logout: document.getElementById("logout"),
+    renderList: document.getElementById("renderList"),
+    resolveAll: document.getElementById("resolveAll"),
+    followAllSlowly: document.getElementById("followAllSlowly"),
+    accountList: document.getElementById("accountList"),
+    authStatus: document.getElementById("authStatus"),
+    log: document.getElementById("log"),
+  };
+
+  function log(message, level = "info") {
+    const now = new Date().toLocaleTimeString();
+    els.log.textContent += `[${now}] ${message}\n`;
+    els.log.scrollTop = els.log.scrollHeight;
+    console[level === "error" ? "error" : "log"](message);
+  }
+
+  function normalizeInstance(raw) {
+    return raw
+      .trim()
+      .replace(/^https?:\/\//i, "")
+      .replace(/\/+$/g, "");
+  }
+
+  function instanceBase() {
+    const instance = normalizeInstance(els.instance.value);
+    if (!instance) throw new Error("Enter your home Mastodon instance first.");
+    return `https://${instance}`;
+  }
+
+  function storagePrefix() {
+    const instance = normalizeInstance(els.instance.value);
+    return `mastodon-follow-poc:${instance}:`;
+  }
+
+  function getJson(key) {
+    const raw = localStorage.getItem(storagePrefix() + key);
+    return raw ? JSON.parse(raw) : null;
+  }
+
+  function setJson(key, value) {
+    localStorage.setItem(storagePrefix() + key, JSON.stringify(value));
+  }
+
+  function del(key) {
+    localStorage.removeItem(storagePrefix() + key);
+  }
+
+  function saveInstance() {
+    const instance = normalizeInstance(els.instance.value);
+    if (!instance) throw new Error("Enter an instance, e.g. mastodon.social");
+    els.instance.value = instance;
+    localStorage.setItem("mastodon-follow-poc:lastInstance", instance);
+    updateAuthStatus();
+    log(`Saved instance: ${instance}`);
+  }
+
+  async function apiFetch(path, options = {}) {
+    const base = instanceBase();
+    const url = path.startsWith("http") ? path : `${base}${path}`;
+    const response = await fetch(url, options);
+
+    const text = await response.text();
+    let data = null;
+    try {
+      data = text ? JSON.parse(text) : null;
+    } catch {
+      data = text;
+    }
+
+    if (!response.ok) {
+      const detail = typeof data === "object" && data && data.error ? data.error : text;
+      throw new Error(`${response.status} ${response.statusText}: ${detail}`);
+    }
+
+    return data;
+  }
+
+  async function registerApp() {
+    saveInstance();
+
+    const body = new FormData();
+    body.set("client_name", APP_NAME);
+    body.set("redirect_uris", REDIRECT_URI);
+    body.set("scopes", DEFAULT_SCOPES);
+    body.set("website", APP_WEBSITE);
+
+    const app = await apiFetch("/api/v1/apps", {
+      method: "POST",
+      body,
+    });
+
+    setJson("app", {
+      client_id: app.client_id,
+      client_secret: app.client_secret,
+      redirect_uri: REDIRECT_URI,
+      scopes: DEFAULT_SCOPES,
+      created_at: new Date().toISOString(),
+    });
+
+    updateAuthStatus();
+    log(`Registered app. Redirect URI: ${REDIRECT_URI}`);
+  }
+
+  function login() {
+    saveInstance();
+
+    const app = getJson("app");
+    if (!app) {
+      throw new Error("Register the app first.");
+    }
+    if (app.scopes !== DEFAULT_SCOPES) {
+      throw new Error(`Stored app scopes are stale. Click "Forget local credentials", then "Register app on instance" again. Stored: ${app.scopes}; wanted: ${DEFAULT_SCOPES}`);
+    }
+
+    const state = crypto.randomUUID();
+    sessionStorage.setItem(storagePrefix() + "oauthState", state);
+
+    const params = new URLSearchParams({
+      response_type: "code",
+      client_id: app.client_id,
+      redirect_uri: app.redirect_uri,
+      scope: app.scopes,
+      state,
+    });
+
+    const authUrl = `${instanceBase()}/oauth/authorize?${params.toString()}`;
+    log("Redirecting to Mastodon authorization page...");
+    location.href = authUrl;
+  }
+
+  async function handleOAuthCallback() {
+    const url = new URL(location.href);
+    const code = url.searchParams.get("code");
+    const returnedState = url.searchParams.get("state");
+
+    if (!code) return;
+
+    const instance = normalizeInstance(localStorage.getItem("mastodon-follow-poc:lastInstance") || els.instance.value);
+    if (instance) els.instance.value = instance;
+
+    const expectedState = sessionStorage.getItem(storagePrefix() + "oauthState");
+    if (expectedState && returnedState !== expectedState) {
+      throw new Error("OAuth state mismatch. Refusing to exchange code.");
+    }
+
+    const app = getJson("app");
+    if (!app) {
+      throw new Error("OAuth callback received, but no app registration found in localStorage for this instance.");
+    }
+
+    const body = new URLSearchParams({
+      grant_type: "authorization_code",
+      code,
+      client_id: app.client_id,
+      client_secret: app.client_secret,
+      redirect_uri: app.redirect_uri,
+      scope: app.scopes,
+    });
+
+    const token = await apiFetch("/oauth/token", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body,
+    });
+
+    setJson("token", {
+      access_token: token.access_token,
+      token_type: token.token_type,
+      scope: token.scope,
+      created_at: new Date().toISOString(),
+    });
+
+    // Clean code/state from address bar.
+    history.replaceState({}, document.title, app.redirect_uri);
+    sessionStorage.removeItem(storagePrefix() + "oauthState");
+
+    updateAuthStatus();
+    log("OAuth token saved.");
+  }
+
+  function authHeaders() {
+    const token = getJson("token");
+    if (!token || !token.access_token) {
+      throw new Error("You are not logged in yet.");
+    }
+    return {
+      "Authorization": `Bearer ${token.access_token}`,
+    };
+  }
+
+  async function verifyCredentials() {
+    const account = await apiFetch("/api/v1/accounts/verify_credentials", {
+      headers: authHeaders(),
+    });
+    log(`Logged in as @${account.acct}`);
+    return account;
+  }
+
+  function parseAccounts() {
+    const seen = new Set();
+    const accounts = [];
+
+    for (const line of els.accounts.value.split(/\r?\n/)) {
+      const trimmed = line.trim();
+      if (!trimmed || trimmed.startsWith("#")) continue;
+
+      const cleaned = trimmed
+        .replace(/^acct:/i, "")
+        .replace(/^https?:\/\/[^/@]+\/@/i, "@");
+
+      const match = cleaned.match(/^@?([^@\s]+)@([^@\s/]+)$/);
+      if (!match) {
+        accounts.push({ raw: trimmed, acct: null, error: "Expected @user@domain" });
+        continue;
+      }
+
+      const acct = `${match[1]}@${match[2]}`;
+      if (!seen.has(acct.toLowerCase())) {
+        seen.add(acct.toLowerCase());
+        accounts.push({ raw: trimmed, acct, error: null });
+      }
+    }
+
+    return accounts;
+  }
+
+  function renderList() {
+    const accounts = parseAccounts();
+    els.accountList.innerHTML = "";
+
+    for (const item of accounts) {
+      const row = document.createElement("div");
+      row.className = "account-row";
+      row.dataset.acct = item.acct || "";
+
+      const label = document.createElement("div");
+      label.innerHTML = item.error
+        ? `<span class="acct bad">${escapeHtml(item.raw)}</span><br><span class="small bad">${escapeHtml(item.error)}</span>`
+        : `<span class="acct">@${escapeHtml(item.acct)}</span><br><span class="small muted status">Not resolved</span>`;
+
+      const actions = document.createElement("div");
+
+      const resolveBtn = document.createElement("button");
+      resolveBtn.textContent = "Resolve";
+      resolveBtn.disabled = !!item.error;
+      resolveBtn.addEventListener("click", async () => runRow(row, "resolve"));
+
+      const followBtn = document.createElement("button");
+      followBtn.textContent = "Follow";
+      followBtn.disabled = !!item.error;
+      followBtn.addEventListener("click", async () => runRow(row, "follow"));
+
+      const openSearchBtn = document.createElement("button");
+      openSearchBtn.textContent = "Open search";
+      openSearchBtn.disabled = !!item.error;
+      openSearchBtn.addEventListener("click", () => {
+        const url = `${instanceBase()}/search?q=${encodeURIComponent("@" + item.acct)}`;
+        window.open(url, "_blank", "noopener,noreferrer");
+      });
+
+      actions.append(resolveBtn, followBtn, openSearchBtn);
+      row.append(label, actions);
+      els.accountList.append(row);
+    }
+
+    log(`Rendered ${accounts.length} row(s).`);
+  }
+
+  function setRowStatus(row, message, cls = "muted") {
+    const status = row.querySelector(".status");
+    if (status) {
+      status.className = `small status ${cls}`;
+      status.textContent = message;
+    }
+  }
+
+  async function resolveAccount(acct) {
+    // resolve=true asks your home instance to go discover the remote actor if needed.
+    const params = new URLSearchParams({
+      q: acct,
+      type: "accounts",
+      resolve: "true",
+      limit: "5",
+    });
+
+    const result = await apiFetch(`/api/v2/search?${params.toString()}`, {
+      headers: authHeaders(),
+    });
+
+    const accounts = result.accounts || [];
+    const wanted = acct.toLowerCase();
+
+    const exact = accounts.find(a =>
+      String(a.acct || "").toLowerCase() === wanted ||
+      String(a.url || "").toLowerCase().includes(`/@${wanted.split("@")[0]}`)
+    );
+
+    if (!exact) {
+      const candidates = accounts.map(a => a.acct).filter(Boolean).join(", ");
+      throw new Error(`Could not resolve @${acct}${candidates ? `. Candidates: ${candidates}` : ""}`);
+    }
+
+    return exact;
+  }
+
+  async function followAccountId(id) {
+    return await apiFetch(`/api/v1/accounts/${encodeURIComponent(id)}/follow`, {
+      method: "POST",
+      headers: authHeaders(),
+    });
+  }
+
+  async function relationshipFor(id) {
+    const params = new URLSearchParams();
+    params.append("id[]", id);
+    const relationships = await apiFetch(`/api/v1/accounts/relationships?${params.toString()}`, {
+      headers: authHeaders(),
+    });
+    return relationships[0] || null;
+  }
+
+  async function runRow(row, action) {
+    const acct = row.dataset.acct;
+    if (!acct) return;
+
+    try {
+      setRowStatus(row, `Resolving @${acct}...`, "muted");
+      const account = await resolveAccount(acct);
+      row.dataset.accountId = account.id;
+      setRowStatus(row, `Resolved as local id ${account.id}: ${account.display_name || "no display name"}`, "ok");
+      log(`Resolved @${acct} -> id ${account.id}`);
+
+      if (action === "follow") {
+        const before = await relationshipFor(account.id);
+        if (before && before.following) {
+          setRowStatus(row, `Already following @${acct}`, "ok");
+          log(`Already following @${acct}`);
+          return;
+        }
+
+        setRowStatus(row, `Following @${acct}...`, "muted");
+        const rel = await followAccountId(account.id);
+
+        if (rel.following) {
+          setRowStatus(row, `Following @${acct}`, "ok");
+          log(`Followed @${acct}`);
+        } else if (rel.requested) {
+          setRowStatus(row, `Follow request sent to @${acct}`, "warn");
+          log(`Follow request sent to @${acct}`);
+        } else {
+          setRowStatus(row, `Follow call returned, but not following/requested. Check manually.`, "warn");
+          log(`Unexpected follow relationship for @${acct}: ${JSON.stringify(rel)}`);
+        }
+      }
+    } catch (err) {
+      setRowStatus(row, err.message, "bad");
+      log(`Error for @${acct}: ${err.message}`, "error");
+    }
+  }
+
+  async function resolveAll() {
+    const rows = [...els.accountList.querySelectorAll(".account-row[data-acct]")];
+    for (const row of rows) {
+      if (row.dataset.acct) await runRow(row, "resolve");
+    }
+  }
+
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  async function followAllSlowly() {
+    const rows = [...els.accountList.querySelectorAll(".account-row[data-acct]")];
+    for (const row of rows) {
+      if (!row.dataset.acct) continue;
+      await runRow(row, "follow");
+      await sleep(1500);
+    }
+  }
+
+  function logout() {
+    const instance = normalizeInstance(els.instance.value);
+    if (!instance) return;
+
+    del("app");
+    del("token");
+    sessionStorage.removeItem(storagePrefix() + "oauthState");
+    updateAuthStatus();
+    log(`Forgot local app/token data for ${instance}. The OAuth app may still exist on your Mastodon account settings.`);
+  }
+
+  function updateAuthStatus() {
+    const instance = normalizeInstance(els.instance.value);
+    const app = instance ? getJson("app") : null;
+    const token = instance ? getJson("token") : null;
+
+    if (!instance) {
+      els.authStatus.textContent = "Enter an instance.";
+      return;
+    }
+
+    els.authStatus.innerHTML = [
+      `Instance: <code>${escapeHtml(instance)}</code>`,
+      app ? `<span class="ok">app registered</span>` : `<span class="warn">app not registered</span>`,
+      token ? `<span class="ok">token present</span>` : `<span class="warn">not logged in</span>`,
+      app ? `App scopes: <code>${escapeHtml(app.scopes || "(unknown)")}</code>` : `Wanted scopes: <code>${escapeHtml(DEFAULT_SCOPES)}</code>`,
+      token && token.scope ? `Token scopes: <code>${escapeHtml(token.scope)}</code>` : "",
+      `Redirect URI: <code>${escapeHtml(REDIRECT_URI)}</code>`,
+    ].join(" · ");
+  }
+
+  function escapeHtml(value) {
+    return String(value)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
+
+  els.saveInstance.addEventListener("click", () => safely(saveInstance));
+  els.registerApp.addEventListener("click", () => safely(registerApp));
+  els.login.addEventListener("click", () => safely(login));
+  els.logout.addEventListener("click", () => safely(logout));
+  els.renderList.addEventListener("click", () => safely(renderList));
+  els.resolveAll.addEventListener("click", () => safely(resolveAll));
+  els.followAllSlowly.addEventListener("click", () => safely(followAllSlowly));
+
+  async function safely(fn) {
+    try {
+      await fn();
+    } catch (err) {
+      log(err.message || String(err), "error");
+      alert(err.message || String(err));
+    }
+  }
+
+  function init() {
+    const last = localStorage.getItem("mastodon-follow-poc:lastInstance");
+    if (last) els.instance.value = last;
+
+    updateAuthStatus();
+    renderList();
+
+    handleOAuthCallback()
+      .then(() => {
+        updateAuthStatus();
+        const token = getJson("token");
+        if (token) return verifyCredentials();
+      })
+      .catch(err => {
+        log(`OAuth callback error: ${err.message}`, "error");
+      });
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>

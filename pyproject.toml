@@ -1,0 +1,26 @@
+[project]
+name = "tech-youtubers"
+version = "0.1.0"
+description = "A directory of YouTubers and YouTube channel feeds on Mastodon"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mastodon-py>=2.2.1",
+    "pelican>=4.12.0",
+    "markdown>=3.10.2",
+    "invoke>=3.0.3",
+    "requests>=2.32.0",
+    "requests-cache>=1.2.1",
+    "tomli>=2.2.0",
+]
+
+[dependency-groups]
+dev = [
+    "mkdocs>=1.6.0",
+    "pyyaml>=6.0",
+]
+
+[tool.uv]
+
+[tool.uv.pip]
+universal = true

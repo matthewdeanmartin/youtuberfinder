@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Follow on Mastodon – YouTubers on Mastodon</title>
+  <meta name="description" content="Follow native Mastodon accounts belonging to YouTube creators in one click. Uses secure PKCE OAuth." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{SITEURL}}/theme/css/style.css" />
+  <style>
+    /* ── Follow-page specific styles ─────────────────────────────── */
+    .follow-hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .follow-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 60% at 80% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .follow-hero h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      background: linear-gradient(135deg, #a5b4fc 0%, #60a5fa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .follow-hero p {
+      margin: 0;
+      color: #94a3b8;
+      max-width: 56ch;
+    }
+    .security-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #34d399;
+      border-radius: 99px;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      margin-bottom: 1rem;
+    }
+    .security-badge svg { flex-shrink: 0; }
+
+    /* Step cards */
+    .step-section {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+      box-shadow: var(--shadow);
+    }
+    .step-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.2rem;
+    }
+    .step-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 0.85rem;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .step-header h2 {
+      margin: 0;
+      font-size: 1.1rem;
+      border: none;
+      padding: 0;
+    }
+
+    /* Form controls */
+    label.field-label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+    .field-input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.6rem 0.9rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 1rem;
+      transition: border-color 0.2s;
+    }
+    .field-input:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    }
+
+    /* Buttons */
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.55rem 1rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: all 0.15s;
+      background: var(--panel-strong);
+      color: var(--text);
+    }
+    .btn:hover:not(:disabled) {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+    .btn:disabled { opacity: 0.45; cursor: not-allowed; }
+    .btn-primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .btn-primary:hover:not(:disabled) {
+      background: var(--accent-strong);
+      border-color: var(--accent-strong);
+    }
+    .btn-danger {
+      background: transparent;
+      border-color: #ef4444;
+      color: #f87171;
+    }
+    .btn-danger:hover:not(:disabled) {
+      background: #ef4444;
+      color: #fff;
+    }
+
+    /* Auth status pill */
+    #authStatus {
+      margin-top: 0.9rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    #authStatus code {
+      background: var(--panel-strong);
+      padding: 0.1rem 0.3rem;
+      border-radius: 5px;
+      font-size: 0.82rem;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: 99px;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+    .pill-ok  { background: rgba(16,185,129,.15); color: #34d399; border: 1px solid rgba(16,185,129,.3); }
+    .pill-warn{ background: rgba(234,179,8,.12);  color: #fbbf24; border: 1px solid rgba(234,179,8,.3); }
+    .pill-bad { background: rgba(239,68,68,.12);  color: #f87171; border: 1px solid rgba(239,68,68,.3); }
+
+    /* Creator cards */
+    #accountList { margin-top: 1rem; }
+    .creator-card {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: center;
+      padding: 0.9rem 1rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      margin-bottom: 0.6rem;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .creator-card:hover { border-color: var(--accent); transform: translateX(2px); }
+    .creator-name { font-weight: 700; font-size: 0.95rem; }
+    .creator-handle {
+      font-family: 'Courier New', ui-monospace, monospace;
+      font-size: 0.82rem;
+      color: var(--accent-strong);
+      margin-top: 0.15rem;
+    }
+    .creator-status {
+      font-size: 0.8rem;
+      margin-top: 0.2rem;
+      color: var(--muted);
+    }
+    .creator-actions { display: flex; gap: 0.4rem; flex-wrap: wrap; justify-content: flex-end; }
+
+    /* Log */
+    #log {
+      font-family: 'Courier New', ui-monospace, monospace;
+      font-size: 0.82rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem;
+      min-height: 5rem;
+      max-height: 14rem;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      line-height: 1.55;
+    }
+    .log-ok   { color: #34d399; }
+    .log-warn { color: #fbbf24; }
+    .log-err  { color: #f87171; }
+
+    @media (prefers-color-scheme: light) {
+      .follow-hero {
+        background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 50%, #eff6ff 100%);
+        border-color: #e2e8f0;
+      }
+      .follow-hero h1 {
+        background: linear-gradient(135deg, #4f46e5 0%, #2563eb 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .creator-card { background: var(--panel-strong); }
+    }
+  </style>
+</head>
+<body>
+  <div class="site-shell">
+    <!-- ── Header (matches site template) ───────────────────────── -->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div class="site-branding">
+          <a class="site-title" href="{{SITEURL}}/">YouTubers on Mastodon</a>
+          <p class="site-tagline">Find YouTube creators, channel feeds, and real people to follow on Mastodon.</p>
+        </div>
+        <nav class="top-nav" aria-label="Primary">
+          <a href="{{SITEURL}}/">Home</a>
+          <a href="{{SITEURL}}/technology/">Technology</a>
+          <a href="{{SITEURL}}/gaming/">Gaming</a>
+          <a href="{{SITEURL}}/science-education/">Education</a>
+          <a href="{{SITEURL}}/music/">Music</a>
+          <a href="{{SITEURL}}/news-society/">News</a>
+          <a href="{{SITEURL}}/youtubers/">All YouTubers</a>
+          <a href="{{SITEURL}}/bulk-follow/">Bulk Follow</a>
+          <a class="active" href="{{SITEURL}}/mastodon-follow/">Follow on Mastodon</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="site-content">
+      <!-- ── Sidebar ─────────────────────────────────────────────── -->
+      <aside class="site-sidebar">
+        <nav class="section-nav" aria-label="Section">
+          <p class="section-nav__title">Topics</p>
+          <!-- TOPICS:START --><ul>
+            <li><a href="{{SITEURL}}/technology/">Technology &amp; Computing</a></li>
+            <li><a href="{{SITEURL}}/gaming/">Gaming &amp; VTubers</a></li>
+            <li><a href="{{SITEURL}}/science-education/">Science &amp; Education</a></li>
+            <li><a href="{{SITEURL}}/music/">Music</a></li>
+            <li><a href="{{SITEURL}}/art-making/">Art, Design &amp; Making</a></li>
+            <li><a href="{{SITEURL}}/news-society/">News, Politics &amp; Society</a></li>
+            <li><a href="{{SITEURL}}/culture-entertainment/">Culture &amp; Entertainment</a></li>
+            <li><a href="{{SITEURL}}/lifestyle-hobbies/">Lifestyle, Travel &amp; Hobbies</a></li>
+            <li><a href="{{SITEURL}}/other/">Other</a></li>
+          </ul><!-- TOPICS:END -->
+          <p class="section-nav__title">Browse</p>
+          <ul>
+            <li><a href="{{SITEURL}}/youtubers/">All YouTubers</a></li>
+            <li><a href="{{SITEURL}}/bulk-follow/">Bulk Follow Guide</a></li>
+            <li class="active"><a href="{{SITEURL}}/mastodon-follow/">Follow on Mastodon</a></li>
+            <li><a href="{{SITEURL}}/about/">About</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- ── Main content ────────────────────────────────────────── -->
+      <main class="site-main">
+        <div class="follow-hero">
+          <div class="security-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            PKCE OAuth · No secrets stored · Session-only token
+          </div>
+          <h1>Follow YouTubers on Mastodon</h1>
+          <p>Connect to your Mastodon instance and follow native creator accounts in one click. Automated channel feeds are intentionally excluded.</p>
+        </div>
+
+        <!-- Step 1: Connect -->
+        <section class="step-section" id="section-connect">
+          <div class="step-header">
+            <span class="step-badge">1</span>
+            <h2>Connect your Mastodon instance</h2>
+          </div>
+
+          <label class="field-label" for="instance">Your home Mastodon instance</label>
+          <input
+            id="instance"
+            class="field-input"
+            type="text"
+            placeholder="mastodon.social"
+            autocomplete="off"
+            spellcheck="false"
+          />
+
+          <div class="btn-row">
+            <button id="btnConnect" class="btn btn-primary" type="button">Connect &amp; Authorize</button>
+            <button id="btnLogout" class="btn btn-danger" type="button">Forget Credentials</button>
+          </div>
+
+          <div id="authStatus">Enter your instance above and click Connect.</div>
+        </section>
+
+        <!-- Step 2: Creator list -->
+        <section class="step-section" id="section-accounts">
+          <div class="step-header">
+            <span class="step-badge">2</span>
+            <h2>Choose creators to follow</h2>
+          </div>
+
+          <div class="btn-row" style="margin-top:0; margin-bottom:0.75rem;">
+            <button id="btnFollowAll" class="btn btn-primary" type="button" disabled>
+              ⚡ Follow All (slowly)
+            </button>
+            <button id="btnSelectAll" class="btn" type="button">Select All</button>
+            <button id="btnSelectNone" class="btn" type="button">Deselect All</button>
+          </div>
+
+          <div id="accountList" aria-live="polite"></div>
+        </section>
+
+        <!-- Log -->
+        <section class="step-section">
+          <div class="step-header" style="margin-bottom:0.8rem;">
+            <span class="step-badge" style="background:var(--panel-strong);color:var(--muted);">✦</span>
+            <h2>Activity log</h2>
+          </div>
+          <div id="log" role="log" aria-label="Activity log"></div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>&copy; 2026 YouTubers on Mastodon.</p>
+        <p>Follow tool uses <strong>PKCE OAuth</strong> — your Mastodon password is never seen by this page.</p>
+      </div>
+    </footer>
+  </div>
+
+<script src="{{SITEURL}}/mastodon-follow/follow-core.js"></script>
+<script>
+/* ================================================================
+   YouTubers on Mastodon – Follow Pack (UI)
+   ----------------------------------------------------------------
+   All OAuth + resolve + follow logic lives in follow-core.js
+   (window.MastodonFollow). This file is just the page's UI: the
+   instance input, connect/logout buttons, the creator cards, the
+   "Follow All" runner, and the activity log. The shared core is
+   also loaded on category pages so inline Follow buttons work
+   everywhere using the same per-tab session token.
+================================================================ */
+(() => {
+  "use strict";
+
+  const MF = window.MastodonFollow;
+
+  /* ── Creators (generated from data/youtubers.json) ───────────── */
+  /* DATA:START */
+  const STARTER_ACCOUNTS = [
+    {"name": "ARTICLE 19", "acct": "article19@mastodon.world", "niche": "Defending freedom of expression and information around the world."},
+    {"name": "Agora Verkehrswende", "acct": "agoraverkehr@agora-thinktanks.social", "niche": "Thinktank für klimaneutrale Mobilität - wissenschaftlich fundiert, überparteilich, gemeinnützig, lösungsorientiert. https://www. agora-verkehrswende.de"},
+    {"name": "Alain Schneider", "acct": "alain92@mastodon.social", "niche": "fonctionnaire retraité (Affaires étrangères, Éducation nationale, Inalco), militant associatif (multicarte) syndical (CFDT) et politique (socialiste) https:// bsky.app/profile/alain92200.bs ky.social"},
+    {"name": "AlgorithmWatch", "acct": "algorithmwatch@chaos.social", "niche": "We ensure that the use of algorithms & AI benefits the many, not just the few! Join us 🤍 🇪🇺 We’re the EU/German part 🇨🇭 For Switzerland: @ algorithmwatch_ch"},
+    {"name": "Bischöfliche Marienschule", "acct": "marienschule@kirche.social", "niche": "Gymnasium in Mönchengladbach // Religiöses, soziales, musisches und MINT-Profil"},
+    {"name": "Communist Party", "acct": "cpb@pub.communistparty.org.uk", "niche": ""},
+    {"name": "Creative Commons", "acct": "creativecommons@mastodon.social", "niche": "Creative Commons helps you legally share your knowledge and creativity to build a more equitable, accessible, and innovative world. https:// creativecommons.start.page"},
+    {"name": "Daniel P. Huffman", "acct": "pinakographos@mapstodon.space", "niche": "An arboreal, poly, gender non-participating mapmaker and cat foster. I like to share my process, write tutorials, and otherwise informally teach cartography (with support from many of you on Patreon)."},
+    {"name": "David Revoy", "acct": "davidrevoy@framapiaf.org", "niche": "🍄 Webcomic Artist • Fantasy humor 🌱 Weekly comic strips (Wed) • Longer series brewing in background 🎨 Only use Free/Libre & Open Source tools • CC-licensed • No AI"},
+    {"name": "Die PARTEI NRW", "acct": "DiePARTEINRW@nrw.social", "niche": ""},
+    {"name": "DoblajeVideojuegos 🎙️🎮", "acct": "doblajevideojuegos@tkz.one", "niche": "En nuestra base de datos de # doblaje de # videojuegos podrás enterarte de quien ha puesto voz a cada personaje de cada videojuego doblado al español de España 🎙️🎮 🇪🇸"},
+    {"name": "Downes 🍁", "acct": "Downes@mastodon.social", "niche": "Philosopher. Educator. Journalist. Programmer. Photographer. Cyclist. Socialist."},
+    {"name": "Drattzy Games 🔜 PAX West", "acct": "drattzy@mastodon.gamedev.place", "niche": "Creative duo inspired by # SNES # JRPG games like # ChronoTrigger and # FFVI . ✉️ team@drattzygames.com Wishlist Alterium Shift on Steam"},
+    {"name": "Euskalgintzaren Kontseilua", "acct": "kontseilua@mastodon.eus", "niche": "Euskararen normalizazioaren aldeko gizarte eragileen bilgunea gara."},
+    {"name": "Euskarabildua", "acct": "euskarabildua@mastodon.eus", "niche": "Iametza Interaktiboak eta Ametzagaiña taldeak antolatutako jardunaldia. Bertan, euskara eta teknologia berriak uztartuko dira."},
+    {"name": "Graziano D'Urso", "acct": "grazianodurso@mastodon.social", "niche": "Cantante lirico (baritono), insegnante di musica, esperto in vocologia artistica, consulente legale e saggista italiano."},
+    {"name": "Greenpeace International", "acct": "greenpeace@mastodon.social", "niche": "Greenpeace exists because this fragile Earth deserves a voice. It needs solutions. It needs change. It needs action. https:// empli.fi/greenpeace"},
+    {"name": "Henry Segerman", "acct": "henryseg@mathstodon.xyz", "niche": "Mathematician working mostly in three-dimensional geometry and topology, and mathematical maker/artist working mostly in 3D printing and virtual reality. # Math # Maths # Art # 3DPrinting # Geometry"},
+    {"name": "Hoshino Lina (星乃リナ) 🩵 3D Yuri Wedding 2026!!!", "acct": "lina@vt.social", "niche": "Hello everyone, Hoshino Lina here! I'm a developer VTuber! I also help run VT Social! EN/日本語｜she/her｜🎨 # HoshinoLinArt ｜My gf: @ cyan 🩵｜We are @ TokyoHackerGirls Model https:// x.com/NananoNanase Design https:// x.com/shiranui_illust PFP https:// x.com/7783__ 🦋 @lina.yt 📨 lina@lina.yt 💲 https:// lin…"},
+    {"name": "Islamische Zeitung", "acct": "islamischezeitung@troet.cafe", "niche": "Deutsche, islamische Nachrichten, Themen, Lebensart, Grundlagen und Rubriken"},
+    {"name": "Jason Scott", "acct": "textfiles@digipres.club", "niche": "Troublemaker"},
+    {"name": "Jean-Denis Haas", "acct": "jeandenishaas@mastodon.art", "niche": "🎬 Animation Director at Lucasfilm Animation, formerly anim supe on “How To Train Your Dragon”, “Star Trek: Prodigy” / ex-Framestore, Blizzard, Paramount/Nickelodeon, WB & ILM | Need help with animation? My workshop link👇🏻 www.youtube.com/@jeandenishaas"},
+    {"name": "John Conway", "acct": "john@sauropods.win", "niche": "I am an artist, and I post a lot of my own art. I am also the Admin here at Sauropods.win, and a lot of my boosts will be great dinosaur (and other prehistoric animal) stuff from the other winners here. Some hashtags: # Art # Paintings # Palaeontology # Paleontology # Palaeoart # Paleoart # Dinosaur…"},
+    {"name": "Kevin McAleer 🤖 Robot Maker", "acct": "kevsmac@mastodon.social", "niche": "I make videos about robots on YouTube! https://www. youtube.com/kevinmcaleer28 Also checkout www.kevsrobots.com for robot projects and downloadable files"},
+    {"name": "LILITH", "acct": "ldragoon@mastodon.social", "niche": "Author & Illustrator;"},
+    {"name": "Lennart Quiring", "acct": "LennartQuiring@gruene.social", "niche": "Bündnis 90/Die GRÜNEN - Vorsitzender Kreistagsfraktion Verden - LAGen Schule, Digi, WiFi, PBW, MoVe, Postwachstum Nds. - Web: https://www. lennartquiring.de"},
+    {"name": "LibreOffice Design", "acct": "libodesign@fosstodon.org", "niche": "https://www. libreoffice.org/about-us/libre office-timeline/"},
+    {"name": "LibrePCB", "acct": "librepcb@fosstodon.org", "niche": "LibrePCB is a free, cross-platform, easy-to-use electronic design automation suite to draw schematics and design printed circuit boards – for makers, students and professionals, from beginners to experts."},
+    {"name": "MakerGeek", "acct": "makergeek@hometech.social", "niche": "Maker|Geek I mess with CNC, laser, machining, 3d printing, woodwork, electronics, welding Also on tiktok"},
+    {"name": "Marcin Wichary", "acct": "mwichary@mastodon.online", "niche": "Writing about software craft and quality: https:// unsung.aresluna.org / Wrote a book about the history of keyboards: https:// shifthappens.site / Designer / Typographer / Occasional speaker / Chicagoan in training"},
+    {"name": "Matt Ferrell / Undecided", "acct": "mattferrell@mastodon.social", "niche": "Clean tech, energy, and future technology explained clearly. Covers EVs, solar, wind, and emerging sustainable tech."},
+    {"name": "Matthew Gallant", "acct": "gangles@mastodon.social", "niche": "Game Director at Naughty Dog • Intergalactic: The Heretic Prophet • Worked on The Last of Us Part I & II, Uncharted 4 • Accessibility tinkerer • ⚜️QC🇨🇦CA"},
+    {"name": "Moose Allain", "acct": "MooseAllain@mas.to", "niche": "Illustrator, cartoonist, flotsam, occasionally jetsam, melancaholic. He/him. https://www. worldofmoose.com/"},
+    {"name": "Natureza Terráquea (Piter Keo)", "acct": "piterkeo@bertha.social", "niche": "Biólogo, planariólogo, linguista amador, divulgador científico em biologia (com foco em planárias) e línguas."},
+    {"name": "Nitrux", "acct": "Nitrux_NX@mastodon.cloud", "niche": "Official Mastodon for # Nitrux — Making @mauiproject since 2017 — # DisruptiveByDesign"},
+    {"name": "Palais de Tokyo", "acct": "palaisdetokyo@reseauculture.fr", "niche": "📍Centre d'art contemporain à Paris 12h-22h, tous les jours sauf le mardi"},
+    {"name": "Penpot", "acct": "penpot@fosstodon.org", "niche": "Think and build digital products. Together🫶 Penpot is the open-source design platform for teams that collaborate at scale."},
+    {"name": "Pirates de Catalunya", "acct": "partit_pirata@mastodont.cat", "niche": "Som el partit pirata de Catalunya: democràcia directa, drets humans, transparència total, programari i cultura lliures."},
+    {"name": "Piratpartiet", "acct": "piratpartiet@mastodon.social", "niche": "The official account of the Swedish Pirate Party. Part of the content is crossposted from our Twitter, part is original."},
+    {"name": "Revision Demoparty", "acct": "revisionparty@icosahedron.website", "niche": "The world's biggest pure demoparty - during Easter weekend in Saarbrücken, Germany. www.revision-party.net"},
+    {"name": "Rob Rich", "acct": "RobsteinOne@elekk.xyz", "niche": "Designer, amateur toy art critic, columnist & Exploits Games editor for Unwinnable, goofball."},
+    {"name": "Robert Yang", "acct": "radiatoryang@mastodon.gamedev.place", "niche": "Artist, indie game developer, level designer, practicing homosexual. // I don't really use Mastodon much anymore. I'm most active on Bluesky: https:// bsky.app/profile/radiatoryang. bsky.social"},
+    {"name": "SNS JU", "acct": "6G_SNS@eupolicy.social", "niche": "The Smart Networks and Services Joint Undertaking supports industrial leadership for Europe in 5G and 6G and embraces the voice of EU projects in the field."},
+    {"name": "Scientist Rebellion", "acct": "ScientistRebellion@social.rebellion.global", "niche": "Scientists & academics willing to tell the truth about the climate emergency and act accordingly. Join us in civil disobedience! 🥼🔜 https:// scientistrebellion.com/how-to- join [propics] Extinction Rebellion symbol (by street artist ESP, 2011) filled with Warming Stripes graphics (by climate scienti…"},
+    {"name": "Shyle", "acct": "Shyle@mastodon.social", "niche": "Multitâches, fait des BD un peu partout, mini-punk chez Edam Edam, coupe des légumes chez l'empereur du Japon et dessine des fesses"},
+    {"name": "Som Mobilitat", "acct": "sommobilitat@mastodon.social", "niche": "Treballem per una mobilitat +sostenible. Mobilitat elèctrica compartida al teu barri. Fes-te'n sòcia!"},
+    {"name": "Stefano Giolo - staipa.it", "acct": "staipa@mastodon.uno", "niche": "Mi occupo di Divulgazione Informatica, # criticalthinking , # usoconsapevoledellatecnologia e # InformEtica e faccio parte del team di bufale.net/Filogico.it."},
+    {"name": "Tamzin Hadasa Kelly", "acct": "tamzin@wikis.world", "niche": "Wikimedian (User:Tamzin), tokiponist (wan Tansin), tattoo enthusiast (5), polycule LLC member (kulupu olin), proud denizen of not-America (2025-04-30). When you say \"I made a Wikipedia\", you're using the word \"Wikipedia\" wrong. When I say it I'm not. In an extremely heterosexual relationship with @ …"},
+    {"name": "Tanja Kinkel", "acct": "Tanjakinkel@muenchen.social", "niche": "Geb. 27.09.1969 in Bamberg. Autorin, Vielleserin, Reisende. Liebt Geschichte, Fantasy, Gegenwart und Zukunft. Und Katzen."},
+    {"name": "TechSoup", "acct": "TechSoup@publicgood.social", "niche": "We connect # nonprofit organizations to mission-critical tech resources, knowledge and community for change-makers."},
+    {"name": "Theresa Hannig", "acct": "t_matam_t@det.social", "niche": "Autorin | Politikwissenschaftlerin | Stadträtin | Europäerin | Feministin | # wikifueralle | Artikel 3 GG Fangirl | Grün | she/her 🇪🇺🇺🇳🏳️‍🌈 https:// theresahannig.de"},
+    {"name": "Timothy Speed", "acct": "Timothy_Speed@mastodon.social", "niche": "Neurodivergent Researcher, System Theorist, and Artist (Orcid: 0009-0002-0143-5949)"},
+    {"name": "Transport Evolved Official", "acct": "show@mastodon.transportevolved.com", "niche": "This is the Mastodon Account for Transport Evolved - the YouTube channel about cleaner, greener, safer and smarter transportation! Please note: only official staff are able to use the @ mastodon.transportevolved.com domain."},
+    {"name": "Veloren", "acct": "veloren@floss.social", "niche": "Official Veloren account Veloren is a multiplayer voxel RPG written in # Rust . It is inspired by games such as Cube World, Legend of Zelda: Breath of the Wild, Dwarf Fortress and Minecraft. Veloren is fully open-source, licensed under GPL 3. It uses original graphics, music and assets created by it…"},
+    {"name": "Vie de Pontarlier", "acct": "viedepontarlier@framapiaf.org", "niche": "Activité du compte en pause. Actualité et animations de la ville de # Pontarlier 🇫🇷 et de ses alentours."},
+    {"name": "War and Peas 🧿", "acct": "warandpeas@mastodon.social", "niche": "Comics"},
+    {"name": "XOXO", "acct": "xoxo@xoxo.zone", "niche": "XOXO was an experimental festival for independent artists and creators from the internet."},
+    {"name": "alexanderlehmann.net", "acct": "alexanderlehmann_net@mastodon.social", "niche": "Ich mache Animationsfilme zu diversen (politischen) Themen. # netzpolitik # climatejustice # blender"},
+    {"name": "allendearnaiz", "acct": "allendearnaiz@mastodon.social", "niche": "Artista plastikoa. Serigrafia eta grabatua lantzen ditut, baita ehuntze lanak ere. Oiartzun, Euskal Herria. pixelfed.social/allendearnaiz"},
+    {"name": "iFixit", "acct": "iFixit@mastodon.social", "niche": "Never take broken for an answer. Our mission is to teach everyone to fix every thing. Have a repair question? Ask! You can check out our repair forum, fix with our free repair guides, and buy parts and tools at iFixit.com."},
+    {"name": "parahörnchen 👩‍🦽", "acct": "HoernchenCecile@todon.eu", "niche": "DE / FR Autorin u.a \"Kommen Sie da runter! ISBN 978-3-939045-23-6, unbequeme, # Umwelt -#Antiatom- Kletter-Aktivistin im 👩‍🦽 Spitzname 🐿 # Rheuma # Barrierefreiheit # Paraclimbing # Klettern # klimakrise # Ableismus Pixefeld Account: @ HoernchenCecile Auteure, militante # antinucléaire , pour le # c…"},
+    {"name": "vgt.austria", "acct": "vgt_austria@wien.rocks", "niche": "Official Account of VEREIN GEGEN TIERFABRIKEN: advocates # animal rights, exposes abuse, negotiates with politicial parties & economic interest groups. www.vgt.at"},
+    {"name": "vhsreutlingen", "acct": "vhsreutlingen@vhs.social", "niche": "Mehr vom Leben! l.vhsrt.de/start"},
+    {"name": "ÖDP Düsseldorf und Niederrhein", "acct": "oedpduesseldorf@nrw.social", "niche": ""},
+    {"name": "2600 Magazine", "acct": "2600@mastodon.online", "niche": "The Hacker Quarterly We Are Everywhere Joined January 1984"},
+    {"name": "404 Media", "acct": "404mediaco@mastodon.social", "niche": "404media.co"},
+    {"name": "Adam Conover", "acct": "adamconover@mastodon.social", "niche": "I'm a comedian and television host. Created Adam Ruins Everything and The G Word on Netflix. Host of the podcast FACTUALLY!"},
+    {"name": "Adam Zbiejczuk", "acct": "zbiejczuk@mastodonczech.cz", "niche": "http:// influencer.cz co-owner | # babeltalk organizer | helping companies with social media | @ cetin ex-spokesperson (still cooperating) | connecting people & projects | 🇨🇿 & 🇵🇱"},
+    {"name": "Alfred Chow - Maker of Things", "acct": "Maker_of_Things@cupoftea.social", "niche": "Professional maker, in wood and metal, from miniatures to museum installations. # MakersHour # ActuallyAutistic and a # Carer . He/Him/They # LGBTQI friendly. Currently building a community workshop in Salford, and writing the story of # HarrietAndDaisy . https://www. makerofthings.org.uk/ Married t…"},
+    {"name": "Amy Lynn", "acct": "amylynnorg@mastodon.social", "niche": "Born and raised in Akron, Ohio, Amy Lynn is an award‑winning podcaster, voice‑over actress, and author with over 25 years of experience bringing stories to life. Creator and host of Faith and Tech Bytes with Amy Lynn and co‑host of The Geek and The Detective, she is recognized for her digital publis…"},
+    {"name": "Anders Puck Nielsen", "acct": "anderspuck@krigskunst.social", "niche": "Military analyst at the Royal Danish Defence College. Doing a PhD at the Technical University of Denmark about the implications of social media on warfare. I make videos on YouTube about war, conflict, Russia – at the moment mostly the war in Ukraine. Author of \"Krigens Logik\" and host of \"Krigskuns…"},
+    {"name": "Andrew Steele", "acct": "statto@mas.to", "niche": "Scientist, author, presenter, campaigner."},
+    {"name": "Andy Gibson 💭", "acct": "gandy@mastodon.social", "niche": "Thinking about thinking and sometimes worrying about it. Speaker, writer, tinkerer, Head Gardener at Mindapples, author of the Mind Manual. Into # psychology , # mentalhealth , # education , # democracy and # hats ."},
+    {"name": "Andy Mabbett", "acct": "Pigsonthewing@mastodon.social", "niche": "Man of many talents - some of them useful. Multiple monomaniac. Author of 'Pink Floyd: The Music and The Mystery' and more. Birder. Cyclist. Wikimedian. FRSA."},
+    {"name": "Anne Applebaum", "acct": "anneapplebaum@journa.host", "niche": "Staff writer at The Atlantic. Author of GULAG, IRON CURTAIN, RED FAMINE and TWILIGHT OF DEMOCRACY"},
+    {"name": "Ashley M. Gjøvik, JD", "acct": "ashleygjovik@mastodon.social", "niche": "This is my true-crime-podcast of an account dedicated to my whistleblower legal battle with my ex-employer, Apple Computer Ask me about Apple's neglected offices on dangerous toxic waste dumps; Apple's secret silicon fab exhausting metric tons of solvents & lethal gases in the middle of dense reside…"},
+    {"name": "Auschwitz Memorial", "acct": "auschwitzmuseum@mastodon.world", "niche": "Former German Nazi concentration & extermination camp Auschwitz. Official account at Mastodon. You can also find us on: FB: http:// facebook.com/auschwitzmemorial IN: http:// instagram.com/auschwitzmemorial TT: http:// twitter.com/AuschwitzMuseum # museum # memorial # NeverForget # NeverAgainIsNow #…"},
+    {"name": "Babel: The Language Magazine", "acct": "babel@masto.ai", "niche": "📚 The quarterly linguistics magazine for all language lovers 📖 Available in print and digital 🖥️ 🔗 http://www. babelzine.co.uk"},
+    {"name": "Barry Luijbregts", "acct": "podhome@podcastindex.social", "niche": "Building www.podhome.fm. Intelligent podcast tools to help you create, host and distribute your podcasts."},
+    {"name": "Bellingcat", "acct": "Bellingcat@mstdn.social", "niche": "Bellingcat is an independent investigative collective of researchers, investigators, and citizen journalists brought together by a passion for open source research. Want to support our charity? http:// bellingcat.com/donate/ Buy our book \"We Are Bellingcat\" here: http:// bit.ly/2EP09EN Our award-win…"},
+    {"name": "Berliner Stadtreinigung", "acct": "BSR@berlin.social", "niche": "Berliner Stadtreinigung - Germany's largest municipal waste management company https:// bsr.de"},
+    {"name": "Bistum Würzburg", "acct": "bistumwuerzburg@kirche.social", "niche": "Deine katholische Kirche in Unterfranken."},
+    {"name": "Blast Info", "acct": "blast_info@mamot.fr", "niche": "Blast, nouvelle Web TV indépendante, nouveau site d’infos. Éditos, enquêtes, culture, tribunes et reportages. Lancé par Denis Robert. https://www. blast-info.fr"},
+    {"name": "BookCrossing", "acct": "BookCrossing@mastodon.social", "niche": "Let your books gather readers, not dust. Read and release to make the world a library. Founded in 2001 - worldwide networking of books - ©BookCrossing is the act of giving a book a unique identity so, as it is passed from reader to reader, it can be tracked. www.bookcrossing.com"},
+    {"name": "Bretterwisser", "acct": "Bretterwisser@podcasts.social", "niche": "Brettspielpodcast seit 2013 auf Sendung!"},
+    {"name": "Choan Gálvez", "acct": "choan@ukers.eu", "niche": "Composer and performer. King of Waltzes. Master of # Ukulele Tears. Extraordinarily handsome. Author of 50 Miniature Studies for Ukulele, May the Low 4th, Eight Rags a Week and a few other ukulele repertoire books."},
+    {"name": "Computer History Museum 🇸🇮", "acct": "muzej@mastodon.social", "niche": "🖥️🏛️🇸🇮 Računalniški muzej / Computer History Museum Slovenia 👉 https:// linktr.ee/racunalniskimuzej"},
+    {"name": "Einschlafen Podcast", "acct": "einschlafen@podcasts.social", "niche": "Entspannend seit 2010"},
+    {"name": "Freedom Press", "acct": "Freedom_Press@kolektiva.social", "niche": "An independent, radical co-op controlled by its volunteers, Freedom runs Britain’s oldest anarchist press and its largest bookshop. More about us: https:// freedomnews.org.uk/about/ News site: https:// freedomnews.org.uk Shop: https:// freedompress.org.uk/ Publishing: https:// freedompress.org.uk/wh…"},
+    {"name": "Fränkische Schweiz-Museum", "acct": "fsmt@mastodon.social", "niche": ""},
+    {"name": "Fusion Party Australia", "acct": "FusionPartyAus@mastodon.au", "niche": "Real people for a bright future. linktr.ee/fusionpartyaus Authorised by K. Hunt, FUSION, 254 McLeod Ln, Mansfield"},
+    {"name": "Gareth Dennis", "acct": "GarethDennis@mas.to", "niche": "Railway engineer and writer. Hosts # Railnatter . Director of E2M. Lecturer for the PWI and elsewhere. Co-founder of the Campaign for Level Boarding. Chair of NEREF. He/him."},
+    {"name": "GigaScience Journal", "acct": "GigaScience@mastodon.social", "niche": "The # OpenScience journal from BGI & OUP publishing articles using/generating large datasets. And linked to GigaDB # opendata hosting/analysis repository."},
+    {"name": "GregPalast", "acct": "GregPalast@mastodon.online", "niche": "Investigative journalist and author of the NY Times bestsellers Armed Madhouse + The Best Democracy Money Can Buy. Catch my reports at: http:// GregPalast.com Watch my new documentary, Vigilantes Inc: America’s New Vote Suppression Hitmen — narrated by Rosario Dawson — which exposes the most brazen,…"},
+    {"name": "Ikusgela", "acct": "Ikusgela@mastodon.eus", "niche": "Mundua ulertzeko bideoak | @ euwikipedia http://www. ikusgela.eus"},
+    {"name": "James Swallow", "acct": "jmswallow@mstdn.social", "niche": "Writer of Fortune; BAFTA nominated, award-winning New York Times & Sunday Times bestselling author of novels, scripts & games, new thrillers Dark Horizon & Airside, the Marc Dane series, along with fiction from the worlds of Tom Clancy, Star Trek, Warhammer and much more... https:// linktr.ee/jmswal…"},
+    {"name": "Jan Ainali", "acct": "ainali@social.coop", "niche": "Run: @ OpenByDefault Tinker: @ govdirectory Talk: @ wikipediapodden Strive: @ wikisusdev Worked: @ publiccode , @ europarl_en Former ED of: Wikimedia Sverige Born at 332 ppm."},
+    {"name": "John Siracusa", "acct": "siracusa@mastodon.social", "niche": "Programmer, tech writer, and co-host of Accidental Tech Podcast, Reconcilable Differences, and Robot or Not."},
+    {"name": "Jon Harald Søby", "acct": "jhsoby@wikis.world", "niche": ""},
+    {"name": "K. Tempest Bradford", "acct": "ktempestbradford@wandering.shop", "niche": "I'm an award-winning science fiction, fantasy, and speculative fiction author 💖 Ruby Finley vs. the Interstellar Invasion! 💖 a creative writing teacher for Writing the Other (aka @ writingtheother_bot and also @ writingtheother ), on the steering committee for the Carl Brandon Society, and a Black G…"},
+    {"name": "Karsten Hoffmeyer", "acct": "karsten_h@mastodon.social", "niche": "From Professional Wiki @ ProWiki . Provides hosting, services, and consulting services for # MediaWiki and # SemanticMediaWiki since 2011."},
+    {"name": "Kristina Gehrmann", "acct": "kristinagehrmann@mastodon.art", "niche": "Illustrator and graphic novelist (\"Im Eisland\", \"The Jungle\", \"Bloody Mary\"), she/her, deaf. # NoAI"},
+    {"name": "Letterform Archive", "acct": "letterformarchive@typo.social", "niche": "A nonprofit center for inspiration, education, publishing, and community in lettering, typography, and graphic design. We post items from our collection of over 100,000 objects. # Typography # Lettering # GraphicDesign # Books # Library # Museum # DesignMuseum # DesignSchool # DesignPublisher # Desi…"},
+    {"name": "Lili Saintcrow", "acct": "lilithsaintcrow@raggedfeathers.com", "niche": "I write books. Black sheep of the von Schtupp clan. A crow for a fetch, I'm your huckleberry. (Hint: Like \"synchro.\")"},
+    {"name": "Lingthusiasm", "acct": "lingthusiasm@wandering.shop", "niche": "A podcast that's enthusiastic about linguistics! By @ gretchenmcc and @ superlinguo"},
+    {"name": "LoadingReadyRun", "acct": "LoadingReadyRun@kind.social", "niche": "Official Mastodon account of LoadingReadyRun. We make silly things on the internet."},
+    {"name": "MATT RIFE", "acct": "bassetfwesh@mastodon.social", "niche": "I'm a standup comedian I love you all ❤️❤️❤️"},
+    {"name": "Madeleine Linke", "acct": "LinkeMadeleine@mastodon.social", "niche": "Landesvorsitzende Bündnis 90/Die Grünen Sachsen-Anhalt & Fraktionsvorsitzende Grüne/future! Magdeburg"},
+    {"name": "Magnus Manske", "acct": "magnusmanske@wikis.world", "niche": "# rustlang # mediawiki # wikibase # wikidata # wikipedia # foss # fedi22"},
+    {"name": "Malcolm Nance", "acct": "MalcolmNance@defenseofliberty.social", "niche": "US Intelligence +36 yrs. Expert MENA/SWA Terrorism, US Extremism, Dead Russians | x5 NYT Bestselling Author, Navy Sr Chief, Widower, Ukrainian Legionnaire 🇺🇦"},
+    {"name": "Matthias Schüssler", "acct": "MrClicko@mastodon.social", "niche": "Journalist, Blogger, Radio Man, Mastodon-Charmeur"},
+    {"name": "MikroTik", "acct": "mikrotik@mikrotik.social", "niche": "The official all-in-one MikroTik account. # BuyFromEU # Latvia # MikroTik"},
+    {"name": "Mohammad Basereh", "acct": "MohammadBasereh@mastodon.social", "niche": "Mohammad Basereh | محمد باسره is an Iranian composer, producer, and psychologist with an advanced degree in Psychology. He started his music career in 2011 after completing specialized courses. Known for his fusion music, he incorporates interactive technologies into his work. His compositions inclu…"},
+    {"name": "National Film Board of Canada", "acct": "NFB@socel.net", "niche": "7,000+ films, 86 years, 12 Oscars, & counting! The NFB is dedicated to promoting, preserving, and reflecting the Canadian sense of self through stories. 🇨🇦 Stream Canadian. Stream nfb.ca for free! 🍁 Français @ onf 🖼️ Banner art: Stream Canadian."},
+    {"name": "Nicolas Vigneron", "acct": "belett@mamot.fr", "niche": "# Wikimedia # Rennes , ingénieur # environnement de formation, information data # Wikidata bibliophilie typographie"},
+    {"name": "Not Just Bikes 🇳🇱", "acct": "notjustbikes@social.notjustbikes.com", "niche": "A cranky old guy who has been places and seen things. No, I am not going to bridge to Bluesky, and I am not going to create a PeerTube channel. Please stop asking. Do not re-post my posts (or screenshots of my posts) on other platforms. These posts are meant only for Mastodon."},
+    {"name": "Now Entertainment Magazine", "acct": "NowEntertainment@mastodon.social", "niche": "# nowentertainmentmagazine Music news, reviews, and interviews. We throw gas on the fire."},
+    {"name": "Oratoire du Louvre", "acct": "oratoiredulouvre@piaille.fr", "niche": "Temple protestant à # Paris , en face du Louvre depuis 1811. # Christianisme social, libéral et inclusif. # epudf"},
+    {"name": "PM Press", "acct": "pmpress@kolektiva.social", "niche": "PM Press is an independent, radical publisher of books and media to educate, entertain, and inspire. https:// linktr.ee/pmpress"},
+    {"name": "Panoptykon", "acct": "panoptykon@eupolicy.social", "niche": "Żyjemy pod nadzorem. Każda nasza aktywność jest rejestrowana, analizowana, sprzedawana. Po to, by państwo i korporacje mogły decydować o nas i za nas. Nie podoba nam się ten układ. Chcemy, by nowe technologie służyły ludziom. Chcemy wolności i prywatności. O to walczymy. # inwigilacja # prywatnosc #…"},
+    {"name": "Polygon", "acct": "polygon@mastodon.social", "niche": "A tour guide for the wilderness of modern entertainment. We find, share, and investigate the things you love and the people who make and enjoy them."},
+    {"name": "RIPE NCC", "acct": "ripencc@mastodon.social", "niche": "We're the RIPE NCC, the Regional Internet Registry for Europe, Middle East and parts of Central Asia. We act as the secretariat to the RIPE community."},
+    {"name": "Ralph Ruthe", "acct": "ralphruthe@troet.cafe", "niche": "Autor, Musiker, Filmemacher, Cartoonist - www.ruthe.de"},
+    {"name": "SMK – Statens Museum for Kunst", "acct": "smk@expressional.social", "niche": "Vi taler om den store, fælles danske kunstsamling og om museet i København og i Thy. Og vi håber meget, at du vil tale med os! # smkmuseum # dkart # dkmuseum # kunstmuseum # copenhagen SMK is the national gallery of Denmark. We post in Danish but happily (try to) respond in other languages."},
+    {"name": "SPD OV Fritzlar", "acct": "SPD_Fritzlar@spd.social", "niche": ""},
+    {"name": "Scott Santens", "acct": "scottsantens@hachyderm.io", "niche": "Writer and Unconditional Universal # BasicIncome (UBI) advocate with a crowdfunded monthly basic income | Author of Let There Be Money | Editor of UBI Today | Founder and President of ITSAfoundation.org"},
+    {"name": "Splann ! Lanceur d'enquêtes", "acct": "splann@mamot.fr", "niche": "{Fr} Premier média indépendant dédié à l'enquête en Bretagne {Bzhg} Kentañ media enklask dizalc’h e Breizh En accès libre | infolettre gratuite | financé par vos dons | splann.org 🔍"},
+    {"name": "Stephen Harrison", "acct": "harrisonstephen@mastodon.social", "niche": "Writer. Novel THE EDITORS out now. Posting essays at notes.stephenharrison.com"},
+    {"name": "Steve Shives", "acct": "steveshives@mstdn.social", "niche": "YouTuber. Co-host, Ensign's Log and Late Seating podcasts. Social justice advocate. Tries to do good. He/Him"},
+    {"name": "TWiT Podcasts", "acct": "TWiT@mastodon.social", "niche": "The TWiT.tv Netcast Network with Leo Laporte features the #1 ranked technology podcast This Week in Tech, along with other top-ranked online shows. 👉 twit.tv"},
+    {"name": "TechAltar", "acct": "Techaltar@mas.to", "niche": "I make videos for YouTube & Nebula."},
+    {"name": "TechHut", "acct": "techhut@fosstodon.org", "niche": "Yes, I use this account and check it out frequently. No, you don't need to tag an admin to try to get me in trouble. TechHut Media."},
+    {"name": "The Ferret", "acct": "theferret@mastodon.scot", "niche": "The Ferret is an award-winning investigative journalism platform based in Scotland. We are a # coop owned by our readers and writers. Join us! * This account is mainly automated. Don't send story tips through Mastodon. Send them here: https:// theferret.scot/contact/"},
+    {"name": "The Public Domain Review", "acct": "publicdomainrev@mastodon.social", "niche": "Not-for-profit project dedicated to exploring curious and compelling works from the history of art, literature, and ideas — focusing on works now fallen into the public domain. Smaller posts surface images, books, audio, and film (sourced from places like Internet Archive, Library of Congress, The M…"},
+    {"name": "Theater Ulm", "acct": "theaterulm@xn--baw-joa.social", "niche": "Willkommen im Theater Ulm www.theater-ulm.de # Schauspiel # Musiktheater # Tanz # Konzert # theater # kultur # ulm"},
+    {"name": "Thoth Open Metadata", "acct": "Thoth_metadata@hcommons.social", "niche": "Thoth is an open metadata management and dissemination platform for # OAbooks , developed under the remit of @ copim , now a non-profit CIC registered in the UK, and key partner in the Open Book Futures project. # MetadataMatters # openinfra # OAbooks"},
+    {"name": "Thunderbird: Free Your Inbox", "acct": "thunderbird@mastodon.online", "niche": "FREE YOUR INBOX! Thunderbird is your all-in-one communications command center that puts YOU in control. Manage all your email accounts separately or in a unified inbox. Filter, customize, and organize the way you like. Thunderbird simply makes your life simpler. What's New: https:// blog.thunderbird…"},
+    {"name": "Tim Pritlove", "acct": "timpritlove@mastodon.social", "niche": "Dedicated Podcaster. Professional Amateur. Discordian Evangelist. Berlin, Germany"},
+    {"name": "Todd Vaziri", "acct": "tvaziri@mastodon.social", "niche": "I make visual effects for movies and talk about movies a lot."},
+    {"name": "Tom Merritt", "acct": "acedtect@mstdn.social", "niche": "Podcaster, Coffee achiever, Fearnot"},
+    {"name": "Unicorn Riot", "acct": "UnicornRiot@mastodon.social", "niche": "Independent media amplifying stories from the frontlines of social and environmental struggles. Bookmark our website: https:// unicornriot.ninja/"},
+    {"name": "Vera de Kok", "acct": "1Veertje@mas.to", "niche": "Wikipedia's \"Media Contributor of the Year 2025“"},
+    {"name": "Volker Quaschning", "acct": "VQuaschning@mastodon.green", "niche": "👨‍💼Professor für Regenerative Energiesysteme (HTW Berlin) 🔆Experte für Erneuerbare Energien, Energiewende, Klimaschutz 📖Buchautor 🎬YouTuber 🎧Podcaster"},
+    {"name": "WGGB - the writers' union", "acct": "WritersGuildGB@union.place", "niche": "Writers' Guild of Great Britain, union representing writers in TV, film, radio, theatre, videogames, books, comedy. Join: https:// writersguild.org.uk"},
+    {"name": "Wikifunctions", "acct": "wikifunctions@wikis.world", "niche": "A catalog of functions that anyone can edit, run, and reuse"},
+    {"name": "Wikimedia CH", "acct": "WikimediaCH@wikis.world", "niche": "The official Wikimedia chapter for all Swiss users and readers of @ wikipedia and its sister projects. Join us as an association member!"},
+    {"name": "Wikimédia France", "acct": "Wikimedia_Fr@wikis.world", "niche": "Association soutenant les projets # Wikimedia et la connaissance libre. Président Cedric Tarbouriech. Photo par Flora Garde, sous licence CC BY-SA 4.0."},
+    {"name": "Wikipedia", "acct": "wikipedia@wikis.world", "niche": "Wikipedia is a multilingual free online encyclopedia written and maintained by a community of volunteers, known as Wikipedians, through open collaboration and using a wiki-based editing system called @ mediawiki . Wikipedia is the largest and most-read reference work in history. (from https:// w.wik…"},
+    {"name": "Wojtek Żubr Boliński", "acct": "mr_zvbr@kolektiva.social", "niche": "Robię opiniotwórczy program o charakterze egalitarnym. Mimo, że to chyba bardziej prywatne niż gilotynowe konto, to i tak muszę ostrzec, że znajdziesz tu pewnie dużo polityki i innych nieprzyjemnych rzeczy. 🦬 Antifa shareholder 🦬 happiness manager at Żydokomuna 🦬 milkman of human kindness"},
+    {"name": "donni saphire", "acct": "donni@mastodon.social", "niche": "Chicago comedian in real life, Internet poster in posting. Proudly hatless. Suspicious of most squirrels. Only wrestles sea cows seasonally"},
+    {"name": "gmmds", "acct": "gmmds@mastodonapp.uk", "niche": "Chess Grandmaster, IT consultant, author of \"The Silicon Road to Chess Improvement\", https:// youtube.com/c/SiliconRoadChess , co-author of \"Re-Engineering the Chess Classics\", co-author of the award-winning \"Game Changer\". Also some little thoughts about art, ballet, classical music and English win…"},
+    {"name": "internetarchive", "acct": "internetarchive@mastodon.archive.org", "niche": "Internet Archive is a non-profit research library preserving web pages, books, movies & audio for public access. Explore web history via the Wayback Machine."},
+    {"name": "inventaire.io", "acct": "inventaire@mamot.fr", "niche": "https:// inventaire.io is a # libre webapp to share physical books with your friends, groups, and neighbors To do that, we run a # Wikidata -federated open bibliographic database, learn more: https:// data.inventaire.io # BookSharing # LinkedOpenData # NonProfit # books # library"},
+    {"name": "kvistgaard", "acct": "kvistgaard@social.vivaldi.net", "niche": "Consultant, Author, Speaker. Helps in managing organizations and data. Works with open, enterprise and personal # knowledgegraphs . Loves jazz, tennis, and sailing. https:// velitchkov.eu"},
+    {"name": "nika dubrovsky", "acct": "nika@graeber.social", "niche": "Writing children books for adults and adult books for kids."},
+    {"name": "AdventureX", "acct": "adventurex@mastodon.gamedev.place", "niche": "AdventureX brings together devs & gamers with a passion for interactive storytelling: Nov 7th & 8th 2026 in London"},
+    {"name": "Board Game Circus", "acct": "boardgamecircus@brettspiel.space", "niche": "Board Game Publishing House & International Translation Studio from Germany. Shop: brettspielkiosk.de — Posts by Daniel & Johannes. 🏳️‍🌈🏳️‍⚧️☮️❤️🌿🎲"},
+    {"name": "Bytten Studio", "acct": "ByttenStudio@social.bytten-studio.com", "niche": "Bytten Studio is a small Brighton-based indie game studio making @ CassetteBeasts !"},
+    {"name": "Chris Huelsbeck", "acct": "Chris_Huelsbeck@universeodon.com", "niche": "Composer of Video Game Soundtracks and other music, with 35+ Years experience & 100+ released projects! I write memorable melodies! Oh, and I won awards too! ;)"},
+    {"name": "Desert Bus For Hope", "acct": "desertbus@kind.social", "niche": "The profile for the official Desert Bus for Hope charity gaming marathon, raising money for Child's Play Charity 🌵🚌💙"},
+    {"name": "EGOSOFT", "acct": "egosoft@mastodon.social", "niche": "We're the creators of the popular X space simulation game series 🚀 Find out more: linktr.ee/egosoft"},
+    {"name": "FRACTiLE Games", "acct": "fractilegames@mastodon.gamedev.place", "niche": "Mikko Rytkönen. A solo indie game developer from Tampere, Finland."},
+    {"name": "Gamespace", "acct": "Gamespace@mastodon.social", "niche": "Gaming News, Videos and Review. A haven for gamers everywhere"},
+    {"name": "Kitsune Games", "acct": "kitsunegames@mastodon.social", "niche": "Kitsune Games is the inclusive indie game studio behind titles like Kitsune Tails, MidBoss, Super Bernie World, and Ultra Hat Dimension."},
+    {"name": "Laura Kate Dale", "acct": "LauraKBuzz@tech.lgbt", "niche": "Accessibility / Queer Consultant. Podquisition. Access-Ability. Author. Twitch Partner. Amateur Speedrunner. Disabled. Trans. LauraKBuzzOfficial@Gmail.Com Patreon.com/LauraKBuzz"},
+    {"name": "Minecraft Wiki", "acct": "MinecraftWikiEN@wikis.world", "niche": "The Minecraft Wiki is a community-run, publicly accessible and editable website for all information on the Minecraft franchise. Not affiliated with Mojang or Microsoft."},
+    {"name": "Power Up With Pride", "acct": "PowerUpWithPride@kind.social", "niche": "Charity speedrunning marathons to support LGBTQIA+ organizations! # PUWP26 runs June 5-7, 2026, in support of Point of Pride! Game/volunteer submissions open thru March 31! https:// submissions.powerupwithpride.o rg/ https:// forms.gle/vXr1DAeyH1Zgrwxk8"},
+    {"name": "Ryan Baumann", "acct": "ryanfb@digipres.club", "niche": "📜 Papyri, Ancient Greek, Latin, computers, video games, cats, etc. https:// papyri.info maintainer Creator of https:// podqueue.fm , the missing \"Listen Later\" for audio on the web"},
+    {"name": "Simmer Valenciana", "acct": "simmervalenciana@mastodont.cat", "niche": "🎮Gamer valenciana | Comunicadora 📺 # PlaçaTísner @beteve | 🔚La Colla @apunt_media | 🟣Creadora de contingut | # Benicarló i # Terrassa 🧑‍🏫 Politòloga en camí | @poblet_info @SimsAddictes i @TerritoriGamer"},
+    {"name": "Trese Brothers Games", "acct": "TreseBrothers@mastodon.social", "niche": "Indie game devs going 10+ years strong. We make deep, highly-replayable RPGs & strategy games for PC and mobile. # Gaming # GameDev # PCGaming"},
+    {"name": "Xeno Series Wiki", "acct": "XenoSeriesWiki@mastodon.social", "niche": "Independent wiki for the \"Xeno\" game series. This is our Mastodon account where we share updates about the wiki, the series and occasionally some trivia."},
+    {"name": "gregandcin", "acct": "gregandcin@mindly.social", "niche": "I kinda like games and tech. Local connoAsseur. Rested and Sleeppilled. Admin #2 of Mindly.Social # fedi22 # tech # gaming # anime # manga # keyboards"},
+    {"name": "tomossy3", "acct": "tomossy3@mastodon.social", "niche": "# tomossy3"},
+    {"name": "Úna-Minh (not Úna) Kavanagh", "acct": "unaminhkavanagh@mastodon.ie", "niche": "🎮 # Irish # Gamer 📝 Games Producer https:// unaminh.itch.io/ 🌱 Enthusiastic # Forager ☘️ # IrishLanguage Speaker and Creator ✍️ Editor & Owner https:// weareirish.ie/ My 150 Gaeilge Resources: 👉 https:// payhip.com/b/bm0ZI"},
+    {"name": "Christophe Grébert", "acct": "grebert@mastodon.top", "niche": "# Vélotafeur à # Paris et banlieue. Mes intérêts : # vélo # mobilité # ville # urbanisme # planète # climat # environnement # démocratie # citoyenneté # médias # LGBT + # plantesvertes"},
+    {"name": "CopernicusECMWF", "acct": "CopernicusECMWF@masto.ai", "niche": "The # CopernicusClimate Change Service (#C3S) & # CopernicusAtmosphere Monitoring Service (CAMS), implemented by ECMWF on behalf of the European Commission."},
+    {"name": "Ecosia", "acct": "ecosia@mastodon.social", "niche": "Find what you need. Plant trees where they’re needed. Search with Ecosia and be climate active every day: http:// ecosia.co/learnmore"},
+    {"name": "Extinction Rebellion Global", "acct": "ExtinctionR@social.rebellion.global", "niche": "Global non-violent direct action movement demanding a response to the climate and ecological emergency. Donate at bit.ly/supportxr"},
+    {"name": "Public Transport Users Assoc", "acct": "ptua@mastodon.social", "niche": "Public Transport Users Association - campaigning for better public transport in Melbourne and around Victoria, Australia"},
+    {"name": "ADFC Bundesverband", "acct": "ADFC@mastodon.social", "niche": "Allgemeiner Deutscher Fahrrad-Club e. V. 🚲 Weil Radfahren glücklich macht! 🐘 Offizieller Account 🤝 240.000 Mitglieder unterstützen unsere Arbeit. Sei dabei! https://www. adfc.de/mitgliedschaft 🧡 Bitte beachte unsere Netiquette: https://www. adfc.de/netiquette"},
+    {"name": "ARISS - Amateur Radio on ISS", "acct": "ARISS_Intl@mastodon.hams.social", "niche": "We are Amateur Radio on the International Space Station (ARISS). We let students experience the excitement of talking with crew members of the International Space Station, inspiring them to pursue interests in STEM fields. For more information on our event, visit ARISS.org."},
+    {"name": "Aurélie Gries 🇵🇸", "acct": "AurelieGries@mastodon.top", "niche": "• Féministe ♀️ écoterroriste 🌿 anticapitaliste ⚖️ Municipaliste libertaire 🏴 • Éducatrice PJJ Team CGT 🔻 • Maire-Adjointe # Lyon7 # Lyon déléguée à la petite-enfance, vie associative et promotion de la santé • Candidate 2022 # NUPES • PEPS"},
+    {"name": "Chris Isaak", "acct": "chrisisaak@gram.social", "niche": "Found myself on the corner side of the internet. I’m a singer, songwriter, guitarist, and amateur actor, also an animal pal."},
+    {"name": "Clan Analogue", "acct": "clan_analogue@mastodon.art", "niche": "Australian Electronic Music and Arts Collective # nobridge"},
+    {"name": "DNA Lounge", "acct": "dnalounge@sfba.social", "niche": "DNA Lounge has been one of San Francisco's most popular nightclubs for over four decades, hosting an always-eclectic variety of events, including all-ages live music, 18+ dance parties, burlesque shows, lecture series and private parties. Two stages, four dance floors, seven bars and a full-service …"},
+    {"name": "Die Linke Bonn", "acct": "dielinkebonn@nrw.social", "niche": ""},
+    {"name": "Die Linke Dortmund", "acct": "dielinke_dortmund@linke.social", "niche": "Offizieller Account vom Kreisverband Die Linke Dortmund"},
+    {"name": "Die Linke KV Bergstraße", "acct": "linke_bergstrasse@linke.social", "niche": "Kreisverband Bergstraße in Südhessen"},
+    {"name": "Die Linke KV Tübingen", "acct": "LinkeTuebingen@chaos.social", "niche": "Die Linke Kreisverband Tübingen"},
+    {"name": "Fall Of Carthage", "acct": "fallofcarthage@metalhead.club", "niche": "# groovemetal / # metalcore band from Germany. Arkadius Antonik (also SuidAkrA, Realms Of Odoric, Dragonbreed) and Sascha @ assbach . Drums: Ken Jentzen, Bass: Sebastian Jensen. Five albums on Bandcamp, Spotify, etc. # metal # metalbands # music If not mentioned otherwise, Sascha ( @ assbach ) is wr…"},
+    {"name": "Fritz Tietz", "acct": "breitcord@norden.social", "niche": "Zu viele, zu schnell https:// tinyurl.com/ybnee3be Alte Lieben https:// tinyurl.com/yfdadjn6 Warum länger aufs Tempolimit warten? Jetzt bestellen! https:// fritztietz.de/tempolimit/ Fritz Tietz https:// fritztietz.de"},
+    {"name": "George Takei 🏳️‍🌈🖖🏽", "acct": "georgetakei@universeodon.com", "niche": "Husband, Actor, Activist, Uncle George to the Internet"},
+    {"name": "Jean VOGUET", "acct": "jeanvoguet@mastodon.social", "niche": "https:// linktr.ee/jeanvoguet https:// jeanvoguet.wordpress.com Acousmatic Composer - Geophonodesies, Heterotopias & Volumiphonies # JeanVoguet # volumiphony # acousmatic # electroacoustic # AcousmaticMusic # ElectronicMusic # volumiphonie # 3Daudio # geophonodesy # AudioResearch"},
+    {"name": "MASTER BOOT RECORD", "acct": "MASTERBOOTRECORD@mastodon.cloud", "niche": "I am a 486DX-33MHz-64MB processing avant-garde chiptune, synthesized heavy metal & classical symphonic music. 100% Synthesized, 100% Dehumanized."},
+    {"name": "Marina Weisband", "acct": "afelia@chaos.social", "niche": "Demokratie wachsen lassen."},
+    {"name": "Megan Marie Hart", "acct": "meganmariehart@mastodon.social", "niche": "Opera singer. Vegetarian. 🕊️ Nedda 🎼 PAGLIACCI 📍 Staatstheater Darmstadt 🗓️ August 29 🕢 19:30 # opera # operaSinger # soprano # classicalMusic # singer"},
+    {"name": "Music Arrangers & Composers", "acct": "ASMAC@mastodon.social", "niche": "American Society of Music Arrangers and Composers (ASMAC) Weekly Webinars, Discussions, & Masterclasses with the top names music in arranging and composing. Building community and education since 1938. ASMAC welcomes members from anywhere on Earth. Members have access to over 200 event videos (500+ …"},
+    {"name": "Odyssey Opera", "acct": "Odysseyopera@mastodon.social", "niche": "@ Odysseyopera was founded in 2013 to present adventurous and eclectic works that affirm # opera as a powerful expression of the human experience. # OdysseyOpera 's world-class artists perform operatic repertoire from its historic beginnings through lesser-known masterpieces to contemporary new work…"},
+    {"name": "Radio LOHRO 90.2 MHz", "acct": "lohro@radiosocial.de", "niche": "Freies Radio in Rostock, DE-MV. Lass hören! . Lizenznehmer: Kulturnetzwerk e.V."},
+    {"name": "Ràdio Klara 104.4FM València", "acct": "radioklara@mastodon.social", "niche": "Emisora libre que emite en València desde 1982."},
+    {"name": "The Incredible Herrengedeck", "acct": "herrengedeck@mastodon.social", "niche": "Chanson-Punk aus Berlin"},
+    {"name": "Vito C.", "acct": "vito@jbo.social", "niche": "Singer and guitarist with German Comedy Metal band J.B.O. since 1989 www.jbo.de"},
+    {"name": "WFMU", "acct": "WFMU@c.im", "niche": "WFMU is an independent listener-supported freeform radio station broadcasting live on the air and online 24x7 from downtown Jersey City, NJ. We'll be posting periodically about upcoming specials and other station info while we wait to see how things develop here on Mastodon. This account, like all W…"},
+    {"name": "choan 🍉", "acct": "choan@social.anartist.org", "niche": "Musician. Composer. Programmer by needs. Anti-fascist. Anti-zionist. Atheist. I love coding, but I hate writing code for a living. I'd rather live from my music. Cloud is someone else's computer. Claude is someone else's code."},
+    {"name": "fogdriver", "acct": "fogdriver@metalhead.club", "niche": "Yes fogdriver - the band! Fogdriver conjures instrumental soundscapes from southern Germany, where heavy riffs, hypnotic grooves, and expansive atmospheres blur the line between stoner rock, psychedelia, and post-rock. On stage, sound and vision merge into an immersive, shadowed world that pulls the…"},
+    {"name": "herbert", "acct": "hvdsomp@w3c.social", "niche": "OpenURL, SFX, OAI-PMH, OAI-ORE, info URI, bX, djatoka, MESUR, aDORe, Memento, Web Annotation, ResourceSync, Robust Links, Link Set, Signposting"},
+    {"name": "9to5Google.com", "acct": "9to5google@mastodon.online", "niche": "Official 9to5Google. We break news on Alphabet, Google, Android, Pixel, Home, Chrome, and more. Send tips to tips@9to5g.com"},
+    {"name": "9to5Mac", "acct": "9to5Mac@mastodon.online", "niche": "We break Apple news. Follow for the latest leaks, rumors, reviews, tips, and more"},
+    {"name": "ATypI", "acct": "atypi@typo.social", "niche": "ATypI is a 501(c)(3) nonprofit organization serving the international type community. ATypI Stanford: May 27–30, 2026 | ATypI Sharjah: October 28–31, 2026. Visit atypi.org for details."},
+    {"name": "Andrew Lokenauth", "acct": "FluentInFinance@mastodon.social", "niche": "I write https:// TheFinanceNewsletter.com , trusted by 100,000+ readers to get smarter with the economy, geopolitics, finance, and decision making. 20 years finance experience — Follow for daily insights & turn notifications on!"},
+    {"name": "Ars Technica", "acct": "arstechnica@mastodon.social", "niche": "Original news, reviews, analysis of tech trends, and expert advice on the most fundamental aspects of tech. Official Ars Technica account. 🟠"},
+    {"name": "BNO News", "acct": "BNONews@mastodon.social", "niche": "This account is currently inactive. Follow us on X/Twitter, Threads, Bluesky or Facebook for breaking news and updates."},
+    {"name": "Bertelsmann Stiftung", "acct": "BertelsmannStiftung@stiftungen.social", "niche": "Wir wollen Menschen bewegen, Zukunft gestalten."},
+    {"name": "BiblioCon2026", "acct": "bibliocon@openbiblio.social", "niche": "114. BiblioCon vom 19. - 22. Mai 2026 in Berlin | # BiblioCon26 | Impressum: https:// 2026.bibliocon.de/impressum/"},
+    {"name": "Bistum Trier", "acct": "bistumtrier@katholisch.social", "niche": ""},
+    {"name": "CTXT", "acct": "ctxt@mastodon.world", "niche": "La alianza entre CTXT y Acción Contra el Odio para combatir el odio y fortalecer la democracia. SUSCRÍBETE en https:// agora.ctxt.es/?utm_campaign=ay uso-no-lo-haria&utm_medium=email&utm_source=acumbamail 🧐 Síguenos en http:// linktr.ee/ctxt.es"},
+    {"name": "CenDemTech", "acct": "CenDemTech@techpolicy.social", "niche": "The Center for Democracy & Technology (CDT). Shaping technology policy and architecture, with a focus on equity and justice. https:// cdt.org"},
+    {"name": "Contre Attaque", "acct": "contreattaque@mastodon.social", "niche": "Organiser la révolte, documenter les luttes"},
+    {"name": "Corporate Europe Observatory", "acct": "corporateeurope@mstdn.social", "niche": "Corporate Europe Observatory (CEO) challenges the influence of Big Business and corporate lobby groups in EU policy-making."},
+    {"name": "Cour de justice de l'UE", "acct": "Curia_fr@curia.social-network.europa.eu", "niche": "Compte officiel de l’unité presse de la Cour de justice de l’UE."},
+    {"name": "Court of Justice of the EU", "acct": "Curia@curia.social-network.europa.eu", "niche": "Official account of the Press Service of the Court of Justice of the European Union."},
+    {"name": "Craig Mod", "acct": "craigmod@mastodon.social", "niche": "A walking man"},
+    {"name": "DW Innovation", "acct": "dw_innovation@mastodon.social", "niche": "DW = Germany's international broadcaster. DW Innovation = DW ReCo + DW Lab. We explore emerging technologies and their impact on journalism, media, and audiences."},
+    {"name": "Daily Tech News Show", "acct": "dtnsshow@mstdn.social", "niche": "DTNS - Helping each other understand. http:// dailytechnewsshow.com/"},
+    {"name": "Dave Ackley", "acct": "livcomp@hachyderm.io", "niche": "The universe exists. Reality is up to us. We Are Coders. We Ship Code. Like This 🥁🥁 Like This 🥁🥁 FEDI COUNCIL PRIORITIES Spirit before name Name before truth Truth before judgment Judgment before action Action before evaluation Evaluation before automation"},
+    {"name": "DeanObeidallah", "acct": "DeanObeidallah@masto.ai", "niche": "Host: The Dean Obeidallah show SiriusXM radio channel 127 weekdays 6-9PMET. Democrats are the REAL Patriots! Pls Sign up for my newsletter: https:// deanobeidallah.substack.com/"},
+    {"name": "Democracy Without Borders", "acct": "democracywb@mastodon.world", "niche": "Democracy Without Borders advocates global democracy."},
+    {"name": "Digital Rights Watch", "acct": "drwaus@aus.social", "niche": "We stand up for human rights in the digital age."},
+    {"name": "Dorin Popa", "acct": "NiceBastard@social.tchncs.de", "niche": "Journalist"},
+    {"name": "EDPS", "acct": "EDPS@social.edps.europa.eu", "niche": "News from the European Data Protection Supervisor (EDPS). Disclaimer: http:// europa.eu/!HP66qc"},
+    {"name": "EDRi", "acct": "edri@eupolicy.social", "niche": "European Digital Rights. We defend your rights and freedoms online."},
+    {"name": "Electronic Frontier Foundation", "acct": "eff@mastodon.social", "niche": "We're the Electronic Frontier Foundation. We're a nonprofit that fights for your privacy and free speech online. Find all of EFF's social media accounts at eff.org/social."},
+    {"name": "Else Kröner-Fresenius-Stiftung", "acct": "EKFStiftung@wisskomm.social", "niche": "# EKFS"},
+    {"name": "Eric Alper", "acct": "EricAlper@mastodon.social", "niche": "Freelance Music Publicist. SiriusXM Host. Shameless Idealist. Lifelong Musicaholic. I talk about Music News in the Media. Eric@ThatEricAlper.com"},
+    {"name": "European Court of Auditors", "acct": "EUauditors@mastodon.social", "niche": "📢 News from the # EUauditors , external auditor of the # EUbudget , and independent guardian of the # EUfinances . 🔐 Data Protection Statement: link.europa.eu/YmkdTc"},
+    {"name": "Felix Reda", "acct": "senficon@ohai.social", "niche": "obnoxious twink who thinks he knows everybody | former Member of the European Parliament | 🏳️‍⚧️ | Opinions my own, though I don’t think opinions can be owned."},
+    {"name": "Fight for the Future", "acct": "fight@mastodon.fightforthefuture.org", "niche": "Digital rights are human rights. There's hardly anything as important as ensuring that our shared future has freedom of expression and creativity at its core. https:// links.fightforthefuture.org"},
+    {"name": "Forbes", "acct": "Forbes@newsie.social", "niche": "Official account of Forbes, the world’s leading voice for entrepreneurial success and free enterprise, and home to breaking news, business, money and more."},
+    {"name": "GRÜNE Bürstadt", "acct": "buerstadt@gruene.social", "niche": "BÜNDNIS 90/DIE GRÜNEN Bürstadt"},
+    {"name": "Heinrich Böll Stiftung BW", "acct": "HeinrichBoellStiftungBW@det.social", "niche": "Die grüne politische Stiftung in Baden-Württemberg # hbsbw # heinrichböll www.boell-bw.de"},
+    {"name": "Hochschule Anhalt", "acct": "hsanhalt@mastodon.social", "niche": "Offizieller Kanal der Hochschule Anhalt"},
+    {"name": "Il Disinformatico", "acct": "ildisinformatico@mastodon.uno", "niche": "Paolo Attivissimo, giornalista informatico, cacciatore di bufale, collaboratore RadioTV Svizzera (RSI.ch) / IT journalist, hoax buster, Swiss Radio & TV (RSI.ch) contributor."},
+    {"name": "Innovate for Vegas Foundation", "acct": "innovateforvegas@fosstodon.org", "niche": "A Nevada Nonprofit 501(c)(3) public charity civic volunteer organization Making our Smart City Smarter! Podcasts: https:// creators.spotify.com/pod/profi le/lets-innovate-for-vegas YouTube: https://www. youtube.com/@InnovateForVegas Plus verified links…"},
+    {"name": "It's Going Down", "acct": "igd_news@kolektiva.social", "niche": "In search of new forms of life. Sharing news, podcasts, and opinion about autonomous social movements across so-called North America."},
+    {"name": "Jan Böhmermann 🤨", "acct": "janboehm@edi.social", "niche": "(Parody) // 🇪🇺 / from the motherland of fun and laughter / ZDF Magazin Royale / fest & flauschig bei Spotify / hotline +49 30 959997666 / ❤️✊😉"},
+    {"name": "Jan Philipp Albrecht", "acct": "janalbrecht@gruene.social", "niche": "Vorstand | president Heinrich-Böll-Stiftung Vorher | before: MdEP | MEP 🌻🇪🇺 & Minister in Schleswig-Holstein ⚡️🐗🌾♻️🐝💻 Hier privat | private views"},
+    {"name": "Kai Arzheimer", "acct": "kaiarzheimer@fediscience.org", "niche": "Professor of Politics @PoWiMZ / @uni_mainz | parties, elections, attitudes, behaviour | right-wing extremism/populism/radicalism"},
+    {"name": "Kai Rüsberg", "acct": "Ruhrnalist@mastodon.social", "niche": "# MachEsEinfach Keep it simple, but simply keep up. Journalism is about change and developing society, so challenge methods and embrace opportunities. Renewables are peace energy! Ruhrgebiet Ruhrnalist~gmail com Pixelfed: @ MoJonalist https:// bsky.app/profile/Ruhrnalist.ma stodon.social.ap.brid.gy …"},
+    {"name": "LMMS", "acct": "LMMS@fosstodon.org", "niche": "(Temporarily inactive again, as I stopped having time to run this account. We'll be back shortly) Unofficial news about the free, cross-platform DAW. I report on changes in LMMS with a little summary and some thoughts, plus a link for the interested :) I also boost interesting posts about LMMS from …"},
+    {"name": "Le Muséum", "acct": "LeMuseum@reseauculture.fr", "niche": "Muséum national d'Histoire naturelle 400 ans d’aventures scientifiques pour éclairer demain 🌍 Observer, comprendre, agir pour la Terre et le vivant 📍 10 musées, jardins et zoos en France"},
+    {"name": "Liam @ GamingOnLinux 🐧🎮", "acct": "gamingonlinux@mastodon.social", "niche": "News + Opinions. One person mostly. Creator of many forms. Support on Patreon: http:// patreon.com/gamingonlinux https://www. gamingonlinux.com (official account) If you want me, email me: contact@gamingonlinux.com"},
+    {"name": "MCDOT", "acct": "MontgomeryCountyMDDOT@urbanists.social", "niche": "Montgomery County, MD - Dept. of Transportation 101 Monroe Street, Rockville, MD 20850 Account Monitored: (Mon.- Fri. from 8:30am-5:00pm)"},
+    {"name": "MacRumors.com", "acct": "macrumors@mastodon.social", "niche": "Apple, iPhone, iPad, and Mac rumors, news, tips and videos. Tap Follow!"},
+    {"name": "MariaDB Foundation", "acct": "mariadb_org@fosstodon.org", "niche": "Ensuring continuity and open collaboration in the MariaDB ecosystem"},
+    {"name": "Marion Kuchenny", "acct": "MarionKuchenny@hessen.social", "niche": "Moderatorin, Journalistin, Podcasterin, Medientrainerin, Auftrittscoach, Autorin & Mensch geblieben ☕ www.marion-kuchenny.de"},
+    {"name": "Militarylandnet", "acct": "militarylandnet@mstdn.social", "niche": "A database dedicated to 🇺🇦 Ukrainian regular and volunteer military units, combined with a news source primarily focused on the Ukrainian Armed Forces."},
+    {"name": "Mongabay", "acct": "mongabay@mastodon.green", "niche": "Reader-supported news and inspiration from nature's frontline. Mongabay is a non-profit."},
+    {"name": "NFDI", "acct": "NFDI@nfdi.social", "niche": "German National Research Data Infrastructure. For a FAIR data future."},
+    {"name": "NFDI4Chem", "acct": "NFDI4Chem@nfdi.social", "niche": "⚗️ We help chemists to handle their data from measure to publish. 📑We build an open + FAIR infrastructure for research data management. 🧑‍🔬Non-profit, community-driven"},
+    {"name": "Niebezpiecznik", "acct": "niebezpiecznik@mastodon.cloud", "niche": "Znamy Twoje hasło."},
+    {"name": "North East Bylines", "acct": "NEBylines@mastodon.social", "niche": "Citizen journalism in the North East of England"},
+    {"name": "OCCRP", "acct": "occrp@federated.press", "niche": "We are a network of journalists exposing crime and corruption so the public can hold power to account. Our journalism has so far helped return $10+ billion to the public sphere and led to 700+ arrests, indictments, and sentences."},
+    {"name": "Open Collective", "acct": "opencollective@mastodon.opencollective.com", "niche": "We are a tech platform that enables 600+ nonprofits, and fiscal hosts to support 7000+ groups to raise and spend $35 million each year with full transparency"},
+    {"name": "Open Knowledge Foundation", "acct": "okfn@fosstodon.org", "niche": "We provide services, tools and training to build a world open by design where all knowledge is accessible to everyone. # opendata # opengov # openknowledge # OpenDefinition # TheTechWeWant # OpenDataEditor # CKAN # SchoolOfData # OpenDataDay"},
+    {"name": "Open Rights Group", "acct": "openrightsgroup@social.openrightsgroup.org", "niche": "We fight for digital rights (UK). Join us. # privacy # freespeech # surveillance # censorship # dataprotection"},
+    {"name": "Paris Musées", "acct": "parismusees@reseauculture.fr", "niche": "Le réseau des 14 musées et sites archéologiques de la Ville de Paris"},
+    {"name": "Patrick Klepek", "acct": "patrickklepek@mastodon.social", "niche": "editor @ Remap // editor @ Crossplay newsletter // formerly Waypoint, Giant Bomb, others // tips: patrick.klepek@protonmail.com // signal: 224-707-1561"},
+    {"name": "Peter Gleick", "acct": "petergleick@fediscience.org", "niche": "# Climate and # water scientist and communicator. Interested in including # birds , mandolin, politics. You can find me at www.gleick.com. Author of many scientific papers, the 9 volumes of The World's Water (Island Press); Bottled and Sold: The Story Behind Our Obsession with Bottled Water (Island …"},
+    {"name": "ProPublica", "acct": "ProPublica@newsie.social", "niche": "The official Mastodon page for ProPublica. Pursuing stories with moral force."},
+    {"name": "Proof News", "acct": "proofnews@mastodon.social", "niche": "Proof is investigating the social impacts of AI."},
+    {"name": "Pulse of Europe", "acct": "pulseofeurope@mastodon.social", "niche": "Wir machen 🇪🇺 Öffentlichkeit & Zivilgesellschaft wirksam: # PulseofEurope # OurEuropeNow # EuropeanHomeParliaments # EuropaDemo # EuropaSalon # PrideOfEurope # EUROMAT # NoVeto # PoEWatchesEU"},
+    {"name": "SNJ-CGT (rejoignez-nous !)", "acct": "snjcgt@mastodon.social", "niche": "Face à un journalisme sous contrainte, un syndicalisme de combat ! 👉🏽 https:// snjcgt.fr/adherer-en-ligne/"},
+    {"name": "STAT", "acct": "STAT@newsie.social", "niche": "Reporting from the frontiers of health & medicine."},
+    {"name": "Scottish Greens", "acct": "ScottishGreens@mastodon.scot", "niche": "For People and For Planet 💚🏴󠁧󠁢󠁳󠁣󠁴󠁿 Join the Scottish Greens today: greens.scot/join All posts promoted by the Scottish Green Party, at 19b Graham Street, Edinburgh, EH6 5QN."},
+    {"name": "Senator Paula Simons🇨🇦", "acct": "Paulatics@mstdn.ca", "niche": "Independent senator from Alberta. Host of Alberta Unbound. I live on Treaty Six Territory. she/her Vive le Canada! Forever a Canadian."},
+    {"name": "Slashdot", "acct": "slashdot@mastodon.cloud", "niche": "News for Nerds, Stuff that Matters"},
+    {"name": "Som Energia", "acct": "SomEnergia@mastodon.economiasocial.org", "niche": "Això no va de llum. Va de canviar el món. Uneix-te a l’elèctrica ètica, cooperativa i activista. Esto no va de luz. Va de cambiar el mundo. Únete a la eléctrica ética, cooperativa y activista. ✉️ info@somenergia.coop 📞 872 202 550"},
+    {"name": "SteamDeckHQ", "acct": "steamdeckhq@mastodon.world", "niche": "The #1 unofficial Steam Deck optimization website! We review and optimize games, curate news, and create guides relating to the Steam Deck."},
+    {"name": "Suomen antropologi (journal)", "acct": "suomenantropologi@fediscience.org", "niche": "Suomen antropologi: The Journal of the Finnish Anthropological Society is a peer-reviewed, fully # OpenAccess and English language general # anthropology journal. All content is available without restrictions and there are no APCs. The journal is funded by membership payments of the society. @ DOAJ …"},
+    {"name": "TUKO.co.ke", "acct": "TUKOcoke@mastodon.social", "niche": "TUKO.co.ke is Kenya’s largest online news website, founded in 2015 by Legit (ex-GMEM). We cover breaking news, business, bright entertainment news, politics, economy and engaging human interest stories in Kenya and worldwide."},
+    {"name": "Taylor Lorenz", "acct": "taylorlorenz@mastodon.social", "niche": "Technology and online culture journalist and content creator. I write User Magazine, a newsletter about how the internet is reshaping politics, culture, and business. https://www. usermag.co"},
+    {"name": "Tech For Palestine", "acct": "tech4palestine@infosec.exchange", "niche": "We are an incubator for pro-Palestine advocacy projects. Completely free mentorship, volunteer pool, and marketing support to help you scale."},
+    {"name": "The Document Foundation", "acct": "tdforg@fosstodon.org", "niche": "We are the home of @ libreoffice and the Document Liberation Project. Here you'll find news about the foundation's work."},
+    {"name": "The Hill Times", "acct": "TheHillTimes@flipboard.com", "niche": "Shining a light on Canada’s federal government, Parliament, and politics since 1989. Visit: https://www. hilltimes.com Follow to see posts from the official The Hill Times Flipboard profile."},
+    {"name": "The Intercept", "acct": "theintercept@journa.host", "niche": "Fearless, adversarial journalism. Join our newsletter to get our best investigative reporting delivered to you: https:// theintercept.com/newsletter/"},
+    {"name": "The Japan Times", "acct": "thejapantimes@mastodon.social", "niche": "Official account of Japan's most widely read English-language news source. Est. 1897. https://www. japantimes.co.jp/"},
+    {"name": "The Manila Times", "acct": "TheManilaTimes@mastodon.social", "niche": "The Manila Times is a national daily newspaper in the Philippines that delivers trusted, quality content in print and digital editions."},
+    {"name": "The Real News Network", "acct": "therealnews@mastodon.social", "niche": "We are a viewer-supported nonprofit newsroom connecting you to the movements, people, and perspectives that are advancing the cause of a more just, equal, and livable planet."},
+    {"name": "The Tyee", "acct": "thetyee@mstdn.ca", "niche": "Independent BC-based journalism that swims against the current. Paywall-free since 2003."},
+    {"name": "Threema", "acct": "threemaapp@mastodon.social", "niche": "Seriously secure communication. If you have questions, please contact us via https:// threema.id/%2ASUPPORT or support@threema.ch."},
+    {"name": "Unseen Japan", "acct": "unseenjapan@mstdn.jp", "niche": "The Japan you don't learn about in anime."},
+    {"name": "Violet Blue", "acct": "violetblue@mastodon.social", "niche": "Award-winning author, journalist. Shaped like the hole in your heart. Engadget, Popular Science, freelance reporter on hacking, privacy, sexuality, human rights. Previously SF Chronicle, ZDNet, CBS, O Magazine, many more. Six IPPY awards (2023 Gold); notable book appearance: Oprah; Advisor to Withou…"},
+    {"name": "Volt Italia", "acct": "VoltItalia@social.vivaldi.net", "niche": "Partito progressista paneuropeo 💜🇪🇺 | Parte di Volt Europa | Per destinarci il tuo 2x1000, scrivi Y59 | Per unirti a Volt e altri link utili 👉🏻 linktr.ee/VoltItalia"},
+    {"name": "WeAreFairphone", "acct": "WeAreFairphone@social.fairphone.community", "niche": "COMMUNITY account run by Ingo /i ( https:// social.tchncs.de/@Ingo_FP_Angel ) and Urs /u @ aachen . We are NOT Fairphone employees."},
+    {"name": "Westport Observatory", "acct": "WestportObservatory@vmst.io", "niche": "The Westport Observatory, run by the volunteers of the Westport Astronomical Society brings the night sky down to the thousands who visit annually. We’re a non-profit that’s free and open to the public every Wednesday night from 8-10 pm if the skies are clear. We do suggest a donation of $5 per pers…"},
+    {"name": "Wikimedia Foundation", "acct": "wikimediafoundation@wikimedia.social", "niche": "We're the nonprofit that hosts # Wikipedia and it's sister projects, working to create a world where every human can freely share in the sum of all knowledge. Join the movement. Header: https:// w.wiki/7BaE Avatar: https:// w.wiki/4np4"},
+    {"name": "Wikimédia Portugal", "acct": "wikimediapt@masto.pt", "niche": "Wikimedia Portugal é o capítulo português da Fundação Wikimedia / Wikimedia Portugal is the Portuguese chapter of the Wikimedia Foundation Sigam também o nosso blog no fediverso, procurando por @blog.wikimedia.pt"},
+    {"name": "XSF: XMPP Standards Foundation", "acct": "xmpp@fosstodon.org", "niche": "XMPP - Extensible Messaging and Presence Protocol Promoting open communication and open communication infrastructure Standardized within the IETF Getting started with XMPP: https:// xmpp.org/getting-started/ Finding XMPP-related jobs or finding developers, administrators and integrators: https:// xm…"},
+    {"name": "Xberg-klimaneutral e.V.", "acct": "Xbergklimaneutral@mastodon.social", "niche": "Klimakrise bekämpfen, Klimaanpassung und Urbane Wärmewende sozialgerecht voranbringen; informieren und vernetzen"},
+    {"name": "detektor.fm", "acct": "detektorfm@social.detektor.fm", "niche": "Podcast-Radio / Neue Musik & Journalismus / https:// detektor.fm/impressum / # podcasts # podcasting # radio"},
+    {"name": "freedesktop.org", "acct": "XOrgFoundation@floss.social", "niche": "Home of the free desktop: XDG, Wayland, Mesa, PipeWire, and more. Front for the X.Org Foundation. they/them. 🐧"},
+    {"name": "funk", "acct": "funk@social.funk.net", "niche": "Wir machen Content 💜"},
+    {"name": "naturstrom", "acct": "NATURSTROM@mastodon.green", "niche": "# Energiewende in allen Facetten seit 1998 – dezentral und bürgernah. Heute größter unabhängiger # Ökostrom -Anbieter in DE. 💚"},
+    {"name": "noyb.eu", "acct": "noybeu@mastodon.social", "niche": "⚖️ noyb (\"none of your business\") is a non-profit association committed to the legal enforcement of European data protection laws. 🇪🇺 🏛️ So far, noyb has filed more than 900 cases against numerous intentional infringements - including companies such as Google, Apple, Facebook/Meta and Amazon. 🧑‍⚖️ A…"},
+    {"name": "openDemocracy", "acct": "openDemocracy@newsie.social", "niche": "Free thinking for the world 🌍 We're an independent media organisation covering world affairs and ideas."},
+    {"name": "rustfoundation", "acct": "rustfoundation@mastodon.social", "niche": "The Rust Foundation is an independent nonprofit organization dedicated to stewarding the Rust programming language and its global community."},
+    {"name": "sltrib", "acct": "sltrib@mas.to", "niche": "Utah's essential nonprofit news source."},
+    {"name": "thejuicemedia", "acct": "thejuicemedia@mastodon.social", "niche": "We make Honest Government Ads."},
+    {"name": "AGAL", "acct": "agal@mastodon.gal", "niche": "🛰️ Associaçom Galega da Língua, reintegrando o galego na lusofonia desde 1981"},
+    {"name": "ANYWAYS", "acct": "anyways@urbanists.social", "niche": "A simpler alternative to a traffic model. Skip the complex traffic models and get quick, practical results. by @ xivk"},
+    {"name": "Acrimed", "acct": "acrimed@mamot.fr", "niche": "Observatoire des médias depuis 1996."},
+    {"name": "Anil Dash", "acct": "anildash@me.dm", "niche": "I'm a big fan of being a big fan of things. you can email me at a@anildash.com or SMS/signal at +1 646 541 5843. kind but not nice. # tfr"},
+    {"name": "Anthrocon, Inc.", "acct": "anthrocon@mastodon.furrycon.social", "niche": "Anthrocon is Pittsburgh's Premier Furry Convention. Join us July 2-5, 2026 for 🙀Critters, Cryptids & Curses👻 | 📧 info@anthrocon.org | # Anthrocon # LovePGH"},
+    {"name": "AskLibreOffice", "acct": "AskLibreOffice@fosstodon.org", "niche": "Please follow us and keep on eye to the questions related to @ libreoffice . --- Please ask your questions via our portal http:// ask.libreoffice.org"},
+    {"name": "Atelier de création libertaire", "acct": "ACLibertaire@mstdn.fr", "niche": "1979-2026- 47 ans de culture libertaire"},
+    {"name": "BUND Sachsen", "acct": "bundsachsen@dresden.network", "niche": "BUND für Umwelt & Naturschutz Sachsen e.V. (NRO) # sachsen weit aktiv, # Naturschutz # Klimaschutz , # Energiewende , # Umweltschutz , # Wildbienen , # Feuersalamander , # Wildkatze https://www. bund-sachsen.de/service/links/"},
+    {"name": "Back-on-Track.eu", "acct": "backontrack@eupolicy.social", "niche": "European network to support cross-border and # nighttrains . Join us today! 🚄🛌🛌🛌 🇪🇺"},
+    {"name": "Basenotes", "acct": "Basenotes@mastodon.social", "niche": ""},
+    {"name": "Blaž Urban Gracar", "acct": "letibus@mastodon.gamedev.place", "niche": ""},
+    {"name": "Blender Studio", "acct": "BlenderStudio@mastodon.social", "niche": "Official account for the Blender Studio team. Freedom to Create."},
+    {"name": "Bruxelles Mobilité", "acct": "bruxellesmobilite@info.mobilite-mobiliteit.brussels", "niche": "🚲🚶🚗🚇 Les actualités de Bruxelles Mobilité 🦣"},
+    {"name": "CNES", "acct": "cnes@social.numerique.gouv.fr", "niche": "L'actu du CNES, le Centre National d'Études Spatiales."},
+    {"name": "Caren Lay", "acct": "caren_lay@mastodon.social", "niche": "Aktivistin • Politikerin (MdB, Die Linke) • Feministin • Wk # Bautzen • # Mietenwahnsinnstoppen • # Clubsterbenstoppen"},
+    {"name": "Cassette Beasts 2002", "acct": "CassetteBeasts@social.bytten-studio.com", "niche": ":pombomb: The BAFTA-nominated @ ByttenStudio is making Cassette Beasts 2002, a monster-fusing RPG coming to Steam, Xbox Series, PS5 and Nintendo Switch 2! :traffikrab: Collect awesome monsters to use during turn-based battles in this open-world RPG. Combine any two monster forms using Cassette Beast…"},
+    {"name": "CentOS", "acct": "centos@fosstodon.org", "niche": ""},
+    {"name": "Cooperatives de Treball", "acct": "coopstreball@mastodon.social", "niche": "➡️ Agrupem, representem i liderem les + de 3.000 cooperatives de treball de Catalunya des de 1935. 🙌🏾 Acompanyament 🖥 Formació💡 Incidència"},
+    {"name": "Craig Newmark", "acct": "craignewmark@mastodon.social", "niche": "founder, craigslist not as funny as I think I am (Not craigslist management since 2000; retired 2018)"},
+    {"name": "Datawrapper", "acct": "datawrapper@vis.social", "niche": "We've moved to @ datawrapper — follow us there for the latest updates!"},
+    {"name": "Der Postillon 📯", "acct": "derpostillon@mastodon.social", "niche": "Ehrliche Nachrichten - unabhängig, schnell, seit 1845"},
+    {"name": "Deutsche Tolkien Gesellschaft", "acct": "dtg@dtg.social", "niche": ""},
+    {"name": "Devine Lu Linvega", "acct": "neauoire@merveilles.town", "niche": "It’s always night under the ultraviolet sun."},
+    {"name": "Dr. Ismail Küpeli", "acct": "ismail_kupeli@digitalcourage.social", "niche": "Politikwissenschaftler | ismail.kuepeli@ruhr-uni-bochum.de | https:// ismail-kuepeli.de"},
+    {"name": "EVENTPHONE", "acct": "eventphone@chaos.social", "niche": "EVENTPHONE - Stay connected ISDN → @ c3isdn 2/3/4/5G → @ c3gsm"},
+    {"name": "Embat OLC", "acct": "embat@mas.to", "niche": "Organització Llibertària de Catalunya Cop que dóna l'onada a la riba, a la nau; impuls del vent. De forma figurativa es pot referir a envestida, avanç, impuls. https:// linktr.ee/Embat"},
+    {"name": "FIZ Karlsruhe", "acct": "fiz_karlsruhe@wisskomm.social", "niche": "# Forschungsdatenmanagement # Informationsinfrastruktur # nfdi # knowlegdegraph # KI # Datenschutz"},
+    {"name": "Fraunhofer IOF", "acct": "Fraunhofer_IOF@wisskomm.social", "niche": "Fraunhofer IOF – Photonics made in Jena"},
+    {"name": "Fridays For Future Italia", "acct": "fffitalia@mastodon.uno", "niche": "Account Mastodon ufficiale di Fridays For Future Italia"},
+    {"name": "Fridays For Future Wien", "acct": "ViennaForFuture@climatejustice.global", "niche": ""},
+    {"name": "Fridays for Future Frankfurt", "acct": "FFF_Frankfurt@climatejustice.global", "niche": "Offizieller Mastodon Account von Fridays for Future Frankfurt am Main."},
+    {"name": "GLS Bank", "acct": "glsbank@ruhr.social", "niche": "Menschlich, zukunftsweisend, nachhaltig und obendrein ganz transparent. Sozial-ökologisches Bankgeschäft seit 1974! Service: Mo - Fr / 9 - 17 Uhr"},
+    {"name": "GRÜNE Magdeburg", "acct": "gruene_md@gruene.social", "niche": "Öko? Logisch! # Magdeburg"},
+    {"name": "Galaxy Map", "acct": "galaxy_map@mastodon.social", "niche": "The first accurate and detailed maps of the Milky Way and ways to visualize them, including VR."},
+    {"name": "Gustavo B.", "acct": "GUSTAVOEGATOTV@mstdn.io", "niche": ":bloblurk:"},
+    {"name": "Günter Born", "acct": "gborn@social.tchncs.de", "niche": "IT-Autor seit 1993, (IT-)Blogger unter borncity.com seit 2007"},
+    {"name": "IGN France", "acct": "ignfrance@social.numerique.gouv.fr", "niche": "L' # IGN accompagne les # PolitiquesPubliques en produisant des # GéoDonnées , des référentiels et outils numériques répondant à tous les besoins et usages # OpenData"},
+    {"name": "Ideme vlakom", "acct": "zssk_mimoriadne@mastodon.social", "niche": "🚆 Sledujte všetky mimoriadnosti a aktuálne informácie o vlakoch ZSSK! 🚨 Výluky, meškania, nehody - všetko na jednom mieste."},
+    {"name": "Indivisible ❌👑", "acct": "indivisibleteam@mastodon.social", "niche": "We’re organizing against this fascist regime the only way that actually works — with on-the-ground, volunteer-led, communities of people power."},
+    {"name": "Irene Mihalic", "acct": "IreneMihalic@gruene.social", "niche": "MdB aus # Gelsenkirchen | Erste Parlamentarische Geschäftsführerin @ GrueneBundestag | # Innenpolitik4Life"},
+    {"name": "Jack Rhysider ⏯", "acct": "jackrhysider@infosec.exchange", "niche": "I make Darknet Diaries"},
+    {"name": "Jason Kottke", "acct": "jkottke@saturation.social", "niche": "Trying to do better. VT/Internet. he/him"},
+    {"name": "Jeff Leiper 🚶🚲 🚇 🛴🚍♻︎☕️", "acct": "jleiper@urbanists.social", "niche": "I probably biked here. This is not an official channel - please direct ward/City issues requiring attention to my and my staff's attention at jeff.leiper@ottawa.ca. I track stuff at jeffleiper.ca. Born at 325.5 ppm."},
+    {"name": "Jey Pawlik 🏳️‍⚧️", "acct": "jeypawlik@mastodon.art", "niche": "30+ | nonbinary | they/them | 🇨🇦 Working on comics at https:// topazcomics.com & Oh Joy Sex Toy Previously: College Humor, Disney, Bloom, Game Grumps Married to @mparker.bsky.social https:// jpawlik.com"},
+    {"name": "Jöran Muuß-Merholz", "acct": "joeran@mastodon.social", "niche": "in exploring mode"},
+    {"name": "Jürgen Coße, MdB", "acct": "MdB@nrw.social", "niche": ""},
+    {"name": "KlimalisteBW", "acct": "KlimalisteBW@climatejustice.social", "niche": "Klimaliste Baden-Württemberg Netzwerk kommunaler Klimalisten."},
+    {"name": "Konstantin v. Notz", "acct": "KonstantinNotz@gruene.social", "niche": "https:// von-notz.de/biografie/"},
+    {"name": "Last.fm Service Status", "acct": "lastfmstatus@mastodon.world", "niche": "Service status updates from the Last.fm team. Please note, we can not offer direct 1-1 support, except in limited circumstances. Instead, please report issues to our customer support team in our support forums: http:// support.last.fm ."},
+    {"name": "Laurenz Sommerlad", "acct": "LaurenzSommerlad@mastodon.social", "niche": "Robotics, AI & Entrepreneurship | TUM Student | Sports 🏋️‍♂️🥋🏃🤿🏂 | Languages 🇩🇪🇺🇸🇫🇷🇪🇸🇯🇵🇪🇬 📍Munich, Germany"},
+    {"name": "Le Monde.fr", "acct": "lemonde@mastodon.social", "niche": "Le compte officiel du journal du même nom."},
+    {"name": "Linksfraktion Hamburg", "acct": "LinksfraktionHH@linke.social", "niche": "Hamburgische Bürgerschaft since 2008. Offizieller Kanal."},
+    {"name": "Linus Torvalds", "acct": "users/torvalds@social.kernel.org", "niche": ""},
+    {"name": "Lisa Badum", "acct": "badumlisa@gruene.social", "niche": "🌻 MdB | Sprecherin für Klimapolitik @ GrueneBundestag | Oberfranken, Bamberg, Forchheim"},
+    {"name": "Lu wilson", "acct": "TodePond@mas.to", "niche": "London https:// Todepond.com https:// youtube.com/@Todepond"},
+    {"name": "MC Frontalot", "acct": "mc_frontalot@mastodon.cloud", "niche": "579th-Greatest Rapper (The World's)"},
+    {"name": "MacSourcePorts", "acct": "MacSourcePorts@mastodon.social", "niche": ""},
+    {"name": "Mensuel Alternative Libertaire", "acct": "alternativelibertaire@framapiaf.org", "niche": "Alternative Libertaire est le mensuel de l’Union Communiste Libertaire (UCL) Fondé en 1991, le mensuel Alternative libertaire veut donner envie de s’informer, de se révolter et de s’engager."},
+    {"name": "MÄNNI", "acct": "mnni@krassestegang.social", "niche": "Melancholischer Punkrock aus Aachen"},
+    {"name": "NE Ohio Regional Sewer", "acct": "neorsd@mastodon.online", "niche": "yes, really the Northeast Ohio Regional Sewer District in Cleveland, Ohio."},
+    {"name": "Nico Semsrott", "acct": "nicosemsrott@mastodon.social", "niche": "# pruef & @ pruef_de & nicosemsrott.de"},
+    {"name": "POuL", "acct": "poul_polimi@mastodon.uno", "niche": "Politecnico Open unix Labs - Milano IT"},
+    {"name": "Ralph Caspers", "acct": "hyperjinx@mastodon.social", "niche": ""},
+    {"name": "Regenbogenfabrik", "acct": "rbf@chaos.social", "niche": "Kinder-, Kultur- und Nachbarschaftszentrum in Berlin-Kreuzberg seit 1981. Kultur & Veranstaltungen, Hostel, Selbsthilfe, Kantine, Kita Lausitzer Str. 21a 10999 Berlin"},
+    {"name": "Resonite", "acct": "Resonite@mastodon.social", "niche": ""},
+    {"name": "Simon Villeneuve", "acct": "picolaton@jasette.facil.services", "niche": "wikimédien et enseignant au collégial en physique et astronomie"},
+    {"name": "Stefan Borggraefe", "acct": "BorgTenOfNine@mastodon.social", "niche": ""},
+    {"name": "TYPO3 CMS", "acct": "typo3@typo3.social", "niche": ""},
+    {"name": "Tailscale", "acct": "tailscale@hachyderm.io", "niche": "Simple, secure networks for teams of any scale. Built on WireGuard. The official account for Tailscale."},
+    {"name": "The Verge", "acct": "verge@mastodon.social", "niche": "The official account by https:// theverge.com"},
+    {"name": "The Wall Street Journal.", "acct": "WSJ@flipboard.com", "niche": "Since 1889 🗞️ Follow to see posts from the official The Wall Street Journal. Flipboard profile."},
+    {"name": "Toolbox Bodensee", "acct": "toolbox@chaos.social", "niche": "Gemeinnütziger Verein und Kreativwerkstatt in Markdorf am Bodensee. Komm doch mal vorbei. https:// toolbox-bodensee.de/"},
+    {"name": "UFW", "acct": "ufwupdates@union.place", "niche": ""},
+    {"name": "Una Kravets", "acct": "Una@front-end.social", "niche": "Making the web more stylish ✨🎨 UI & DevTools DevRel @ Google Chrome"},
+    {"name": "Videnskab.dk", "acct": "videnskabdk@journa.host", "niche": "Nyheder, overraskende historier og vigtige perspektiver fra videnskabens verden. Gratis nyhedsbrev: https:// videnskab.dk/nyhedsbrev/ # dkvid"},
+    {"name": "Volt Europa", "acct": "VoltEuropa@mstdn.social", "niche": "Building a federal, green, progressive Europe. 🇪🇺 5 MEPs | 300+ elected representatives | 30+ countries Be the change and join! 💜"},
+    {"name": "ZSK Berlin", "acct": "zskberlin@mastodon.social", "niche": "Punkrock aus Berlin!"},
+    {"name": "Ziko van Dijk", "acct": "zvandijk@mastodon.social", "niche": "historian, linguist, wiki-expert, German in the Netherlands"},
+    {"name": "ZoneMinder", "acct": "zoneminder@fosstodon.org", "niche": ""},
+    {"name": "abgeordnetenwatch", "acct": "a_watch@bewegung.social", "niche": "Demokratie. Besser machen. Frageplattform, Recherchen, Petitionen. Datenschutz: https://www. abgeordnetenwatch.de/datenschu tzerklaerung"},
+    {"name": "chronik.LE", "acct": "chronik_LE@systemli.social", "niche": "Dokumentation und Analyse rechter, rassistischer und faschistischer Ereignisse in und um Leipzig. # Leipzig # Dokumentation , # Recherche , # Analyse # ExtremeRechte , # Neonazis Kontakt ▫️ chronik.LE@engagiertewissenschaft.de ▫️ https:// chronikle.org/ereignismelden"},
+    {"name": "elèuthera editrice", "acct": "eleuthera_editrice@mastodon.bida.im", "niche": "Elèuthera è un progetto culturale libertario. Siamo pirati, in questa navigazione a vista verso l'isola che (ancora) non c'è. www.eleuthera.it/index.php"},
+    {"name": "formalabsaudio", "acct": "formalabsaudio@mastodon.social", "niche": ""},
+    {"name": "metalamerica", "acct": "metalamerica@mastodon.social", "niche": ""},
+    {"name": "naydentodorov", "acct": "naydentodorov@mastodon.social", "niche": ""},
+    {"name": "rebeccawatson", "acct": "rebeccawatson@mstdn.social", "niche": ""},
+    {"name": "resnijars", "acct": "resnijars@mastodon.gamedev.place", "niche": "18+ only two queer furries making games (Stardust Demon on Steam: https:// store.steampowered.com/app/281 5500/Stardust_Demon/ ) (Spice Sacrifice demo (18+): https:// resnijars.itch.io/spice-sacrif ice-showcase )"},
+    {"name": "vhs Crailsheim", "acct": "crailsheim@vhs.social", "niche": ""},
+    {"name": "Éditions Libertalia", "acct": "LibertaliaLivre@piaille.fr", "niche": "Libertalia, édition indépendante et antifasciste. Librairie Libertalia, 12 rue Marcelin-Berthelot, Montreuil (métro Croix-de-Chavaux). Librairie Libertalia de la Maison des Métallos, Paris 11 (métro Couronnes). S’emploie à bâtir des jours heureux."},
+    {"name": "Český statistický úřad", "acct": "czstatistika@mastodonczech.cz", "niche": ""},
+    {"name": "Автономное Действие / Autonomous Action", "acct": "avtonom_org@todon.eu", "niche": "Мы - либертарная медиа-группа, выросшая из движения \"Автономное Действие\". Мы по-прежнему разделяем ценности, изложенные в Манифесте АД, но не ограничиваемся рамками этой организации. Своей целью мы ставим продвижение либертарной и анархической альтернативы посредством создания качественных и соврем…"},
+    {"name": "עומדים ביחד نقف معًا", "acct": "omdimbeyachad@leftodon.social", "niche": "אנחנו תנועה יהודית-ערבית הנאבקת למען שלום, שוויון וצדק חברתי. نحن حراك يهودي-عربي يناضل من أجل السلام، المساواة والعدالة الاجتماعية"},
+    {"name": ".mau.", "acct": "mau@mathstodon.xyz", "niche": "Maurizio Codogno - non-practicing mathematician"},
+    {"name": ".mau.", "acct": "mau@poliversity.it", "niche": "matematico non praticante, ascendente wikipedia. Una persona serissima"},
+    {"name": "ARK Alliance", "acct": "arks_org@fosstodon.org", "niche": "Supporting Archival Resource Keys (ARKs) as open, non-paywalled persistent identifiers for the scientific and cultural record."},
+    {"name": "ASTRON", "acct": "astron@mastodon.nl", "niche": "ASTRON is the Netherlands Institute for Radio Astronomy - LOFAR, WSRT & SKA. Our mission is to make discoveries in radio astronomy happen!"},
+    {"name": "Accademia Gioenia", "acct": "gioenia@mstdn.social", "niche": "The Gioenia Academy (established: 1824) is a scientific scholarly society based in Catania, Italy. http://www. gioenia.unict.it/"},
+    {"name": "Alex McLean", "acct": "yaxu@post.lurk.org", "niche": "Non-academic # UKRIFLF research fellow at non-profit org @ thentrythis , working on algorithmic patterns ( @ alpaca ). Instigator of @ tidalcycles , and co-founder of @ algorave , @ toplap , algomech festival, etc I tend to post live coding related things as @ yaxu he/him # searchable"},
+    {"name": "American Assoc Wine Economists", "acct": "wineecon@mstdn.social", "niche": "American Association of Wine Economists, Based at New York University NYU; www.wine-economics.org posts by Karl Storchmann. email: aawe@wine-economics.org or karl.storchmann@nyu.edu AAWE is a non-profit Organization with members from all over the world. We hold annual # wineeconomics conferences, pu…"},
+    {"name": "André Reichel", "acct": "andrereichel@fediscience.org", "niche": "German # Sustainability Researcher & Critical Management Scholar | Ecological Economist & System Theorist | # Professor of # International Management & Sustainability in # Stuttgart | Tree Hugger | He/Him | Toots auf Deutsch and English"},
+    {"name": "Anita Graser 🇪🇺🇺🇦🇬🇪", "acct": "underdarkGIS@fosstodon.org", "niche": "# SpatialDataScience | # MovementDataAnalysis | # OpenSource # Geospatial | @ qgis PSC Member | Creator of @ movingpandas & # Trajectools | Senior Scientist & Thematic Coordinator at AIT | She/her/Dr Previously: @ underdarkGIS # searchable"},
+    {"name": "AoIR", "acct": "AoIR@aoir.social", "niche": "The Association of Internet Researchers is an academic association dedicated to the advancement of the cross-disciplinary field of Internet studies. It is a member-based support network promoting critical and scholarly Internet research independent from traditional disciplines and existing across ac…"},
+    {"name": "Assn for Computing Machinery", "acct": "ACM@mastodon.acm.org", "niche": "The world's largest professional organization advancing # computing as a science and profession. Join our official # Mastodon instance: mastodon.acm.org https:// linktr.ee/theofficialacm"},
+    {"name": "Avispa Mídia", "acct": "AvispaMidia@mastodon.social", "niche": "Medio independiente. Cubrimos pueblos originarios, crisis climática, economía verde, feminismos, geopolítica y resistencias en América Latina"},
+    {"name": "Biblissima+", "acct": "biblissima@universites.social", "niche": "Observatoire des cultures écrites anciennes, de l’argile à l’imprimé / Observatory of Written Cultures, from Clay to Print Campus Condorcet (Paris-Aubervilliers) ANR-21-ESRE-0005"},
+    {"name": "Cameron Neylon", "acct": "cameronneylon@hcommons.social", "niche": "Prof of Research Communications and co-lead of the Curtin Open Knowledge Initiative"},
+    {"name": "Carolyn Porco", "acct": "carolynporco@mastodon.social", "niche": "Voyager & Cassini! AAS Carl Sagan Medal 2010. Asteroid Porco 7231. Visiting Scholar UC Berkeley. Thinker. Living my best life. On Substack Now! \"Coming of Age in the Solar System\" Extolling the long march of science that has brought us to an awareness of the cosmos, the solar system, our precious bl…"},
+    {"name": "Caspar van Lissa", "acct": "cjvanlissa@mastodon.social", "niche": "Associate professor at Tilburg University and chair of the Open Science Community Tilburg. Interested in social data science, research synthesis, and reproducibility."},
+    {"name": "Center for Open Science", "acct": "CenterforOpenScience@fosstodon.org", "niche": "Our mission is to increase openness, integrity, and reproducibility of research. # OpenScience"},
+    {"name": "Chris Long", "acct": "cplong@hcommons.social", "niche": "Provost and Senior Vice President, University of Oregon | Co-founder, @ publicphilosophyjournal | Co-PI, @ humetricshss | Husband & Father | he/him."},
+    {"name": "Christian Spannagel", "acct": "cspannagel@scholar.social", "niche": "math prof, video creator & streamer * computer science, education, science comm, math in occultism & religion; goth; located in Heidelberg, Germany"},
+    {"name": "Dan Goodman", "acct": "neuralreckoning@neuromatch.social", "niche": "I'm a computational neuroscientist and science reformer. I'm based at Imperial College London. I like to build things and organisations, including the Brian spiking neural network simulator, Neuromatch and the SNUFA spiking neural network community."},
+    {"name": "Daniel Lakens", "acct": "lakens@mastodon.social", "niche": "Experimental Psychologist Eindhoven University of Technology in The Netherlands. Chair ERB. I work on making science more reliable and efficient. Likes teaching statistics, bouldering, and walks with my wife and dog. I do not interact with anonymous accounts. Profile picture: Florian Braakman https:…"},
+    {"name": "DataCite", "acct": "datacite@openbiblio.social", "niche": "We are a global community that shares a common interest: to ensure that research outputs and resources are openly available and connected so that their reuse can advance knowledge across and between disciplines, now and in the future. # DataCite # OpenScience # PersistentIdentifiers # metadata # Res…"},
+    {"name": "DataPLANT", "acct": "nfdi4plants@nfdi.social", "niche": "Services and infrastructures to support # FAIRData science and good data management practices within the plant basic research community. # NFDI ."},
+    {"name": "David Graeber Institute", "acct": "DGI@graeber.social", "niche": ""},
+    {"name": "David M. Levinson ⁂", "acct": "Transportist@mastodon.social", "niche": "Trnsprtst. Rogue Planner. Refreshingly Unromantic. So F*ing Lucid. fRSN. 2%. Research: # Access , # Transport # Economics , # NetworkEvolution , # Traffic . Founding Editor: https:// jtlu.org https:// fediscience.org/@findingspress Books: The Transportation Experience, Planning for Place and Plexus,…"},
+    {"name": "David Monniaux", "acct": "MonniauxD@social.sciences.re", "niche": "Chercheur en informatique inculte, tout à fait mainstream et à la pensée banale. Uncultured research scientist in computer science. Totally mainstream and with banal thoughts. he/him/whatever"},
+    {"name": "Deutsche Sporthochschule Köln", "acct": "Sporthochschule@wisskomm.social", "niche": "Wissenschaft in Bewegung | German Sport University Cologne | Deutschlands einzige Sportuniversität |"},
+    {"name": "Dr. Casey Fiesler", "acct": "cfiesler@hci.social", "niche": "information science prof at university of colorado boulder, social computing / tech ethics researcher, exceptionally minuscule tiktok star, fangirl / geek, she/her"},
+    {"name": "Dr. Katharine Hayhoe", "acct": "kathhayhoe@fediscience.org", "niche": "Climate Scientist, Professor @ Texas Tech, Chief Scientist @ The Nature Conservancy, UN Champion of the Earth, author of Saving Us. Posts 100% my own. For more frequent posts, I recommend following me on Bluesky or my bridge account here: https:// fediscience.org/@katharinehayh oe.com@bsky.brid.gy I…"},
+    {"name": "Dr. Lucky Tran", "acct": "luckytran@med-mastodon.com", "niche": "📢 Scientist and organizer working in public health, climate justice, and science communication ❗️Opinions my own and do not reflect those of my employer ➡️ Contact/Links: https:// linktr.ee/luckytran"},
+    {"name": "Drought Center", "acct": "droughtcenter@mastodon.world", "niche": "We're the National Drought Mitigation Center at the University of Nebraska-Lincoln. Our mission is to reduce the effects of drought on people, the environment and the economy with cutting-edge science and thoughtful planning. We host the U.S. Drought Monitor, the nation's leading resource to track d…"},
+    {"name": "EGAarchive", "acct": "EGAarchive@genomic.social", "niche": "The European Genome-phenome Archive (EGA) is a service for archiving and sharing all types of genetic and phenotypic data from research projects. Jointly managed by the European Bioinformatics Institute (EMBL-EBI) in Cambridge (UK) and the Centre for Genomic Regulation (CRG) in Barcelona, we aim to …"},
+    {"name": "ESO", "acct": "esoastronomy@mastodon.social", "niche": "The European Southern Observatory designs, builds & operates world-class observatories on the ground for the benefit of society. # astrodon # astronomy # astrophysics # space # science"},
+    {"name": "EUA", "acct": "EUA@eupolicy.social", "niche": "The European University Association is a community of over 900 members and affiliates. It represents universities and national rectors’ conferences in 48 European countries, as well as affiliated organisations and networks based both in and beyond Europe. # highereducation # research # innovation"},
+    {"name": "Ecological Research Network", "acct": "Ecornet@mastodon.social", "niche": "Transdisziplinäre # Nachhaltigkeitsforschung im Netzwerk: @ wupperinst | @ oekoinstitut | Ecologic Institut | ifeu | @ ioew | @ isoewikom | IZT | @ ufu"},
+    {"name": "European Research Council (ERC", "acct": "ERC_Research@respublicae.eu", "niche": "Unofficial automated mirror. No copyright asserted. ∎ The European Research Council, set up by the EU, funds top researchers of any nationality, helping pursue great ideas at the frontiers of knowledge. # HorizonEU"},
+    {"name": "FORCE11", "acct": "force11@mastodon.world", "niche": "FORCE11 - a growing community that aims to transform and improve the future of research communication and e-scholarship - FORCE11.org"},
+    {"name": "GEOMAR", "acct": "geomar_de@helmholtz.social", "niche": "At GEOMAR Helmholtz Centre for Ocean Research Kiel we explore the global ocean from the seafloor to the atmosphere. # OurWorldIsTheOcean"},
+    {"name": "Habib Mhenni", "acct": "habibmhenni@wikis.world", "niche": "🖖 from Sayada • civil engineer • teacher • libre • pirate P-) • :wikipedia: and admin :commons: | @ CLibre • @Wikimedia ctr /!\ Personal account. Q105725266"},
+    {"name": "Hasso Plattner Institute", "acct": "Hasso_Plattner_Institute@hpi.social", "niche": "The Hasso Plattner Institute combines excellent # research and # teaching in # DigitalEngineering"},
+    {"name": "Heidi Seibold", "acct": "HeidiSeibold@fosstodon.org", "niche": "Co-founder of the Digital Research Academy @ digiresacademy >reboot academia podcast: https:// anchor.fm/reboot-academia Newsletter: https:// heidiseibold.ck.page/ Cyclist and data scientist. My toots are searchable via tootfinder.ch"},
+    {"name": "Helen Czerski", "acct": "helenczerski@fediscience.org", "niche": "Physics, bubbles, oceans, hot chocolate and curiosity. Associate Professor at UCL, writer, broadcaster. Author of Storm in a Teacup and Blue Machine: https:// linktr.ee/helenczerski # fedi22 # physics # ocean # climate # bikes"},
+    {"name": "Helmholtz Association", "acct": "association@helmholtz.social", "niche": "The Helmholtz Association contributes to solving grand challenges facing society, science and industry by conducting top-rate research in the fields of Aeronautics, Space and Transport; Earth and Environment; Energy; Health; Matter; and Information."},
+    {"name": "Hopkins Press", "acct": "HopkinsPress@mastodon.social", "niche": "At Johns Hopkins University Press, we envision a future where knowledge enriches the life of every person. Home to Project MUSE."},
+    {"name": "IAP", "acct": "astroIAP@social.numerique.gouv.fr", "niche": "Institut d'astrophysique de Paris ( # SorbonneUniversité , @ cnrs ) Officiel"},
+    {"name": "Innovative Health Initiative", "acct": "IHIEurope@mastodon.social", "niche": "We're an EU public-private partnership funding # health # research & # innovation under # HorizonEU . We also manage Innovative Medicines Initiative projects."},
+    {"name": "InsiderPhD", "acct": "insiderphd@infosec.exchange", "niche": "Application security, API security, bug bounty hunting, and practical security research education."},
+    {"name": "Invest in Open Infrastructure", "acct": "investinopen@indieweb.social", "niche": "We work to increase investment in + adoption of open infrastructure to further equitable access to + participation in research."},
+    {"name": "Knight First Amendment Inst.", "acct": "knightcolumbia@mastodon.online", "niche": "The Knight First Amendment Institute at Columbia University works to advance the freedoms of speech and the press in the digital age through litigation, research, policy advocacy, and public education."},
+    {"name": "LAB-66 | Science & Tech", "acct": "lab66@mastodon.social", "niche": "Siarhei Besarab (Сяргей Бесараб) | Interdisciplinary Chemist & Researcher | Science Communicator | EU1AEY Exploring the intersection of # Chemistry , # RadiationSafety , # Toxicology 🧪☢️ Advocate for # CitizenScience , # DIY / # Maker movement, and technical cross-disciplinary knowledge. Bio & Links…"},
+    {"name": "La Vie des Idées", "acct": "laviedesidees@piaille.fr", "niche": "Revue en ligne de sciences humaines. Vie intellectuelle et actualité éditoriale internationale. https:// laviedesidees.fr"},
+    {"name": "Lane Rasberry", "acct": "Bluerasberry@disobey.net", "niche": "Wikipedia, open science, data science, LGBT+, coffee, 💙🧪💊🐭☕️🏳️‍🌈🌀🧬🎶📘Charlottesville, Virginia, USA"},
+    {"name": "Leibniz Universität Hannover", "acct": "unihannover@wisskomm.social", "niche": "Global denken, interdisziplinär forschen: Leibniz leben! http:// go.lu-h.de/netiquette | http:// go.lu-h.de/impressum | Uni Hannover"},
+    {"name": "Leonid Schneider", "acct": "SchneiderLeonid@mastodon.social", "niche": "Failed scientist turned \"Independent science journalist\". The troll behind For Better Science. https:// forbetterscience.com/"},
+    {"name": "Libraries4Future", "acct": "libraries4future@climatejustice.global", "niche": "Initiative for people working at and with libraries # greenlibraries # sustainability # libraries4future . Co-founded in Berlin, Germany, by @libreas Verein and Netzwerk Grüne Bibliothek @ netzwerkgruenebibliothek Posts in German and English."},
+    {"name": "MPI for Marine Microbiology", "acct": "MarineMicrobio@wisskomm.social", "niche": "News from the Max Planck Institute for Marine Microbiology Website: https://www. mpi-bremen.de"},
+    {"name": "MPI for the Science of Light", "acct": "MPI_ScienceOfLight@wisskomm.social", "niche": "The Max Planck Institute for the Science of Light (MPL) focuses on basic research into all aspects of the interaction between light and matter, from modern optics to photonics, quantum effects and their applications in the \"real\" world. It aims to extend the realm of the possible in the science and …"},
+    {"name": "Maese J Sebastian Quintero S", "acct": "Siriox@metalhead.club", "niche": "Teacher of Natural Sciences, Friki de los Idiomas, Esperantisto, Wikimedian, Asturófilo, SciFi"},
+    {"name": "Matt Parker", "acct": "standupmaths@mathstodon.xyz", "niche": "#1 best-selling author, also maths clown. Humble Pi, a comedy of maths errors: https:// mathsgear.co.uk/collections/bo oks/products/humble-pi-signed-paperback Videos: http:// youtube.com/standupmaths"},
+    {"name": "Matthias C. Rillig", "acct": "mrillig@mastodon.online", "niche": "Professor (Ecology). Our lab at Freie Universität Berlin is interested in soil, global change, biodiversity, and fungi. I'm also active on youtube, making videos on life in academia. # PhdChat # PhdLife # PostdocLife # academia # SciComm # ecology # soil # biodiversity # fungi # ClimateChange # Glob…"},
+    {"name": "Max-Planck-Gesellschaft", "acct": "maxplanckgesellschaft@wisskomm.social", "niche": "Germany's leading basic research organization. Toots in English and German."},
+    {"name": "Meg Schwamb", "acct": "megschwamb@mastodon.online", "niche": "Planetary scientist & astronomer at Queen’s University Belfast: KBOs, Planet Four(Mars), exoplanets (Planet Hunters NGTS) ,LSST SSSC co-chair. Opinions posted are my own"},
+    {"name": "Megan Smolenyak", "acct": "megansmolenyak@mastodon.social", "niche": "🕵️‍♀️ Lifelong genealogist and stubborn solver of history mysteries & cold cases. Don't try to hide from me. I *will* find you. # genealogy # Geneadons # history # familyhistory # histodons"},
+    {"name": "Molly White", "acct": "molly0xfff@hachyderm.io", "niche": "crypto researcher & critic, software engineer, wikipedian • @ web3isgreat creator • newsletter: https://www. citationneeded.news/ she/her • :QueerCat_Bisexual:"},
+    {"name": "Nick Walker", "acct": "DrNicky@zirk.us", "niche": "Co-author of the WEIRD LUCK webcomic. Author of NEUROQUEER HERESIES, plus various short fiction & nonfiction. Professor & aikido teacher."},
+    {"name": "Nikolaus Forgó", "acct": "nikolausf@wien.rocks", "niche": "Law. IT. And all in between. This is going to be personal. Professor of Law at University of Vienna. Into IT (law) since you were not born yet then. Bio: https:// id.univie.ac.at/en/team/univ-p rof-dr-nikolaus-forgo/ Biggest hobby: https://www. youtube.com/@arsboni_idlaw"},
+    {"name": "ORCID Organization", "acct": "ORCID_Org@scicomm.xyz", "niche": "ORCID uniquely identifies and connects researchers and innovators to their affiliations and contributions across disciplines, borders, and time."},
+    {"name": "Olivia Guest · Ολίβια Γκεστ", "acct": "olivia@scholar.social", "niche": "associate professor of computational cognitive science · she/they · cypriot/kıbrıslı/κυπραία · σὺν Ἀθηνᾷ καὶ χεῖρα κίνει"},
+    {"name": "Open Data Institute", "acct": "ODIHQ@mastodon.social", "niche": "Making data work for everyone."},
+    {"name": "Open Education Global", "acct": "oeglobal@social.fossdle.org", "niche": "Open Education Global (OEG) is a global, members-based, non-profit organization supporting the development and use of Open Education around the world. Education should be open and available for all – everywhere for everyone. Build this open future with us."},
+    {"name": "Open Latin", "acct": "lingualatina@colloquium.social", "niche": "Help us create Open Latin resources # Classics # LinguaLatina # latin ? # latineloquor # salvete"},
+    {"name": "PIK_climate", "acct": "PIK_climate@wisskomm.social", "niche": "Science for safe & just # Climate future. Scientific Directors Johan # Rockström , Ottmar # Edenhofer // All PIK social media channels: https:// pik-potsdam.de/socials"},
+    {"name": "PLOS", "acct": "PLOS@mstdn.science", "niche": "PLOS is a non-profit organization on a mission to drive open science forward with measurable, meaningful change in research publishing, policy and practice."},
+    {"name": "Phil Plait", "acct": "badastro@mastodon.social", "niche": "SCIENCE! # Astronomer , # scicomm , # author , etc. Newsletter: https:// badastronomy.beehiiv.com/"},
+    {"name": "Piter Kehoma Boll", "acct": "piterkeo@ursal.zone", "niche": "Doutor em biologia trabalhando com taxonomia e ecologia de planárias terrestres. Editor-chefe da revista Neotropical Biology and Conservation. Tradutor por > eng e revisor de textos acadêmicos. Divulgador científico. YouTuber fazendo divulgação sobre línguas e linguística. Gay, não-monogâmico, pesce…"},
+    {"name": "Poly Haven", "acct": "polyhaven@masto.ai", "niche": "The Public 3D Asset Library"},
+    {"name": "QEDcon", "acct": "QEDcon@mastodon.world", "niche": "QED is the UK's biggest grassroots celebration of science, reason and critical thinking. QED returns 19-20 October 2024 (with a free one-day Skepticamp event on the 18th!)."},
+    {"name": "RWTH Aachen University", "acct": "rwthaachenuniversity@wisskomm.social", "niche": "➡️ 𝗢𝗳𝗳𝗶𝘇𝗶𝗲𝗹𝗹𝗲𝗿 𝗔𝗰𝗰𝗼𝘂𝗻𝘁 𝗱𝗲𝗿 𝗥𝗪𝗧𝗛 ⬅️ by RWTH-Pressestelle 🙋‍♂️🙋‍♀️ # rwth # rwthaachen # rwthaachenuniversity ➡️ www.rwth-aachen.de/impressum ➡️ www.rwth-aachen.de/datenschutzerklaerung"},
+    {"name": "Research Organization Registry", "acct": "ResearchOrgs@mastodon.social", "niche": "ROR, the Research Organization Registry, is a global, community-led registry of open persistent identifiers for research organizations 🦁 Brought to you by the California Digital Library, @crossref, and @datacite # ScholComm # metadata # PIDs # POSI # ScholarlyPublishing # OpenScience Find us elsewhe…"},
+    {"name": "Robert Reich", "acct": "rbreich@masto.ai", "niche": "Berkeley professor, former Secretary of Labor. Co-founder of Inequality Media. Sign up for updates, analysis and drawings: http:// robertreich.substack.com"},
+    {"name": "SIB Swiss Bioinformatics", "acct": "SIB@mstdn.science", "niche": "The SIB Swiss Institute of Bioinformatics is an internationally recognized non-profit organization dedicated to biological and biomedical # DataScience . Our # DataScientists create knowledge and solve complex questions in many fields, from # biodiversity and # evolution to # medicine . They provide…"},
+    {"name": "SSI", "acct": "SoftwareSaved@mastodon.social", "niche": "The Software Sustainability Institute is the first organisation in the world that was dedicated to improving software in research. We help people build better and more sustainable software to enable world-class research."},
+    {"name": "Science", "acct": "c/science@beehaw.org", "niche": "Studies, research findings, and interesting tidbits from the ever-expanding scientific world. Subcommunities on Beehaw: Space Be sure to also check out these other Fediverse science communities: lemmy.ml/c/science mander.xyz/c/science This community’s icon was made by Aaron Schneider, under the CC-B…"},
+    {"name": "Science Étonnante", "acct": "scienceetonnante@piaille.fr", "niche": "Je suis David Louapre, le créateur de Science Étonnante. Retrouvez ici les actualités de la chaîne Youtube, du blog, etc."},
+    {"name": "Scientific European", "acct": "ScientificEuropean@toot.community", "niche": "European popular science magazine geared to disseminate advances in science to scientifically minded general readers. | SCIEU.com"},
+    {"name": "Serhii Nazarovets", "acct": "serhii@mstdn.science", "niche": "Ph.D. in Social Communication. My research interests: Bibliometrics, Scientometrics, Scholarly Communication, and Library Science."},
+    {"name": "Stadtbibliothek Springe", "acct": "stbspringe@openbiblio.social", "niche": ""},
+    {"name": "SwissNationalScienceFoundation", "acct": "snsf_ch@social.anoxinon.de", "niche": "The Swiss National Science Foundation ( # SNSF ) funds excellent research at universities and other institutions – from chemistry to medicine to sociology. We invest in researchers and their ideas 🔬🌱📚 Deutsch: @ SNF_ch Français: @ fns_ch Impressum: https://www. snf.ch/en/hlIRadd9hpPlLtpM/pag e/impri…"},
+    {"name": "TIB", "acct": "tibhannover@openbiblio.social", "niche": "Leibniz-Informationszentrum Technik und Naturwissenschaften und Universitätsbibliothek ▪ https://www. TIB.eu ▪ http:// WasWenn.TIB.eu ▪ http:// TIB.eu/impressum ▪ 🇪🇺🇺🇦"},
+    {"name": "Tavis Ormandy", "acct": "taviso@social.sdf.org", "niche": "Vulnerability Researcher @ Google Project Zero. UNIX, Hacking, Reversing, TTYs"},
+    {"name": "Technische Universität Dresden", "acct": "tudresden@wisskomm.social", "niche": "Willkommen an der TUD | The Collaborative University inventive. transformative. engaged."},
+    {"name": "Technische Universität München", "acct": "tu_muenchen@wisskomm.social", "niche": "Toots from the TUM web communications team"},
+    {"name": "The Transmitter", "acct": "thetransmitter@mastodon.social", "niche": "Dedicated to helping neuroscientists stay current and build connections. Subscribe to receive the latest news and perspectives on neuroscience: www.thetransmitter.org/newsletters/"},
+    {"name": "Thomas Holtz", "acct": "Arctomet@sciencemastodon.com", "niche": "Tyrannocentric # Dinosaur # Paleobiologist ; Univ. Maryland Principal Lecturer in # Vertebrate # Paleontology ; Director of College Park Scholars Science & Global Change Program; Research Associate, National Museum of Natural History; Random House author"},
+    {"name": "Thomas Hull", "acct": "tomhull@mathstodon.xyz", "niche": "Associate Professor of Applied Mathematics at Franklin & Marshall College. Studies the mathematics of origami (folding)."},
+    {"name": "UFZ", "acct": "ufz@helmholtz.social", "niche": "Helmholtz-Zentrum für Umweltforschung (UFZ) | Helmholtz Centre for Environmental Research (UFZ); Impressum | Imprint: https://www. ufz.de/impressum"},
+    {"name": "Uni Göttingen", "acct": "unigoettingen@academiccloud.social", "niche": "Offizieller Mastodon-Account der Uni Göttingen (ohne Unimedizin) • Official Mastodon account of University of Göttingen"},
+    {"name": "Universität Greifswald", "acct": "unigreifswald@mastodon.social", "niche": ""},
+    {"name": "Universität Jena", "acct": "unijena@mastodon.social", "niche": "LIGHT. LIFE. LIBERTY. – Connecting People and Ideas"},
+    {"name": "Universität Leipzig", "acct": "unileipzig@wisskomm.social", "niche": "Der offizielle Mastodon-Kanal der Universität Leipzig. # UniLeipzig"},
+    {"name": "Universität Regensburg", "acct": "uni_regensburg@wisskomm.social", "niche": ""},
+    {"name": "Universitätsbibliothek Leipzig", "acct": "ubleipzig@openbiblio.social", "niche": "Leipzig University Library # UBLeipzig"},
+    {"name": "Université de Bordeaux", "acct": "univbordeaux@mastodon.social", "niche": "Compte officiel de l'université de Bordeaux (#formation - # recherche - # innovation )"},
+    {"name": "Université de Liège", "acct": "UniversitedeLiege@mastodon.online", "niche": "+ 28,000 students | 43 research units | 11 faculties | +100 active spin-offs | Founded in 1817 | Public university (Belgium) | # ULiège"},
+    {"name": "Volker Beck", "acct": "volker_beck@mastodon.social", "niche": "# Citoyen + # humanrights # antisemitismuskritisch + # LGBT + # Religion + # Israel + MP(94-17) + # CERES # RUB # tikvahinstitut , Präsident # dig 🇮🇱🇺🇦 + VIEWS ARE MY OWN 🍍 privat hier"},
+    {"name": "WikiConference North America", "acct": "WikiConferenceNA@wikis.world", "niche": "The annual gathering of Wikimedians, institutions, and professionals from across North America. Join us in New York City, 16-19 October 2025: https:// wikiconference.org/wiki/2025/M ain_Page"},
+    {"name": "Wissenschaftsrat", "acct": "WissRat@wisskomm.social", "niche": "# WissRatSitzungen # WREmpfehlungen # WissRat # Wissenschaft # GermanScienceCouncil www.wissenschaftsrat.de/impressum"},
+    {"name": "Yale Divinity School", "acct": "YaleDivinitySchool@mstdn.social", "niche": "A graduate professional school of Yale University, offering programs of study leading to the degrees of Master of Divinity, Master of Arts in Religion, and Master of Sacred Theology. This account is managed by the YDS Office of Communications. Searchable # fedi22 # academia # academics # ivyleague #…"},
+    {"name": "ZeMKI", "acct": "zemki@sciences.social", "niche": "ZeMKI is the Centre for Media, Communication and Information Research, 📍University of Bremen, Germany https://www. zemki.uni-bremen.de"},
+    {"name": "annie rauwerda", "acct": "annierau@wikis.world", "niche": "big fan of wikipedia, crossword puzzles, my cat, venn diagrams, the library, joking around, etc! I have accounts called \"depths of wikipedia\" on other sites!"},
+    {"name": "eLife", "acct": "eLife@fediscience.org", "niche": "A non-profit open-access journal for research in the life and biomedical sciences working to improve research culture and communication."},
+    {"name": "gwup | die skeptiker", "acct": "gwup@social.tchncs.de", "niche": "The # GWUP is the largest & oldest skeptics' society in Germany. We have been promoting science, enlightenment & reason since 1987. https://www. gwup.org/join"},
+    {"name": "leHACK", "acct": "leHACK@infosec.exchange", "niche": "🗓️ # leHACK 2026 // June 26-27, 2026 🎟️Tickets : https://www. billetweb.fr/lehack-2026-brave -new-world 📍 https://www. cite-sciences.fr"},
+    {"name": "planet4589 (Jonathan McDowell)", "acct": "planet4589@mastodon.social", "niche": "Astronomer at (but not speaking for) the Center for Astrophysics - Harvard and Smithsonian, working on Chandra, commenting on space launches. Somerville, MA. Orbital Police. All plots/images CC-BY"},
+    {"name": "saarik", "acct": "jarmosaarikko@mastodon.social", "niche": "retired information specialist and zoologist from Finland. Modelled linked library data with # Bibframe and # RDA . I'm a CODA. Interests: # K -drama, , # Korean , # walking , # birdwatching , # cooking , # duolingo , # shrews , # metadata , # wikidata , # vocabularies , # classification , # librari…"},
+    {"name": "🎥 Cinémathèque de Bretagne 🎥", "acct": "cinemathequebzh@mastodon.social", "niche": "Cinémathèque de Bretagne · Gwarez Filmoù Breizh • Brittany Film Archive Collecter, préserver et transmettre la mémoire filmée de la # Bretagne Dastum, mirout ha treuzkas memor filmet # Breizh"},
+    {"name": ".NET", "acct": "dotnet@dotnet.social", "niche": "Free. Cross-platform. Open source. A developer platform for building all your apps. Run by the .NET Community team at Microsoft."},
+    {"name": "0 A.D. ✅", "acct": "play0ad@mastodon.social", "niche": "0 A.D. is a free and open-source, historical Real Time Strategy game, focused on the period from 500 B.C. to 1 B.C., under development by Wildfire Games. It's cross-platform, playable on Windows, macOS, FreeBSD, Linux, and OpenBSD. Choose from 13 different civilizations, a multitude of maps, game mo…"},
+    {"name": "1Password", "acct": "1password@1password.social", "niche": "Building a safer, simpler digital future for everyone."},
+    {"name": "52°North", "acct": "52North@fosstodon.org", "niche": "52°North is devoted to spatial information research. We support open science through open data and open source software."},
+    {"name": "7amleh", "acct": "7amleh@mastodon.social", "niche": "# DigitalRights = # HumanRights"},
+    {"name": "@weblearning", "acct": "weblearning@social.ds106.us", "niche": "Same ed techie package (open, critical, pragmatic), but perhaps a bit more intentional. Small, at this moment, is all. Lives in # SouthAfrica . Can be found elsewhere as @ weblearning . All opinions are my own."},
+    {"name": "ATHENE Center", "acct": "ATHENECenter@wisskomm.social", "niche": "ATHENE: Applied cybersecurity research for industry, society and government Darmstadt, Germany www.athene-center.de https://www. athene-center.de/impressum https://www. athene-center.de/datenschutzer klaerung"},
+    {"name": "Aaron Giles", "acct": "aaronsgiles@corteximplant.com", "niche": "Rogue emulation programmer & demon hunter. Formerly of # Microsoft , # MAME , # Connectix , and # LucasArts . Still active in the Seattle choral scene # SeattleSings via Summer Fling Singers, Harmonia, and Sine Nomine. Author of # DREAMM emulator and the # ymfm audio library. AI sucks."},
+    {"name": "AdGuard", "acct": "AdGuard@mastodon.social", "niche": "Blocks ads and protects your personal data on any OS/device."},
+    {"name": "Adam Honse", "acct": "CalcProgrammer1@mastodon.social", "niche": "Software Engineer, Linux Enthusiast, @ OpenRGB Developer, and Gamer"},
+    {"name": "Andrews & Arnold Ltd (AAISP)", "acct": "aaisp@social.aa.net.uk", "niche": "Andrews & Arnold Ltd, official Fediverse/Mastodon account. This is not really for support so replies may be slow. Staff should tag posts, usually with initials, e.g. ^RevK is director @ revk ^AB and ^AH are general managers Follow @ aastatus for live status posts. For an urgent response, calling or …"},
+    {"name": "Apache - The ASF", "acct": "TheASF@fosstodon.org", "niche": "The global home for open source software, powering some of the world’s most ubiquitous software projects in web, big data, Java, IoT, cloud computing, and more."},
+    {"name": "Apereo Foundation", "acct": "apereo@social.fossdle.org", "niche": "Collaborating across higher education to foster, develop, and sustain open source software and technologies to support learning, teaching, and research. # OpenSource for # HigherEducation by # HigherEd ."},
+    {"name": "Ardour DAW", "acct": "ardour@fosstodon.org", "niche": "Free/libre digital audio workstation. Record, edit, and mix on Linux, macOS, and Windows."},
+    {"name": "Barry Schwartz", "acct": "rustybrick@c.im", "niche": "Search geek covering Google and loves web and mobile development. # seo # ppc # google"},
+    {"name": "Beta.NYC", "acct": "BetaNYC@urbanists.social", "niche": "We help New Yorkers access information & use technology. We are a # civictech organization improving the lives of New Yorkers through # opendata , public interest technology (#pitech) & service design. We want New York’s governments to work for the people, by the people, for the digital era. Our wor…"},
+    {"name": "Biome", "acct": "biomejs@fosstodon.org", "niche": "Official account of the Biome project"},
+    {"name": "Bitwarden", "acct": "bitwarden@fosstodon.org", "niche": "Bitwarden empowers enterprises, developers, and individuals to safely store and share sensitive data. With a transparent, open source approach to password management, secrets management, and passwordless and passkey innovations, Bitwarden makes it easy for users to extend robust security practices t…"},
+    {"name": "Blacks In Cybersecurity HQ", "acct": "blacksincyber@infosec.exchange", "niche": "Blacks In # Cybersecurity ™️ Official HQ 🏠 | # LitLikeBIC |#BlacksInCyber | 34ch-0n3-734ch-M4ny | 2x DC Black Badge CTF 🏆💻🏴‍☠️ blacksincyber@infosec.exchange/defconsocial # ShareTheMicInCyber"},
+    {"name": "Blender 🔶", "acct": "Blender@mastodon.social", "niche": "Official account for the Free and Open Source 3D creation suite. Free to use for any purpose, forever."},
+    {"name": "Brave", "acct": "brave@mastodon.social", "niche": "The best privacy online. Browse privately and earn rewards. Search without a trace. Easily access Web3. # SwitchToBrave and ditch Big Tech."},
+    {"name": "Brazil Singh", "acct": "brazilsinghrittik@en.osm.town", "niche": "Board of Director, Openstreetmap Foundation"},
+    {"name": "Brewster Kahle", "acct": "brewsterkahle@mastodon.archive.org", "niche": "Digital Librarian at the Internet Archive http:// archive.org http:// openlibrary.org http:// brewster.kahle.org @ internetarchive tfr"},
+    {"name": "Brodie Robertson", "acct": "BrodieOnLinux@mstdn.social", "niche": "Linux, Wayland, and FOSS commentary. Creator of Tech Over Tea and advocate for open-source software."},
+    {"name": "Bryan Cantrill", "acct": "bcantrill@mastodon.social", "niche": "Co-founder and CTO of Oxide Computer Company. Nom de guerre: General Protection Fault."},
+    {"name": "Build Awesome (11ty)", "acct": "11ty@neighborhood.11ty.dev", "niche": "🎈 A simpler static site generator, maintained since 2017 🤝 Team @ fontawesome and @ webawesome 🐀 Created/maintained by @ zachleat (this account, too) 📦 Team HTML ⚡️ Team Static #️⃣ Use # 11ty for community boosts!"},
+    {"name": "CWE Program", "acct": "CWE_Program@mastodon.social", "niche": "Account maintained by the Common Weakness Enumeration (CWE™) Program to update the community on CWE--related announcements. https:// cwe.mitre.org"},
+    {"name": "Center for Digital Narrative", "acct": "cdn@fediscience.org", "niche": "CDN is a Norwegian Centre of Research Excellence (SFF). We focus on algorithmic narrativity, new environments and materialities, and shifting cultural contexts in humanities-driven research."},
+    {"name": "Chocolatey Software, Inc.", "acct": "chocolatey@fosstodon.org", "niche": "Windows Software Management Automation - Manage zips, scripts, binaries & installers with PowerShell and deploy everywhere! Status: http:// status.chocolatey.org"},
+    {"name": "Chris Heilmann", "acct": "codepo8@toot.cafe", "niche": "Web developer for 25 years. Ex-Yahoo, Mozilla, Microsoft. Wrote the Developer Advocacy handbook. ChristianHeilmann.com && WeAreDevelopers.com"},
+    {"name": "Chris Messina", "acct": "chrismessina@mastodon.xyz", "niche": "Inventor of the hashtag #1 Product Hunter Man of the internet Generalist"},
+    {"name": "Chris Pirillo", "acct": "ChrisPirillo@mastodon.social", "niche": "Content-Creator-for-Hire (for Your Business) . Sharing Discoveries on the Internet Since 1992 . # Creator . # Geek . # Nerd . # Toys . # StarWars . # LEGO . # Seattle . # Nerd . # Retro . # Founder . # Entrepreneur . # 3DPrinting . # Vegan . # Jedi . # Tech . # Software . # Community . # SocialMedia…"},
+    {"name": "Ciro Santilli", "acct": "cirosantilli@mastodon.social", "niche": "https:// cirosantilli.com"},
+    {"name": "CodePen", "acct": "codepen@fosstodon.org", "niche": "Build, test, and discover front-end code 💻"},
+    {"name": "CodeWeavers", "acct": "codeweavers@mas.to", "niche": "Lots of people talk about open source. Talk is cheap. We code."},
+    {"name": "Coding Grace", "acct": "codinggrace@mastodon.ie", "niche": "🇮🇪 An Irish not-for-profit advocating # DiversityInTech through events, collaboration, and curating # NorthernIrish & # Irish events. @ whykay / @ micktwomey / @ roundcrisis"},
+    {"name": "Collabora", "acct": "collabora@floss.social", "niche": "Whether it's the Linux kernel, web engines, graphics or multimedia, we can help. # OpenSource # OpenFirst"},
+    {"name": "Couleurs Gaies", "acct": "couleursgaies@asso.lgbt", "niche": "🏳️‍🌈 Centre LGBTQI+ de Lorraine Nord 🍹 Bar «La Palette» à Metz 📢 Organise la Marche des fiertés de Metz"},
+    {"name": "Crossref", "acct": "crossref@mastodon.online", "niche": "We are 52 staff worldwide and we run the global non-profit digital infrastructure governed by the scholarly research community (that is 24,000 organisational members from 165 countries who have registered 180 million # articles # preprints # datasets # chapters # grants ). We make all kinds of resea…"},
+    {"name": "Crowd Supply", "acct": "crowdsupply@hachyderm.io", "niche": "Curated crowdfunding for engineers, designers and creators of open source technology. We help bring original, useful, respectful hardware to life."},
+    {"name": "Crunchy Tech", "acct": "crunchytek@mastodon.social", "niche": "Since 2009, Crunchy Tech has been at the forefront of delivering state-of-the-art AV solutions to commercial clients. Specializing in creating immersive audiovisual experiences, we pride ourselves on our innovative approach and our commitment to excellence. # padzilla # audiovisual # tech"},
+    {"name": "Dan Bricklin", "acct": "danb@qoto.org", "niche": "One of the VisiCalc guys, CTO Alpha Software, DBDemo, Trellix, blogger, podcaster, SocialCalc, iPad app: Note Taker HD, president of Software Garden, Inc."},
+    {"name": "Daniel Mietchen", "acct": "EvoMRI@mastodon.social", "niche": "Trying to share research processes and their results as widely and openly as possible."},
+    {"name": "Deno", "acct": "deno_land@fosstodon.org", "niche": "A modern runtime for JavaScript and TypeScript https:// deno.land # deno # denoland"},
+    {"name": "Der »ganz normale« Wahnsinn", "acct": "elektra_42@mastodon.social", "niche": "Philosopher of Non-Thinking. Unicameral consciousness sweeping like a virus through the digital world. Modern day nam-shubs. Born at 322.39 ppm atmospheric CO² level."},
+    {"name": "Derek", "acct": "distrotube@fosstodon.org", "niche": "Derek Taylor from the DistroTube channel on YouTube and Odysee."},
+    {"name": "DevConf.CZ", "acct": "devconf_cz@fosstodon.org", "niche": "# DefineFUTURE at the free open source community conference in Brno, Czech Republic. The next event is coming in June 2026. Hashtag: # devconf_cz"},
+    {"name": "Digital Preservation Coalition", "acct": "dpc_chat@digipres.club", "niche": "The Digital Preservation Coalition (DPC) is building a welcoming and inclusive global community, working together to bring about a sustainable future for our digital assets."},
+    {"name": "Dolphin Emulator", "acct": "dolphin@social.dolphin-emu.org", "niche": "The GameCube/Wii emulator of your choice!"},
+    {"name": "EPFL", "acct": "EPFL@social.epfl.ch", "niche": "Compte officiel de l’EPFL (École Polytechnique Fédérale de Lausanne) --- Official account of EPFL, one of the most cosmopolitan technical universities in Europe 13'000 students 120 nationalities"},
+    {"name": "Eclipse Foundation", "acct": "EclipseFdn@mastodon.social", "niche": "Brussels-based member-driven non-profit supporting a global open source community. We host the @ EclipseIDE , @ jakartaee , Adoptium, Open VSX and 400+ projects."},
+    {"name": "Eigenbaukombinat Halle e.V.", "acct": "eigenbaukombinat@chaos.social", "niche": "Makespace, Hackspace, Mitmachwerkstatt in Halle (Saale)"},
+    {"name": "Emily Bache", "acct": "emilybache@sw-development-is.social", "niche": "Technical Coach, creator of Samman Coaching, Youtuber, Author. she/her."},
+    {"name": "Emily Young", "acct": "emilyyoung@tech.lgbt", "niche": "All-tech enthusiast and total retro/Linux geek | Newfoundlander | Former host/writer at Linus Tech Tips"},
+    {"name": "Emmanuele Bassi", "acct": "ebassi@mastodon.social", "niche": "FLOSS project necromancer. Geek, husband, lover, software developer, Londoner. Not necessarily in that order. he/him Proud # GTK and # GNOME dev; member of the GNOME Foundation. \"One of the people responsible for the failure of the Linux desktop\", according to a random YouTube user. Opinions are alw…"},
+    {"name": "Eric K", "acct": "kleptones@mastodon.social", "niche": "Piano player in the whorehouse of life. Background check: https:// w.wiki/Eu9x Vintage non-responsive website: https://www. kleptones.com Listen: https:// soundcloud.com/kleptones https://www. mixcloud.com/kleptones https:// kleptones.bandcamp.com https://www. subvert.fm/the-kleptones Email list for…"},
+    {"name": "European Commission", "acct": "EUCommission@ec.social-network.europa.eu", "niche": "News and information from the European Commission. A project to foster our presence in the fediverse and support our commitment to European social media platforms based on open source technology. 🇪🇺 Official Mastodon account as verified by the official EU domain in our server’s address ( https:// eu…"},
+    {"name": "FIRST.org", "acct": "firstdotorg@infosec.exchange", "niche": "Improving Security Together"},
+    {"name": "Framework", "acct": "frameworkcomputer@fosstodon.org", "niche": "Remaking consumer electronics to respect people and the planet. 💻🪛 Framework Laptop 13 and 16 are now in stock, and pre-orders are open on Framework Desktop!"},
+    {"name": "Fraunhofer HHI", "acct": "FraunhoferHHI@wisskomm.social", "niche": "@ FraunhoferHHI shapes the digital society of the future: Our research teams develop new standards for information and communication technologies."},
+    {"name": "Fraunhofer SIT", "acct": "fraunhofersit@wisskomm.social", "niche": "Cybersicherheit und Privacy https://www. sit.fraunhofer.de/de/impressum/ https://www. sit.fraunhofer.de/datenschutze rklaerung/"},
+    {"name": "Fraunhofer-Gesellschaft", "acct": "fraunhofergesellschaft@wisskomm.social", "niche": "Angewandte Forschung seit 75 Jahren. Technologie, Innovation, Wertschöpfung."},
+    {"name": "Future Coding", "acct": "shaharyarranjah1@mastodon.social", "niche": "It's shaharyarranjah1 content creator and software engineer and and data scientist Currently teaching on YouTube. # shaharyarranjah1 # softwareengineer # aiengineer https://www. youtube.com/@shaharyarranjah1"},
+    {"name": "Futurist Jim Carroll", "acct": "jimcarroll@mastodon.futurist.info", "niche": "Single user Mastodon # selfhost Online since '82 - BBS, Source, Compuserve, BIX, WELL, Usenet, uucp Wrote 34 books in 90s on 'Net/tech; 3 radio shows, news columns, mags, etc ---- 30 yrs on global stages speaking on disruptive trends, innovation, creativity, future. Represented by Harry Walker Agenc…"},
+    {"name": "Games That Weren't", "acct": "gamesthatwerent@mastodon.world", "niche": "We are an Cancelled & Unreleased Video games archive with prototypes, developer history and assets for many computers and consoles of all ages. A non-profit large archive dedicated to preserving lost games that were never released to the public. Sharing history and stories from the developers, asset…"},
+    {"name": "Garoa Hacker Clube", "acct": "garoa@fosstodon.org", "niche": "# hackerspace # SãoPaulo # Brasil"},
+    {"name": "Gerold Reichenbach", "acct": "g_reichenbach@hessen.social", "niche": "# Suedhesse # SPD # THW # Digitales # KatS # Kritis # Wandern und # Wein https:// gerold-reichenbach.de/"},
+    {"name": "GitHub", "acct": "github@hachyderm.io", "niche": "The AI-powered developer platform to build, scale, and deliver secure software. Here to chat with our friends, boost cool stuff happening in the community and listen to what’s happening. # GitHub # Dev # Programming # OpenSource"},
+    {"name": "Godot Engine", "acct": "godotengine@mastodon.gamedev.place", "niche": "Your free, open-source game engine 🎮🛠️ Develop your 2D & 3D games, cross-platform projects, or even XR ideas!"},
+    {"name": "Graham Cluley", "acct": "gcluley@mastodon.green", "niche": "Computer # security chap. Public speaker, blogger, # DoctorWho fan since 1972. Author of Jacaranda Jim and Humbug games. Host of the @ smashingsecurity # podcast . Needs haircut. # cybersecurity # infosec # ai # SmashingSecurity He/Him/His"},
+    {"name": "Graphics Programming Meetup", "acct": "graphicsmeetup@mastodon.gamedev.place", "niche": "A virtual meetup dedicated to graphics programming. We meet online every week. Organized by @ lesley , @ Cdgiessen , and Jonathan Baker"},
+    {"name": "Gynvael Coldwind 🐈", "acct": "gynvael@infosec.exchange", "niche": "security researcher/programmer ⁂ previously security team @ Google ⁂ Dragon Sector CTF founder/player ⁂ technical livestreamer ⁂ slide maker ⁂ he/him"},
+    {"name": "Hackerspace TDvenlo", "acct": "TDvenlo@hsnl.social", "niche": "We're the Hackerspace in Venlo, NL. Location: Under the public library, Venlo. Meetings: Friday Evening."},
+    {"name": "Hacklabor", "acct": "hacklabor@chaos.social", "niche": "# Hackspace # Schwerin"},
+    {"name": "Hacksaar", "acct": "hacksaar@social.saarland", "niche": "Technik Kultur Saar e. V. Hackerspace Saarbrücken"},
+    {"name": "Hackspace Siegen", "acct": "Hasi@chaos.social", "niche": "We are the first Hackspace in Siegen. Part of the Chaos Family around the CCC and supporting the CCC Siegen"},
+    {"name": "HeiGIT", "acct": "heigit@mastodon.social", "niche": "Open-source geoinformation, methods and software for the benefit of the environment and society. --- This is the official account of HeiGIT (Heidelberg Institute for Geoinformation Technology) at Heidelberg University. Check us out at https:// heigit.org/"},
+    {"name": "Helen Leigh", "acct": "helenleigh@chaos.social", "niche": "Hardware hacker, writer & maker of musical oddities. I love open source hardware and weird electronics. Hardware & community at Crowd Supply Cymru > London > Berlin > Portland"},
+    {"name": "Henna Virkkunen", "acct": "HennaVirkkunen@ec.social-network.europa.eu", "niche": "Executive Vice-President for Tech Sovereignty, Security and Democracy of the European Commission"},
+    {"name": "Hetzner", "acct": "hetzner@mastodon.hetzner.social", "niche": "We're a leading provider of high-performance hosting solutions, trusted by developers, businesses, and enterprises around the globe."},
+    {"name": "Hex-Rays SA", "acct": "HexRaysSA@infosec.exchange", "niche": "Hex-Rays was founded in 2005 to improve the digital security and face the rising cybersecurity threats that are increasingly affecting both public and private entities. Fully independent from any governmental agencies and stock market pressures, Hex-Rays is renowned for developing the state-of-the-a…"},
+    {"name": "Home Assistant", "acct": "homeassistant@fosstodon.org", "niche": "Open source home automation that puts local control & privacy first. Powered by a worldwide community of tinkerers & DIY enthusiasts."},
+    {"name": "ISC.org", "acct": "iscdotorg@fosstodon.org", "niche": "ISC.org maintains and publishes the BIND 9 DNS software, the Kea DHCP server, and the Stork graphical management interface. ISC also operates the F-Root system for the benefit of the Internet."},
+    {"name": "Igalia", "acct": "igalia@floss.social", "niche": "Igalia is an open source consultancy specialized in the development of innovative projects and solutions with desktop, mobile, and web technologies."},
+    {"name": "Ilya Zverev", "acct": "zverik@en.osm.town", "niche": "I love OpenStreetMap and crafting virtual things. he/him."},
+    {"name": "Jakarta EE", "acct": "jakartaee@mastodon.social", "niche": "Powered by participation, Jakarta EE is focused on enabling community-driven collaboration and open innovation for the cloud. Hosted by @ EclipseFdn"},
+    {"name": "Jami", "acct": "Jami@mstdn.io", "niche": "The distributed universal and secure Free Software for multimedia communications by Savoir-faire Linux and the GNU community."},
+    {"name": "Jason Scott", "acct": "textfiles@mastodon.archive.org", "niche": "Free-Range Archivist at the Internet Archive"},
+    {"name": "Jeff Geerling", "acct": "geerlingguy@mastodon.social", "niche": "Father, author, developer, maker. Sometimes called \"an inflammatory enigma\". # stl # ansible # k8s # raspberrypi # crohns # ostomy"},
+    {"name": "Jen Simmons", "acct": "jensimmons@front-end.social", "niche": " Apple Evangelist on the Web Developer Experience team for Safari & @ webkit . Member of CSS Working Group. Formerly Firefox. # longCOVID since March 2020. # pwME"},
+    {"name": "Jesse Vincent", "acct": "jesse@metasocial.com", "niche": "Doing AI stuff at Prime Radiant. Past lives include: keyboard.io, VaccinateCA, K-9 Mail, Request Tracker & Perl."},
+    {"name": "Joe Grand", "acct": "joegrand@chaos.social", "niche": "Official page of Joe Grand. Hardware hacker, computer engineer, occasional YouTuber, former L0pht member and juvenile delinquent, sometimes known as Kingpin."},
+    {"name": "Jon Amil", "acct": "amilgz@mastodon.gal", "niche": "Presidente da @ agal . Colaborador do https:// recunchogamer.gal ."},
+    {"name": "Jon Skeet", "acct": "jonskeet@hachyderm.io", "niche": "Christian, husband (of Holly Webb), father, feminist, software engineer (currently at Google), author, Stack Overflow contributor. He/him"},
+    {"name": "Jonah Aragon", "acct": "jonah@mastodon.neat.computer", "niche": "Sometimes people read things I write or watch things I say • I work at @ privacyguides and @ triplebit (ASN 401332) • Instance admin @ https:// mstdn.party , https:// mstdn.plus , and https:// neat.computer • Formerly @ techlore [ Minneapolis 🏙️ ][ Minnesota :MN: ][ USA 🇺🇸 ]"},
+    {"name": "KDE", "acct": "kde@floss.social", "niche": "A worldwide technology community 🌍 Creators of the Plasma desktop & a variety of Free and open source applications that let you control your digital life."},
+    {"name": "Kagi HQ", "acct": "kagihq@mastodon.social", "niche": "Privacy-respecting search, browser and products that put you first. No ads. No trackers. Ever. Support email: support@kagi.com"},
+    {"name": "Karen Melchior", "acct": "karmel80@norrebro.space", "niche": "Stærkere Danmark gennem stærkt Europa. Überfeminist. Born at 338.7 ppm CO2 Twitter: @ karmel80"},
+    {"name": "Kažką ten su kompais", "acct": "kazkassukompais@kasdopuods.lt", "niche": "Seni susireikšminę ITšnykai pliurpia apie kompiuterius. Mus dominančios temos: atviras kodas (FOSS, OpenSource) kibersaugumas (CybeSecurity) GNU Linux nūdienos skaitmeninės aktualijos ir politikos bei aibė kitų, su IT susijusių klausimų. Norintiem paremti: https://ko-fi.com/kazkatensukompais"},
+    {"name": "Kingsley Uyi Idehen", "acct": "kidehen@mastodon.social", "niche": "Founder & CEO, OpenLink Software (#VirtuosoRDBMS, # YouI , # OSDS , creator) # SSI : ni:///sha-256;xxdJ16bthZ724u0_xHvcNt0_Wu4ABxb56nPT50hNz-Q (denotes a SHA256 hash of a Public Key from a locally stored X.509 Cert) # Nostr : d9c8c00017a2a345c2f32132436a26e1c72cb7a57e7b6b316f62dee2f8bcf8dd Foci: # O…"},
+    {"name": "Kit O'Connell", "acct": "kitoconnell@kolektiva.social", "niche": "They/them type middle-aged queerdo. GLAAD-award nominated journalist. Formerly Digital Editor at the Texas Observer. Disabled with # fibromyalgia . Also follow @ oconnell Pfp: a smiling white person against a dark bg with wavy brown hair, bushy eyebrows, a very light mustache and a big Irish nose an…"},
+    {"name": "Krita", "acct": "Krita@mastodon.art", "niche": "Free and open source painting software. Get it at krita.org (Linux, Windows, OSX or Android) and talk with other users and devs in the # krita channel on libera.chat!"},
+    {"name": "LINux on MOBile", "acct": "linmob@fosstodon.org", "niche": "Hi! This is the main Fediverse account of a blog about LINux on MOBile devices – linmob.net. It's has been restarted in 2020 because of the PinePhone. Used to be https:// identi.ca/linmob . Also on bluesky: https:// bsky.app/profile/linmob.net ."},
+    {"name": "LINux on MOBile", "acct": "linmob@linuxmobile.social", "niche": "Hi! This is the main Fediverse account of a blog about LINux on MOBile devices – linmob.net. It's has been restarted in 2020 because of the PinePhone and continues to report the news on Mobian, postmarketOS, Sailfish OS, Ubuntu Touch and the hardware these alternative operating systems run on. Used …"},
+    {"name": "LLVM Project", "acct": "llvm@mastodon.social", "niche": "Official account for the LLVM Project (run by the LLVM Foundation)"},
+    {"name": "Liane M. Dubowy", "acct": "lianedubowy@social.tchncs.de", "niche": "nerdgrrrl * editor at c't Magazin"},
+    {"name": "LibreOffice", "acct": "libreoffice@fosstodon.org", "niche": "Free, private, open source office suite by @ tdforg and a worldwide community. LibreOffice was based on OpenOffice. # foss # opensource"},
+    {"name": "Linaro Limited", "acct": "LinaroLtd@mastodon.social", "niche": "Linaro: Pioneering ARM Innovation, One Accelerated Product at a Time # LinaroAccelerates"},
+    {"name": "Linux Lads Podcast", "acct": "linuxlads@mastodon.ie", "niche": "A podcast about Linux and Open Source from a bunch of lads. Co-hosted by Amolith ( @ amolith ), Conor ( @ techcelt ), Mike ( @ mikee ), and Shane ( @ stranded_output ). Edited by Jake ( @ jbauer )."},
+    {"name": "Lubuntu", "acct": "LubuntuOfficial@fosstodon.org", "niche": "Lubuntu is a lightweight, simple, less resource hungry and more energy-efficient Linux Distribution based on Ubuntu and built for you."},
+    {"name": "Lucas Werkmeister", "acct": "LucasWerkmeister@wikis.world", "niche": "Wikimedian, Wikidata developer at Wikimedia Germany (but posting about work pretty rarely), hobby pianist, bi; also @ WikidataFacts , @ LucasOhrwurm , @ ItsBiNotStraight , @ DorkusShorkus Feel free to request follow, I just like having some control who follows me ;)"},
+    {"name": "LukHash", "acct": "lukhash@mastodon.social", "niche": "Retro-inspired electronic music producer, fusing classic 80s vibes with modern energy 👾 # chiptune meets # synthwave , powered by custom-modded # retro tech ✨️ MUSIC/MERCH/CONTACT: 🌐 https:// music.lukhash.com"},
+    {"name": "Luka Prin/ce Lucija", "acct": "luka@sonomu.club", "niche": "Computer sound noise music. Beats, noise, bass, & nyabinary space. Gender non-conforming kinkster. Feminist, vegan, anti-capitalist, commoner. White, able-bodied, slavic/slovenian of jewish & romani descent. Any pronoun. follow also my alt on gotosocial: @ prinlu (@0x.trans.fail) \"Earth carves canyo…"},
+    {"name": "Marcus Hutchins", "acct": "malwaretech@infosec.exchange", "niche": "Cybersecurity"},
+    {"name": "Marit van Dijk ☕️🥑", "acct": "maritvandijk@mastodon.social", "niche": "Software Developer | Java Developer Advocate @ JetBrains | International Keynote Speaker | Pronouns: She/her"},
+    {"name": "Martin Dougiamas", "acct": "martin@openedtech.social", "niche": "I’ve mixed Computer Science and Education since 1999. # OpenSource is The Way. Founder, Chairman and now Head of Research @ moodle Founder and Chairman @ openedtech My personal mission is to find and promote positive ways to implement technology like # AI , # AR and # Openness to help bring high qua…"},
+    {"name": "Martin Owens", "acct": "doctormo@floss.social", "niche": "Inkscape Programmer and Software Freedom Contractor. Graphics, art, computers, politics, ideas, science. Pronouns: they/them Politics: A socialist... well, a federated pro-social consensualist... er, or something like that. Meme Immunity: Innate rebel, adaptive skeptic, and pro-humility Culture: Bri…"},
+    {"name": "Mastodon", "acct": "Mastodon@mastodon.social", "niche": "Our mission is to connect the world through thriving online communities. This is the primary account for the Mastodon project. For technical software updates, follow @ MastodonEngineering For news and updates on the Mastodon servers that we operate (like this one!), follow @ staff"},
+    {"name": "Mathy Vanhoef", "acct": "vanhoefm@infosec.exchange", "niche": "Hacker at heart | Discovered KRACK and FragAttacks | Prof. Computer Science at @KU_Leuven (Belgium) | Did Postdoc at NYUAD | Network Security & Applied Crypto | Open to consultancy"},
+    {"name": "Matt Burgess", "acct": "mattburgess@infosec.exchange", "niche": "Security writer, WIRED. Privacy, data, surveillance, cyber. Keen runner."},
+    {"name": "Meshtastic", "acct": "meshtastic@mastodon.social", "niche": "Your favorite open source, off-grid, encrypted mesh communication platform that runs on affordable radios"},
+    {"name": "Mitchell Hashimoto", "acct": "mitchellh@hachyderm.io", "niche": "Working on a new terminal: Ghostty. 👻 Prev: founded @HashiCorp. Created Vagrant, Terraform, Vault, and others. Vision Jet Pilot. 👨‍✈️"},
+    {"name": "Mojeek Search Engine", "acct": "Mojeek@mastodon.social", "niche": "Trusted by millions to build the world's alternative search engine since 2004 as pioneer of private, transparent and sustainable access to knowledge on the web # search # searchengine # bigtech # alternatives # privacy # technology # tech # fedi22"},
+    {"name": "Molten Software", "acct": "vileboss@bitbang.social", "niche": "Molten Software - 🌱🇵🇷 T I N K E R E R - Crohn's disease victim"},
+    {"name": "Mullvad VPN", "acct": "mullvadnet@mastodon.online", "niche": "A fast, trustworthy, and easy-to-use VPN is a good first step toward reclaiming your privacy. Just €5/month. For your right to privacy. For support, contact us via email: support at mullvadvpn dot net Bridged to Bluesky via https:// bsky.app/profile/mullvadnet.ma stodon.online.ap.brid.gy"},
+    {"name": "Munich Quantum Valley", "acct": "MunichQuantum@mastodon.social", "niche": "Munich Quantum Valley – founded by BAdW, DLR, FhG, FAU, LMU, MPG, and TUM – has the goal to develop and operate quantum computers in Bavaria."},
+    {"name": "Naomi Amethyst 🏳️‍⚧️", "acct": "naomi@fedi.amethyst.name", "niche": "just a girl in tech ​:trans:​​:transfemme:​​:pansexual:​​:demisexual:​​:polyam:​"},
+    {"name": "Nextcloud 📱☁️💻", "acct": "nextcloud@mastodon.xyz", "niche": "A safe home for all your data, community-driven & open source! https:// nextcloud.com Join us at https:// help.nextcloud.com and https:// github.com/nextcloud 😊"},
+    {"name": "Nicholas C. Zakas", "acct": "nzakas@fosstodon.org", "niche": "Creator of @ eslint . Author, programmer, speaker, coach. GitHub Star."},
+    {"name": "Nick @ The Linux Experiment", "acct": "thelinuxEXP@mastodon.social", "niche": "YouTube content creator and Linux user living in Brest, Brittany. Might post gaming related stuff, especially if it runs on Linux, natively or not ! # linux # opensource # tech # gaming"},
+    {"name": "Nitrokey", "acct": "nitrokey@social.nitrokey.com", "niche": "Secure your digital life with Open Source. Made in Germany. With strong community focus. For secure authentication, data encryption, and key management. Impressum: https://www. nitrokey.com/de/impressum"},
+    {"name": "ONLYOFFICE", "acct": "ONLYOFFICE@fosstodon.org", "niche": ":onlyoffice: Open-source office and productivity suite"},
+    {"name": "OONI", "acct": "ooni@mastodon.social", "niche": "Exposing internet censorship worldwide since 2012. Open data. Free software. Global community. 🌐📊"},
+    {"name": "OSHWA", "acct": "oshwassociation@mastodon.social", "niche": "The Open Source Hardware Association (OSHWA) aims to foster technological knowledge and encourage research that is accessible, collaborative and respects user freedom."},
+    {"name": "OSM US", "acct": "OpenStreetMapUS@en.osm.town", "niche": "We are a nonprofit founded in 2010 to help grow & support OpenStreetMap in the U.S. by connecting & convening community. https:// openstreetmap.us/"},
+    {"name": "OW2", "acct": "ow2@fosstodon.org", "niche": "# opensource community for professional software"},
+    {"name": "OWASP Foundation", "acct": "owasp@infosec.exchange", "niche": "We improve the security of apps with community-led open source projects, 260 local chapters, and tens of thousands of members worldwide"},
+    {"name": "Obsidian", "acct": "obsidian@mas.to", "niche": "The free and flexible app for your private thoughts. For help and deeper discussions, join our community: https:// obsidian.md/community"},
+    {"name": "OctoPrint 🐙", "acct": "octoprint@floss.social", "niche": "The snappy web interface for your 3D printer! Official account of OctoPrint, maintained by @ foosel . If you need help, please get in touch either on the Community Forum or the official Discord server, see https:// help.octoprint.org/"},
+    {"name": "Olimex", "acct": "olimex@mastodon.social", "niche": "Open Source Hardware evangelist. Designing OSHW linux computers certified by OSHWA. https://www. olimex.com"},
+    {"name": "Olivier Minazzoli", "acct": "ominazzoli@scicomm.xyz", "niche": "Astrophysicist, specialist in relativity -- pro open-knowledge, open-source and open-data. :tux: user since :debian: Potato. Currenlty on :ubuntu:. Personal account."},
+    {"name": "Open Source Business Alliance", "acct": "OSBA@social.osb-alliance.de", "niche": "Open Source Business Alliance - Bundesverband für digitale Souveränität e.V."},
+    {"name": "Open Titus", "acct": "opentitus@mastodon.uno", "niche": "Youtuber e blogger dal mondo del Pinguino🐧 ❤️ Per sostenere il canale: https:// paypal.me/opentitus"},
+    {"name": "OpenCV", "acct": "opencv@mastodon.social", "niche": "This is the official account for OpenCV, the world’s largest computer vision library! We’re open source, run by a non-profit, and fully independent."},
+    {"name": "OpenGeoHub Foundation", "acct": "opengeohub@fosstodon.org", "niche": "Connect - Create - Share - Repeat. A not-for-profit research foundation. We promote Open Geodata and Open Source software, run Summer Schools and workshops."},
+    {"name": "OpenRA", "acct": "openra@mastodon.social", "niche": "OpenRA is an Open Source, Cross-Platform project that recreates and modernizes classic real time strategy games, like Red Alert, Command & Conquer, and Dune 2000"},
+    {"name": "OpenSSF", "acct": "openssf@social.lfx.dev", "niche": "Open Source Security Foundation (OpenSSF) Advancing open source security for all"},
+    {"name": "OpenStreetMap Latam", "acct": "osmlatam@en.osm.town", "niche": "Comunidad OpenStreetMap en Latinoamérica. Administrado por @Cyberjuan @kolektiva.social, @ angoca y @la_nenemini"},
+    {"name": "OpenTTD", "acct": "openttd@mas.to", "niche": "OpenTTD is a free and open source transport simulation game. This account is unofficial but developer-run."},
+    {"name": "Opendata.ch", "acct": "OpendataCH@mastodon.social", "niche": "Empowering people to make our society more open, innovative and fair with open knowledge | # OpenData # OGD # CivicTech # Hackathon | part of the @ okfn network"},
+    {"name": "PadreSJ", "acct": "PadreSJ@twit.social", "niche": "Fr. Robert Ballecer, SJ Catholic Priest. Jesuit in Rome. My opinions are my own. My online journey started even BEFORE the years of \"NOOOO!!! STAY OFF THE PHONE!\" He/Him/Geek/Nerd"},
+    {"name": "Paul's Hardware", "acct": "paulshardware@techhub.social", "niche": "I make tech videos on YouTube: https:// youtube.com/@paulshardware"},
+    {"name": "Pirate Party Australia", "acct": "piratepartyau@mastodon.pirateparty.be", "niche": "Freedom of information & culture, civil & digital liberties, privacy, gov transparency. Authorised by: A. Jago, PPAU, Brisbane"},
+    {"name": "Piratenpartei Deutschland", "acct": "profile/piratenpartei@piratenpartei.social", "niche": "Hallo, Zukunft. Goodbye, Steinzeit. Wähle das größte Digital-Kollektiv: PIRATEN. Freiheit. Würde. Teilhabe."},
+    {"name": "Piratenpartei Hessen", "acct": "profile/hessen@piratenpartei.social", "niche": "Fediverse / Friendica Account der Piratenpartei Hessen"},
+    {"name": "Privacy International", "acct": "privacyint@mastodon.xyz", "niche": "We fight for the right to privacy across the world. Sign up for all things # privacy # data # surveillance https:// action.privacyinternational.org"},
+    {"name": "ProWiki", "acct": "ProWiki@mastodon.social", "niche": "Professional # MediaWiki services, including hosting and development Run by @ jeroen and @ karsten_h Also # Wikibase , # SemanticMediaWiki , # OpenData , # OpenSource , # KnowledgeManagement # LinkedOpenData # Wikidata # KnowledgeGraphs"},
+    {"name": "Protect.ngo", "acct": "cyberpeaceinstitute@mastodon.cyberpeaceinstitute.org", "niche": "The NGO dedicated to enhancing peace and stability in cyberspace"},
+    {"name": "Proton", "acct": "protonprivacy@mastodon.social", "niche": "Official Proton account, creator of Proton Mail, Proton Drive, Proton Pass, Proton VPN, Proton Wallet, Proton Meet, and Lumo. Support queries are handled by our Customer Service Team: https:// proton.me/support"},
+    {"name": "QGIS", "acct": "qgis@fosstodon.org", "niche": "Official account of QGIS - the user friendly Open Source Geographic Information System"},
+    {"name": "RIOT", "acct": "RIOT_OS@fosstodon.org", "niche": "RIOT OS: The friendly Operating System for the Internet of Things"},
+    {"name": "RenézuCode", "acct": "ReneRebe@chaos.social", "niche": "Ads! ☮Peace,not war! 20+y OpenSource, computer science, perfectionist, minimalist # ExactCODE , # ExactScan , # OCRKit , # Recompress , # t2sde , # Linux – Berlin, Europe"},
+    {"name": "Rocky Linux", "acct": "rockylinux@fosstodon.org", "niche": "Rocky Linux is a community-driven Enterprise Linux distro, for HPC, AltArch, and beyond | 🏛️ @resforg@fosstodon.org | 🦋 @rockylinux.org"},
+    {"name": "Rust Language", "acct": "rust@social.rust-lang.org", "niche": "A programming language empowering everyone to build reliable and efficient software."},
+    {"name": "Ryan Challinor", "acct": "awwbees@post.lurk.org", "niche": "I make \"bespoke\", a free open source modular synth — principal designer at epic games/harmonix — he/him"},
+    {"name": "SLIMBOOK (Official)", "acct": "slimbook@linuxrocks.online", "niche": "ᴛʜᴇ ʙᴇsᴛ ɢɴᴜ/ʟɪɴᴜx ᴄᴏᴍᴘᴜᴛᴇʀs🐧 💻 Elegant and powerful hardware with the best in customer service 🇪🇺 EU brand 🌏 International shipments https:// slimbook.com/en/"},
+    {"name": "SWIB", "acct": "swib@openbiblio.social", "niche": "SWIB (Semantic Web in Libraries) is a community and an annual conference focusing on Linked Open Data (LOD) in libraries and related organizations. # swib26 will happen 16-18 November 2026 online. Website/Forum: https:// swib.org Tooting: @ acka47"},
+    {"name": "Sammy Arson Fox (\"weird furry\")", "acct": "theresnotime@fox.nexus", "niche": "I'm some sort of fox-like, queer software engineer who doesn't really do the whole \"gender\" thing (but is kinda a girl? sometimes? mostly? who knows.) \"Infrastruktur fuchs\", Wikimedian, card carrying union member, weird furry, works at a big non-profit I post \"weird stuff\" more than \"tech stuff\"... …"},
+    {"name": "Scott Hanselman 👸🏽🐝🌮", "acct": "shanselman@hachyderm.io", "niche": "VP of Developer Community @ MSFT - Code, OSS, STEM, Beyoncé, 🏴󠁧󠁢󠁳󠁣󠁴󠁿🇿🇼#T1D, # DevRel YouTube+TikTok listen to the @Hanselminutes inclusive tech podcast! My opinions. https:// hanselman.com"},
+    {"name": "Security Onion 🧅​", "acct": "securityonion@infosec.exchange", "niche": "Peel back the layers of your network and make your adversaries cry! Free platform for threat hunting, enterprise security monitoring, and log management. Questions: http:// securityonion.net/discuss"},
+    {"name": "Semantic MediaWiki", "acct": "smw@wikis.world", "niche": "Semantic MediaWiki (SMW) is an # OpenSource # KnowledgeManagement and content framework for @ mediawiki , turning it into a # KnowledgeGraph"},
+    {"name": "Simon Willison", "acct": "simon@fedi.simonwillison.net", "niche": "Open source developer building tools to help journalists, archivists, librarians and others analyze, explore and publish their data. https:// datasette.io and many other # projects ."},
+    {"name": "Software Craft Strasbourg", "acct": "swcraftstras@mobilizon.fr", "niche": "@swcraftstras | #swcraftstras La communauté Software Craft Strasbourg réunit les développeu(r|se)s, sans sexisme ni élitisme, quelque soit le langage ou la techno. Venez prolonger les discussions sur le Discord du meetup ! Inscriptions ici . swcraftstras.github.io — Discord — Youtube"},
+    {"name": "Software Defined Talk", "acct": "softwaredefinedtalk@hachyderm.io", "niche": "A weekly podcast covering all the news and events in Enterprise Software and Cloud Computing. Threads: @ softwaredefinedtalk"},
+    {"name": "Software Heritage", "acct": "swheritage@mstdn.social", "niche": "We collect, preserve, and share # software # sourcecode for present and future generations. # swh # softwarecommons # freesoftware # opensource"},
+    {"name": "SpaceHey", "acct": "spacehey@mastodon.social", "niche": "The privacy friendly retro social network: https:// spacehey.com"},
+    {"name": "StartMail", "acct": "startmail@mastodon.social", "niche": "Easy-to-use encrypted email provider. 🔒✉️ From the founders of Startpage. Protecting your privacy with state-of-the-art security and technology."},
+    {"name": "State of the Map", "acct": "sotm@en.osm.town", "niche": "The State of the Map is the annual international conference of OpenStreetMap, organised by the OpenStreetMap Foundation. https:// 2026.stateofthemap.org/"},
+    {"name": "Supaplex", "acct": "Supaplex@g0v.social", "niche": "A Wikipedian and a OpenStreetMap project contributer"},
+    {"name": "SuperTux", "acct": "supertux@floss.social", "niche": "Official account for the SuperTux Project. If you've made or are currently making any addons or fan content, toot about it with # supertux and it will be boosted!"},
+    {"name": "Surveillance Report", "acct": "sr@social.lol", "niche": "Has now become the Techlore Surveillance Report! All future content, updates, and analysis have moved to the official account: @ techlore"},
+    {"name": "TU Chemnitz", "acct": "tuchemnitz@mastodon.social", "niche": "Official account of # TUChemnitz # ChemnitzUniversityOfTechnology : https://www. tu-chemnitz.de . Datenschutz: http:// mytuc.org/zpsd"},
+    {"name": "TUXEDO", "acct": "tuxedocomputers@linuxrocks.online", "niche": "Linux Hardware in a Tailor-made Suit 💻🐧"},
+    {"name": "Tarah Wheeler", "acct": "Tarah@infosec.exchange", "niche": "♦️ CSO of TPO Group ♦️EFF Board Of Directors♦️US/UK Fulbright Scholar in Cyber Security ♦️ Formerly Harvard, Brookings, Splunk, Symantec. ♦️she/her curmudgienne♦️standard disclaimer regarding personal opinions.♦️Searchable. t AT tarah DOT org"},
+    {"name": "Tech Interceptor", "acct": "TechInterceptor@mastodon.online", "niche": "Keyboard | Mice | EDC | PC & Gear Loving tech, one gadget at a time! ⚡"},
+    {"name": "Tech Tales Podcast", "acct": "techtales@mas.to", "niche": "Tech Tales is a podcast exploring the technology world's epic failures, forgotten successes, and everything in between. Hosted by @ corbin . Made without generative AI."},
+    {"name": "Tech Tangents", "acct": "TechTangents@dialup.space", "niche": ""},
+    {"name": "Techlore", "acct": "techlore@social.lol", "niche": "Digital rights, privacy, security, anonymity tools, and practical guidance for safer technology use."},
+    {"name": "Technology Assessment", "acct": "ITAS_KIT@xn--baw-joa.social", "niche": "Attention: This profile is inactive. Follow our new profile: https:// social.kit.edu/@ITAS to stay updated! Institute for Technology Assessment and Systems Analysis (ITAS) at @ KIT_Karlsruhe | Impressum/legal details: http:// bit.ly/HXclR5 Fields of activity: # technologyassessment # policyadivce # …"},
+    {"name": "Technology Connections", "acct": "TechConnectify@mas.to", "niche": "I'm that snarky, sometimes cranky YouTube person who told you about how dishwashers work. I post many things which should not be taken too seriously (on account of the cranky snark thing). If you think I'm mad at you, I'm almost certainly not! Friendly and helpful, if strongly opinionated."},
+    {"name": "Terence Eden", "acct": "Edent@mastodon.social", "niche": "Longer hair than you. Got the ⏻ symbol into # Unicode . Open Standards / Source / Data geek. Known as @ Edent on most social platforms. Bit obsessed with # SolarPower but not quite a # SolarPunk . Please read the link before replying. Yes, that means you!"},
+    {"name": "The Cybersecurity Librarian", "acct": "cyberlibrarian@infosec.exchange", "niche": "Cyber Threat Manager, Detection Engineer, Threat Hunter, and CTI analyst... also a professional librarian! CISM, MLIS, CTIA, GCIA, GCWN \"Cataloguing threats, curating intel, and teaching cyber literacy.\" # ThreatHunting # DetectionEngineering # CTI # CyberThreatIntelligence # Librarian # InfoSec # C…"},
+    {"name": "The Linux Foundation", "acct": "linuxfoundation@social.lfx.dev", "niche": "A nonprofit organization enabling mass innovation through open source. # linux # kubernetes # riscv # hyperledger # anuket @ openssf @ openjsf @ pytorch # o3de and more!"},
+    {"name": "Troy Hunt", "acct": "troyhunt@infosec.exchange", "niche": "Creator of @ haveibeenpwned . Microsoft Regional Director and MVP. Pluralsight author. Online security, technology and “The Cloud”. Australian."},
+    {"name": "Trufi Association", "acct": "TrufiAssoc@urbanists.social", "niche": "Apps making sustainable mobility convenient for everyone. Open data for transport innovation, research, and better cities. T: TrufiAssoc"},
+    {"name": "UBports", "acct": "ubports@mastodon.social", "niche": "We develop Ubuntu Touch, an Ubuntu based mobile OS, to increase freedom of choice with an user respecting and community developed option."},
+    {"name": "Union syndicale Solidaires ⏚", "acct": "unionsolidaires@syndicat.solidaires.org", "niche": "Compte officiel de l'Union syndicale Solidaires. 🤝 Droits / défenses des travailleuses et travailleurs. ✊ Actualités des luttes, transformation sociale. 👉 Anticapitalisme, écologie, antiracisme, féminisme, antifascisme, lgbti+, internationalisme"},
+    {"name": "VideoLAN", "acct": "videolan@floss.social", "niche": "Official account of the # VideoLAN project, # VLC and the community. Open Source Multimedia ftw."},
+    {"name": "Vivaldi Browser", "acct": "Vivaldi@social.vivaldi.net", "niche": "It's a web browser. It's Powerful. It's Personal. It's Private."},
+    {"name": "Webrecorder", "acct": "webrecorder@digipres.club", "niche": "Webrecorder provides sophisticated solutions for everyone to accurately archive the complex, interactive Web."},
+    {"name": "Wikimedia Italia", "acct": "wikimediaitalia@framapiaf.org", "niche": "Operiamo per diffondere il sapere libero e per sostenere i progetti Wikimedia, come Wikipedia, l'enciclopedia libera, e OpenStreetMap. # libre # it # copyleft # Wikimedia # CreativeCommons # searchable"},
+    {"name": "Wikitubia", "acct": "youtubewiki@mastodon.social", "niche": "Fandom wiki with 25k+ pages that ANYONE can edit! Please DM on Twitter or Instagram for verification."},
+    {"name": "Wingware", "acct": "wingware@masto.ai", "niche": "We're makers of Wing Python IDE, which was designed from the ground up for the Python programming language. Our goal is to provide a more productive development experience for Python programmers. We'll be posting new release and other news here, for those that prefer to follow us on Mastodon. Feel f…"},
+    {"name": "Wolfgang Strengmann-Kuhn", "acct": "w_sk@gruene.social", "niche": "habilitierter Volkswirt Institut für Sozialökologie, ISÖ, https:// isoe.org Ex-MdB, 2008-25, @ GrueneBundestag , # Armut # Arbeitsmarkt # Grundeinkommen # Grundsicherung # Rente Bluesky: @strengmann-kuhn.de"},
+    {"name": "Wolfgang's Channel", "acct": "notthebee@tilde.zone", "niche": "Linux, NixOS, self-hosting, and efficient computing. Opinionated takes on minimalist but powerful setups."},
+    {"name": "XeroLinux", "acct": "XeroLinux@fosstodon.org", "niche": "This is the official account for the # XeroLinux Project... # XLAPiT , # Ricing # PlasmaInstall # Distro . # Blogging about useful tools, teaching Linux and more. Huge # ArchLinux & # KDEPlasma supporter. But I strongly believe in the \"Use whatever works for you\" idea. No judgement, we are all diffe…"},
+    {"name": "a stinky ox 🐂", "acct": "llamasoft_ox@toot.wales", "niche": "I am an ox that makes games and lightsynths. Recreational shepherd. Carmarthenshire. I like # coding , # gaming , # retrogames , # fur (fake of course), # beer , # curry , # plushies , # Floyd , # sheep , # Defaidodon , # Wales , oh I'm sure I shall think to add more. Ought to put # Atari there too …"},
+    {"name": "adafruit", "acct": "adafruit@fosstodon.org", "niche": "Brooklyn, NY USA - Manufacturer, open-source hardware, certified Minority and Woman-owned Business Enterprise (M/WBE) Teaching, sharing, # engineering # DIY # electronics # opensource # opensourcehardware # hardware # python # circuitpython # arduino , # raspberrypi # art # hacking ... account is ma…"},
+    {"name": "alexgamingdev", "acct": "alexgamingdev@mastodon.social", "niche": "I am a software architect and developer focusing on .NET and C#. My work involves building scalable applications and tools like Officeweb, arch-it, and sweep-it. I am interested in local-first software, data sovereignty, and efficient system architectures."},
+    {"name": "awp", "acct": "awp_fr@awp.news", "niche": "Au coeur des marchés avec awp Informations financières, l'agence leader du secteur économique en Suisse et au Liechtenstein. Rapide, pertinent, actuel."},
+    {"name": "bleeptrack", "acct": "bleeptrack@vis.social", "niche": "Creative Technologist and award-winning Artist Speaker Randomness Sommelier Neural Net Weaver Project Vlogs @ bleeptrack Doing # scicom at @ ki_und_koffein # generativeart # creativecoding # opensource # maker # electronics # penplotter # solarpunk life: # tinyhouse # cityel # homeassistant and # so…"},
+    {"name": "chlod", "acct": "chlod@wikis.world", "niche": "🇵🇭 student. programmer. wikipedian. open-source software developer. screamer into abysses. Q124309390. i edit and make software (volunteer) for # wikipedia and the # wikimedia movement. i'm also a college student, spending most time at home."},
+    {"name": "classless Kulla", "acct": "classless@mstdn.social", "niche": "mostly English/Deutsch - travelling lecturer, writer, vocalist, dj - class struggle, ideology, altered states & pleasure - always looking for gigs/shows - classless.org"},
+    {"name": "daniel:// stenberg://", "acct": "bagder@mastodon.social", "niche": "I write curl. I don't know anything."},
+    {"name": "elementary", "acct": "elementary@mastodon.social", "niche": "Thoughtful, capable, and ethical computing—plus AppCenter, the pay-what-you-can app store"},
+    {"name": "epicenter.works", "acct": "epicenter_works@chaos.social", "niche": "Menschenrechte im digitalen Zeitalter schützen. Blog 🔘 https:// epicenter.works Impressum 🔘 https:// epicenter.works/kontakt"},
+    {"name": "fortext lab", "acct": "forTEXT@fedihum.org", "niche": "# DigitalHumanities # DH We use & develop computational methods for the analysis of (literary) texts, for the theoretical development of analysis concepts and for the reinforcement of computational and manual analysis processes. We are home to the open source annotation tool CATMA ( https:// catma.d…"},
+    {"name": "golang", "acct": "golang@hachyderm.io", "niche": "Official account of the Go language project."},
+    {"name": "hackaday", "acct": "hackaday@hackaday.social", "niche": "🔥 Engineering knowledge exchange: http:// hackaday.com ☠️ Get featured: tips at hackaday dot com 📒 Learn: http:// hackaday.io/u"},
+    {"name": "jwz", "acct": "jwz@mastodon.social", "niche": "I write screen savers and sell beer. Impresario of DNA Lounge, the world's greatest nightclub. Also wrote your parents' web browser and stuff."},
+    {"name": "lichess", "acct": "lichess@mastodon.online", "niche": "The free/libre open-source chess server. No paywall, no tracking, no ads. Just the good stuff."},
+    {"name": "morgan", "acct": "morgan3d@mastodon.gamedev.place", "niche": "Morgan McGuire - Gone sailing! Known for Roblox, NVIDIA, Markdeep, Activision, Graphics Codex, G3D, Skylanders, E Ink, Titan Quest, Vicarious Visions, Unity, Williams College, U. Waterloo, Quadplay, Computer Graphics: Principles & Practice"},
+    {"name": "netzpolitik.org", "acct": "netzpolitik_feed@chaos.social", "niche": "Medium für digitale Freiheitsrechte. Offizieller Account. Anfragen bitte per E-Mail an kontakt@netzpolitik.org. # Netzpolitik"},
+    {"name": "omg! ubuntu", "acct": "omgubuntu@floss.social", "niche": "A blog (remember those?) tracking # Ubuntu and its place within the wider # Linux ecosystem. News, app spotlights, how-tos and snark. Est 2009 ✌️"},
+    {"name": "pchestek", "acct": "pchestek@fosstodon.org", "niche": "In private practice. North Carolina Certified Specialist in Trademark Law, Former board member of OSI. Opinions are my own. # Fedora # BeefyMiracle"},
+    {"name": "pornophonique", "acct": "pornophonique@mastodon.social", "niche": "This is where Gameboy meets Lagerfeuer meets Fediverse. We toot about sad robots, the loneliness in computer dungeons and other heart-breaking geeky scenarios like the downfall of mankind. We do music. Listen: https:// pornophonique.de"},
+    {"name": "stacksmashing", "acct": "stacksmashing@infosec.exchange", "niche": "I'm an IT security researcher, and sometimes I make videos about that! Contact: contact@stacksmashing.net"},
+    {"name": "t-online", "acct": "tonline@mastodon.social", "niche": "Deutschlands größtes Digitalmedium. Nachrichten, exklusive Recherchen, Ratgeber - alles kostenlos. || Impressum: http:// t-online.de/impressum/"},
+  ];
+  /* DATA:END */
+
+  const APP_WEBSITE = "https://matthewdeanmartin.github.io/youtuberfinder/";
+
+  /* ── DOM ─────────────────────────────────────────────────────── */
+  function qs(sel) { return document.querySelector(sel); }
+
+  const els = {
+    instance:     qs("#instance"),
+    btnConnect:   qs("#btnConnect"),
+    btnLogout:    qs("#btnLogout"),
+    btnFollowAll: qs("#btnFollowAll"),
+    btnSelectAll: qs("#btnSelectAll"),
+    btnSelectNone:qs("#btnSelectNone"),
+    accountList:  qs("#accountList"),
+    authStatus:   qs("#authStatus"),
+    log:          qs("#log"),
+  };
+
+  /* ── Logging (wired into the shared core) ────────────────────── */
+  function log(msg, level = "info") {
+    const ts   = new Date().toLocaleTimeString();
+    const cls  = level === "error" ? "log-err" : level === "warn" ? "log-warn" : "log-ok";
+    const span = document.createElement("span");
+    span.className = cls;
+    span.textContent = `[${ts}] ${msg}\n`;
+    els.log.appendChild(span);
+    els.log.scrollTop = els.log.scrollHeight;
+    console[level === "error" ? "error" : "log"](msg);
+  }
+  MF.init({ log });
+
+  /* ── Connect / logout ────────────────────────────────────────── */
+  async function connect() {
+    const inst = MF.setInstance(els.instance.value);
+    if (!inst) throw new Error("Enter an instance first (e.g. mastodon.social).");
+    await MF.beginAuthorize();  // navigates away, returns to this page
+  }
+
+  function logout() {
+    MF.setInstance(els.instance.value);
+    MF.logout();
+    updateAuthStatus();
+  }
+
+  /* ── Auth status UI ──────────────────────────────────────────── */
+  function esc(str) {
+    return String(str)
+      .replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;").replaceAll("'", "&#039;");
+  }
+
+  function updateAuthStatus() {
+    const inst  = MF.normalizeInstance(els.instance.value) || MF.getInstance();
+    const app   = inst ? MF.getApp(inst) : null;
+    const cid   = app ? app.client_id : null;
+    const connected = MF.isConnected();
+
+    const parts = [];
+    if (inst)      parts.push(`Instance: <code>${esc(inst)}</code>`);
+    if (cid)       parts.push(`<span class="pill pill-ok">✓ app registered</span>`);
+    else           parts.push(`<span class="pill pill-warn">⚠ app not yet registered</span>`);
+    if (connected) parts.push(`<span class="pill pill-ok">✓ token (session-only)</span>`);
+    else           parts.push(`<span class="pill pill-warn">⚠ not authorized</span>`);
+    els.authStatus.innerHTML = parts.join(" &nbsp;·&nbsp; ");
+
+    els.btnFollowAll.disabled = !connected;
+  }
+
+  /* ── Creator card rendering ──────────────────────────────────── */
+  function setCardStatus(card, msg, level = "muted") {
+    const el = card.querySelector(".creator-status");
+    if (el) {
+      el.textContent = msg;
+      el.style.color = level === "ok" ? "var(--accent-strong)"
+                     : level === "err" ? "#f87171"
+                     : level === "warn" ? "#fbbf24"
+                     : "var(--muted)";
+    }
+  }
+
+  // Map a core status string to a card message.
+  function cardStatusHandler(card, acct) {
+    return function (state) {
+      if (state === "resolving")           setCardStatus(card, `Resolving @${acct}…`);
+      else if (state === "following")      setCardStatus(card, `Following @${acct}…`);
+      else if (state === "already")        setCardStatus(card, `Already following @${acct}`, "ok");
+      else if (state === "following-done") setCardStatus(card, `✓ Following @${acct}`, "ok");
+      else if (state === "requested")      setCardStatus(card, `⏳ Follow request sent to @${acct}`, "warn");
+      else if (state === "unknown")        setCardStatus(card, `Unexpected state – check Mastodon manually`, "warn");
+    };
+  }
+
+  async function followCard(card) {
+    const acct = card.dataset.acct;
+    if (!acct) return;
+    try {
+      MF.setInstance(els.instance.value);
+      await MF.connectAndFollow(acct, {
+        onStatus: cardStatusHandler(card, acct),
+        promptInstance: () => els.instance.value,
+      });
+    } catch (err) {
+      setCardStatus(card, err.message, "err");
+      log(`Error for @${acct}: ${err.message}`, "error");
+    }
+  }
+
+  function renderList() {
+    els.accountList.innerHTML = "";
+    for (const creator of STARTER_ACCOUNTS) {
+      const card = document.createElement("div");
+      card.className = "creator-card";
+      card.dataset.acct = creator.acct;
+
+      const info = document.createElement("div");
+      info.innerHTML = `
+        <div class="creator-name">${esc(creator.name)}</div>
+        <div class="creator-handle">@${esc(creator.acct)}</div>
+        <div class="creator-status">${esc(creator.niche)}</div>
+      `;
+
+      const checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
+      checkbox.checked = true;
+      checkbox.className = "creator-select";
+      checkbox.setAttribute("aria-label", `Select ${creator.name}`);
+      checkbox.style.cssText = "width:1.1rem;height:1.1rem;accent-color:var(--accent);cursor:pointer;";
+
+      const actions = document.createElement("div");
+      actions.className = "creator-actions";
+
+      const followBtn = document.createElement("button");
+      followBtn.type = "button";
+      followBtn.className = "btn btn-primary";
+      followBtn.style.fontSize = "0.8rem";
+      followBtn.textContent = "Follow";
+      followBtn.addEventListener("click", () => followCard(card));
+
+      const openBtn = document.createElement("button");
+      openBtn.type = "button";
+      openBtn.className = "btn";
+      openBtn.style.fontSize = "0.8rem";
+      openBtn.textContent = "🔍 Search";
+      openBtn.addEventListener("click", () => {
+        try {
+          MF.setInstance(els.instance.value);
+          const url = `${MF.instanceBase()}/search?q=${encodeURIComponent("@" + creator.acct)}`;
+          window.open(url, "_blank", "noopener,noreferrer");
+        } catch (err) { log(err.message, "error"); }
+      });
+
+      actions.append(followBtn, openBtn, checkbox);
+      card.append(info, actions);
+      els.accountList.append(card);
+    }
+    log(`Rendered ${STARTER_ACCOUNTS.length} creators.`);
+  }
+
+  function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+  async function followAllSlowly() {
+    const cards = [...els.accountList.querySelectorAll(".creator-card")];
+    for (const card of cards) {
+      const cb = card.querySelector(".creator-select");
+      if (cb && !cb.checked) continue;
+      await followCard(card);
+      await sleep(1500);  // rate-limit courtesy delay
+    }
+  }
+
+  function selectAll(state) {
+    els.accountList.querySelectorAll(".creator-select").forEach(cb => cb.checked = state);
+  }
+
+  async function safely(fn) {
+    try { await fn(); }
+    catch (err) { log(err.message || String(err), "error"); }
+  }
+
+  /* ── Initialise ──────────────────────────────────────────────── */
+  async function init() {
+    const last = MF.getInstance();
+    if (last) els.instance.value = last;
+
+    els.btnConnect.addEventListener("click",    () => safely(connect));
+    els.btnLogout.addEventListener("click",     () => { logout(); });
+    els.btnFollowAll.addEventListener("click",  () => safely(followAllSlowly));
+    els.btnSelectAll.addEventListener("click",  () => selectAll(true));
+    els.btnSelectNone.addEventListener("click", () => selectAll(false));
+    els.instance.addEventListener("input",      updateAuthStatus);
+
+    renderList();
+    updateAuthStatus();
+
+    // Handle an OAuth redirect back to this page, then finish any pending
+    // follow (e.g. the user clicked Follow on a card before connecting).
+    try {
+      const returned = await MF.handleCallback();
+      updateAuthStatus();
+      if (returned && MF.isConnected()) await MF.verifyCredentials();
+      const pending = MF.getPendingFollow();
+      if (pending && MF.isConnected()) {
+        const card = [...els.accountList.querySelectorAll(".creator-card")]
+          .find(c => c.dataset.acct === pending);
+        await MF.resumePending(card ? cardStatusHandler(card, pending) : undefined);
+      }
+      if (MF.isConnected()) await markFollowedCards();
+    } catch (err) {
+      log(`OAuth callback error: ${err.message}`, "error");
+    }
+  }
+
+  // On load (when connected), pre-mark cards for creators already followed.
+  async function markFollowedCards() {
+    const cards = [...els.accountList.querySelectorAll(".creator-card[data-acct]")];
+    const byAcct = {};
+    const accts = [];
+    for (const card of cards) {
+      const acct = card.dataset.acct;
+      if (acct) { byAcct[acct] = card; accts.push(acct); }
+    }
+    if (!accts.length) return;
+    await MF.followStatuses(accts, (acct, state) => {
+      const card = byAcct[acct];
+      if (!card) return;
+      if (state === "following") {
+        setCardStatus(card, `✓ Following @${acct}`, "ok");
+        disableFollow(card);
+      } else if (state === "requested") {
+        setCardStatus(card, `⏳ Follow request pending`, "warn");
+        disableFollow(card);
+      }
+    });
+  }
+
+  function disableFollow(card) {
+    const btn = [...card.querySelectorAll("button")].find(b => b.textContent === "Follow");
+    if (btn) { btn.disabled = true; btn.textContent = "Following"; }
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>

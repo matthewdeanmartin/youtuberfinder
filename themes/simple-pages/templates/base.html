@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{{ SITENAME | e }}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css" />
+</head>
+<body>
+    {% set current_slug = page.slug if page is defined else article.slug if article is defined else "" %}
+    <div class="site-shell">
+        <header class="site-header">
+            <div class="site-header__inner">
+                <div class="site-branding">
+                    <a class="site-title" href="{{ SITEURL }}/">{{ SITENAME | e }}</a>
+                    <p class="site-tagline">{{ SITESUBTITLE | default("Find YouTube creators and channel feeds on Mastodon.") | e }}</p>
+                </div>
+                <nav class="top-nav" aria-label="Primary">
+                    <a{% if page is defined and (page.slug == "home" or not page.url) %} class="active"{% endif %} href="{{ SITEURL }}/">Home</a>
+                    {% for cat in SIDEBAR_CATEGORIES if cat.slug in TOP_NAV_CATEGORIES %}
+                    <a{% if current_slug == cat.slug %} class="active"{% endif %} href="{{ SITEURL }}/{{ cat.slug }}/">{{ TOP_NAV_CATEGORIES[cat.slug] | e }}</a>
+                    {% endfor %}
+                    <a{% if page is defined and page.slug == "youtubers" %} class="active"{% endif %} href="{{ SITEURL }}/youtubers/">All YouTubers</a>
+                    <a{% if page is defined and page.slug == "bulk-follow" %} class="active"{% endif %} href="{{ SITEURL }}/bulk-follow/">Bulk Follow</a>
+                    <a{% if page is defined and page.slug == "mastodon-follow" %} class="active"{% endif %} href="{{ SITEURL }}/mastodon-follow/">Follow on Mastodon</a>
+                </nav>
+                <div id="header-auth" class="header-auth" aria-live="polite"></div>
+            </div>
+        </header>
+
+        <div class="site-content">
+            <aside class="site-sidebar">
+                <nav class="section-nav" aria-label="Section">
+                    <p class="section-nav__title">Topics</p>
+                    <ul>
+                        {% for cat in SIDEBAR_CATEGORIES %}
+                        <li{% if current_slug == cat.slug %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.slug }}/">{{ cat.label | e }}</a></li>
+                        {% endfor %}
+                    </ul>
+
+                    <p class="section-nav__title">Browse</p>
+                    <ul>
+                        <li{% if page is defined and page.slug == "youtubers" %} class="active"{% endif %}><a href="{{ SITEURL }}/youtubers/">All YouTubers</a></li>
+                        <li{% if page is defined and page.slug == "bots" %} class="active"{% endif %}><a href="{{ SITEURL }}/bots/">Automated Feeds &amp; Bots</a></li>
+                        <li{% if page is defined and page.slug == "bulk-follow" %} class="active"{% endif %}><a href="{{ SITEURL }}/bulk-follow/">Bulk Follow Guide</a></li>
+                        <li{% if page is defined and page.slug == "mastodon-follow" %} class="active"{% endif %}><a href="{{ SITEURL }}/mastodon-follow/">Follow on Mastodon</a></li>
+                        <li{% if page is defined and page.slug == "about" %} class="active"{% endif %}><a href="{{ SITEURL }}/about/">About</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="site-main">
+                {% block content %}{% endblock %}
+            </main>
+        </div>
+
+        <footer class="site-footer">
+            <div class="site-footer__inner">
+                <p>&copy; {{ CURRENTYEAR }} {{ AUTHOR }}. Built with <a href="https://getpelican.com/">Pelican</a>.</p>
+                <p>Generated {{ GENERATED_DATE }}.</p>
+            </div>
+        </footer>
+    </div>
+    {# ?v=GENERATED_DATE busts the browser cache on every build, so a deploy
+       never serves a stale follow-core.js missing newly added API methods. #}
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/lang-filter.js?v={{ GENERATED_DATE }}"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/category-controls.js?v={{ GENERATED_DATE }}"></script>
+    <script src="{{ SITEURL }}/mastodon-follow/follow-core.js?v={{ GENERATED_DATE }}"></script>
+    <script src="{{ SITEURL }}/mastodon-follow/header-auth.js?v={{ GENERATED_DATE }}"></script>
+    <script src="{{ SITEURL }}/mastodon-follow/creator-profile.js?v={{ GENERATED_DATE }}"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/follow-inline.js?v={{ GENERATED_DATE }}"></script>
+</body>
+</html>

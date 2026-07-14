@@ -1,0 +1,29 @@
+{
+  "name": "tech-youtubers-quality-gates",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "quality:html": "html-validate \"output/**/*.html\"",
+    "quality:browser": "node scripts/check_browser_support.mjs output",
+    "quality:a11y": "node scripts/check_a11y.mjs output",
+    "quality": "npm run quality:html && npm run quality:browser && npm run quality:a11y"
+  },
+  "devDependencies": {
+    "doiuse": "^6.0.5",
+    "glob": "^11.0.3",
+    "html-validate": "^9.7.1",
+    "pa11y": "^9.0.1",
+    "postcss": "^8.5.6"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead",
+    "not op_mini all",
+    "not kaios 2.5",
+    "not kaios 3.0-3.1",
+    "not and_qq 14.9",
+    "not and_uc 15.5"
+  ]
+}

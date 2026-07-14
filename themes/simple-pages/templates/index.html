@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="index-content">
+    <h1>Featured Creator Profiles</h1>
+    {% if articles %}
+        <div class="article-list">
+        {% for article in articles %}
+            <div class="article-card">
+                <div class="article-card__meta">
+                    <span class="ecosystem-badge ecosystem-badge--{{ article.tech_stack | lower }}">{{ article.tech_stack | default("General") | e }}</span>
+                    <span class="article-date">{{ article.date.strftime('%Y-%m-%d') }}</span>
+                </div>
+                <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title | e }}</a></h2>
+                {% if article.summary %}
+                <p class="article-summary">{{ article.summary | striptags }}</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+        </div>
+    {% else %}
+        <p>Profiles coming soon. Check back after we've catalogued the directory.</p>
+    {% endif %}
+</div>
+{% endblock %}
