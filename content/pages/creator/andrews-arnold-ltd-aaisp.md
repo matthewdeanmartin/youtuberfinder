@@ -1,0 +1,25 @@
+Title: Andrews & Arnold Ltd (AAISP)
+Date: 2026-06-20
+Slug: andrews-arnold-ltd-aaisp
+save_as: creator/andrews-arnold-ltd-aaisp/index.html
+url: creator/andrews-arnold-ltd-aaisp/
+status: hidden
+Summary: Technology & Computing creator Andrews & Arnold Ltd (AAISP) on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UC3Ezjcb55Erf05nSWU-dUew" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://social.aa.net.uk/@aaisp" target="_blank" rel="noopener noreferrer">@aaisp@social.aa.net.uk</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>254</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>1038</strong></p>
+<p class="creator-profile__bio">Andrews &amp; Arnold Ltd, official Fediverse/Mastodon account. This is not really for support so replies may be slow. Staff should tag posts, usually with initials, e.g. ^RevK is director @ revk ^AB and ^AH are general managers Follow @ aastatus for live status posts. For an urgent response, calling or …</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="aaisp@social.aa.net.uk" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="Jr-d0m9wgcc" data-video-title="2FA Setup" aria-label="Play: 2FA Setup"><img class="video-card__thumb" src="https://i.ytimg.com/vi/Jr-d0m9wgcc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Jr-d0m9wgcc" target="_blank" rel="noopener noreferrer">2FA Setup</a><time datetime="2016-12-07">2016-12-07</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="agYHiSXple0" data-video-title="The Lights Before Christmas - AAISP - Christmas 2015" aria-label="Play: The Lights Before Christmas - AAISP - Christmas 2015"><img class="video-card__thumb" src="https://i.ytimg.com/vi/agYHiSXple0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=agYHiSXple0" target="_blank" rel="noopener noreferrer">The Lights Before Christmas - AAISP - Christmas 2015</a><time datetime="2015-12-09">2015-12-09</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="LwcBaRj02qI" data-video-title="The problems with government crypto backdoors" aria-label="Play: The problems with government crypto backdoors"><img class="video-card__thumb" src="https://i.ytimg.com/vi/LwcBaRj02qI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=LwcBaRj02qI" target="_blank" rel="noopener noreferrer">The problems with government crypto backdoors</a><time datetime="2015-08-03">2015-08-03</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="LO6oVv73nZw" data-video-title="Low tech crypto with a back door?!" aria-label="Play: Low tech crypto with a back door?!"><img class="video-card__thumb" src="https://i.ytimg.com/vi/LO6oVv73nZw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=LO6oVv73nZw" target="_blank" rel="noopener noreferrer">Low tech crypto with a back door?!</a><time datetime="2015-01-27">2015-01-27</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="3G8dPAdmyss" data-video-title="Encryption - The low-tech way." aria-label="Play: Encryption - The low-tech way."><img class="video-card__thumb" src="https://i.ytimg.com/vi/3G8dPAdmyss/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=3G8dPAdmyss" target="_blank" rel="noopener noreferrer">Encryption - The low-tech way.</a><time datetime="2015-01-15">2015-01-15</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="aaisp@social.aa.net.uk" data-mastodon-url="https://social.aa.net.uk/@aaisp"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

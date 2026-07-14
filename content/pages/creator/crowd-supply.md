@@ -1,0 +1,25 @@
+Title: Crowd Supply
+Date: 2026-06-20
+Slug: crowd-supply
+save_as: creator/crowd-supply/index.html
+url: creator/crowd-supply/
+status: hidden
+Summary: Technology & Computing creator Crowd Supply on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/@crowd_supply" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://hachyderm.io/@crowdsupply" target="_blank" rel="noopener noreferrer">@crowdsupply@hachyderm.io</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>1,940</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>1285</strong></p>
+<p class="creator-profile__bio">Curated crowdfunding for engineers, designers and creators of open source technology. We help bring original, useful, respectful hardware to life.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="crowdsupply@hachyderm.io" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="4fixvpvdDdk" data-video-title="Discovery Drive: Automated Aviation Photography via ADS-B Tracking" aria-label="Play: Discovery Drive: Automated Aviation Photography via ADS-B Tracking"><img class="video-card__thumb" src="https://i.ytimg.com/vi/4fixvpvdDdk/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=4fixvpvdDdk" target="_blank" rel="noopener noreferrer">Discovery Drive: Automated Aviation Photography via ADS-B Tracking</a><time datetime="2026-03-16">2026-03-16</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="G-1YK6nRlIc" data-video-title="Discovery Drive Promo Video" aria-label="Play: Discovery Drive Promo Video"><img class="video-card__thumb" src="https://i.ytimg.com/vi/G-1YK6nRlIc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=G-1YK6nRlIc" target="_blank" rel="noopener noreferrer">Discovery Drive Promo Video</a><time datetime="2026-02-24">2026-02-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="fC0nfQKwigs" data-video-title="Discovery Dish GOES 18 Full Disk Blend" aria-label="Play: Discovery Dish GOES 18 Full Disk Blend"><img class="video-card__thumb" src="https://i.ytimg.com/vi/fC0nfQKwigs/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=fC0nfQKwigs" target="_blank" rel="noopener noreferrer">Discovery Dish GOES 18 Full Disk Blend</a><time datetime="2023-12-05">2023-12-05</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="Sq8wf2addO8" data-video-title="Discovery Dish Promo Video" aria-label="Play: Discovery Dish Promo Video"><img class="video-card__thumb" src="https://i.ytimg.com/vi/Sq8wf2addO8/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Sq8wf2addO8" target="_blank" rel="noopener noreferrer">Discovery Dish Promo Video</a><time datetime="2023-11-23">2023-11-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="93WAj07R6x0" data-video-title="KrakenSDR: Finding Multiple GSM Base Station Transmit Towers with the Multi-VFO Feature" aria-label="Play: KrakenSDR: Finding Multiple GSM Base Station Transmit Towers with the Multi-VFO Feature"><img class="video-card__thumb" src="https://i.ytimg.com/vi/93WAj07R6x0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=93WAj07R6x0" target="_blank" rel="noopener noreferrer">KrakenSDR: Finding Multiple GSM Base Station Transmit Towers with the Multi-VFO Feature</a><time datetime="2023-08-04">2023-08-04</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="crowdsupply@hachyderm.io" data-mastodon-url="https://hachyderm.io/@crowdsupply"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

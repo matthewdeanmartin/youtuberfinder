@@ -1,0 +1,25 @@
+Title: FORCE11
+Date: 2026-06-20
+Slug: force11
+save_as: creator/force11/index.html
+url: creator/force11/
+status: hidden
+Summary: Science & Education creator FORCE11 on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Science &amp; Education</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCeoSUmlntunLJU29ODPzx6g" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.world/@force11" target="_blank" rel="noopener noreferrer">@force11@mastodon.world</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>196</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>196</strong></p>
+<p class="creator-profile__bio">FORCE11 - a growing community that aims to transform and improve the future of research communication and e-scholarship - FORCE11.org</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="force11@mastodon.world" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="hUTiz9nbWaM" data-video-title="FSCI Opening Plenary" aria-label="Play: FSCI Opening Plenary"><img class="video-card__thumb" src="https://i.ytimg.com/vi/hUTiz9nbWaM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=hUTiz9nbWaM" target="_blank" rel="noopener noreferrer">FSCI Opening Plenary</a><time datetime="2024-08-21">2024-08-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="CuN4ul1pk7I" data-video-title="FSCI Closing Plenary" aria-label="Play: FSCI Closing Plenary"><img class="video-card__thumb" src="https://i.ytimg.com/vi/CuN4ul1pk7I/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=CuN4ul1pk7I" target="_blank" rel="noopener noreferrer">FSCI Closing Plenary</a><time datetime="2024-08-21">2024-08-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="kb2EbdH_ovI" data-video-title="Dan O&#x27;Donnell - Academic Freedom, privilege, and intersectionality" aria-label="Play: Dan O&#x27;Donnell - Academic Freedom, privilege, and intersectionality"><img class="video-card__thumb" src="https://i.ytimg.com/vi/kb2EbdH_ovI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=kb2EbdH_ovI" target="_blank" rel="noopener noreferrer">Dan O&#x27;Donnell - Academic Freedom, privilege, and intersectionality</a><time datetime="2024-08-21">2024-08-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="GBU8iwAV2rE" data-video-title="Ivan Oransky and Martyn Rittman - Retractions: On The Rise, But Not Enough" aria-label="Play: Ivan Oransky and Martyn Rittman - Retractions: On The Rise, But Not Enough"><img class="video-card__thumb" src="https://i.ytimg.com/vi/GBU8iwAV2rE/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=GBU8iwAV2rE" target="_blank" rel="noopener noreferrer">Ivan Oransky and Martyn Rittman - Retractions: On The Rise, But Not Enough</a><time datetime="2024-08-21">2024-08-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="DZ2Bgwyx3nU" data-video-title="Geoffrey Bilder - The Principles of Fauxpen Scholarly Infrastructure" aria-label="Play: Geoffrey Bilder - The Principles of Fauxpen Scholarly Infrastructure"><img class="video-card__thumb" src="https://i.ytimg.com/vi/DZ2Bgwyx3nU/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=DZ2Bgwyx3nU" target="_blank" rel="noopener noreferrer">Geoffrey Bilder - The Principles of Fauxpen Scholarly Infrastructure</a><time datetime="2024-08-11">2024-08-11</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="force11@mastodon.world" data-mastodon-url="https://mastodon.world/@force11"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

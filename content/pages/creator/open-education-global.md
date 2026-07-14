@@ -1,0 +1,25 @@
+Title: Open Education Global
+Date: 2026-06-20
+Slug: open-education-global
+save_as: creator/open-education-global/index.html
+url: creator/open-education-global/
+status: hidden
+Summary: Science & Education creator Open Education Global on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Science &amp; Education</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UC-jcvZ6z94387QDu52g9VNA" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://social.fossdle.org/@oeglobal" target="_blank" rel="noopener noreferrer">@oeglobal@social.fossdle.org</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>1,880</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>627</strong></p>
+<p class="creator-profile__bio">Open Education Global (OEG) is a global, members-based, non-profit organization supporting the development and use of Open Education around the world. Education should be open and available for all – everywhere for everyone. Build this open future with us.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="oeglobal@social.fossdle.org" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="jNgm1H_ZPLs" data-video-title="OEG Voices 098: Ana Michelle Tellez Ferrer" aria-label="Play: OEG Voices 098: Ana Michelle Tellez Ferrer"><img class="video-card__thumb" src="https://i.ytimg.com/vi/jNgm1H_ZPLs/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=jNgm1H_ZPLs" target="_blank" rel="noopener noreferrer">OEG Voices 098: Ana Michelle Tellez Ferrer</a><time datetime="2026-05-27">2026-05-27</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="DTvNgVOMkQE" data-video-title="Lo más destacado del episodio 98 de OEGlobal Voices con Anna Michelle Tellez Ferrer" aria-label="Play: Lo más destacado del episodio 98 de OEGlobal Voices con Anna Michelle Tellez Ferrer"><img class="video-card__thumb" src="https://i.ytimg.com/vi/DTvNgVOMkQE/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=DTvNgVOMkQE" target="_blank" rel="noopener noreferrer">Lo más destacado del episodio 98 de OEGlobal Voices con Anna Michelle Tellez Ferrer</a><time datetime="2026-05-27">2026-05-27</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="0VIeynrd0LA" data-video-title="A Fierce Commitment to Teaching: Michigan Faculty Voices on OER" aria-label="Play: A Fierce Commitment to Teaching: Michigan Faculty Voices on OER"><img class="video-card__thumb" src="https://i.ytimg.com/vi/0VIeynrd0LA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=0VIeynrd0LA" target="_blank" rel="noopener noreferrer">A Fierce Commitment to Teaching: Michigan Faculty Voices on OER</a><time datetime="2026-05-20">2026-05-20</time></div></li><li class="video-card video-card--link"><a href="https://www.youtube.com/shorts/yefT-dURfoU" target="_blank" rel="noopener noreferrer">#OEWeek26 Town Square of Open Education in Review – Thank you! #OEWeek #education4all</a><time datetime="2026-05-08">2026-05-08</time></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="S55M-H0LS1M" data-video-title="CCCOER Webinar - Behind the Scenes: Managing Grant-Funded Projects with Washington Open ProfTech" aria-label="Play: CCCOER Webinar - Behind the Scenes: Managing Grant-Funded Projects with Washington Open ProfTech"><img class="video-card__thumb" src="https://i.ytimg.com/vi/S55M-H0LS1M/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=S55M-H0LS1M" target="_blank" rel="noopener noreferrer">CCCOER Webinar - Behind the Scenes: Managing Grant-Funded Projects with Washington Open ProfTech</a><time datetime="2026-04-16">2026-04-16</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="oeglobal@social.fossdle.org" data-mastodon-url="https://social.fossdle.org/@oeglobal"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

@@ -1,0 +1,25 @@
+Title: Автономное Действие / Autonomous Action
+Date: 2026-06-20
+Slug: autonomous-action
+save_as: creator/autonomous-action/index.html
+url: creator/autonomous-action/
+status: hidden
+Summary: Other creator Автономное Действие / Autonomous Action on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Other</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UC6CruuQ_UOl42zRAeBuWGxQ" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://todon.eu/@avtonom_org" target="_blank" rel="noopener noreferrer">@avtonom_org@todon.eu</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>1,600</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>606</strong></p>
+<p class="creator-profile__bio">Мы - либертарная медиа-группа, выросшая из движения &quot;Автономное Действие&quot;. Мы по-прежнему разделяем ценности, изложенные в Манифесте АД, но не ограничиваемся рамками этой организации. Своей целью мы ставим продвижение либертарной и анархической альтернативы посредством создания качественных и соврем…</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="avtonom_org@todon.eu" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="9yumUysbwW8" data-video-title="Крышу снесло: «Тренды порядка и хаоса», эпизод 267" aria-label="Play: Крышу снесло: «Тренды порядка и хаоса», эпизод 267"><img class="video-card__thumb" src="https://i.ytimg.com/vi/9yumUysbwW8/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=9yumUysbwW8" target="_blank" rel="noopener noreferrer">Крышу снесло: «Тренды порядка и хаоса», эпизод 267</a><time datetime="2026-06-24">2026-06-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="DNXezuOsQ7g" data-video-title="Будут платить: «Тренды порядка и хаоса», эпизод 266" aria-label="Play: Будут платить: «Тренды порядка и хаоса», эпизод 266"><img class="video-card__thumb" src="https://i.ytimg.com/vi/DNXezuOsQ7g/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=DNXezuOsQ7g" target="_blank" rel="noopener noreferrer">Будут платить: «Тренды порядка и хаоса», эпизод 266</a><time datetime="2026-06-17">2026-06-17</time></div></li><li class="video-card video-card--link"><a href="https://www.youtube.com/shorts/dcwSP3iVyCs" target="_blank" rel="noopener noreferrer">«Ангелы в подвалах: хроника сирийской революции»</a><time datetime="2026-06-12">2026-06-12</time></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="WNdHkVYnhPU" data-video-title="Заглянуть на огонёк: «Тренды порядка и хаоса», эпизод 265" aria-label="Play: Заглянуть на огонёк: «Тренды порядка и хаоса», эпизод 265"><img class="video-card__thumb" src="https://i.ytimg.com/vi/WNdHkVYnhPU/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=WNdHkVYnhPU" target="_blank" rel="noopener noreferrer">Заглянуть на огонёк: «Тренды порядка и хаоса», эпизод 265</a><time datetime="2026-06-11">2026-06-11</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="ZdWxIlbmxxU" data-video-title="Анархисты и так называемый «искусственный интеллект»: «Тренды порядка и хаоса», эпизод 264" aria-label="Play: Анархисты и так называемый «искусственный интеллект»: «Тренды порядка и хаоса», эпизод 264"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ZdWxIlbmxxU/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ZdWxIlbmxxU" target="_blank" rel="noopener noreferrer">Анархисты и так называемый «искусственный интеллект»: «Тренды порядка и хаоса», эпизод 264</a><time datetime="2026-06-04">2026-06-04</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="avtonom_org@todon.eu" data-mastodon-url="https://todon.eu/@avtonom_org"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

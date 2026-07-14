@@ -1,0 +1,25 @@
+Title: Gareth Dennis
+Date: 2026-06-20
+Slug: gareth-dennis
+save_as: creator/gareth-dennis/index.html
+url: creator/gareth-dennis/
+status: hidden
+Summary: Culture & Entertainment creator Gareth Dennis on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Culture &amp; Entertainment</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/garethdennistv" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mas.to/@GarethDennis" target="_blank" rel="noopener noreferrer">@GarethDennis@mas.to</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>17,900</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>1155</strong></p>
+<p class="creator-profile__bio">Railway engineer and writer. Hosts # Railnatter . Director of E2M. Lecturer for the PWI and elsewhere. Co-founder of the Campaign for Level Boarding. Chair of NEREF. He/him.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="GarethDennis@mas.to" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="Rh_KlF-FGF0" data-video-title="How do trains crash into each other? | #Railnatter 310" aria-label="Play: How do trains crash into each other? | #Railnatter 310"><img class="video-card__thumb" src="https://i.ytimg.com/vi/Rh_KlF-FGF0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Rh_KlF-FGF0" target="_blank" rel="noopener noreferrer">How do trains crash into each other? | #Railnatter 310</a><time datetime="2026-06-24">2026-06-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="vuY--_2pXPM" data-video-title="How Extreme Heat Defeats Our Railways" aria-label="Play: How Extreme Heat Defeats Our Railways"><img class="video-card__thumb" src="https://i.ytimg.com/vi/vuY--_2pXPM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=vuY--_2pXPM" target="_blank" rel="noopener noreferrer">How Extreme Heat Defeats Our Railways</a><time datetime="2026-06-24">2026-06-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="XUN7DM_mgSs" data-video-title="Leeds Has Been Talking About Mass Transit For Decades" aria-label="Play: Leeds Has Been Talking About Mass Transit For Decades"><img class="video-card__thumb" src="https://i.ytimg.com/vi/XUN7DM_mgSs/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=XUN7DM_mgSs" target="_blank" rel="noopener noreferrer">Leeds Has Been Talking About Mass Transit For Decades</a><time datetime="2026-06-23">2026-06-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="cLkpeus7ae8" data-video-title="Leeds Predicted Its Own Transport Disaster" aria-label="Play: Leeds Predicted Its Own Transport Disaster"><img class="video-card__thumb" src="https://i.ytimg.com/vi/cLkpeus7ae8/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=cLkpeus7ae8" target="_blank" rel="noopener noreferrer">Leeds Predicted Its Own Transport Disaster</a><time datetime="2026-06-22">2026-06-22</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="FXtCSofo4aU" data-video-title="The Solar Railway | Trainsatlantic 1" aria-label="Play: The Solar Railway | Trainsatlantic 1"><img class="video-card__thumb" src="https://i.ytimg.com/vi/FXtCSofo4aU/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=FXtCSofo4aU" target="_blank" rel="noopener noreferrer">The Solar Railway | Trainsatlantic 1</a><time datetime="2026-06-22">2026-06-22</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="GarethDennis@mas.to" data-mastodon-url="https://mas.to/@GarethDennis"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

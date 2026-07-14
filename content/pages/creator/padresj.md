@@ -1,0 +1,25 @@
+Title: PadreSJ
+Date: 2026-06-20
+Slug: padresj
+save_as: creator/padresj/index.html
+url: creator/padresj/
+status: hidden
+Summary: Technology & Computing creator PadreSJ on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/digitaljesuit" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://twit.social/@PadreSJ" target="_blank" rel="noopener noreferrer">@PadreSJ@twit.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>916</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>7829</strong></p>
+<p class="creator-profile__bio">Fr. Robert Ballecer, SJ Catholic Priest. Jesuit in Rome. My opinions are my own. My online journey started even BEFORE the years of &quot;NOOOO!!! STAY OFF THE PHONE!&quot; He/Him/Geek/Nerd</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="PadreSJ@twit.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="JdkV9lqlCtI" data-video-title="Auto-Loop Beta Test -- FAIL" aria-label="Play: Auto-Loop Beta Test -- FAIL"><img class="video-card__thumb" src="https://i.ytimg.com/vi/JdkV9lqlCtI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=JdkV9lqlCtI" target="_blank" rel="noopener noreferrer">Auto-Loop Beta Test -- FAIL</a><time datetime="2015-03-29">2015-03-29</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="lUB1xWQ3CE0" data-video-title="Hey FedEx... what&#x27;s up with THIS?" aria-label="Play: Hey FedEx... what&#x27;s up with THIS?"><img class="video-card__thumb" src="https://i.ytimg.com/vi/lUB1xWQ3CE0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=lUB1xWQ3CE0" target="_blank" rel="noopener noreferrer">Hey FedEx... what&#x27;s up with THIS?</a><time datetime="2014-09-28">2014-09-28</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="uGa189kMie0" data-video-title="Padre&#x27;s Corner #17 - Bill Meeks: Dogboy, Geek Guys" aria-label="Play: Padre&#x27;s Corner #17 - Bill Meeks: Dogboy, Geek Guys"><img class="video-card__thumb" src="https://i.ytimg.com/vi/uGa189kMie0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=uGa189kMie0" target="_blank" rel="noopener noreferrer">Padre&#x27;s Corner #17 - Bill Meeks: Dogboy, Geek Guys</a><time datetime="2014-07-04">2014-07-04</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="lOGz8hbj8sw" data-video-title="Padre&#x27;s Corner #16 - Scott Johnson - Part I : Nerds, Nerds, Nerds" aria-label="Play: Padre&#x27;s Corner #16 - Scott Johnson - Part I : Nerds, Nerds, Nerds"><img class="video-card__thumb" src="https://i.ytimg.com/vi/lOGz8hbj8sw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=lOGz8hbj8sw" target="_blank" rel="noopener noreferrer">Padre&#x27;s Corner #16 - Scott Johnson - Part I : Nerds, Nerds, Nerds</a><time datetime="2014-06-21">2014-06-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="Zq7aL6Jaxs8" data-video-title="Padre&#x27;s Corner #15 - Spies, Like us" aria-label="Play: Padre&#x27;s Corner #15 - Spies, Like us"><img class="video-card__thumb" src="https://i.ytimg.com/vi/Zq7aL6Jaxs8/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Zq7aL6Jaxs8" target="_blank" rel="noopener noreferrer">Padre&#x27;s Corner #15 - Spies, Like us</a><time datetime="2014-05-31">2014-05-31</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="PadreSJ@twit.social" data-mastodon-url="https://twit.social/@PadreSJ"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

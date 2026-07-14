@@ -1,0 +1,25 @@
+Title: Mitchell Hashimoto
+Date: 2026-06-20
+Slug: mitchell-hashimoto
+save_as: creator/mitchell-hashimoto/index.html
+url: creator/mitchell-hashimoto/
+status: hidden
+Summary: Technology & Computing creator Mitchell Hashimoto on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UC0gjVbm7HY5GzDTo5NbQruA" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://hachyderm.io/@mitchellh" target="_blank" rel="noopener noreferrer">@mitchellh@hachyderm.io</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>3,120</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>8389</strong></p>
+<p class="creator-profile__bio">Working on a new terminal: Ghostty. 👻 Prev: founded @HashiCorp. Created Vagrant, Terraform, Vault, and others. Vision Jet Pilot. 👨‍✈️</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="mitchellh@hachyderm.io" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="biZ4HywLxZY" data-video-title="Devlog: Libghostty Kitty Graphics Protocol Support" aria-label="Play: Devlog: Libghostty Kitty Graphics Protocol Support"><img class="video-card__thumb" src="https://i.ytimg.com/vi/biZ4HywLxZY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=biZ4HywLxZY" target="_blank" rel="noopener noreferrer">Devlog: Libghostty Kitty Graphics Protocol Support</a><time datetime="2026-04-06">2026-04-06</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="X2d0CxwrJJQ" data-video-title="Devlog: Libghostty &quot;Effects&quot; API (and Windows)" aria-label="Play: Devlog: Libghostty &quot;Effects&quot; API (and Windows)"><img class="video-card__thumb" src="https://i.ytimg.com/vi/X2d0CxwrJJQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=X2d0CxwrJJQ" target="_blank" rel="noopener noreferrer">Devlog: Libghostty &quot;Effects&quot; API (and Windows)</a><time datetime="2026-03-24">2026-03-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="VAGNcyo8hqs" data-video-title="Devlog: Libghostty ABI Compatibility" aria-label="Play: Devlog: Libghostty ABI Compatibility"><img class="video-card__thumb" src="https://i.ytimg.com/vi/VAGNcyo8hqs/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=VAGNcyo8hqs" target="_blank" rel="noopener noreferrer">Devlog: Libghostty ABI Compatibility</a><time datetime="2026-03-22">2026-03-22</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="5rSKmoE8yrA" data-video-title="Advent of Code 2021 Day 07 in SQL (PostgreSQL)" aria-label="Play: Advent of Code 2021 Day 07 in SQL (PostgreSQL)"><img class="video-card__thumb" src="https://i.ytimg.com/vi/5rSKmoE8yrA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=5rSKmoE8yrA" target="_blank" rel="noopener noreferrer">Advent of Code 2021 Day 07 in SQL (PostgreSQL)</a><time datetime="2021-12-07">2021-12-07</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="58XRqAxl0zo" data-video-title="Advent of Code 2021 Day 06 in SQL (PostgreSQL)" aria-label="Play: Advent of Code 2021 Day 06 in SQL (PostgreSQL)"><img class="video-card__thumb" src="https://i.ytimg.com/vi/58XRqAxl0zo/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=58XRqAxl0zo" target="_blank" rel="noopener noreferrer">Advent of Code 2021 Day 06 in SQL (PostgreSQL)</a><time datetime="2021-12-06">2021-12-06</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="mitchellh@hachyderm.io" data-mastodon-url="https://hachyderm.io/@mitchellh"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

@@ -1,0 +1,25 @@
+Title: eLife
+Date: 2026-06-20
+Slug: elife
+save_as: creator/elife/index.html
+url: creator/elife/
+status: hidden
+Summary: Science & Education creator eLife on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Science &amp; Education</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCNEHLtAc_JPI84xW8V4XWyw" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://fediscience.org/@eLife" target="_blank" rel="noopener noreferrer">@eLife@fediscience.org</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>1,620</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>5597</strong></p>
+<p class="creator-profile__bio">A non-profit open-access journal for research in the life and biomedical sciences working to improve research culture and communication.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="eLife@fediscience.org" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="di6RPaOYJxg" data-video-title="Fair and Equitable Publishing Models - How to Transition to Diamond Open Access" aria-label="Play: Fair and Equitable Publishing Models - How to Transition to Diamond Open Access"><img class="video-card__thumb" src="https://i.ytimg.com/vi/di6RPaOYJxg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=di6RPaOYJxg" target="_blank" rel="noopener noreferrer">Fair and Equitable Publishing Models - How to Transition to Diamond Open Access</a><time datetime="2026-04-09">2026-04-09</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="Az_AlHB0nFI" data-video-title="An Introduction to Science Communication" aria-label="Play: An Introduction to Science Communication"><img class="video-card__thumb" src="https://i.ytimg.com/vi/Az_AlHB0nFI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Az_AlHB0nFI" target="_blank" rel="noopener noreferrer">An Introduction to Science Communication</a><time datetime="2026-01-22">2026-01-22</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="yer0LF9xpLI" data-video-title="What is a Reviewed Preprint?" aria-label="Play: What is a Reviewed Preprint?"><img class="video-card__thumb" src="https://i.ytimg.com/vi/yer0LF9xpLI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=yer0LF9xpLI" target="_blank" rel="noopener noreferrer">What is a Reviewed Preprint?</a><time datetime="2026-01-14">2026-01-14</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="fXLFp-gFh5w" data-video-title="Mapping the Open Science landscape in the Global South" aria-label="Play: Mapping the Open Science landscape in the Global South"><img class="video-card__thumb" src="https://i.ytimg.com/vi/fXLFp-gFh5w/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=fXLFp-gFh5w" target="_blank" rel="noopener noreferrer">Mapping the Open Science landscape in the Global South</a><time datetime="2025-01-21">2025-01-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="XVnJVPj23ig" data-video-title="The eLife Model for research publishing: How does it work?" aria-label="Play: The eLife Model for research publishing: How does it work?"><img class="video-card__thumb" src="https://i.ytimg.com/vi/XVnJVPj23ig/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=XVnJVPj23ig" target="_blank" rel="noopener noreferrer">The eLife Model for research publishing: How does it work?</a><time datetime="2024-09-25">2024-09-25</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="eLife@fediscience.org" data-mastodon-url="https://fediscience.org/@eLife"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

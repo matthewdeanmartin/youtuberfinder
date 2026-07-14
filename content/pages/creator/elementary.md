@@ -1,0 +1,25 @@
+Title: elementary
+Date: 2026-06-20
+Slug: elementary
+save_as: creator/elementary/index.html
+url: creator/elementary/
+status: hidden
+Summary: Technology & Computing creator elementary on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCedpdMQjb_qdBGhwUEY3YAw" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.social/@elementary" target="_blank" rel="noopener noreferrer">@elementary@mastodon.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>6,220</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>13304</strong></p>
+<p class="creator-profile__bio">Thoughtful, capable, and ethical computing—plus AppCenter, the pay-what-you-can app store</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="elementary@mastodon.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="1hpEyj9vz0Y" data-video-title="Livestream with Cassidy James Blaede – December 23, 2021" aria-label="Play: Livestream with Cassidy James Blaede – December 23, 2021"><img class="video-card__thumb" src="https://i.ytimg.com/vi/1hpEyj9vz0Y/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=1hpEyj9vz0Y" target="_blank" rel="noopener noreferrer">Livestream with Cassidy James Blaede – December 23, 2021</a><time datetime="2021-12-23">2021-12-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="zTU2IAeJqjQ" data-video-title="Guide: How to Give Feedback for elementary OS" aria-label="Play: Guide: How to Give Feedback for elementary OS"><img class="video-card__thumb" src="https://i.ytimg.com/vi/zTU2IAeJqjQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=zTU2IAeJqjQ" target="_blank" rel="noopener noreferrer">Guide: How to Give Feedback for elementary OS</a><time datetime="2021-11-19">2021-11-19</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="qpTRCO-nTzg" data-video-title="Livestream with Cassidy James Blaede – October 28, 2021" aria-label="Play: Livestream with Cassidy James Blaede – October 28, 2021"><img class="video-card__thumb" src="https://i.ytimg.com/vi/qpTRCO-nTzg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=qpTRCO-nTzg" target="_blank" rel="noopener noreferrer">Livestream with Cassidy James Blaede – October 28, 2021</a><time datetime="2021-10-28">2021-10-28</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="2L62Hp4sDJw" data-video-title="Livestream with Cassidy James Blaede – August 26, 2021" aria-label="Play: Livestream with Cassidy James Blaede – August 26, 2021"><img class="video-card__thumb" src="https://i.ytimg.com/vi/2L62Hp4sDJw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=2L62Hp4sDJw" target="_blank" rel="noopener noreferrer">Livestream with Cassidy James Blaede – August 26, 2021</a><time datetime="2021-08-26">2021-08-26</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="3KoCDt4fxcM" data-video-title="Guide: How to Download &amp; Install elementary OS" aria-label="Play: Guide: How to Download &amp; Install elementary OS"><img class="video-card__thumb" src="https://i.ytimg.com/vi/3KoCDt4fxcM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=3KoCDt4fxcM" target="_blank" rel="noopener noreferrer">Guide: How to Download &amp; Install elementary OS</a><time datetime="2021-08-10">2021-08-10</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="elementary@mastodon.social" data-mastodon-url="https://mastodon.social/@elementary"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

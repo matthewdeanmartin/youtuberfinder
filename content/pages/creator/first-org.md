@@ -1,0 +1,25 @@
+Title: FIRST.org
+Date: 2026-06-20
+Slug: first-org
+save_as: creator/first-org/index.html
+url: creator/first-org/
+status: hidden
+Summary: Technology & Computing creator FIRST.org on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCK3_z6YyWvfqrOuCmrfxsTw" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://infosec.exchange/@firstdotorg" target="_blank" rel="noopener noreferrer">@firstdotorg@infosec.exchange</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>5,470</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>771</strong></p>
+<p class="creator-profile__bio">Improving Security Together</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="firstdotorg@infosec.exchange" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="C1NJVniBW0U" data-video-title="FIRSTCON26 Event Recap" aria-label="Play: FIRSTCON26 Event Recap"><img class="video-card__thumb" src="https://i.ytimg.com/vi/C1NJVniBW0U/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=C1NJVniBW0U" target="_blank" rel="noopener noreferrer">FIRSTCON26 Event Recap</a><time datetime="2026-06-19">2026-06-19</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="CsVCmvom67w" data-video-title="Episode 60: Mars Cheng, TXOne Networks Inc., FIRSTCON26 Speaker" aria-label="Play: Episode 60: Mars Cheng, TXOne Networks Inc., FIRSTCON26 Speaker"><img class="video-card__thumb" src="https://i.ytimg.com/vi/CsVCmvom67w/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=CsVCmvom67w" target="_blank" rel="noopener noreferrer">Episode 60: Mars Cheng, TXOne Networks Inc., FIRSTCON26 Speaker</a><time datetime="2026-06-12">2026-06-12</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="C3xk8kTSSSc" data-video-title="Episode 59: Julie Agnes Sparks and Greg Foss, Datadog, FIRSTCON26 Speakers" aria-label="Play: Episode 59: Julie Agnes Sparks and Greg Foss, Datadog, FIRSTCON26 Speakers"><img class="video-card__thumb" src="https://i.ytimg.com/vi/C3xk8kTSSSc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=C3xk8kTSSSc" target="_blank" rel="noopener noreferrer">Episode 59: Julie Agnes Sparks and Greg Foss, Datadog, FIRSTCON26 Speakers</a><time datetime="2026-06-08">2026-06-08</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="32FPCLBdV1k" data-video-title="Episode 58: Cheng-Lin Yang and Lily Chen, CyCraft, FIRSTCON26 Speakers" aria-label="Play: Episode 58: Cheng-Lin Yang and Lily Chen, CyCraft, FIRSTCON26 Speakers"><img class="video-card__thumb" src="https://i.ytimg.com/vi/32FPCLBdV1k/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=32FPCLBdV1k" target="_blank" rel="noopener noreferrer">Episode 58: Cheng-Lin Yang and Lily Chen, CyCraft, FIRSTCON26 Speakers</a><time datetime="2026-06-05">2026-06-05</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="i9Ai0x4ERNE" data-video-title="Billions of Indicators, Zero Action: How We Fixed That" aria-label="Play: Billions of Indicators, Zero Action: How We Fixed That"><img class="video-card__thumb" src="https://i.ytimg.com/vi/i9Ai0x4ERNE/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=i9Ai0x4ERNE" target="_blank" rel="noopener noreferrer">Billions of Indicators, Zero Action: How We Fixed That</a><time datetime="2026-06-02">2026-06-02</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="firstdotorg@infosec.exchange" data-mastodon-url="https://infosec.exchange/@firstdotorg"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

@@ -1,0 +1,25 @@
+Title: Drought Center
+Date: 2026-06-20
+Slug: drought-center
+save_as: creator/drought-center/index.html
+url: creator/drought-center/
+status: hidden
+Summary: Science & Education creator Drought Center on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Science &amp; Education</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCQLanjBBaD1thvUaj6Tzb5A" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.world/@droughtcenter" target="_blank" rel="noopener noreferrer">@droughtcenter@mastodon.world</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>2,230</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>976</strong></p>
+<p class="creator-profile__bio">We&#x27;re the National Drought Mitigation Center at the University of Nebraska-Lincoln. Our mission is to reduce the effects of drought on people, the environment and the economy with cutting-edge science and thoughtful planning. We host the U.S. Drought Monitor, the nation&#x27;s leading resource to track d…</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="droughtcenter@mastodon.world" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="zWqcOdYaPW0" data-video-title="U.S. Drought Monitor June 18, 2026" aria-label="Play: U.S. Drought Monitor June 18, 2026"><img class="video-card__thumb" src="https://i.ytimg.com/vi/zWqcOdYaPW0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=zWqcOdYaPW0" target="_blank" rel="noopener noreferrer">U.S. Drought Monitor June 18, 2026</a><time datetime="2026-06-18">2026-06-18</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="nCNpxdFc7dc" data-video-title="U.S. Drought Monitor June 4, 2026" aria-label="Play: U.S. Drought Monitor June 4, 2026"><img class="video-card__thumb" src="https://i.ytimg.com/vi/nCNpxdFc7dc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=nCNpxdFc7dc" target="_blank" rel="noopener noreferrer">U.S. Drought Monitor June 4, 2026</a><time datetime="2026-06-04">2026-06-04</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="77PG8BzP2Ek" data-video-title="U.S. Drought Monitor May 28, 2026" aria-label="Play: U.S. Drought Monitor May 28, 2026"><img class="video-card__thumb" src="https://i.ytimg.com/vi/77PG8BzP2Ek/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=77PG8BzP2Ek" target="_blank" rel="noopener noreferrer">U.S. Drought Monitor May 28, 2026</a><time datetime="2026-05-28">2026-05-28</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="XCJ-FTOyyq4" data-video-title="U.S. Drought Monitor May 21, 2026" aria-label="Play: U.S. Drought Monitor May 21, 2026"><img class="video-card__thumb" src="https://i.ytimg.com/vi/XCJ-FTOyyq4/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=XCJ-FTOyyq4" target="_blank" rel="noopener noreferrer">U.S. Drought Monitor May 21, 2026</a><time datetime="2026-05-21">2026-05-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="R2RR1t0jnP0" data-video-title="U.S. Drought Monitor May 14, 2026" aria-label="Play: U.S. Drought Monitor May 14, 2026"><img class="video-card__thumb" src="https://i.ytimg.com/vi/R2RR1t0jnP0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=R2RR1t0jnP0" target="_blank" rel="noopener noreferrer">U.S. Drought Monitor May 14, 2026</a><time datetime="2026-05-14">2026-05-14</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="droughtcenter@mastodon.world" data-mastodon-url="https://mastodon.world/@droughtcenter"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

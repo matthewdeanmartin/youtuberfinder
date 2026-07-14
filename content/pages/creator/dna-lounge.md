@@ -1,0 +1,25 @@
+Title: DNA Lounge
+Date: 2026-06-20
+Slug: dna-lounge
+save_as: creator/dna-lounge/index.html
+url: creator/dna-lounge/
+status: hidden
+Summary: Music creator DNA Lounge on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Music</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCBKC3Bi_ckdOm3HxPRB98LQ" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://sfba.social/@dnalounge" target="_blank" rel="noopener noreferrer">@dnalounge@sfba.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>2,210</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>1553</strong></p>
+<p class="creator-profile__bio">DNA Lounge has been one of San Francisco&#x27;s most popular nightclubs for over four decades, hosting an always-eclectic variety of events, including all-ages live music, 18+ dance parties, burlesque shows, lecture series and private parties. Two stages, four dance floors, seven bars and a full-service …</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="dnalounge@sfba.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="hlPpvTtVrGg" data-video-title="Death Guild, 22 Jun 2026 at DNA Lounge" aria-label="Play: Death Guild, 22 Jun 2026 at DNA Lounge"><img class="video-card__thumb" src="https://i.ytimg.com/vi/hlPpvTtVrGg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=hlPpvTtVrGg" target="_blank" rel="noopener noreferrer">Death Guild, 22 Jun 2026 at DNA Lounge</a><time datetime="2026-06-23">2026-06-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="eh2fdj1_FBY" data-video-title="Monday Night Hubba, 22 Jun 2026 at DNA Lounge" aria-label="Play: Monday Night Hubba, 22 Jun 2026 at DNA Lounge"><img class="video-card__thumb" src="https://i.ytimg.com/vi/eh2fdj1_FBY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=eh2fdj1_FBY" target="_blank" rel="noopener noreferrer">Monday Night Hubba, 22 Jun 2026 at DNA Lounge</a><time datetime="2026-06-23">2026-06-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="ShAyNh-MJGw" data-video-title="Coming up at DNA Lounge!" aria-label="Play: Coming up at DNA Lounge!"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ShAyNh-MJGw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ShAyNh-MJGw" target="_blank" rel="noopener noreferrer">Coming up at DNA Lounge!</a><time datetime="2026-06-22">2026-06-22</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="Aly39JQLrMw" data-video-title="Hubba Hubba Revue: Sgt. Die Wies&#x27; Chocolate Sundae, 21 Jun 2026 at DNA Lounge" aria-label="Play: Hubba Hubba Revue: Sgt. Die Wies&#x27; Chocolate Sundae, 21 Jun 2026 at DNA Lounge"><img class="video-card__thumb" src="https://i.ytimg.com/vi/Aly39JQLrMw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Aly39JQLrMw" target="_blank" rel="noopener noreferrer">Hubba Hubba Revue: Sgt. Die Wies&#x27; Chocolate Sundae, 21 Jun 2026 at DNA Lounge</a><time datetime="2026-06-22">2026-06-22</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="px0dV2bKLPA" data-video-title="Coming up at DNA Lounge!" aria-label="Play: Coming up at DNA Lounge!"><img class="video-card__thumb" src="https://i.ytimg.com/vi/px0dV2bKLPA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=px0dV2bKLPA" target="_blank" rel="noopener noreferrer">Coming up at DNA Lounge!</a><time datetime="2026-06-21">2026-06-21</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="dnalounge@sfba.social" data-mastodon-url="https://sfba.social/@dnalounge"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

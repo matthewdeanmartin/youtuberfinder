@@ -1,0 +1,25 @@
+Title: omg! ubuntu
+Date: 2026-06-20
+Slug: omg-ubuntu
+save_as: creator/omg-ubuntu/index.html
+url: creator/omg-ubuntu/
+status: hidden
+Summary: Technology & Computing creator omg! ubuntu on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCIiSwcm9xiFb3Y4wjzR41eQ" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://floss.social/@omgubuntu" target="_blank" rel="noopener noreferrer">@omgubuntu@floss.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>61,700</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>16724</strong></p>
+<p class="creator-profile__bio">A blog (remember those?) tracking # Ubuntu and its place within the wider # Linux ecosystem. News, app spotlights, how-tos and snark. Est 2009 ✌️</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="omgubuntu@floss.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="mZfbb2zDvfs" data-video-title="Ubuntu 26.04: New Boot Spinner Animation" aria-label="Play: Ubuntu 26.04: New Boot Spinner Animation"><img class="video-card__thumb" src="https://i.ytimg.com/vi/mZfbb2zDvfs/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=mZfbb2zDvfs" target="_blank" rel="noopener noreferrer">Ubuntu 26.04: New Boot Spinner Animation</a><time datetime="2026-03-26">2026-03-26</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="pLPhOCeHyy4" data-video-title="Mozilla&#x27;s New AI Assistant Extension for Firefox (Quick Demo)" aria-label="Play: Mozilla&#x27;s New AI Assistant Extension for Firefox (Quick Demo)"><img class="video-card__thumb" src="https://i.ytimg.com/vi/pLPhOCeHyy4/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=pLPhOCeHyy4" target="_blank" rel="noopener noreferrer">Mozilla&#x27;s New AI Assistant Extension for Firefox (Quick Demo)</a><time datetime="2024-12-31">2024-12-31</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="U2BnHNVMAYk" data-video-title="Ubuntu 23.10: The Best New Features" aria-label="Play: Ubuntu 23.10: The Best New Features"><img class="video-card__thumb" src="https://i.ytimg.com/vi/U2BnHNVMAYk/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=U2BnHNVMAYk" target="_blank" rel="noopener noreferrer">Ubuntu 23.10: The Best New Features</a><time datetime="2023-10-11">2023-10-11</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="q6Opu7OQ-uc" data-video-title="Ubuntu 23.04: What&#x27;s New?" aria-label="Play: Ubuntu 23.04: What&#x27;s New?"><img class="video-card__thumb" src="https://i.ytimg.com/vi/q6Opu7OQ-uc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=q6Opu7OQ-uc" target="_blank" rel="noopener noreferrer">Ubuntu 23.04: What&#x27;s New?</a><time datetime="2023-04-12">2023-04-12</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="MzBsI9XZpEg" data-video-title="Ubuntu 22.10: What&#x27;s New?" aria-label="Play: Ubuntu 22.10: What&#x27;s New?"><img class="video-card__thumb" src="https://i.ytimg.com/vi/MzBsI9XZpEg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=MzBsI9XZpEg" target="_blank" rel="noopener noreferrer">Ubuntu 22.10: What&#x27;s New?</a><time datetime="2022-10-19">2022-10-19</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="omgubuntu@floss.social" data-mastodon-url="https://floss.social/@omgubuntu"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

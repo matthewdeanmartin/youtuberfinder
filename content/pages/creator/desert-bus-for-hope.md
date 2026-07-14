@@ -1,0 +1,25 @@
+Title: Desert Bus For Hope
+Date: 2026-06-20
+Slug: desert-bus-for-hope
+save_as: creator/desert-bus-for-hope/index.html
+url: creator/desert-bus-for-hope/
+status: hidden
+Summary: Gaming & VTubers creator Desert Bus For Hope on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Gaming &amp; VTubers</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCz5-PNQxaT4WtB_OMAwD85g" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://kind.social/@desertbus" target="_blank" rel="noopener noreferrer">@desertbus@kind.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>14,500</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>2775</strong></p>
+<p class="creator-profile__bio">The profile for the official Desert Bus for Hope charity gaming marathon, raising money for Child&#x27;s Play Charity 🌵🚌💙</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="desertbus@kind.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="5emUEMc3Tbg" data-video-title="DBEx2026 - Thank Yous! and DB20" aria-label="Play: DBEx2026 - Thank Yous! and DB20"><img class="video-card__thumb" src="https://i.ytimg.com/vi/5emUEMc3Tbg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=5emUEMc3Tbg" target="_blank" rel="noopener noreferrer">DBEx2026 - Thank Yous! and DB20</a><time datetime="2026-06-21">2026-06-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="fgTFgVYTGBA" data-video-title="DBEx2026 - AI, sound isolation learning, and recording techniques talk" aria-label="Play: DBEx2026 - AI, sound isolation learning, and recording techniques talk"><img class="video-card__thumb" src="https://i.ytimg.com/vi/fgTFgVYTGBA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=fgTFgVYTGBA" target="_blank" rel="noopener noreferrer">DBEx2026 - AI, sound isolation learning, and recording techniques talk</a><time datetime="2026-06-21">2026-06-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="95Git7n0-R8" data-video-title="DBEx2026 - Peej and Paul talk about the steering comittee" aria-label="Play: DBEx2026 - Peej and Paul talk about the steering comittee"><img class="video-card__thumb" src="https://i.ytimg.com/vi/95Git7n0-R8/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=95Git7n0-R8" target="_blank" rel="noopener noreferrer">DBEx2026 - Peej and Paul talk about the steering comittee</a><time datetime="2026-06-21">2026-06-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="RuY0ljysL-4" data-video-title="DBEx2026 - What would turn you into the Joker?" aria-label="Play: DBEx2026 - What would turn you into the Joker?"><img class="video-card__thumb" src="https://i.ytimg.com/vi/RuY0ljysL-4/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=RuY0ljysL-4" target="_blank" rel="noopener noreferrer">DBEx2026 - What would turn you into the Joker?</a><time datetime="2026-06-21">2026-06-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="yEAh1zZlXoo" data-video-title="DBEx2026 - Shift 3 has a Drawing Fight" aria-label="Play: DBEx2026 - Shift 3 has a Drawing Fight"><img class="video-card__thumb" src="https://i.ytimg.com/vi/yEAh1zZlXoo/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=yEAh1zZlXoo" target="_blank" rel="noopener noreferrer">DBEx2026 - Shift 3 has a Drawing Fight</a><time datetime="2026-06-21">2026-06-21</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="desertbus@kind.social" data-mastodon-url="https://kind.social/@desertbus"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

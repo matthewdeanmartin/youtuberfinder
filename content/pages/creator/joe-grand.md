@@ -1,0 +1,25 @@
+Title: Joe Grand
+Date: 2026-06-20
+Slug: joe-grand
+save_as: creator/joe-grand/index.html
+url: creator/joe-grand/
+status: hidden
+Summary: Technology & Computing creator Joe Grand on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/@JoeGrand" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://chaos.social/@joegrand" target="_blank" rel="noopener noreferrer">@joegrand@chaos.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>455,000</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>2559</strong></p>
+<p class="creator-profile__bio">Official page of Joe Grand. Hardware hacker, computer engineer, occasional YouTuber, former L0pht member and juvenile delinquent, sometimes known as Kingpin.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="joegrand@chaos.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="TGmGiN5Pa48" data-video-title="The Shocking Result of My $75 Million Bulk Hack" aria-label="Play: The Shocking Result of My $75 Million Bulk Hack"><img class="video-card__thumb" src="https://i.ytimg.com/vi/TGmGiN5Pa48/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=TGmGiN5Pa48" target="_blank" rel="noopener noreferrer">The Shocking Result of My $75 Million Bulk Hack</a><time datetime="2026-03-19">2026-03-19</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="MhJoJRqJ0Wc" data-video-title="$75,000,000 Crypto Wallet Bulk Hack" aria-label="Play: $75,000,000 Crypto Wallet Bulk Hack"><img class="video-card__thumb" src="https://i.ytimg.com/vi/MhJoJRqJ0Wc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=MhJoJRqJ0Wc" target="_blank" rel="noopener noreferrer">$75,000,000 Crypto Wallet Bulk Hack</a><time datetime="2026-03-16">2026-03-16</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="o5IySpAkThg" data-video-title="I hacked time to recover $3 million from a Bitcoin software wallet" aria-label="Play: I hacked time to recover $3 million from a Bitcoin software wallet"><img class="video-card__thumb" src="https://i.ytimg.com/vi/o5IySpAkThg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=o5IySpAkThg" target="_blank" rel="noopener noreferrer">I hacked time to recover $3 million from a Bitcoin software wallet</a><time datetime="2024-05-28">2024-05-28</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="bZFQDeBpHmg" data-video-title="THE WORLD&#x27;S THINNEST BOOMBOX" aria-label="Play: THE WORLD&#x27;S THINNEST BOOMBOX"><img class="video-card__thumb" src="https://i.ytimg.com/vi/bZFQDeBpHmg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=bZFQDeBpHmg" target="_blank" rel="noopener noreferrer">THE WORLD&#x27;S THINNEST BOOMBOX</a><time datetime="2022-11-15">2022-11-15</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="icBD5PiyoyI" data-video-title="Hacking a Samsung Galaxy for $6,000,000 in Bitcoin!?" aria-label="Play: Hacking a Samsung Galaxy for $6,000,000 in Bitcoin!?"><img class="video-card__thumb" src="https://i.ytimg.com/vi/icBD5PiyoyI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=icBD5PiyoyI" target="_blank" rel="noopener noreferrer">Hacking a Samsung Galaxy for $6,000,000 in Bitcoin!?</a><time datetime="2022-06-23">2022-06-23</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="joegrand@chaos.social" data-mastodon-url="https://chaos.social/@joegrand"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

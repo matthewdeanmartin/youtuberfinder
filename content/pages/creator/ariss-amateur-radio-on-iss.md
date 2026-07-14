@@ -1,0 +1,25 @@
+Title: ARISS - Amateur Radio on ISS
+Date: 2026-06-20
+Slug: ariss-amateur-radio-on-iss
+save_as: creator/ariss-amateur-radio-on-iss/index.html
+url: creator/ariss-amateur-radio-on-iss/
+status: hidden
+Summary: Music creator ARISS - Amateur Radio on ISS on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Music</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCxm5Ca2y0HD_NxXlZWXv11A" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.hams.social/@ARISS_Intl" target="_blank" rel="noopener noreferrer">@ARISS_Intl@mastodon.hams.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>3,190</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>2063</strong></p>
+<p class="creator-profile__bio">We are Amateur Radio on the International Space Station (ARISS). We let students experience the excitement of talking with crew members of the International Space Station, inspiring them to pursue interests in STEM fields. For more information on our event, visit ARISS.org.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="ARISS_Intl@mastodon.hams.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="jJ5JrBA3JEw" data-video-title="Space Chat - National STEM Festival, Washington, DC USA" aria-label="Play: Space Chat - National STEM Festival, Washington, DC USA"><img class="video-card__thumb" src="https://i.ytimg.com/vi/jJ5JrBA3JEw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=jJ5JrBA3JEw" target="_blank" rel="noopener noreferrer">Space Chat - National STEM Festival, Washington, DC USA</a><time datetime="2026-06-18">2026-06-18</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="fDyPSD98Keg" data-video-title="ARISS Forum at Dayton Hamvention 2026 - Hamvention Live Stream" aria-label="Play: ARISS Forum at Dayton Hamvention 2026 - Hamvention Live Stream"><img class="video-card__thumb" src="https://i.ytimg.com/vi/fDyPSD98Keg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=fDyPSD98Keg" target="_blank" rel="noopener noreferrer">ARISS Forum at Dayton Hamvention 2026 - Hamvention Live Stream</a><time datetime="2026-05-23">2026-05-23</time></div></li><li class="video-card video-card--link"><a href="https://www.youtube.com/shorts/xQRed80JSs0" target="_blank" rel="noopener noreferrer">US STEM Proposal Webinar coming up April 30</a><time datetime="2026-04-23">2026-04-23</time></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="wVW5_8g8ywk" data-video-title="Space Chat: U of Bordeaux 2026 HamTV Version with Sophie Adenot" aria-label="Play: Space Chat: U of Bordeaux 2026 HamTV Version with Sophie Adenot"><img class="video-card__thumb" src="https://i.ytimg.com/vi/wVW5_8g8ywk/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=wVW5_8g8ywk" target="_blank" rel="noopener noreferrer">Space Chat: U of Bordeaux 2026 HamTV Version with Sophie Adenot</a><time datetime="2026-04-20">2026-04-20</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="155YWYq4BZg" data-video-title="Space Chat - Hilltop Elementary School, Canfield, Ohio USA" aria-label="Play: Space Chat - Hilltop Elementary School, Canfield, Ohio USA"><img class="video-card__thumb" src="https://i.ytimg.com/vi/155YWYq4BZg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=155YWYq4BZg" target="_blank" rel="noopener noreferrer">Space Chat - Hilltop Elementary School, Canfield, Ohio USA</a><time datetime="2026-04-04">2026-04-04</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="ARISS_Intl@mastodon.hams.social" data-mastodon-url="https://mastodon.hams.social/@ARISS_Intl"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

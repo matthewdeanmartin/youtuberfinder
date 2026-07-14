@@ -1,0 +1,25 @@
+Title: Blogothèque
+Date: 2026-06-20
+Slug: blogotheque
+save_as: creator/blogotheque/index.html
+url: creator/blogotheque/
+status: hidden
+Summary: Music creator Blogothèque on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Music</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/@blogotheque" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://rss-mstdn.studiofreesia.com/@youtube_blogotheque" target="_blank" rel="noopener noreferrer">@youtube_blogotheque@rss-mstdn.studiofreesia.com</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>707,000</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>72</strong></p>
+<p class="creator-profile__bio">To create unique musical moments, dive into the intimacy of a song, testify to the strength of a concert and offer it to as many people as possible through o... このアカウントはRSSフィードの内容を投稿するbotアカウントです。 このアカウントの投稿に関するお問い合わせは @ owner までお願いします。</p>
+
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="VwvFYt9Wrzw" data-video-title="Naomi Greene | A Take Away Show" aria-label="Play: Naomi Greene | A Take Away Show"><img class="video-card__thumb" src="https://i.ytimg.com/vi/VwvFYt9Wrzw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=VwvFYt9Wrzw" target="_blank" rel="noopener noreferrer">Naomi Greene | A Take Away Show</a><time datetime="2026-06-24">2026-06-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="UtAbIAWjugY" data-video-title="Maisie Peters &amp; Marcus Mumford - If You Let Me | Live Session" aria-label="Play: Maisie Peters &amp; Marcus Mumford - If You Let Me | Live Session"><img class="video-card__thumb" src="https://i.ytimg.com/vi/UtAbIAWjugY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=UtAbIAWjugY" target="_blank" rel="noopener noreferrer">Maisie Peters &amp; Marcus Mumford - If You Let Me | Live Session</a><time datetime="2026-05-27">2026-05-27</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="nvV28qb8los" data-video-title="Aaron Rowe - Hey Ma | Live Session" aria-label="Play: Aaron Rowe - Hey Ma | Live Session"><img class="video-card__thumb" src="https://i.ytimg.com/vi/nvV28qb8los/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=nvV28qb8los" target="_blank" rel="noopener noreferrer">Aaron Rowe - Hey Ma | Live Session</a><time datetime="2026-04-24">2026-04-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="7tIC16OCb0k" data-video-title="Harry Styles - Carla&#x27;s Song | A Take Away Show" aria-label="Play: Harry Styles - Carla&#x27;s Song | A Take Away Show"><img class="video-card__thumb" src="https://i.ytimg.com/vi/7tIC16OCb0k/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=7tIC16OCb0k" target="_blank" rel="noopener noreferrer">Harry Styles - Carla&#x27;s Song | A Take Away Show</a><time datetime="2026-04-08">2026-04-08</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="BqClh8IvVMQ" data-video-title="Chilly Gonzales - Live at @arteconcert Festival 2023 (Paris)" aria-label="Play: Chilly Gonzales - Live at @arteconcert Festival 2023 (Paris)"><img class="video-card__thumb" src="https://i.ytimg.com/vi/BqClh8IvVMQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=BqClh8IvVMQ" target="_blank" rel="noopener noreferrer">Chilly Gonzales - Live at @arteconcert Festival 2023 (Paris)</a><time datetime="2026-03-30">2026-03-30</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="youtube_blogotheque@rss-mstdn.studiofreesia.com" data-mastodon-url="https://rss-mstdn.studiofreesia.com/@youtube_blogotheque"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

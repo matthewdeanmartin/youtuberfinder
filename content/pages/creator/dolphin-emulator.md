@@ -1,0 +1,25 @@
+Title: Dolphin Emulator
+Date: 2026-06-20
+Slug: dolphin-emulator
+save_as: creator/dolphin-emulator/index.html
+url: creator/dolphin-emulator/
+status: hidden
+Summary: Technology & Computing creator Dolphin Emulator on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UC1US0SaXvIUPgnf-GLbfb3g" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://social.dolphin-emu.org/@dolphin" target="_blank" rel="noopener noreferrer">@dolphin@social.dolphin-emu.org</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>40,600</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>6600</strong></p>
+<p class="creator-profile__bio">The GameCube/Wii emulator of your choice!</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="dolphin@social.dolphin-emu.org" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="xtlihSygbRw" data-video-title="Triforce Showcase Featuring F-Zero AX" aria-label="Play: Triforce Showcase Featuring F-Zero AX"><img class="video-card__thumb" src="https://i.ytimg.com/vi/xtlihSygbRw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=xtlihSygbRw" target="_blank" rel="noopener noreferrer">Triforce Showcase Featuring F-Zero AX</a><time datetime="2026-02-16">2026-02-16</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="2jta4PkYBRk" data-video-title="Bug Showcase - Skyward Sword in Dolphin 2.0" aria-label="Play: Bug Showcase - Skyward Sword in Dolphin 2.0"><img class="video-card__thumb" src="https://i.ytimg.com/vi/2jta4PkYBRk/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=2jta4PkYBRk" target="_blank" rel="noopener noreferrer">Bug Showcase - Skyward Sword in Dolphin 2.0</a><time datetime="2024-04-30">2024-04-30</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="gIRilYj3Tg4" data-video-title="Ten Years of Dolphin (HD Reupload)" aria-label="Play: Ten Years of Dolphin (HD Reupload)"><img class="video-card__thumb" src="https://i.ytimg.com/vi/gIRilYj3Tg4/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=gIRilYj3Tg4" target="_blank" rel="noopener noreferrer">Ten Years of Dolphin (HD Reupload)</a><time datetime="2024-04-09">2024-04-09</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="sLlOtAYekuQ" data-video-title="libaesnd 2023 HLE demonstration featuring Sonic Mania" aria-label="Play: libaesnd 2023 HLE demonstration featuring Sonic Mania"><img class="video-card__thumb" src="https://i.ytimg.com/vi/sLlOtAYekuQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=sLlOtAYekuQ" target="_blank" rel="noopener noreferrer">libaesnd 2023 HLE demonstration featuring Sonic Mania</a><time datetime="2024-02-10">2024-02-10</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="lQryk9zXO-c" data-video-title="True Crime: New York City - Glitch Showcase (GameCube)" aria-label="Play: True Crime: New York City - Glitch Showcase (GameCube)"><img class="video-card__thumb" src="https://i.ytimg.com/vi/lQryk9zXO-c/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=lQryk9zXO-c" target="_blank" rel="noopener noreferrer">True Crime: New York City - Glitch Showcase (GameCube)</a><time datetime="2021-11-13">2021-11-13</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="dolphin@social.dolphin-emu.org" data-mastodon-url="https://social.dolphin-emu.org/@dolphin"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

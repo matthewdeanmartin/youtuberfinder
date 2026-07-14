@@ -1,0 +1,25 @@
+Title: CapcomChannel
+Date: 2026-06-20
+Slug: capcomchannel
+save_as: creator/capcomchannel/index.html
+url: creator/capcomchannel/
+status: hidden
+Summary: Gaming & VTubers creator CapcomChannel on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Gaming &amp; VTubers</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/@capcom" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://rss-mstdn.studiofreesia.com/@youtube_capcom" target="_blank" rel="noopener noreferrer">@youtube_capcom@rss-mstdn.studiofreesia.com</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>821,000</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>36</strong></p>
+<p class="creator-profile__bio">CAPCOM CHANNEL(カプコン チャンネル)は、ゲームソフトメーカー カプコンが運営するチャンネルです。カプコンのゲームタイトルの動画や企画動画などを配信します。 このアカウントはRSSフィードの内容を投稿するbotアカウントです。 このアカウントの投稿に関するお問い合わせは @ owner までお願いします。</p>
+
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="ZXQ4jNCQxlE" data-video-title="カプコンスポットライト｜2026.6.26" aria-label="Play: カプコンスポットライト｜2026.6.26"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ZXQ4jNCQxlE/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ZXQ4jNCQxlE" target="_blank" rel="noopener noreferrer">カプコンスポットライト｜2026.6.26</a><time datetime="2026-06-24">2026-06-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="zvXPsm5ZGqI" data-video-title="＜予告編＞カプコン最新情報をお届けするデジタルイベント「カプコンスポットライト｜2026.6.26」配信！" aria-label="Play: ＜予告編＞カプコン最新情報をお届けするデジタルイベント「カプコンスポットライト｜2026.6.26」配信！"><img class="video-card__thumb" src="https://i.ytimg.com/vi/zvXPsm5ZGqI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=zvXPsm5ZGqI" target="_blank" rel="noopener noreferrer">＜予告編＞カプコン最新情報をお届けするデジタルイベント「カプコンスポットライト｜2026.6.26」配信！</a><time datetime="2026-06-23">2026-06-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="W5aVAZs2oqI" data-video-title="『Devil May Cry 5 Devil Hunter Edition』 - Launch Trailer ｜Nintendo Switch 2" aria-label="Play: 『Devil May Cry 5 Devil Hunter Edition』 - Launch Trailer ｜Nintendo Switch 2"><img class="video-card__thumb" src="https://i.ytimg.com/vi/W5aVAZs2oqI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=W5aVAZs2oqI" target="_blank" rel="noopener noreferrer">『Devil May Cry 5 Devil Hunter Edition』 - Launch Trailer ｜Nintendo Switch 2</a><time datetime="2026-06-23">2026-06-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="UaZGH9yc-y4" data-video-title="Memories Are You -PRAGMATA Official Music Video" aria-label="Play: Memories Are You -PRAGMATA Official Music Video"><img class="video-card__thumb" src="https://i.ytimg.com/vi/UaZGH9yc-y4/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=UaZGH9yc-y4" target="_blank" rel="noopener noreferrer">Memories Are You -PRAGMATA Official Music Video</a><time datetime="2026-06-19">2026-06-19</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="XaweVCnHYsE" data-video-title="6月18日（木）よる7時配信|『プラグマタ』大ヒット記念！父の日スペシャルイベント" aria-label="Play: 6月18日（木）よる7時配信|『プラグマタ』大ヒット記念！父の日スペシャルイベント"><img class="video-card__thumb" src="https://i.ytimg.com/vi/XaweVCnHYsE/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=XaweVCnHYsE" target="_blank" rel="noopener noreferrer">6月18日（木）よる7時配信|『プラグマタ』大ヒット記念！父の日スペシャルイベント</a><time datetime="2026-06-18">2026-06-18</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="youtube_capcom@rss-mstdn.studiofreesia.com" data-mastodon-url="https://rss-mstdn.studiofreesia.com/@youtube_capcom"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

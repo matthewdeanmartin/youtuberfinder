@@ -1,0 +1,25 @@
+Title: Technische Universität München
+Date: 2026-06-20
+Slug: technische-universitat-munchen
+save_as: creator/technische-universitat-munchen/index.html
+url: creator/technische-universitat-munchen/
+status: hidden
+Summary: Science & Education creator Technische Universität München on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Science &amp; Education</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCD9OIFnCLtXbvMKRI1vufhQ" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://wisskomm.social/@tu_muenchen" target="_blank" rel="noopener noreferrer">@tu_muenchen@wisskomm.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>27,500</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>1510</strong></p>
+<p class="creator-profile__bio">Toots from the TUM web communications team</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="tu_muenchen@wisskomm.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="o_-aXObEuVw" data-video-title="Podcast &quot;We are TUM&quot;: Lebenslanges Lernen und People Development" aria-label="Play: Podcast &quot;We are TUM&quot;: Lebenslanges Lernen und People Development"><img class="video-card__thumb" src="https://i.ytimg.com/vi/o_-aXObEuVw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=o_-aXObEuVw" target="_blank" rel="noopener noreferrer">Podcast &quot;We are TUM&quot;: Lebenslanges Lernen und People Development</a><time datetime="2026-06-24">2026-06-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="95bBk-XEilg" data-video-title="NewIn: Prof. Anna Dowbaj" aria-label="Play: NewIn: Prof. Anna Dowbaj"><img class="video-card__thumb" src="https://i.ytimg.com/vi/95bBk-XEilg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=95bBk-XEilg" target="_blank" rel="noopener noreferrer">NewIn: Prof. Anna Dowbaj</a><time datetime="2026-06-22">2026-06-22</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="-CXuhje0vQs" data-video-title="TUM Diversity Day 2026" aria-label="Play: TUM Diversity Day 2026"><img class="video-card__thumb" src="https://i.ytimg.com/vi/-CXuhje0vQs/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=-CXuhje0vQs" target="_blank" rel="noopener noreferrer">TUM Diversity Day 2026</a><time datetime="2026-06-19">2026-06-19</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="v4FtCuh4F4A" data-video-title="TUM@Freising: Aus dem All - was Satelliten über unsere Wälder verraten" aria-label="Play: TUM@Freising: Aus dem All - was Satelliten über unsere Wälder verraten"><img class="video-card__thumb" src="https://i.ytimg.com/vi/v4FtCuh4F4A/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=v4FtCuh4F4A" target="_blank" rel="noopener noreferrer">TUM@Freising: Aus dem All - was Satelliten über unsere Wälder verraten</a><time datetime="2026-06-18">2026-06-18</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="FyAqm_tKZl8" data-video-title="TUM Entrepreneurship Day 2026 Trailer" aria-label="Play: TUM Entrepreneurship Day 2026 Trailer"><img class="video-card__thumb" src="https://i.ytimg.com/vi/FyAqm_tKZl8/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=FyAqm_tKZl8" target="_blank" rel="noopener noreferrer">TUM Entrepreneurship Day 2026 Trailer</a><time datetime="2026-06-02">2026-06-02</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="tu_muenchen@wisskomm.social" data-mastodon-url="https://wisskomm.social/@tu_muenchen"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

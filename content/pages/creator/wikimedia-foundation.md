@@ -1,0 +1,25 @@
+Title: Wikimedia Foundation
+Date: 2026-06-20
+Slug: wikimedia-foundation
+save_as: creator/wikimedia-foundation/index.html
+url: creator/wikimedia-foundation/
+status: hidden
+Summary: News, Politics & Society creator Wikimedia Foundation on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">News, Politics &amp; Society</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCK_cUZLMpibyRiIdp0uF-lQ" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://wikimedia.social/@wikimediafoundation" target="_blank" rel="noopener noreferrer">@wikimediafoundation@wikimedia.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>9,740</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>9253</strong></p>
+<p class="creator-profile__bio">We&#x27;re the nonprofit that hosts # Wikipedia and it&#x27;s sister projects, working to create a world where every human can freely share in the sum of all knowledge. Join the movement. Header: <a href="https://w.wiki/7BaE" target="_blank" rel="noopener noreferrer">https://w.wiki/7BaE</a> Avatar: <a href="https://w.wiki/4np4" target="_blank" rel="noopener noreferrer">https://w.wiki/4np4</a></p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="wikimediafoundation@wikimedia.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="rHMTJB8gleQ" data-video-title="Wikimedia Hackathon 2026 Closing Ceremony" aria-label="Play: Wikimedia Hackathon 2026 Closing Ceremony"><img class="video-card__thumb" src="https://i.ytimg.com/vi/rHMTJB8gleQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=rHMTJB8gleQ" target="_blank" rel="noopener noreferrer">Wikimedia Hackathon 2026 Closing Ceremony</a><time datetime="2026-05-04">2026-05-04</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="7ZoQdPNt1nc" data-video-title="Wikimedia Hackathon 2026 Opening Ceremony" aria-label="Play: Wikimedia Hackathon 2026 Opening Ceremony"><img class="video-card__thumb" src="https://i.ytimg.com/vi/7ZoQdPNt1nc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=7ZoQdPNt1nc" target="_blank" rel="noopener noreferrer">Wikimedia Hackathon 2026 Opening Ceremony</a><time datetime="2026-05-01">2026-05-01</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="qW5IQJv84HY" data-video-title="Wikimedia Research Showcase - February 2026" aria-label="Play: Wikimedia Research Showcase - February 2026"><img class="video-card__thumb" src="https://i.ytimg.com/vi/qW5IQJv84HY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=qW5IQJv84HY" target="_blank" rel="noopener noreferrer">Wikimedia Research Showcase - February 2026</a><time datetime="2026-02-26">2026-02-26</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="8lZWpSDMJF8" data-video-title="Wikimedia Foundation&#x27;s speech at the United Nations General Assembly hall" aria-label="Play: Wikimedia Foundation&#x27;s speech at the United Nations General Assembly hall"><img class="video-card__thumb" src="https://i.ytimg.com/vi/8lZWpSDMJF8/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=8lZWpSDMJF8" target="_blank" rel="noopener noreferrer">Wikimedia Foundation&#x27;s speech at the United Nations General Assembly hall</a><time datetime="2026-01-16">2026-01-16</time></div></li><li class="video-card video-card--link"><a href="https://www.youtube.com/shorts/uoBcPE7ipAg" target="_blank" rel="noopener noreferrer">Wikipedia was once an impossible dream. Today, it is 25 years of humanity at its best.</a><time datetime="2025-12-29">2025-12-29</time></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="wikimediafoundation@wikimedia.social" data-mastodon-url="https://wikimedia.social/@wikimediafoundation"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

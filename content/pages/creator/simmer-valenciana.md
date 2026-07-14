@@ -1,0 +1,25 @@
+Title: Simmer Valenciana
+Date: 2026-06-20
+Slug: simmer-valenciana
+save_as: creator/simmer-valenciana/index.html
+url: creator/simmer-valenciana/
+status: hidden
+Summary: Gaming & VTubers creator Simmer Valenciana on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Gaming &amp; VTubers</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCYCRrW0XAoxaoU_FTOV-ytA" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodont.cat/@simmervalenciana" target="_blank" rel="noopener noreferrer">@simmervalenciana@mastodont.cat</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>592</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>243</strong></p>
+<p class="creator-profile__bio">🎮Gamer valenciana | Comunicadora 📺 # PlaçaTísner @beteve | 🔚La Colla @apunt_media | 🟣Creadora de contingut | # Benicarló i # Terrassa 🧑‍🏫 Politòloga en camí | @poblet_info @SimsAddictes i @TerritoriGamer</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="simmervalenciana@mastodont.cat" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="QYgHsgU63io" data-video-title="[Gaming en Femení] -🌟FINAL DE TEMPORADA🌟" aria-label="Play: [Gaming en Femení] -🌟FINAL DE TEMPORADA🌟"><img class="video-card__thumb" src="https://i.ytimg.com/vi/QYgHsgU63io/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=QYgHsgU63io" target="_blank" rel="noopener noreferrer">[Gaming en Femení] -🌟FINAL DE TEMPORADA🌟</a><time datetime="2026-06-22">2026-06-22</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="YhH2AR889mY" data-video-title="[Steam Next Fest] -🌟Nit de DEMOS #2🌟" aria-label="Play: [Steam Next Fest] -🌟Nit de DEMOS #2🌟"><img class="video-card__thumb" src="https://i.ytimg.com/vi/YhH2AR889mY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=YhH2AR889mY" target="_blank" rel="noopener noreferrer">[Steam Next Fest] -🌟Nit de DEMOS #2🌟</a><time datetime="2026-06-20">2026-06-20</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="vZECKs3wSg0" data-video-title="[Steam Next Fest] -🌟Nit de DEMOS #1🌟" aria-label="Play: [Steam Next Fest] -🌟Nit de DEMOS #1🌟"><img class="video-card__thumb" src="https://i.ytimg.com/vi/vZECKs3wSg0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=vZECKs3wSg0" target="_blank" rel="noopener noreferrer">[Steam Next Fest] -🌟Nit de DEMOS #1🌟</a><time datetime="2026-06-19">2026-06-19</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="Qbe7E9HcGhc" data-video-title="[Paralives] -🌟Socialitzant pel barri - Mode Vida🌟" aria-label="Play: [Paralives] -🌟Socialitzant pel barri - Mode Vida🌟"><img class="video-card__thumb" src="https://i.ytimg.com/vi/Qbe7E9HcGhc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Qbe7E9HcGhc" target="_blank" rel="noopener noreferrer">[Paralives] -🌟Socialitzant pel barri - Mode Vida🌟</a><time datetime="2026-06-12">2026-06-12</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="XsMZPsOwRDw" data-video-title="[PARALIVES] -🌟Seguim trastejant el joc🌟" aria-label="Play: [PARALIVES] -🌟Seguim trastejant el joc🌟"><img class="video-card__thumb" src="https://i.ytimg.com/vi/XsMZPsOwRDw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=XsMZPsOwRDw" target="_blank" rel="noopener noreferrer">[PARALIVES] -🌟Seguim trastejant el joc🌟</a><time datetime="2026-06-11">2026-06-11</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="simmervalenciana@mastodont.cat" data-mastodon-url="https://mastodont.cat/@simmervalenciana"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

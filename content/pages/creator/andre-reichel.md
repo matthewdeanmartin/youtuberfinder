@@ -1,0 +1,25 @@
+Title: André Reichel
+Date: 2026-06-20
+Slug: andre-reichel
+save_as: creator/andre-reichel/index.html
+url: creator/andre-reichel/
+status: hidden
+Summary: Science & Education creator André Reichel on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Science &amp; Education</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCZ0It9FJtFdqv_T-y8HMI1w" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://fediscience.org/@andrereichel" target="_blank" rel="noopener noreferrer">@andrereichel@fediscience.org</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>28</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>296</strong></p>
+<p class="creator-profile__bio">German # Sustainability Researcher &amp; Critical Management Scholar | Ecological Economist &amp; System Theorist | # Professor of # International Management &amp; Sustainability in # Stuttgart | Tree Hugger | He/Him | Toots auf Deutsch and English</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="andrereichel@fediscience.org" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="wlNNIKzklAc" data-video-title="Treffpunkt Automotive 2021 / UN-SDGs – Prof. Dr. André Reichel" aria-label="Play: Treffpunkt Automotive 2021 / UN-SDGs – Prof. Dr. André Reichel"><img class="video-card__thumb" src="https://i.ytimg.com/vi/wlNNIKzklAc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=wlNNIKzklAc" target="_blank" rel="noopener noreferrer">Treffpunkt Automotive 2021 / UN-SDGs – Prof. Dr. André Reichel</a><time datetime="2022-04-30">2022-04-30</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="e-B3ANW_xNg" data-video-title="Livestream von André Reichel" aria-label="Play: Livestream von André Reichel"><img class="video-card__thumb" src="https://i.ytimg.com/vi/e-B3ANW_xNg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=e-B3ANW_xNg" target="_blank" rel="noopener noreferrer">Livestream von André Reichel</a><time datetime="2020-11-17">2020-11-17</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="IOvY0dPaRZM" data-video-title="Krise als Chance? Nachhaltigkeit nach Corona" aria-label="Play: Krise als Chance? Nachhaltigkeit nach Corona"><img class="video-card__thumb" src="https://i.ytimg.com/vi/IOvY0dPaRZM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=IOvY0dPaRZM" target="_blank" rel="noopener noreferrer">Krise als Chance? Nachhaltigkeit nach Corona</a><time datetime="2020-05-27">2020-05-27</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="Mx3tPLQH_zs" data-video-title="André Reichel Live!" aria-label="Play: André Reichel Live!"><img class="video-card__thumb" src="https://i.ytimg.com/vi/Mx3tPLQH_zs/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Mx3tPLQH_zs" target="_blank" rel="noopener noreferrer">André Reichel Live!</a><time datetime="2020-03-29">2020-03-29</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="NFXUirnIFN0" data-video-title="Digital Revolution &amp; the Common Good" aria-label="Play: Digital Revolution &amp; the Common Good"><img class="video-card__thumb" src="https://i.ytimg.com/vi/NFXUirnIFN0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=NFXUirnIFN0" target="_blank" rel="noopener noreferrer">Digital Revolution &amp; the Common Good</a><time datetime="2019-01-15">2019-01-15</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="andrereichel@fediscience.org" data-mastodon-url="https://fediscience.org/@andrereichel"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

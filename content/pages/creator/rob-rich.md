@@ -1,0 +1,25 @@
+Title: Rob Rich
+Date: 2026-06-20
+Slug: rob-rich
+save_as: creator/rob-rich/index.html
+url: creator/rob-rich/
+status: hidden
+Summary: Art, Design & Making creator Rob Rich on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Art, Design &amp; Making</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/c/RobsteinOne" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://elekk.xyz/@RobsteinOne" target="_blank" rel="noopener noreferrer">@RobsteinOne@elekk.xyz</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>4,980</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>78</strong></p>
+<p class="creator-profile__bio">Designer, amateur toy art critic, columnist &amp; Exploits Games editor for Unwinnable, goofball.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="RobsteinOne@elekk.xyz" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="eDbhs9PLksA" data-video-title="&quot;Ethical&quot; Toy Collecting - DuckTank Talk" aria-label="Play: &quot;Ethical&quot; Toy Collecting - DuckTank Talk"><img class="video-card__thumb" src="https://i.ytimg.com/vi/eDbhs9PLksA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=eDbhs9PLksA" target="_blank" rel="noopener noreferrer">&quot;Ethical&quot; Toy Collecting - DuckTank Talk</a><time datetime="2026-06-24">2026-06-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="6ueLMS2agss" data-video-title="My Financial Balancing Act - DuckTank Talk" aria-label="Play: My Financial Balancing Act - DuckTank Talk"><img class="video-card__thumb" src="https://i.ytimg.com/vi/6ueLMS2agss/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=6ueLMS2agss" target="_blank" rel="noopener noreferrer">My Financial Balancing Act - DuckTank Talk</a><time datetime="2026-06-17">2026-06-17</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="mHCov9u0m6g" data-video-title="5 Alternatives to Just Buying MORE Toys - DuckTank Talk" aria-label="Play: 5 Alternatives to Just Buying MORE Toys - DuckTank Talk"><img class="video-card__thumb" src="https://i.ytimg.com/vi/mHCov9u0m6g/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=mHCov9u0m6g" target="_blank" rel="noopener noreferrer">5 Alternatives to Just Buying MORE Toys - DuckTank Talk</a><time datetime="2026-06-10">2026-06-10</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="4dL65sggmkI" data-video-title="I *LOVE* Nitro Gen Omega - DuckTank Talk" aria-label="Play: I *LOVE* Nitro Gen Omega - DuckTank Talk"><img class="video-card__thumb" src="https://i.ytimg.com/vi/4dL65sggmkI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=4dL65sggmkI" target="_blank" rel="noopener noreferrer">I *LOVE* Nitro Gen Omega - DuckTank Talk</a><time datetime="2026-06-03">2026-06-03</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="hlyr2qK_aZk" data-video-title="Let&#x27;s be Real About Metal Cardbot - DuckTank Talk" aria-label="Play: Let&#x27;s be Real About Metal Cardbot - DuckTank Talk"><img class="video-card__thumb" src="https://i.ytimg.com/vi/hlyr2qK_aZk/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=hlyr2qK_aZk" target="_blank" rel="noopener noreferrer">Let&#x27;s be Real About Metal Cardbot - DuckTank Talk</a><time datetime="2026-05-27">2026-05-27</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="RobsteinOne@elekk.xyz" data-mastodon-url="https://elekk.xyz/@RobsteinOne"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

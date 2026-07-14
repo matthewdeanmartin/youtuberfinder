@@ -1,0 +1,25 @@
+Title: Anthrocon, Inc.
+Date: 2026-06-20
+Slug: anthrocon-inc
+save_as: creator/anthrocon-inc/index.html
+url: creator/anthrocon-inc/
+status: hidden
+Summary: Other creator Anthrocon, Inc. on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Other</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCOJFIYDaaDWQK1GX3gtnbwg" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.furrycon.social/@anthrocon" target="_blank" rel="noopener noreferrer">@anthrocon@mastodon.furrycon.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>51,700</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>642</strong></p>
+<p class="creator-profile__bio">Anthrocon is Pittsburgh&#x27;s Premier Furry Convention. Join us July 2-5, 2026 for 🙀Critters, Cryptids &amp; Curses👻 | 📧 info@anthrocon.org | # Anthrocon # LovePGH</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="anthrocon@mastodon.furrycon.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="g92nrT5z9N0" data-video-title="Closing Ceremonies [4K] — Anthrocon 2025" aria-label="Play: Closing Ceremonies [4K] — Anthrocon 2025"><img class="video-card__thumb" src="https://i.ytimg.com/vi/g92nrT5z9N0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=g92nrT5z9N0" target="_blank" rel="noopener noreferrer">Closing Ceremonies [4K] — Anthrocon 2025</a><time datetime="2025-07-24">2025-07-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="JscSXXYgH7w" data-video-title="Jazz Big Band [4K] — Anthrocon 2025" aria-label="Play: Jazz Big Band [4K] — Anthrocon 2025"><img class="video-card__thumb" src="https://i.ytimg.com/vi/JscSXXYgH7w/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=JscSXXYgH7w" target="_blank" rel="noopener noreferrer">Jazz Big Band [4K] — Anthrocon 2025</a><time datetime="2025-07-24">2025-07-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="sCj9IIIDT6w" data-video-title="Furry Disco Studio [4K] — Anthrocon 2025" aria-label="Play: Furry Disco Studio [4K] — Anthrocon 2025"><img class="video-card__thumb" src="https://i.ytimg.com/vi/sCj9IIIDT6w/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=sCj9IIIDT6w" target="_blank" rel="noopener noreferrer">Furry Disco Studio [4K] — Anthrocon 2025</a><time datetime="2025-07-24">2025-07-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="X4P_RtQawZw" data-video-title="Floor Wars [4K] — Anthrocon 2025" aria-label="Play: Floor Wars [4K] — Anthrocon 2025"><img class="video-card__thumb" src="https://i.ytimg.com/vi/X4P_RtQawZw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=X4P_RtQawZw" target="_blank" rel="noopener noreferrer">Floor Wars [4K] — Anthrocon 2025</a><time datetime="2025-07-19">2025-07-19</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="UvtWUEY_cFY" data-video-title="Dance Competition [4K] — Anthrocon 2025" aria-label="Play: Dance Competition [4K] — Anthrocon 2025"><img class="video-card__thumb" src="https://i.ytimg.com/vi/UvtWUEY_cFY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=UvtWUEY_cFY" target="_blank" rel="noopener noreferrer">Dance Competition [4K] — Anthrocon 2025</a><time datetime="2025-07-19">2025-07-19</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="anthrocon@mastodon.furrycon.social" data-mastodon-url="https://mastodon.furrycon.social/@anthrocon"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

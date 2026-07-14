@@ -1,0 +1,25 @@
+Title: Martin Dougiamas
+Date: 2026-06-20
+Slug: martin-dougiamas
+save_as: creator/martin-dougiamas/index.html
+url: creator/martin-dougiamas/
+status: hidden
+Summary: Technology & Computing creator Martin Dougiamas on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UC0nTNCAdcCx4mWF2ryWTSWg" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://openedtech.social/@martin" target="_blank" rel="noopener noreferrer">@martin@openedtech.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>133</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>1086</strong></p>
+<p class="creator-profile__bio">I’ve mixed Computer Science and Education since 1999. # OpenSource is The Way. Founder, Chairman and now Head of Research @ moodle Founder and Chairman @ openedtech My personal mission is to find and promote positive ways to implement technology like # AI , # AR and # Openness to help bring high qua…</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="martin@openedtech.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="HdpGAnDVQdg" data-video-title="OER Dataset for AI - quick presentation" aria-label="Play: OER Dataset for AI - quick presentation"><img class="video-card__thumb" src="https://i.ytimg.com/vi/HdpGAnDVQdg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=HdpGAnDVQdg" target="_blank" rel="noopener noreferrer">OER Dataset for AI - quick presentation</a><time datetime="2024-11-20">2024-11-20</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="Iz3HuYD1J1Y" data-video-title="Dirt Man (Extended mix)" aria-label="Play: Dirt Man (Extended mix)"><img class="video-card__thumb" src="https://i.ytimg.com/vi/Iz3HuYD1J1Y/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Iz3HuYD1J1Y" target="_blank" rel="noopener noreferrer">Dirt Man (Extended mix)</a><time datetime="2024-07-29">2024-07-29</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="LlzYhBITxzs" data-video-title="GoldenEye 007 Pause Music (1 hour)" aria-label="Play: GoldenEye 007 Pause Music (1 hour)"><img class="video-card__thumb" src="https://i.ytimg.com/vi/LlzYhBITxzs/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=LlzYhBITxzs" target="_blank" rel="noopener noreferrer">GoldenEye 007 Pause Music (1 hour)</a><time datetime="2024-05-28">2024-05-28</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="f4F9f_kCl2U" data-video-title="MoodleMoot Rwanda presentation" aria-label="Play: MoodleMoot Rwanda presentation"><img class="video-card__thumb" src="https://i.ytimg.com/vi/f4F9f_kCl2U/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=f4F9f_kCl2U" target="_blank" rel="noopener noreferrer">MoodleMoot Rwanda presentation</a><time datetime="2024-05-26">2024-05-26</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="MBYfLEGhUvE" data-video-title="Usha &amp; Martin Wedding Highlights" aria-label="Play: Usha &amp; Martin Wedding Highlights"><img class="video-card__thumb" src="https://i.ytimg.com/vi/MBYfLEGhUvE/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=MBYfLEGhUvE" target="_blank" rel="noopener noreferrer">Usha &amp; Martin Wedding Highlights</a><time datetime="2024-05-26">2024-05-26</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="martin@openedtech.social" data-mastodon-url="https://openedtech.social/@martin"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

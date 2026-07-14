@@ -1,0 +1,25 @@
+Title: Bytten Studio
+Date: 2026-06-20
+Slug: bytten-studio
+save_as: creator/bytten-studio/index.html
+url: creator/bytten-studio/
+status: hidden
+Summary: Gaming & VTubers creator Bytten Studio on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Gaming &amp; VTubers</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCPvmOeWHkiPGh3LMTG3bwvQ" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://social.bytten-studio.com/@ByttenStudio" target="_blank" rel="noopener noreferrer">@ByttenStudio@social.bytten-studio.com</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>1,930</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>272</strong></p>
+<p class="creator-profile__bio">Bytten Studio is a small Brighton-based indie game studio making @ CassetteBeasts !</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="ByttenStudio@social.bytten-studio.com" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="zqoRPGm36cQ" data-video-title="Developer Gameplay Stream #2 | Cassette Beasts" aria-label="Play: Developer Gameplay Stream #2 | Cassette Beasts"><img class="video-card__thumb" src="https://i.ytimg.com/vi/zqoRPGm36cQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=zqoRPGm36cQ" target="_blank" rel="noopener noreferrer">Developer Gameplay Stream #2 | Cassette Beasts</a><time datetime="2022-12-07">2022-12-07</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="aGXIvw19Hkg" data-video-title="Developer Gameplay Stream | Cassette Beasts" aria-label="Play: Developer Gameplay Stream | Cassette Beasts"><img class="video-card__thumb" src="https://i.ytimg.com/vi/aGXIvw19Hkg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=aGXIvw19Hkg" target="_blank" rel="noopener noreferrer">Developer Gameplay Stream | Cassette Beasts</a><time datetime="2022-05-06">2022-05-06</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="3FMebFFnD9k" data-video-title="Cassette Beasts | Open World Gameplay" aria-label="Play: Cassette Beasts | Open World Gameplay"><img class="video-card__thumb" src="https://i.ytimg.com/vi/3FMebFFnD9k/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=3FMebFFnD9k" target="_blank" rel="noopener noreferrer">Cassette Beasts | Open World Gameplay</a><time datetime="2020-09-25">2020-09-25</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="fLkqhAfFN6g" data-video-title="Lenna&#x27;s Inception - 1.1 Update Trailer" aria-label="Play: Lenna&#x27;s Inception - 1.1 Update Trailer"><img class="video-card__thumb" src="https://i.ytimg.com/vi/fLkqhAfFN6g/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=fLkqhAfFN6g" target="_blank" rel="noopener noreferrer">Lenna&#x27;s Inception - 1.1 Update Trailer</a><time datetime="2020-08-31">2020-08-31</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="H-bD1Pf3xGY" data-video-title="Cassette Beasts | Reveal Trailer" aria-label="Play: Cassette Beasts | Reveal Trailer"><img class="video-card__thumb" src="https://i.ytimg.com/vi/H-bD1Pf3xGY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=H-bD1Pf3xGY" target="_blank" rel="noopener noreferrer">Cassette Beasts | Reveal Trailer</a><time datetime="2020-05-11">2020-05-11</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="ByttenStudio@social.bytten-studio.com" data-mastodon-url="https://social.bytten-studio.com/@ByttenStudio"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

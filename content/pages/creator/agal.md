@@ -1,0 +1,25 @@
+Title: AGAL
+Date: 2026-06-20
+Slug: agal
+save_as: creator/agal/index.html
+url: creator/agal/
+status: hidden
+Summary: Other creator AGAL on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Other</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCqeBPR6PGP62quM5wGtS4_w" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.gal/@agal" target="_blank" rel="noopener noreferrer">@agal@mastodon.gal</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>911</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>137</strong></p>
+<p class="creator-profile__bio">🛰️ Associaçom Galega da Língua, reintegrando o galego na lusofonia desde 1981</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="agal@mastodon.gal" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="IhNF_4gkC5Q" data-video-title="A Foice - A Orquestra Filarmónica de Osaka | #MusicandoCarvalhoCalero" aria-label="Play: A Foice - A Orquestra Filarmónica de Osaka | #MusicandoCarvalhoCalero"><img class="video-card__thumb" src="https://i.ytimg.com/vi/IhNF_4gkC5Q/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=IhNF_4gkC5Q" target="_blank" rel="noopener noreferrer">A Foice - A Orquestra Filarmónica de Osaka | #MusicandoCarvalhoCalero</a><time datetime="2023-10-18">2023-10-18</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="W_n4QfV3NJY" data-video-title="Alféizar - Nom sei se matei | #MusicandoCarvalhoCalero" aria-label="Play: Alféizar - Nom sei se matei | #MusicandoCarvalhoCalero"><img class="video-card__thumb" src="https://i.ytimg.com/vi/W_n4QfV3NJY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=W_n4QfV3NJY" target="_blank" rel="noopener noreferrer">Alféizar - Nom sei se matei | #MusicandoCarvalhoCalero</a><time datetime="2023-10-17">2023-10-17</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="kjbDawEq3jo" data-video-title="Milhomes - Afastado de Vénus | #MusicandoCarvalhoCalero" aria-label="Play: Milhomes - Afastado de Vénus | #MusicandoCarvalhoCalero"><img class="video-card__thumb" src="https://i.ytimg.com/vi/kjbDawEq3jo/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=kjbDawEq3jo" target="_blank" rel="noopener noreferrer">Milhomes - Afastado de Vénus | #MusicandoCarvalhoCalero</a><time datetime="2023-10-16">2023-10-16</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="L38FnY7nxjg" data-video-title="Tommy Gun - Automóvel | #MusicandoCarvalhoCalero" aria-label="Play: Tommy Gun - Automóvel | #MusicandoCarvalhoCalero"><img class="video-card__thumb" src="https://i.ytimg.com/vi/L38FnY7nxjg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=L38FnY7nxjg" target="_blank" rel="noopener noreferrer">Tommy Gun - Automóvel | #MusicandoCarvalhoCalero</a><time datetime="2023-10-15">2023-10-15</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="Q7l6q4wkI9U" data-video-title="Intranxeira - Xadrez sobor lençois | #MusicandoCarvalhoCalero" aria-label="Play: Intranxeira - Xadrez sobor lençois | #MusicandoCarvalhoCalero"><img class="video-card__thumb" src="https://i.ytimg.com/vi/Q7l6q4wkI9U/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Q7l6q4wkI9U" target="_blank" rel="noopener noreferrer">Intranxeira - Xadrez sobor lençois | #MusicandoCarvalhoCalero</a><time datetime="2023-10-14">2023-10-14</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="agal@mastodon.gal" data-mastodon-url="https://mastodon.gal/@agal"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

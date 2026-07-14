@@ -1,0 +1,25 @@
+Title: Tanja Kinkel
+Date: 2026-06-20
+Slug: tanja-kinkel
+save_as: creator/tanja-kinkel/index.html
+url: creator/tanja-kinkel/
+status: hidden
+Summary: Art, Design & Making creator Tanja Kinkel on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Art, Design &amp; Making</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCZv_zbUb4tR6byX4606tykA" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://muenchen.social/@Tanjakinkel" target="_blank" rel="noopener noreferrer">@Tanjakinkel@muenchen.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>28</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>227</strong></p>
+<p class="creator-profile__bio">Geb. 27.09.1969 in Bamberg. Autorin, Vielleserin, Reisende. Liebt Geschichte, Fantasy, Gegenwart und Zukunft. Und Katzen.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="Tanjakinkel@muenchen.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="OI-enxR5qLE" data-video-title="18. März 1848 - Lesung aus &quot;Im Wind der Freiheit&quot;" aria-label="Play: 18. März 1848 - Lesung aus &quot;Im Wind der Freiheit&quot;"><img class="video-card__thumb" src="https://i.ytimg.com/vi/OI-enxR5qLE/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=OI-enxR5qLE" target="_blank" rel="noopener noreferrer">18. März 1848 - Lesung aus &quot;Im Wind der Freiheit&quot;</a><time datetime="2026-03-18">2026-03-18</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="kUbHolj6cAg" data-video-title="Bamberger Totentanz: Die Schwertgoschen" aria-label="Play: Bamberger Totentanz: Die Schwertgoschen"><img class="video-card__thumb" src="https://i.ytimg.com/vi/kUbHolj6cAg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=kUbHolj6cAg" target="_blank" rel="noopener noreferrer">Bamberger Totentanz: Die Schwertgoschen</a><time datetime="2024-11-14">2024-11-14</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="Z8HvLyd2PpY" data-video-title="Chorprobe für den Bamberger Totentanz" aria-label="Play: Chorprobe für den Bamberger Totentanz"><img class="video-card__thumb" src="https://i.ytimg.com/vi/Z8HvLyd2PpY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Z8HvLyd2PpY" target="_blank" rel="noopener noreferrer">Chorprobe für den Bamberger Totentanz</a><time datetime="2024-10-28">2024-10-28</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="bn5NhFQsg7g" data-video-title="Der Tod spricht - Interview mit Felix D&#x27;Angelo" aria-label="Play: Der Tod spricht - Interview mit Felix D&#x27;Angelo"><img class="video-card__thumb" src="https://i.ytimg.com/vi/bn5NhFQsg7g/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=bn5NhFQsg7g" target="_blank" rel="noopener noreferrer">Der Tod spricht - Interview mit Felix D&#x27;Angelo</a><time datetime="2024-10-21">2024-10-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="JNm1AvcJBqM" data-video-title="Kostüme für den Bamberger Totentanz" aria-label="Play: Kostüme für den Bamberger Totentanz"><img class="video-card__thumb" src="https://i.ytimg.com/vi/JNm1AvcJBqM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=JNm1AvcJBqM" target="_blank" rel="noopener noreferrer">Kostüme für den Bamberger Totentanz</a><time datetime="2024-10-21">2024-10-21</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="Tanjakinkel@muenchen.social" data-mastodon-url="https://muenchen.social/@Tanjakinkel"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

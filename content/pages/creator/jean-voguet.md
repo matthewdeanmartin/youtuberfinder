@@ -1,0 +1,25 @@
+Title: Jean VOGUET
+Date: 2026-06-20
+Slug: jean-voguet
+save_as: creator/jean-voguet/index.html
+url: creator/jean-voguet/
+status: hidden
+Summary: Music creator Jean VOGUET on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Music</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCqlrI_otBQy_sCaJUSTJtVg" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.social/@jeanvoguet" target="_blank" rel="noopener noreferrer">@jeanvoguet@mastodon.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>8</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>266</strong></p>
+<p class="creator-profile__bio"><a href="https://linktr.ee/jeanvoguet" target="_blank" rel="noopener noreferrer">https://linktr.ee/jeanvoguet</a> <a href="https://jeanvoguet.wordpress.com" target="_blank" rel="noopener noreferrer">https://jeanvoguet.wordpress.com</a> Acousmatic Composer - Geophonodesies, Heterotopias &amp; Volumiphonies # JeanVoguet # volumiphony # acousmatic # electroacoustic # AcousmaticMusic # ElectronicMusic # volumiphonie # 3Daudio # geophonodesy # AudioResearch</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="jeanvoguet@mastodon.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="NAxCCazdbOw" data-video-title="Critical Zone" aria-label="Play: Critical Zone"><img class="video-card__thumb" src="https://i.ytimg.com/vi/NAxCCazdbOw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=NAxCCazdbOw" target="_blank" rel="noopener noreferrer">Critical Zone</a><time datetime="2026-05-11">2026-05-11</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="KIHZd6z9j68" data-video-title="« Oneiroi » (Binaurale)" aria-label="Play: « Oneiroi » (Binaurale)"><img class="video-card__thumb" src="https://i.ytimg.com/vi/KIHZd6z9j68/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=KIHZd6z9j68" target="_blank" rel="noopener noreferrer">« Oneiroi » (Binaurale)</a><time datetime="2025-11-19">2025-11-19</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="ttWtB-2lYsQ" data-video-title="« Oneiroi »" aria-label="Play: « Oneiroi »"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ttWtB-2lYsQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ttWtB-2lYsQ" target="_blank" rel="noopener noreferrer">« Oneiroi »</a><time datetime="2025-08-26">2025-08-26</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="0y9kfRmSf6E" data-video-title="« Atlantide »" aria-label="Play: « Atlantide »"><img class="video-card__thumb" src="https://i.ytimg.com/vi/0y9kfRmSf6E/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=0y9kfRmSf6E" target="_blank" rel="noopener noreferrer">« Atlantide »</a><time datetime="2024-02-12">2024-02-12</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="CxE2WPNJ9KM" data-video-title="Pièces et Miniatures pour Une Guitare Électrique Seule N°3" aria-label="Play: Pièces et Miniatures pour Une Guitare Électrique Seule N°3"><img class="video-card__thumb" src="https://i.ytimg.com/vi/CxE2WPNJ9KM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=CxE2WPNJ9KM" target="_blank" rel="noopener noreferrer">Pièces et Miniatures pour Une Guitare Électrique Seule N°3</a><time datetime="2024-02-02">2024-02-02</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="jeanvoguet@mastodon.social" data-mastodon-url="https://mastodon.social/@jeanvoguet"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

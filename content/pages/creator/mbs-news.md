@@ -1,0 +1,25 @@
+Title: MBS NEWS
+Date: 2026-06-20
+Slug: mbs-news
+save_as: creator/mbs-news/index.html
+url: creator/mbs-news/
+status: hidden
+Summary: News, Politics & Society creator MBS NEWS on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">News, Politics &amp; Society</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/@mbsnews" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://rss-mstdn.studiofreesia.com/@youtube_mbsnews" target="_blank" rel="noopener noreferrer">@youtube_mbsnews@rss-mstdn.studiofreesia.com</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>1,310,000</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>107</strong></p>
+<p class="creator-profile__bio">毎日放送報道情報局が運営するチャンネルです。最新のニュース動画や、MBS報道番組の『憤マン！』『特命取材班 スクープ』といった特集動画などを配信！台風などの際には特別映像の『ライブ配信』も行います。▼チャンネル登録をどうぞよろしくお願いいたします！ <a href="https://www.youtube.com/c/MBSne" target="_blank" rel="noopener noreferrer">https://www.youtube.com/c/MBSne</a> ... このアカウントはRSSフィードの内容を投稿するbotアカウントです。 このアカウントの投稿に関するお問い合わせは @ owner までお願いします。</p>
+
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="uS6mYpq-SnM" data-video-title="【大阪都構想】住民投票めぐり与党内で駆け引き…これまで吉村代表は「大阪府で実施」主張　高市総理の修正案を受け入れ「大阪市で実施」へ（2026年6月24日）" aria-label="Play: 【大阪都構想】住民投票めぐり与党内で駆け引き…これまで吉村代表は「大阪府で実施」主張　高市総理の修正案を受け入れ「大阪市で実施」へ（2026年6月24日）"><img class="video-card__thumb" src="https://i.ytimg.com/vi/uS6mYpq-SnM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=uS6mYpq-SnM" target="_blank" rel="noopener noreferrer">【大阪都構想】住民投票めぐり与党内で駆け引き…これまで吉村代表は「大阪府で実施」主張　高市総理の修正案を受け入れ「大阪市で実施」へ（2026年6月24日）</a><time datetime="2026-06-24">2026-06-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="YQjD6d6ewMw" data-video-title="【神戸市冷凍庫遺体】逮捕の元妻は約14年間家賃支払い…事件発覚防ごうとしたか／医師免許停止中に医療行為したか　元医師逮捕　のべ95人の患者に181回…診察や薬の処方などした疑い【6/24最新ニュース】" aria-label="Play: 【神戸市冷凍庫遺体】逮捕の元妻は約14年間家賃支払い…事件発覚防ごうとしたか／医師免許停止中に医療行為したか　元医師逮捕　のべ95人の患者に181回…診察や薬の処方などした疑い【6/24最新ニュース】"><img class="video-card__thumb" src="https://i.ytimg.com/vi/YQjD6d6ewMw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=YQjD6d6ewMw" target="_blank" rel="noopener noreferrer">【神戸市冷凍庫遺体】逮捕の元妻は約14年間家賃支払い…事件発覚防ごうとしたか／医師免許停止中に医療行為したか　元医師逮捕　のべ95人の患者に181回…診察や薬の処方などした疑い【6/24最新ニュース】</a><time datetime="2026-06-24">2026-06-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="AVV2chcx36c" data-video-title="【台風情報】台風7号は27日にも本州接近か　2つの台風が日本に接近中　台風8号はあさって26日に熱帯低気圧に変わる予想【今後の進路予想】（2026年6月24日）" aria-label="Play: 【台風情報】台風7号は27日にも本州接近か　2つの台風が日本に接近中　台風8号はあさって26日に熱帯低気圧に変わる予想【今後の進路予想】（2026年6月24日）"><img class="video-card__thumb" src="https://i.ytimg.com/vi/AVV2chcx36c/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=AVV2chcx36c" target="_blank" rel="noopener noreferrer">【台風情報】台風7号は27日にも本州接近か　2つの台風が日本に接近中　台風8号はあさって26日に熱帯低気圧に変わる予想【今後の進路予想】（2026年6月24日）</a><time datetime="2026-06-24">2026-06-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="LFBKIMOMBNM" data-video-title="親子げんかで父親殺害か「死んでも構わないと」36歳息子が酒瓶など投げつける　頭への強い衝撃が致命傷に　東大阪市（2026年6月24日）" aria-label="Play: 親子げんかで父親殺害か「死んでも構わないと」36歳息子が酒瓶など投げつける　頭への強い衝撃が致命傷に　東大阪市（2026年6月24日）"><img class="video-card__thumb" src="https://i.ytimg.com/vi/LFBKIMOMBNM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=LFBKIMOMBNM" target="_blank" rel="noopener noreferrer">親子げんかで父親殺害か「死んでも構わないと」36歳息子が酒瓶など投げつける　頭への強い衝撃が致命傷に　東大阪市（2026年6月24日）</a><time datetime="2026-06-24">2026-06-24</time></div></li><li class="video-card video-card--link"><a href="https://www.youtube.com/shorts/usF30R_Ki_Q" target="_blank" rel="noopener noreferrer">親子げんかで父親殺害か「死んでも構わないと」36歳息子が酒瓶など投げつける　頭への強い衝撃が致命傷に　東大阪市 #short</a><time datetime="2026-06-24">2026-06-24</time></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="youtube_mbsnews@rss-mstdn.studiofreesia.com" data-mastodon-url="https://rss-mstdn.studiofreesia.com/@youtube_mbsnews"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

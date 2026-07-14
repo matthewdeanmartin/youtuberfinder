@@ -1,0 +1,25 @@
+Title: David Monniaux
+Date: 2026-06-20
+Slug: david-monniaux
+save_as: creator/david-monniaux/index.html
+url: creator/david-monniaux/
+status: hidden
+Summary: Science & Education creator David Monniaux on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Science &amp; Education</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCuAnUtF8S87PcyFjroNtH0Q" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://social.sciences.re/@MonniauxD" target="_blank" rel="noopener noreferrer">@MonniauxD@social.sciences.re</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>29</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>1973</strong></p>
+<p class="creator-profile__bio">Chercheur en informatique inculte, tout à fait mainstream et à la pensée banale. Uncultured research scientist in computer science. Totally mainstream and with banal thoughts. he/him/whatever</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="MonniauxD@social.sciences.re" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="dhvKZ-S7wQs" data-video-title="Talk for the SNR 2020 workshop about the Verified Polyhedra Library" aria-label="Play: Talk for the SNR 2020 workshop about the Verified Polyhedra Library"><img class="video-card__thumb" src="https://i.ytimg.com/vi/dhvKZ-S7wQs/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=dhvKZ-S7wQs" target="_blank" rel="noopener noreferrer">Talk for the SNR 2020 workshop about the Verified Polyhedra Library</a><time datetime="2020-08-27">2020-08-27</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="tbFFAqOjZtc" data-video-title="Algorithmes vs logiciels" aria-label="Play: Algorithmes vs logiciels"><img class="video-card__thumb" src="https://i.ytimg.com/vi/tbFFAqOjZtc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=tbFFAqOjZtc" target="_blank" rel="noopener noreferrer">Algorithmes vs logiciels</a><time datetime="2020-05-13">2020-05-13</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="Pj0pZs8HoBo" data-video-title="Algorithmes : peut-on leur confier des vies ?" aria-label="Play: Algorithmes : peut-on leur confier des vies ?"><img class="video-card__thumb" src="https://i.ytimg.com/vi/Pj0pZs8HoBo/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Pj0pZs8HoBo" target="_blank" rel="noopener noreferrer">Algorithmes : peut-on leur confier des vies ?</a><time datetime="2020-04-28">2020-04-28</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="6XnCsMegB54" data-video-title="Les algorithmes : un danger ?" aria-label="Play: Les algorithmes : un danger ?"><img class="video-card__thumb" src="https://i.ytimg.com/vi/6XnCsMegB54/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=6XnCsMegB54" target="_blank" rel="noopener noreferrer">Les algorithmes : un danger ?</a><time datetime="2020-04-27">2020-04-27</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="wNLjibSDHqU" data-video-title="Seminar on Meltdown and Spectre, 2018-01-18" aria-label="Play: Seminar on Meltdown and Spectre, 2018-01-18"><img class="video-card__thumb" src="https://i.ytimg.com/vi/wNLjibSDHqU/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=wNLjibSDHqU" target="_blank" rel="noopener noreferrer">Seminar on Meltdown and Spectre, 2018-01-18</a><time datetime="2018-02-15">2018-02-15</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="MonniauxD@social.sciences.re" data-mastodon-url="https://social.sciences.re/@MonniauxD"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

@@ -1,0 +1,25 @@
+Title: Technology Connections
+Date: 2026-06-20
+Slug: technology-connections-2
+save_as: creator/technology-connections-2/index.html
+url: creator/technology-connections-2/
+status: hidden
+Summary: Technology & Computing creator Technology Connections on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCy0tKL1T7wFoYcxCe0xjN6Q" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://feedsin.space/feed/youtube-TechnologyConnections" target="_blank" rel="noopener noreferrer">@feed/youtube-TechnologyConnections@feedsin.space</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>3,160,000</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>21</strong></p>
+<p class="creator-profile__bio">youtube-TechnologyConnections</p>
+
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="_KWdCqpXB7A" data-video-title="Ceiling fans: the simple idea we keep screwing up" aria-label="Play: Ceiling fans: the simple idea we keep screwing up"><img class="video-card__thumb" src="https://i.ytimg.com/vi/_KWdCqpXB7A/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=_KWdCqpXB7A" target="_blank" rel="noopener noreferrer">Ceiling fans: the simple idea we keep screwing up</a><time datetime="2026-06-17">2026-06-17</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="KnUFH5GX_fI" data-video-title="Nobody understands the point of hybrid cars" aria-label="Play: Nobody understands the point of hybrid cars"><img class="video-card__thumb" src="https://i.ytimg.com/vi/KnUFH5GX_fI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=KnUFH5GX_fI" target="_blank" rel="noopener noreferrer">Nobody understands the point of hybrid cars</a><time datetime="2026-05-06">2026-05-06</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="nXdVG45wveo" data-video-title="The disappearing and unappreciated art of audible alerts" aria-label="Play: The disappearing and unappreciated art of audible alerts"><img class="video-card__thumb" src="https://i.ytimg.com/vi/nXdVG45wveo/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=nXdVG45wveo" target="_blank" rel="noopener noreferrer">The disappearing and unappreciated art of audible alerts</a><time datetime="2026-04-12">2026-04-12</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="mmCfOazZCNQ" data-video-title="Oil pressure is the only thing keeping an engine alive" aria-label="Play: Oil pressure is the only thing keeping an engine alive"><img class="video-card__thumb" src="https://i.ytimg.com/vi/mmCfOazZCNQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=mmCfOazZCNQ" target="_blank" rel="noopener noreferrer">Oil pressure is the only thing keeping an engine alive</a><time datetime="2026-03-21">2026-03-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="KtQ9nt2ZeGM" data-video-title="You are being misled about renewable energy technology." aria-label="Play: You are being misled about renewable energy technology."><img class="video-card__thumb" src="https://i.ytimg.com/vi/KtQ9nt2ZeGM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=KtQ9nt2ZeGM" target="_blank" rel="noopener noreferrer">You are being misled about renewable energy technology.</a><time datetime="2026-01-30">2026-01-30</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="feed/youtube-TechnologyConnections@feedsin.space" data-mastodon-url="https://feedsin.space/feed/youtube-TechnologyConnections"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

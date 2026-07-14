@@ -1,0 +1,25 @@
+Title: Christophe Grébert
+Date: 2026-06-20
+Slug: christophe-grebert
+save_as: creator/christophe-grebert/index.html
+url: creator/christophe-grebert/
+status: hidden
+Summary: Lifestyle, Travel & Hobbies creator Christophe Grébert on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Lifestyle, Travel &amp; Hobbies</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UC80C0zG_5SgIqLXIfyi9ehg" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.top/@grebert" target="_blank" rel="noopener noreferrer">@grebert@mastodon.top</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>29</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>1319</strong></p>
+<p class="creator-profile__bio"># Vélotafeur à # Paris et banlieue. Mes intérêts : # vélo # mobilité # ville # urbanisme # planète # climat # environnement # démocratie # citoyenneté # médias # LGBT + # plantesvertes</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="grebert@mastodon.top" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="kHx_IYaEhC4" data-video-title="Loisirs - Magique Destination" aria-label="Play: Loisirs - Magique Destination"><img class="video-card__thumb" src="https://i.ytimg.com/vi/kHx_IYaEhC4/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=kHx_IYaEhC4" target="_blank" rel="noopener noreferrer">Loisirs - Magique Destination</a><time datetime="2025-01-01">2025-01-01</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="ufVx5WLR3Jw" data-video-title="Jean-Marie L&#x27; animateur - Faut lever nos verres" aria-label="Play: Jean-Marie L&#x27; animateur - Faut lever nos verres"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ufVx5WLR3Jw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ufVx5WLR3Jw" target="_blank" rel="noopener noreferrer">Jean-Marie L&#x27; animateur - Faut lever nos verres</a><time datetime="2023-01-29">2023-01-29</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="ZgtuFf7pUjA" data-video-title="Guy Simon - Que je suis bien dans tes bras" aria-label="Play: Guy Simon - Que je suis bien dans tes bras"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ZgtuFf7pUjA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ZgtuFf7pUjA" target="_blank" rel="noopener noreferrer">Guy Simon - Que je suis bien dans tes bras</a><time datetime="2023-01-29">2023-01-29</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="k96ZK2Ckgjk" data-video-title="Magdalena - Au jour le jour 1984" aria-label="Play: Magdalena - Au jour le jour 1984"><img class="video-card__thumb" src="https://i.ytimg.com/vi/k96ZK2Ckgjk/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=k96ZK2Ckgjk" target="_blank" rel="noopener noreferrer">Magdalena - Au jour le jour 1984</a><time datetime="2023-01-28">2023-01-28</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="9SBJ3_wWm1A" data-video-title="Didier Barbelivien - La fille qui s&#x27;balade 1987" aria-label="Play: Didier Barbelivien - La fille qui s&#x27;balade 1987"><img class="video-card__thumb" src="https://i.ytimg.com/vi/9SBJ3_wWm1A/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=9SBJ3_wWm1A" target="_blank" rel="noopener noreferrer">Didier Barbelivien - La fille qui s&#x27;balade 1987</a><time datetime="2023-01-28">2023-01-28</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="grebert@mastodon.top" data-mastodon-url="https://mastodon.top/@grebert"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

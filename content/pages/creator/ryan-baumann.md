@@ -1,0 +1,25 @@
+Title: Ryan Baumann
+Date: 2026-06-20
+Slug: ryan-baumann
+save_as: creator/ryan-baumann/index.html
+url: creator/ryan-baumann/
+status: hidden
+Summary: Gaming & VTubers creator Ryan Baumann on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Gaming &amp; VTubers</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/@ryanfb" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://digipres.club/@ryanfb" target="_blank" rel="noopener noreferrer">@ryanfb@digipres.club</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>922</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>1446</strong></p>
+<p class="creator-profile__bio">📜 Papyri, Ancient Greek, Latin, computers, video games, cats, etc. <a href="https://papyri.info" target="_blank" rel="noopener noreferrer">https://papyri.info</a> maintainer Creator of <a href="https://podqueue.fm" target="_blank" rel="noopener noreferrer">https://podqueue.fm</a> , the missing &quot;Listen Later&quot; for audio on the web</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="ryanfb@digipres.club" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="ybI8ZE1uQRk" data-video-title="Let&#x27;s Catalogue My Retro Game Collection! GBA, GBC, PS2, DS &amp; More!" aria-label="Play: Let&#x27;s Catalogue My Retro Game Collection! GBA, GBC, PS2, DS &amp; More!"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ybI8ZE1uQRk/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ybI8ZE1uQRk" target="_blank" rel="noopener noreferrer">Let&#x27;s Catalogue My Retro Game Collection! GBA, GBC, PS2, DS &amp; More!</a><time datetime="2025-12-04">2025-12-04</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="EZr8Wdr_nxo" data-video-title="Another DOZEN+ N64 Carts Tested on the Analogue 3D! Plus widescreen?" aria-label="Play: Another DOZEN+ N64 Carts Tested on the Analogue 3D! Plus widescreen?"><img class="video-card__thumb" src="https://i.ytimg.com/vi/EZr8Wdr_nxo/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=EZr8Wdr_nxo" target="_blank" rel="noopener noreferrer">Another DOZEN+ N64 Carts Tested on the Analogue 3D! Plus widescreen?</a><time datetime="2025-12-04">2025-12-04</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="9ZXulE9UzCs" data-video-title="Analogue 3D Testing: 64DD, GameShark, Widescreen &amp; More!" aria-label="Play: Analogue 3D Testing: 64DD, GameShark, Widescreen &amp; More!"><img class="video-card__thumb" src="https://i.ytimg.com/vi/9ZXulE9UzCs/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=9ZXulE9UzCs" target="_blank" rel="noopener noreferrer">Analogue 3D Testing: 64DD, GameShark, Widescreen &amp; More!</a><time datetime="2025-12-03">2025-12-03</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="IwA2N3WMxmU" data-video-title="Let&#x27;s Play My Old N64 Carts on the NEW Analogue 3D!" aria-label="Play: Let&#x27;s Play My Old N64 Carts on the NEW Analogue 3D!"><img class="video-card__thumb" src="https://i.ytimg.com/vi/IwA2N3WMxmU/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=IwA2N3WMxmU" target="_blank" rel="noopener noreferrer">Let&#x27;s Play My Old N64 Carts on the NEW Analogue 3D!</a><time datetime="2025-11-30">2025-11-30</time></div></li><li class="video-card video-card--link"><a href="https://www.youtube.com/shorts/gSVpED7AZb0" target="_blank" rel="noopener noreferrer">these games are about to VANISH from the eShop!  #retrogaming #nintendo #gaming #nintendoswitch</a><time datetime="2025-08-27">2025-08-27</time></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="ryanfb@digipres.club" data-mastodon-url="https://digipres.club/@ryanfb"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

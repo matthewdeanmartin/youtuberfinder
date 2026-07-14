@@ -1,0 +1,25 @@
+Title: Brodie Robertson
+Date: 2026-06-20
+Slug: brodie-robertson
+save_as: creator/brodie-robertson/index.html
+url: creator/brodie-robertson/
+status: hidden
+Summary: Technology & Computing creator Brodie Robertson on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCld68syR8Wi-GY_n4CaoJGA" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mstdn.social/@BrodieOnLinux" target="_blank" rel="noopener noreferrer">@BrodieOnLinux@mstdn.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>122,000</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>8487</strong></p>
+<p class="creator-profile__bio">Linux, Wayland, and FOSS commentary. Creator of Tech Over Tea and advocate for open-source software.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="BrodieOnLinux@mstdn.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="iWcFXmnPYoQ" data-video-title="I was wrong about SteamOS" aria-label="Play: I was wrong about SteamOS"><img class="video-card__thumb" src="https://i.ytimg.com/vi/iWcFXmnPYoQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=iWcFXmnPYoQ" target="_blank" rel="noopener noreferrer">I was wrong about SteamOS</a><time datetime="2026-06-24">2026-06-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="wPXqhfgTV9M" data-video-title="Stack Overflow Is Having An Existential Crisis" aria-label="Play: Stack Overflow Is Having An Existential Crisis"><img class="video-card__thumb" src="https://i.ytimg.com/vi/wPXqhfgTV9M/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=wPXqhfgTV9M" target="_blank" rel="noopener noreferrer">Stack Overflow Is Having An Existential Crisis</a><time datetime="2026-06-23">2026-06-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="xe75b6OSR90" data-video-title="X11 Will Completely End Without Your Help" aria-label="Play: X11 Will Completely End Without Your Help"><img class="video-card__thumb" src="https://i.ytimg.com/vi/xe75b6OSR90/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=xe75b6OSR90" target="_blank" rel="noopener noreferrer">X11 Will Completely End Without Your Help</a><time datetime="2026-06-22">2026-06-22</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="uswAKkgmllA" data-video-title="The Weird World Of Alternate Root DNS" aria-label="Play: The Weird World Of Alternate Root DNS"><img class="video-card__thumb" src="https://i.ytimg.com/vi/uswAKkgmllA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=uswAKkgmllA" target="_blank" rel="noopener noreferrer">The Weird World Of Alternate Root DNS</a><time datetime="2026-06-21">2026-06-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="VR20JYYXH6Q" data-video-title="Stay Safe On The AUR In The Face Of Arch Linux Malware" aria-label="Play: Stay Safe On The AUR In The Face Of Arch Linux Malware"><img class="video-card__thumb" src="https://i.ytimg.com/vi/VR20JYYXH6Q/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=VR20JYYXH6Q" target="_blank" rel="noopener noreferrer">Stay Safe On The AUR In The Face Of Arch Linux Malware</a><time datetime="2026-06-20">2026-06-20</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="BrodieOnLinux@mstdn.social" data-mastodon-url="https://mstdn.social/@BrodieOnLinux"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

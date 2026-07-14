@@ -1,0 +1,25 @@
+Title: Technische Universität Dresden
+Date: 2026-06-20
+Slug: technische-universitat-dresden
+save_as: creator/technische-universitat-dresden/index.html
+url: creator/technische-universitat-dresden/
+status: hidden
+Summary: Science & Education creator Technische Universität Dresden on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Science &amp; Education</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/@TUDentdecken" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://wisskomm.social/@tudresden" target="_blank" rel="noopener noreferrer">@tudresden@wisskomm.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>9,920</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>1515</strong></p>
+<p class="creator-profile__bio">Willkommen an der TUD | The Collaborative University inventive. transformative. engaged.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="tudresden@wisskomm.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="e2_4SeEJC9M" data-video-title="24 Gründe, Informatik an der TU Dresden zu studieren 🎯 | Studis geben Antwort" aria-label="Play: 24 Gründe, Informatik an der TU Dresden zu studieren 🎯 | Studis geben Antwort"><img class="video-card__thumb" src="https://i.ytimg.com/vi/e2_4SeEJC9M/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=e2_4SeEJC9M" target="_blank" rel="noopener noreferrer">24 Gründe, Informatik an der TU Dresden zu studieren 🎯 | Studis geben Antwort</a><time datetime="2026-06-04">2026-06-04</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="FPV-IWcIEs4" data-video-title="Smart Biosensors for Tomorrow‘s Medicine 🩻 | Introducing Larysa Baraban" aria-label="Play: Smart Biosensors for Tomorrow‘s Medicine 🩻 | Introducing Larysa Baraban"><img class="video-card__thumb" src="https://i.ytimg.com/vi/FPV-IWcIEs4/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=FPV-IWcIEs4" target="_blank" rel="noopener noreferrer">Smart Biosensors for Tomorrow‘s Medicine 🩻 | Introducing Larysa Baraban</a><time datetime="2026-06-03">2026-06-03</time></div></li><li class="video-card video-card--link"><a href="https://www.youtube.com/shorts/JPZYdUN0qCQ" target="_blank" rel="noopener noreferrer">UNITAG 6. Juni 2026 #TUDresden #Studium #Hochschulinformationstag</a><time datetime="2026-05-26">2026-05-26</time></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="xvJaDgEJ1SI" data-video-title="Connecting School Makers and Bright Minds from around the world ✨ | Season of Excellence" aria-label="Play: Connecting School Makers and Bright Minds from around the world ✨ | Season of Excellence"><img class="video-card__thumb" src="https://i.ytimg.com/vi/xvJaDgEJ1SI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=xvJaDgEJ1SI" target="_blank" rel="noopener noreferrer">Connecting School Makers and Bright Minds from around the world ✨ | Season of Excellence</a><time datetime="2026-04-24">2026-04-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="Eh7qyyGyEOo" data-video-title="Beyond Concrete: Fibers and Polymers for Tomorrow’s Buildings | Prof. Christina Scheffler" aria-label="Play: Beyond Concrete: Fibers and Polymers for Tomorrow’s Buildings | Prof. Christina Scheffler"><img class="video-card__thumb" src="https://i.ytimg.com/vi/Eh7qyyGyEOo/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Eh7qyyGyEOo" target="_blank" rel="noopener noreferrer">Beyond Concrete: Fibers and Polymers for Tomorrow’s Buildings | Prof. Christina Scheffler</a><time datetime="2026-04-20">2026-04-20</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="tudresden@wisskomm.social" data-mastodon-url="https://wisskomm.social/@tudresden"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

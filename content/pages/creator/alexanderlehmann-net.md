@@ -1,0 +1,25 @@
+Title: alexanderlehmann.net
+Date: 2026-06-20
+Slug: alexanderlehmann-net
+save_as: creator/alexanderlehmann-net/index.html
+url: creator/alexanderlehmann-net/
+status: hidden
+Summary: Art, Design & Making creator alexanderlehmann.net on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Art, Design &amp; Making</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/user/alexanderlehmann" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.social/@alexanderlehmann_net" target="_blank" rel="noopener noreferrer">@alexanderlehmann_net@mastodon.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>20,100</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>94</strong></p>
+<p class="creator-profile__bio">Ich mache Animationsfilme zu diversen (politischen) Themen. # netzpolitik # climatejustice # blender</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="alexanderlehmann_net@mastodon.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="Lz98JKTgq3Y" data-video-title="Wie die Telekom die Netzneutralität angreift..." aria-label="Play: Wie die Telekom die Netzneutralität angreift..."><img class="video-card__thumb" src="https://i.ytimg.com/vi/Lz98JKTgq3Y/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Lz98JKTgq3Y" target="_blank" rel="noopener noreferrer">Wie die Telekom die Netzneutralität angreift...</a><time datetime="2025-04-30">2025-04-30</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="8sj26bHvmt8" data-video-title="Technik für Alle dank Upcycling. Mach mit bei der Computertruhe!" aria-label="Play: Technik für Alle dank Upcycling. Mach mit bei der Computertruhe!"><img class="video-card__thumb" src="https://i.ytimg.com/vi/8sj26bHvmt8/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=8sj26bHvmt8" target="_blank" rel="noopener noreferrer">Technik für Alle dank Upcycling. Mach mit bei der Computertruhe!</a><time datetime="2024-12-03">2024-12-03</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="UzJmwT8iXTU" data-video-title="FirMark ein 3D Benchmark" aria-label="Play: FirMark ein 3D Benchmark"><img class="video-card__thumb" src="https://i.ytimg.com/vi/UzJmwT8iXTU/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=UzJmwT8iXTU" target="_blank" rel="noopener noreferrer">FirMark ein 3D Benchmark</a><time datetime="2023-05-31">2023-05-31</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="6_ibL-OODPw" data-video-title="IT-Security Einfach Erklärt" aria-label="Play: IT-Security Einfach Erklärt"><img class="video-card__thumb" src="https://i.ytimg.com/vi/6_ibL-OODPw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=6_ibL-OODPw" target="_blank" rel="noopener noreferrer">IT-Security Einfach Erklärt</a><time datetime="2022-11-02">2022-11-02</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="OhdqbGmUWz4" data-video-title="Chatkontrolle stoppen! Kinder schützen." aria-label="Play: Chatkontrolle stoppen! Kinder schützen."><img class="video-card__thumb" src="https://i.ytimg.com/vi/OhdqbGmUWz4/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=OhdqbGmUWz4" target="_blank" rel="noopener noreferrer">Chatkontrolle stoppen! Kinder schützen.</a><time datetime="2022-10-07">2022-10-07</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="alexanderlehmann_net@mastodon.social" data-mastodon-url="https://mastodon.social/@alexanderlehmann_net"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

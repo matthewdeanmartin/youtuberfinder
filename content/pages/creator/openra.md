@@ -1,0 +1,25 @@
+Title: OpenRA
+Date: 2026-06-20
+Slug: openra
+save_as: creator/openra/index.html
+url: creator/openra/
+status: hidden
+Summary: Technology & Computing creator OpenRA on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCRoiPL1J4K1-EhQeNazrYig" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.social/@openra" target="_blank" rel="noopener noreferrer">@openra@mastodon.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>1,600</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>50</strong></p>
+<p class="creator-profile__bio">OpenRA is an Open Source, Cross-Platform project that recreates and modernizes classic real time strategy games, like Red Alert, Command &amp; Conquer, and Dune 2000</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="openra@mastodon.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="mW-Cw3tcHyY" data-video-title="OpenRA Through the Ages - Gource Visualisation 2007 -- 2018" aria-label="Play: OpenRA Through the Ages - Gource Visualisation 2007 -- 2018"><img class="video-card__thumb" src="https://i.ytimg.com/vi/mW-Cw3tcHyY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=mW-Cw3tcHyY" target="_blank" rel="noopener noreferrer">OpenRA Through the Ages - Gource Visualisation 2007 -- 2018</a><time datetime="2018-01-03">2018-01-03</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="93b7TKooj-M" data-video-title="OpenRA 10th Anniversary Trailer" aria-label="Play: OpenRA 10th Anniversary Trailer"><img class="video-card__thumb" src="https://i.ytimg.com/vi/93b7TKooj-M/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=93b7TKooj-M" target="_blank" rel="noopener noreferrer">OpenRA 10th Anniversary Trailer</a><time datetime="2017-06-19">2017-06-19</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="WoZoQILTaGk" data-video-title="Some scenes from the first proper Tiberian Sun test game in OpenRA" aria-label="Play: Some scenes from the first proper Tiberian Sun test game in OpenRA"><img class="video-card__thumb" src="https://i.ytimg.com/vi/WoZoQILTaGk/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=WoZoQILTaGk" target="_blank" rel="noopener noreferrer">Some scenes from the first proper Tiberian Sun test game in OpenRA</a><time datetime="2015-07-29">2015-07-29</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="CAK-SwSZjbY" data-video-title="OpenRA Trailer" aria-label="Play: OpenRA Trailer"><img class="video-card__thumb" src="https://i.ytimg.com/vi/CAK-SwSZjbY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=CAK-SwSZjbY" target="_blank" rel="noopener noreferrer">OpenRA Trailer</a><time datetime="2015-07-20">2015-07-20</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="3ai-MeYDx5c" data-video-title="Weather effects on Fort LoneStar" aria-label="Play: Weather effects on Fort LoneStar"><img class="video-card__thumb" src="https://i.ytimg.com/vi/3ai-MeYDx5c/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=3ai-MeYDx5c" target="_blank" rel="noopener noreferrer">Weather effects on Fort LoneStar</a><time datetime="2015-07-19">2015-07-19</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="openra@mastodon.social" data-mastodon-url="https://mastodon.social/@openra"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

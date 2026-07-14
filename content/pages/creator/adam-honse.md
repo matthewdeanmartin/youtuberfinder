@@ -1,0 +1,25 @@
+Title: Adam Honse
+Date: 2026-06-20
+Slug: adam-honse
+save_as: creator/adam-honse/index.html
+url: creator/adam-honse/
+status: hidden
+Summary: Technology & Computing creator Adam Honse on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/CalcProgrammer1" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.social/@CalcProgrammer1" target="_blank" rel="noopener noreferrer">@CalcProgrammer1@mastodon.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>4,500</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>566</strong></p>
+<p class="creator-profile__bio">Software Engineer, Linux Enthusiast, @ OpenRGB Developer, and Gamer</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="CalcProgrammer1@mastodon.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="esm0mUjiIu4" data-video-title="Raspberry Pi Pico RP2040 ARGB Smart Splitter, OpenRGB Status Update" aria-label="Play: Raspberry Pi Pico RP2040 ARGB Smart Splitter, OpenRGB Status Update"><img class="video-card__thumb" src="https://i.ytimg.com/vi/esm0mUjiIu4/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=esm0mUjiIu4" target="_blank" rel="noopener noreferrer">Raspberry Pi Pico RP2040 ARGB Smart Splitter, OpenRGB Status Update</a><time datetime="2026-03-27">2026-03-27</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="8QTcOJ1HQoI" data-video-title="OpenRGB Hotplug Test" aria-label="Play: OpenRGB Hotplug Test"><img class="video-card__thumb" src="https://i.ytimg.com/vi/8QTcOJ1HQoI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=8QTcOJ1HQoI" target="_blank" rel="noopener noreferrer">OpenRGB Hotplug Test</a><time datetime="2026-01-15">2026-01-15</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="EuOX2L_yNqI" data-video-title="Steam Gaming on postmarketOS using FEX Emulator and Distrobox" aria-label="Play: Steam Gaming on postmarketOS using FEX Emulator and Distrobox"><img class="video-card__thumb" src="https://i.ytimg.com/vi/EuOX2L_yNqI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=EuOX2L_yNqI" target="_blank" rel="noopener noreferrer">Steam Gaming on postmarketOS using FEX Emulator and Distrobox</a><time datetime="2024-10-21">2024-10-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="XL8RyzrSC4I" data-video-title="Steam, Celeste running on OnePlus 6T in FEX Emulator on postmarketOS" aria-label="Play: Steam, Celeste running on OnePlus 6T in FEX Emulator on postmarketOS"><img class="video-card__thumb" src="https://i.ytimg.com/vi/XL8RyzrSC4I/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=XL8RyzrSC4I" target="_blank" rel="noopener noreferrer">Steam, Celeste running on OnePlus 6T in FEX Emulator on postmarketOS</a><time datetime="2024-10-18">2024-10-18</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="UzWbfGNC0kU" data-video-title="OpenRGB Desk Fan" aria-label="Play: OpenRGB Desk Fan"><img class="video-card__thumb" src="https://i.ytimg.com/vi/UzWbfGNC0kU/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=UzWbfGNC0kU" target="_blank" rel="noopener noreferrer">OpenRGB Desk Fan</a><time datetime="2024-07-16">2024-07-16</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="CalcProgrammer1@mastodon.social" data-mastodon-url="https://mastodon.social/@CalcProgrammer1"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

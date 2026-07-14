@@ -1,0 +1,25 @@
+Title: Martin Owens
+Date: 2026-06-20
+Slug: martin-owens
+save_as: creator/martin-owens/index.html
+url: creator/martin-owens/
+status: hidden
+Summary: Technology & Computing creator Martin Owens on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCPxxdsRV92DZGE-RcRsw_gw" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://floss.social/@doctormo" target="_blank" rel="noopener noreferrer">@doctormo@floss.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>5,960</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>3153</strong></p>
+<p class="creator-profile__bio">Inkscape Programmer and Software Freedom Contractor. Graphics, art, computers, politics, ideas, science. Pronouns: they/them Politics: A socialist... well, a federated pro-social consensualist... er, or something like that. Meme Immunity: Innate rebel, adaptive skeptic, and pro-humility Culture: Bri…</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="doctormo@floss.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="g0Nl_kWVyuo" data-video-title="Inkscape Steals Krita Features!" aria-label="Play: Inkscape Steals Krita Features!"><img class="video-card__thumb" src="https://i.ytimg.com/vi/g0Nl_kWVyuo/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=g0Nl_kWVyuo" target="_blank" rel="noopener noreferrer">Inkscape Steals Krita Features!</a><time datetime="2026-04-04">2026-04-04</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="IxriZsGPGqE" data-video-title="Inkscape gets new Measurement Tools!" aria-label="Play: Inkscape gets new Measurement Tools!"><img class="video-card__thumb" src="https://i.ytimg.com/vi/IxriZsGPGqE/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=IxriZsGPGqE" target="_blank" rel="noopener noreferrer">Inkscape gets new Measurement Tools!</a><time datetime="2026-03-21">2026-03-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="CAeqFLZqFY4" data-video-title="Text Unchained &amp; Get a Job with Inkscape!" aria-label="Play: Text Unchained &amp; Get a Job with Inkscape!"><img class="video-card__thumb" src="https://i.ytimg.com/vi/CAeqFLZqFY4/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=CAeqFLZqFY4" target="_blank" rel="noopener noreferrer">Text Unchained &amp; Get a Job with Inkscape!</a><time datetime="2026-03-07">2026-03-07</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="axf28yT7-98" data-video-title="Progress and Problems in Inkscape" aria-label="Play: Progress and Problems in Inkscape"><img class="video-card__thumb" src="https://i.ytimg.com/vi/axf28yT7-98/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=axf28yT7-98" target="_blank" rel="noopener noreferrer">Progress and Problems in Inkscape</a><time datetime="2026-02-22">2026-02-22</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="76jg9XbNIKA" data-video-title="Inkscape in 2026! - What is going on!" aria-label="Play: Inkscape in 2026! - What is going on!"><img class="video-card__thumb" src="https://i.ytimg.com/vi/76jg9XbNIKA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=76jg9XbNIKA" target="_blank" rel="noopener noreferrer">Inkscape in 2026! - What is going on!</a><time datetime="2026-02-07">2026-02-07</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="doctormo@floss.social" data-mastodon-url="https://floss.social/@doctormo"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

@@ -1,0 +1,25 @@
+Title: Tech Tangents
+Date: 2026-06-20
+Slug: tech-tangents
+save_as: creator/tech-tangents/index.html
+url: creator/tech-tangents/
+status: hidden
+Summary: Technology & Computing creator Tech Tangents on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCerEIdrEW-IqwvlH8lTQUJQ" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://dialup.space/@TechTangents" target="_blank" rel="noopener noreferrer">@TechTangents@dialup.space</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>236,000</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>3202</strong></p>
+<p class="creator-profile__bio"></p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="TechTangents@dialup.space" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="ZOiKKhYg63I" data-video-title="IBM&#x27;s Weird GPU From 1987 - IBM 8514/A" aria-label="Play: IBM&#x27;s Weird GPU From 1987 - IBM 8514/A"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ZOiKKhYg63I/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ZOiKKhYg63I" target="_blank" rel="noopener noreferrer">IBM&#x27;s Weird GPU From 1987 - IBM 8514/A</a><time datetime="2026-06-20">2026-06-20</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="JFusWboPa-s" data-video-title="ATAboy IDE Adapter for CHS Hard Drives" aria-label="Play: ATAboy IDE Adapter for CHS Hard Drives"><img class="video-card__thumb" src="https://i.ytimg.com/vi/JFusWboPa-s/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=JFusWboPa-s" target="_blank" rel="noopener noreferrer">ATAboy IDE Adapter for CHS Hard Drives</a><time datetime="2026-06-06">2026-06-06</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="D82Ai_ZiRog" data-video-title="MailCall 0x12: Mail from viewers like you!" aria-label="Play: MailCall 0x12: Mail from viewers like you!"><img class="video-card__thumb" src="https://i.ytimg.com/vi/D82Ai_ZiRog/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=D82Ai_ZiRog" target="_blank" rel="noopener noreferrer">MailCall 0x12: Mail from viewers like you!</a><time datetime="2026-05-23">2026-05-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="IhMzwISbIAo" data-video-title="What were scanners like in the 80s? - 1988 IBM PageScanner 3119" aria-label="Play: What were scanners like in the 80s? - 1988 IBM PageScanner 3119"><img class="video-card__thumb" src="https://i.ytimg.com/vi/IhMzwISbIAo/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=IhMzwISbIAo" target="_blank" rel="noopener noreferrer">What were scanners like in the 80s? - 1988 IBM PageScanner 3119</a><time datetime="2026-05-09">2026-05-09</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="0-Py5VzB54s" data-video-title="Rebuilding IBM&#x27;s Most Obnoxious PC - PS/2 Model 70 Type 1" aria-label="Play: Rebuilding IBM&#x27;s Most Obnoxious PC - PS/2 Model 70 Type 1"><img class="video-card__thumb" src="https://i.ytimg.com/vi/0-Py5VzB54s/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=0-Py5VzB54s" target="_blank" rel="noopener noreferrer">Rebuilding IBM&#x27;s Most Obnoxious PC - PS/2 Model 70 Type 1</a><time datetime="2026-04-25">2026-04-25</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="TechTangents@dialup.space" data-mastodon-url="https://dialup.space/@TechTangents"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

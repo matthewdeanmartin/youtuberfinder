@@ -1,0 +1,25 @@
+Title: WFMU
+Date: 2026-06-20
+Slug: wfmu
+save_as: creator/wfmu/index.html
+url: creator/wfmu/
+status: hidden
+Summary: Music creator WFMU on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Music</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UC5VDxBkZ9ftHkP82UoHPuEg" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://c.im/@WFMU" target="_blank" rel="noopener noreferrer">@WFMU@c.im</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>8,740</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>2679</strong></p>
+<p class="creator-profile__bio">WFMU is an independent listener-supported freeform radio station broadcasting live on the air and online 24x7 from downtown Jersey City, NJ. We&#x27;ll be posting periodically about upcoming specials and other station info while we wait to see how things develop here on Mastodon. This account, like all W…</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="WFMU@c.im" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="wlL40yhwsck" data-video-title="WFMU Live in the Love Room: Golomb" aria-label="Play: WFMU Live in the Love Room: Golomb"><img class="video-card__thumb" src="https://i.ytimg.com/vi/wlL40yhwsck/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=wlL40yhwsck" target="_blank" rel="noopener noreferrer">WFMU Live in the Love Room: Golomb</a><time datetime="2025-10-09">2025-10-09</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="jRfjNuxQADw" data-video-title="Masma Dream World Live at WFMU" aria-label="Play: Masma Dream World Live at WFMU"><img class="video-card__thumb" src="https://i.ytimg.com/vi/jRfjNuxQADw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=jRfjNuxQADw" target="_blank" rel="noopener noreferrer">Masma Dream World Live at WFMU</a><time datetime="2025-02-21">2025-02-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="F_tEZSuaEMI" data-video-title="Elvis Depressedly Live at WFMU (2017) -- Full Session" aria-label="Play: Elvis Depressedly Live at WFMU (2017) -- Full Session"><img class="video-card__thumb" src="https://i.ytimg.com/vi/F_tEZSuaEMI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=F_tEZSuaEMI" target="_blank" rel="noopener noreferrer">Elvis Depressedly Live at WFMU (2017) -- Full Session</a><time datetime="2024-01-19">2024-01-19</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="wrtrieDTeRo" data-video-title="Sadies Live at WFMU (2018) -- Full Session" aria-label="Play: Sadies Live at WFMU (2018) -- Full Session"><img class="video-card__thumb" src="https://i.ytimg.com/vi/wrtrieDTeRo/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=wrtrieDTeRo" target="_blank" rel="noopener noreferrer">Sadies Live at WFMU (2018) -- Full Session</a><time datetime="2023-12-15">2023-12-15</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="SNHCihtrckA" data-video-title="Mekons Live At WFMU (2015) — Full Session" aria-label="Play: Mekons Live At WFMU (2015) — Full Session"><img class="video-card__thumb" src="https://i.ytimg.com/vi/SNHCihtrckA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=SNHCihtrckA" target="_blank" rel="noopener noreferrer">Mekons Live At WFMU (2015) — Full Session</a><time datetime="2023-12-08">2023-12-08</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="WFMU@c.im" data-mastodon-url="https://c.im/@WFMU"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

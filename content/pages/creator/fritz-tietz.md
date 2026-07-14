@@ -1,0 +1,25 @@
+Title: Fritz Tietz
+Date: 2026-06-20
+Slug: fritz-tietz
+save_as: creator/fritz-tietz/index.html
+url: creator/fritz-tietz/
+status: hidden
+Summary: Music creator Fritz Tietz on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Music</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/user/breitcord" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://norden.social/@breitcord" target="_blank" rel="noopener noreferrer">@breitcord@norden.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>286</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>292</strong></p>
+<p class="creator-profile__bio">Zu viele, zu schnell <a href="https://tinyurl.com/ybnee3be" target="_blank" rel="noopener noreferrer">https://tinyurl.com/ybnee3be</a> Alte Lieben <a href="https://tinyurl.com/yfdadjn6" target="_blank" rel="noopener noreferrer">https://tinyurl.com/yfdadjn6</a> Warum länger aufs Tempolimit warten? Jetzt bestellen! <a href="https://fritztietz.de/tempolimit/" target="_blank" rel="noopener noreferrer">https://fritztietz.de/tempolimit/</a> Fritz Tietz <a href="https://fritztietz.de" target="_blank" rel="noopener noreferrer">https://fritztietz.de</a></p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="breitcord@norden.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="FONZ9vSobU0" data-video-title="L 213, Ortsdurchfahrt Helmstorf (TON AN)" aria-label="Play: L 213, Ortsdurchfahrt Helmstorf (TON AN)"><img class="video-card__thumb" src="https://i.ytimg.com/vi/FONZ9vSobU0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=FONZ9vSobU0" target="_blank" rel="noopener noreferrer">L 213, Ortsdurchfahrt Helmstorf (TON AN)</a><time datetime="2026-05-31">2026-05-31</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="AnddYMgDl5I" data-video-title="Gesang der Radfahrer" aria-label="Play: Gesang der Radfahrer"><img class="video-card__thumb" src="https://i.ytimg.com/vi/AnddYMgDl5I/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=AnddYMgDl5I" target="_blank" rel="noopener noreferrer">Gesang der Radfahrer</a><time datetime="2024-04-01">2024-04-01</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="1WEyMg0ECIM" data-video-title="Die legendäre DRECK-Gala" aria-label="Play: Die legendäre DRECK-Gala"><img class="video-card__thumb" src="https://i.ytimg.com/vi/1WEyMg0ECIM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=1WEyMg0ECIM" target="_blank" rel="noopener noreferrer">Die legendäre DRECK-Gala</a><time datetime="2024-01-04">2024-01-04</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="ofIdSkZSYnQ" data-video-title="Eidelstedt" aria-label="Play: Eidelstedt"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ofIdSkZSYnQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ofIdSkZSYnQ" target="_blank" rel="noopener noreferrer">Eidelstedt</a><time datetime="2023-11-01">2023-11-01</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="HyUUf4SJ__M" data-video-title="Triumph des Willens" aria-label="Play: Triumph des Willens"><img class="video-card__thumb" src="https://i.ytimg.com/vi/HyUUf4SJ__M/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=HyUUf4SJ__M" target="_blank" rel="noopener noreferrer">Triumph des Willens</a><time datetime="2023-07-22">2023-07-22</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="breitcord@norden.social" data-mastodon-url="https://norden.social/@breitcord"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

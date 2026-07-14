@@ -1,0 +1,25 @@
+Title: Linux Lads Podcast
+Date: 2026-06-20
+Slug: linux-lads-podcast
+save_as: creator/linux-lads-podcast/index.html
+url: creator/linux-lads-podcast/
+status: hidden
+Summary: Technology & Computing creator Linux Lads Podcast on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/@linuxlads" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.ie/@linuxlads" target="_blank" rel="noopener noreferrer">@linuxlads@mastodon.ie</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>188</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>762</strong></p>
+<p class="creator-profile__bio">A podcast about Linux and Open Source from a bunch of lads. Co-hosted by Amolith ( @ amolith ), Conor ( @ techcelt ), Mike ( @ mikee ), and Shane ( @ stranded_output ). Edited by Jake ( @ jbauer ).</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="linuxlads@mastodon.ie" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="eaPbYKepq7A" data-video-title="Episode 127: From A to Zed | Linux Lads" aria-label="Play: Episode 127: From A to Zed | Linux Lads"><img class="video-card__thumb" src="https://i.ytimg.com/vi/eaPbYKepq7A/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=eaPbYKepq7A" target="_blank" rel="noopener noreferrer">Episode 127: From A to Zed | Linux Lads</a><time datetime="2024-10-24">2024-10-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="yMSW_yP4jVs" data-video-title="Episode 126: Tangential Perfection | Linux Lads" aria-label="Play: Episode 126: Tangential Perfection | Linux Lads"><img class="video-card__thumb" src="https://i.ytimg.com/vi/yMSW_yP4jVs/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=yMSW_yP4jVs" target="_blank" rel="noopener noreferrer">Episode 126: Tangential Perfection | Linux Lads</a><time datetime="2024-10-21">2024-10-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="NNHAu3Qmi4k" data-video-title="Episode 125: Zorin It to Win It | Linux Lads" aria-label="Play: Episode 125: Zorin It to Win It | Linux Lads"><img class="video-card__thumb" src="https://i.ytimg.com/vi/NNHAu3Qmi4k/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=NNHAu3Qmi4k" target="_blank" rel="noopener noreferrer">Episode 125: Zorin It to Win It | Linux Lads</a><time datetime="2024-10-08">2024-10-08</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="xu_rk1g2YoY" data-video-title="Episode 124: Politics After Eight | Linux Lads" aria-label="Play: Episode 124: Politics After Eight | Linux Lads"><img class="video-card__thumb" src="https://i.ytimg.com/vi/xu_rk1g2YoY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=xu_rk1g2YoY" target="_blank" rel="noopener noreferrer">Episode 124: Politics After Eight | Linux Lads</a><time datetime="2024-10-04">2024-10-04</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="o-7G-VA6Fac" data-video-title="Episode 123: Cloudy with a Chance of Games | Linux Lads" aria-label="Play: Episode 123: Cloudy with a Chance of Games | Linux Lads"><img class="video-card__thumb" src="https://i.ytimg.com/vi/o-7G-VA6Fac/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=o-7G-VA6Fac" target="_blank" rel="noopener noreferrer">Episode 123: Cloudy with a Chance of Games | Linux Lads</a><time datetime="2024-06-27">2024-06-27</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="linuxlads@mastodon.ie" data-mastodon-url="https://mastodon.ie/@linuxlads"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

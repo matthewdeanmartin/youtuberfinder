@@ -1,0 +1,25 @@
+Title: Couleurs Gaies
+Date: 2026-06-20
+Slug: couleurs-gaies
+save_as: creator/couleurs-gaies/index.html
+url: creator/couleurs-gaies/
+status: hidden
+Summary: Technology & Computing creator Couleurs Gaies on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCjOi-jIw0GtO7jXDNyiI5pw" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://asso.lgbt/@couleursgaies" target="_blank" rel="noopener noreferrer">@couleursgaies@asso.lgbt</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>1,030</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>16</strong></p>
+<p class="creator-profile__bio">🏳️‍🌈 Centre LGBTQI+ de Lorraine Nord 🍹 Bar «La Palette» à Metz 📢 Organise la Marche des fiertés de Metz</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="couleursgaies@asso.lgbt" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="QL0-bkIvpGo" data-video-title="BINGO QUEEN HORRIFIQUE : DÉCOUVERTE DES LOTS" aria-label="Play: BINGO QUEEN HORRIFIQUE : DÉCOUVERTE DES LOTS"><img class="video-card__thumb" src="https://i.ytimg.com/vi/QL0-bkIvpGo/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=QL0-bkIvpGo" target="_blank" rel="noopener noreferrer">BINGO QUEEN HORRIFIQUE : DÉCOUVERTE DES LOTS</a><time datetime="2020-10-18">2020-10-18</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="yUXTUhXnHbk" data-video-title="HAPPY PRIDE AVEC COULEURS GAIES ! 🏳️‍🌈" aria-label="Play: HAPPY PRIDE AVEC COULEURS GAIES ! 🏳️‍🌈"><img class="video-card__thumb" src="https://i.ytimg.com/vi/yUXTUhXnHbk/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=yUXTUhXnHbk" target="_blank" rel="noopener noreferrer">HAPPY PRIDE AVEC COULEURS GAIES ! 🏳️‍🌈</a><time datetime="2019-06-04">2019-06-04</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="HHlxLyY86NQ" data-video-title="ACTUALITÉ MARS 2019 : LANCEMENT DE LA PRIDE 2019, VENTE D&#x27;AFFICHES DE CINÉMA" aria-label="Play: ACTUALITÉ MARS 2019 : LANCEMENT DE LA PRIDE 2019, VENTE D&#x27;AFFICHES DE CINÉMA"><img class="video-card__thumb" src="https://i.ytimg.com/vi/HHlxLyY86NQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=HHlxLyY86NQ" target="_blank" rel="noopener noreferrer">ACTUALITÉ MARS 2019 : LANCEMENT DE LA PRIDE 2019, VENTE D&#x27;AFFICHES DE CINÉMA</a><time datetime="2019-03-11">2019-03-11</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="1h7ECR-Nyb0" data-video-title="Rainbow Weeks - Saison 3" aria-label="Play: Rainbow Weeks - Saison 3"><img class="video-card__thumb" src="https://i.ytimg.com/vi/1h7ECR-Nyb0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=1h7ECR-Nyb0" target="_blank" rel="noopener noreferrer">Rainbow Weeks - Saison 3</a><time datetime="2019-03-05">2019-03-05</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="GbSGvg5Epmc" data-video-title="ACTU OCTOBRE 2018 : BINGO QUEEN, INTERVENTIONS, BÉNÉVOLES.." aria-label="Play: ACTU OCTOBRE 2018 : BINGO QUEEN, INTERVENTIONS, BÉNÉVOLES.."><img class="video-card__thumb" src="https://i.ytimg.com/vi/GbSGvg5Epmc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=GbSGvg5Epmc" target="_blank" rel="noopener noreferrer">ACTU OCTOBRE 2018 : BINGO QUEEN, INTERVENTIONS, BÉNÉVOLES..</a><time datetime="2018-10-02">2018-10-02</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="couleursgaies@asso.lgbt" data-mastodon-url="https://asso.lgbt/@couleursgaies"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

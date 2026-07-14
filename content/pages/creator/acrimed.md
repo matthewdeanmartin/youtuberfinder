@@ -1,0 +1,25 @@
+Title: Acrimed
+Date: 2026-06-20
+Slug: acrimed
+save_as: creator/acrimed/index.html
+url: creator/acrimed/
+status: hidden
+Summary: Other creator Acrimed on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Other</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCqEwL9lUdH-ccrN4Rgd0sEw" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mamot.fr/@acrimed" target="_blank" rel="noopener noreferrer">@acrimed@mamot.fr</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>14,000</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>6985</strong></p>
+<p class="creator-profile__bio">Observatoire des médias depuis 1996.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="acrimed@mamot.fr" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="AKD31CUSa7k" data-video-title="Rima Hassan et « la drogue » : fiasco médiatique, apothéose du journalisme policier" aria-label="Play: Rima Hassan et « la drogue » : fiasco médiatique, apothéose du journalisme policier"><img class="video-card__thumb" src="https://i.ytimg.com/vi/AKD31CUSa7k/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=AKD31CUSa7k" target="_blank" rel="noopener noreferrer">Rima Hassan et « la drogue » : fiasco médiatique, apothéose du journalisme policier</a><time datetime="2026-04-09">2026-04-09</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="HYvcdnJUUsU" data-video-title="«La quête du vote musulman» : anatomie d’un récit médiatique islamophobe" aria-label="Play: «La quête du vote musulman» : anatomie d’un récit médiatique islamophobe"><img class="video-card__thumb" src="https://i.ytimg.com/vi/HYvcdnJUUsU/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=HYvcdnJUUsU" target="_blank" rel="noopener noreferrer">«La quête du vote musulman» : anatomie d’un récit médiatique islamophobe</a><time datetime="2025-12-23">2025-12-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="cjnRqFoCEzQ" data-video-title="Guerre et service militaire : les médias sonnent le tocsin" aria-label="Play: Guerre et service militaire : les médias sonnent le tocsin"><img class="video-card__thumb" src="https://i.ytimg.com/vi/cjnRqFoCEzQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=cjnRqFoCEzQ" target="_blank" rel="noopener noreferrer">Guerre et service militaire : les médias sonnent le tocsin</a><time datetime="2025-12-04">2025-12-04</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="GLkkpxcLveY" data-video-title="Des médias contre la reconnaissance de la Palestine" aria-label="Play: Des médias contre la reconnaissance de la Palestine"><img class="video-card__thumb" src="https://i.ytimg.com/vi/GLkkpxcLveY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=GLkkpxcLveY" target="_blank" rel="noopener noreferrer">Des médias contre la reconnaissance de la Palestine</a><time datetime="2025-10-08">2025-10-08</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="AKA2W5gEDlc" data-video-title="Flottille pour Gaza : la hargne de l’éditocratie" aria-label="Play: Flottille pour Gaza : la hargne de l’éditocratie"><img class="video-card__thumb" src="https://i.ytimg.com/vi/AKA2W5gEDlc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=AKA2W5gEDlc" target="_blank" rel="noopener noreferrer">Flottille pour Gaza : la hargne de l’éditocratie</a><time datetime="2025-06-13">2025-06-13</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="acrimed@mamot.fr" data-mastodon-url="https://mamot.fr/@acrimed"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

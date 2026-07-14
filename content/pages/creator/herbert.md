@@ -1,0 +1,25 @@
+Title: herbert
+Date: 2026-06-20
+Slug: herbert
+save_as: creator/herbert/index.html
+url: creator/herbert/
+status: hidden
+Summary: Music creator herbert on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Music</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCr7E3eBfxzmoxoJsgIgHWeQ" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://w3c.social/@hvdsomp" target="_blank" rel="noopener noreferrer">@hvdsomp@w3c.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>48</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>605</strong></p>
+<p class="creator-profile__bio">OpenURL, SFX, OAI-PMH, OAI-ORE, info URI, bX, djatoka, MESUR, aDORe, Memento, Web Annotation, ResourceSync, Robust Links, Link Set, Signposting</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="hvdsomp@w3c.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="U-LmJLdCTFs" data-video-title="Recording a Memento Trace for SlideShare" aria-label="Play: Recording a Memento Trace for SlideShare"><img class="video-card__thumb" src="https://i.ytimg.com/vi/U-LmJLdCTFs/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=U-LmJLdCTFs" target="_blank" rel="noopener noreferrer">Recording a Memento Trace for SlideShare</a><time datetime="2018-05-23">2018-05-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="lKxELclVgFM" data-video-title="Recording a Memento Trace for Figshare" aria-label="Play: Recording a Memento Trace for Figshare"><img class="video-card__thumb" src="https://i.ytimg.com/vi/lKxELclVgFM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=lKxELclVgFM" target="_blank" rel="noopener noreferrer">Recording a Memento Trace for Figshare</a><time datetime="2018-05-23">2018-05-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="lW6xFVlH7SI" data-video-title="Replaying the capture of a SlideShare presentation" aria-label="Play: Replaying the capture of a SlideShare presentation"><img class="video-card__thumb" src="https://i.ytimg.com/vi/lW6xFVlH7SI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=lW6xFVlH7SI" target="_blank" rel="noopener noreferrer">Replaying the capture of a SlideShare presentation</a><time datetime="2018-05-23">2018-05-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="sGefsFnHhAY" data-video-title="Capturing a SlideShare presentation using a Memento Trace" aria-label="Play: Capturing a SlideShare presentation using a Memento Trace"><img class="video-card__thumb" src="https://i.ytimg.com/vi/sGefsFnHhAY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=sGefsFnHhAY" target="_blank" rel="noopener noreferrer">Capturing a SlideShare presentation using a Memento Trace</a><time datetime="2018-05-23">2018-05-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="ySM4XUwoIDo" data-video-title="Replaying the capture of a Figshare repository" aria-label="Play: Replaying the capture of a Figshare repository"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ySM4XUwoIDo/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ySM4XUwoIDo" target="_blank" rel="noopener noreferrer">Replaying the capture of a Figshare repository</a><time datetime="2018-05-23">2018-05-23</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="hvdsomp@w3c.social" data-mastodon-url="https://w3c.social/@hvdsomp"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

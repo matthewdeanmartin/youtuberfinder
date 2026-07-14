@@ -1,0 +1,25 @@
+Title: Rock Paper Shotgun
+Date: 2026-06-20
+Slug: rock-paper-shotgun
+save_as: creator/rock-paper-shotgun/index.html
+url: creator/rock-paper-shotgun/
+status: hidden
+Summary: Gaming & VTubers creator Rock Paper Shotgun on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Gaming &amp; VTubers</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UC5bKSAZBvV9AKlBJPG0Py-A" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://die-partei.social/@rockpapershotgun" target="_blank" rel="noopener noreferrer">@rockpapershotgun@die-partei.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>199,000</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>2857</strong></p>
+<p class="creator-profile__bio">Inoffical Rock Paper Shotgun RSS-Feed</p>
+
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="DWIXWpfSTGY" data-video-title="Game of the Year Watch 2026 Begins | IGN GOTY Watch" aria-label="Play: Game of the Year Watch 2026 Begins | IGN GOTY Watch"><img class="video-card__thumb" src="https://i.ytimg.com/vi/DWIXWpfSTGY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=DWIXWpfSTGY" target="_blank" rel="noopener noreferrer">Game of the Year Watch 2026 Begins | IGN GOTY Watch</a><time datetime="2026-06-23">2026-06-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="7VUsbb5r3Sc" data-video-title="Nintendo Direct Watch Party | June 2026" aria-label="Play: Nintendo Direct Watch Party | June 2026"><img class="video-card__thumb" src="https://i.ytimg.com/vi/7VUsbb5r3Sc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=7VUsbb5r3Sc" target="_blank" rel="noopener noreferrer">Nintendo Direct Watch Party | June 2026</a><time datetime="2026-06-09">2026-06-09</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="PUnQ4YFODa0" data-video-title="IGN Live 2026 Day 2 Livestream – Drifter, Diablo Immortal, Rick and Morty, and More" aria-label="Play: IGN Live 2026 Day 2 Livestream – Drifter, Diablo Immortal, Rick and Morty, and More"><img class="video-card__thumb" src="https://i.ytimg.com/vi/PUnQ4YFODa0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=PUnQ4YFODa0" target="_blank" rel="noopener noreferrer">IGN Live 2026 Day 2 Livestream – Drifter, Diablo Immortal, Rick and Morty, and More</a><time datetime="2026-06-08">2026-06-08</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="EcfoyVRqPMk" data-video-title="Xbox Games Showcase and Gears of War: E-Day Direct Livestream" aria-label="Play: Xbox Games Showcase and Gears of War: E-Day Direct Livestream"><img class="video-card__thumb" src="https://i.ytimg.com/vi/EcfoyVRqPMk/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=EcfoyVRqPMk" target="_blank" rel="noopener noreferrer">Xbox Games Showcase and Gears of War: E-Day Direct Livestream</a><time datetime="2026-06-07">2026-06-07</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="v_-tVVpcmpo" data-video-title="Summer Game Fest 2026 Watch Party" aria-label="Play: Summer Game Fest 2026 Watch Party"><img class="video-card__thumb" src="https://i.ytimg.com/vi/v_-tVVpcmpo/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=v_-tVVpcmpo" target="_blank" rel="noopener noreferrer">Summer Game Fest 2026 Watch Party</a><time datetime="2026-06-06">2026-06-06</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="rockpapershotgun@die-partei.social" data-mastodon-url="https://die-partei.social/@rockpapershotgun"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

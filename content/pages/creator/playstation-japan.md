@@ -1,0 +1,25 @@
+Title: PlayStation Japan
+Date: 2026-06-20
+Slug: playstation-japan
+save_as: creator/playstation-japan/index.html
+url: creator/playstation-japan/
+status: hidden
+Summary: Gaming & VTubers creator PlayStation Japan on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Gaming &amp; VTubers</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/@PlayStationJapan" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://rss-mstdn.studiofreesia.com/@youtube_PlayStationJapan" target="_blank" rel="noopener noreferrer">@youtube_PlayStationJapan@rss-mstdn.studiofreesia.com</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>162,000</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>71</strong></p>
+<p class="creator-profile__bio">ソニー・インタラクティブエンタテインメントジャパンがお届けする、PlayStation® チャンネルへようこそ！最新のタイトルのプロモーションムービーはもちろん、『プレイステーション』がもっと楽しくなるあらゆる動画をご覧いただけます。 このアカウントはRSSフィードの内容を投稿するbotアカウントです。 このアカウントの投稿に関するお問い合わせは @ owner までお願いします。</p>
+
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="a_x-AdGhRkY" data-video-title="INZONE|ボドカ氏 × k4sen氏 × 鈴木ノリアキ氏 |INZONE H9 II レビュー(60秒)【ソニー公式】" aria-label="Play: INZONE|ボドカ氏 × k4sen氏 × 鈴木ノリアキ氏 |INZONE H9 II レビュー(60秒)【ソニー公式】"><img class="video-card__thumb" src="https://i.ytimg.com/vi/a_x-AdGhRkY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=a_x-AdGhRkY" target="_blank" rel="noopener noreferrer">INZONE|ボドカ氏 × k4sen氏 × 鈴木ノリアキ氏 |INZONE H9 II レビュー(60秒)【ソニー公式】</a><time datetime="2026-06-18">2026-06-18</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="2b9PmSop7AA" data-video-title="INZONE|ボドカ氏 × k4sen氏 × 鈴木ノリアキ氏 |INZONE H9 II レビュー(30秒)【ソニー公式】" aria-label="Play: INZONE|ボドカ氏 × k4sen氏 × 鈴木ノリアキ氏 |INZONE H9 II レビュー(30秒)【ソニー公式】"><img class="video-card__thumb" src="https://i.ytimg.com/vi/2b9PmSop7AA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=2b9PmSop7AA" target="_blank" rel="noopener noreferrer">INZONE|ボドカ氏 × k4sen氏 × 鈴木ノリアキ氏 |INZONE H9 II レビュー(30秒)【ソニー公式】</a><time datetime="2026-06-18">2026-06-18</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="WfOUuXCt1SE" data-video-title="【社員インタビュー】ソニーマーケティングの良いところは？【ソニー公式】" aria-label="Play: 【社員インタビュー】ソニーマーケティングの良いところは？【ソニー公式】"><img class="video-card__thumb" src="https://i.ytimg.com/vi/WfOUuXCt1SE/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=WfOUuXCt1SE" target="_blank" rel="noopener noreferrer">【社員インタビュー】ソニーマーケティングの良いところは？【ソニー公式】</a><time datetime="2026-06-15">2026-06-15</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="_hEk8hq772o" data-video-title="【社員インタビュー】前職の経験と現在に活用できているスキルは？【ソニー公式】" aria-label="Play: 【社員インタビュー】前職の経験と現在に活用できているスキルは？【ソニー公式】"><img class="video-card__thumb" src="https://i.ytimg.com/vi/_hEk8hq772o/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=_hEk8hq772o" target="_blank" rel="noopener noreferrer">【社員インタビュー】前職の経験と現在に活用できているスキルは？【ソニー公式】</a><time datetime="2026-06-15">2026-06-15</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="8pKMPf7pgbM" data-video-title="【社員インタビュー】ソニーマーケティングを選んだ理由は？【ソニー公式】" aria-label="Play: 【社員インタビュー】ソニーマーケティングを選んだ理由は？【ソニー公式】"><img class="video-card__thumb" src="https://i.ytimg.com/vi/8pKMPf7pgbM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=8pKMPf7pgbM" target="_blank" rel="noopener noreferrer">【社員インタビュー】ソニーマーケティングを選んだ理由は？【ソニー公式】</a><time datetime="2026-06-15">2026-06-15</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="youtube_PlayStationJapan@rss-mstdn.studiofreesia.com" data-mastodon-url="https://rss-mstdn.studiofreesia.com/@youtube_PlayStationJapan"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

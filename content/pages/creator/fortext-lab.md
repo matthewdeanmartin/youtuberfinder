@@ -1,0 +1,25 @@
+Title: fortext lab
+Date: 2026-06-20
+Slug: fortext-lab
+save_as: creator/fortext-lab/index.html
+url: creator/fortext-lab/
+status: hidden
+Summary: Technology & Computing creator fortext lab on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UC4aOD2eusb_q66LD-Q0km9Q" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://fedihum.org/@forTEXT" target="_blank" rel="noopener noreferrer">@forTEXT@fedihum.org</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>371</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>303</strong></p>
+<p class="creator-profile__bio"># DigitalHumanities # DH We use &amp; develop computational methods for the analysis of (literary) texts, for the theoretical development of analysis concepts and for the reinforcement of computational and manual analysis processes. We are home to the open source annotation tool CATMA ( <a href="https://catma.d…" target="_blank" rel="noopener noreferrer">https://catma.d…</a></p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="forTEXT@fedihum.org" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="JeklxMvLLcs" data-video-title="CATMA Tutorial Español" aria-label="Play: CATMA Tutorial Español"><img class="video-card__thumb" src="https://i.ytimg.com/vi/JeklxMvLLcs/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=JeklxMvLLcs" target="_blank" rel="noopener noreferrer">CATMA Tutorial Español</a><time datetime="2022-06-30">2022-06-30</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="Kk-EdsC_Q7M" data-video-title="Tutorial: Analysieren und visualisieren mit CATMA" aria-label="Play: Tutorial: Analysieren und visualisieren mit CATMA"><img class="video-card__thumb" src="https://i.ytimg.com/vi/Kk-EdsC_Q7M/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Kk-EdsC_Q7M" target="_blank" rel="noopener noreferrer">Tutorial: Analysieren und visualisieren mit CATMA</a><time datetime="2020-02-17">2020-02-17</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="UEIcUvoLfJ0" data-video-title="Tutorial: In CATMA 6 annotieren" aria-label="Play: Tutorial: In CATMA 6 annotieren"><img class="video-card__thumb" src="https://i.ytimg.com/vi/UEIcUvoLfJ0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=UEIcUvoLfJ0" target="_blank" rel="noopener noreferrer">Tutorial: In CATMA 6 annotieren</a><time datetime="2020-01-20">2020-01-20</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="Q10W0st8ZCQ" data-video-title="Tutorial: Tagsets in CATMA 6 anlegen" aria-label="Play: Tutorial: Tagsets in CATMA 6 anlegen"><img class="video-card__thumb" src="https://i.ytimg.com/vi/Q10W0st8ZCQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Q10W0st8ZCQ" target="_blank" rel="noopener noreferrer">Tutorial: Tagsets in CATMA 6 anlegen</a><time datetime="2019-12-23">2019-12-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="agywc1hV0U4" data-video-title="Tutorial: Projektmanagement in CATMA 6" aria-label="Play: Tutorial: Projektmanagement in CATMA 6"><img class="video-card__thumb" src="https://i.ytimg.com/vi/agywc1hV0U4/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=agywc1hV0U4" target="_blank" rel="noopener noreferrer">Tutorial: Projektmanagement in CATMA 6</a><time datetime="2019-11-25">2019-11-25</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="forTEXT@fedihum.org" data-mastodon-url="https://fedihum.org/@forTEXT"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

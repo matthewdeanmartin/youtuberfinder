@@ -1,0 +1,25 @@
+Title: Mathy Vanhoef
+Date: 2026-06-20
+Slug: mathy-vanhoef
+save_as: creator/mathy-vanhoef/index.html
+url: creator/mathy-vanhoef/
+status: hidden
+Summary: Technology & Computing creator Mathy Vanhoef on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/@vanhoefm" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://infosec.exchange/@vanhoefm" target="_blank" rel="noopener noreferrer">@vanhoefm@infosec.exchange</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>11,100</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>1956</strong></p>
+<p class="creator-profile__bio">Hacker at heart | Discovered KRACK and FragAttacks | Prof. Computer Science at @KU_Leuven (Belgium) | Did Postdoc at NYUAD | Network Security &amp; Applied Crypto | Open to consultancy</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="vanhoefm@infosec.exchange" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="vOawEz39yNY" data-video-title="How TunnelCrack breaks most VPNs" aria-label="Play: How TunnelCrack breaks most VPNs"><img class="video-card__thumb" src="https://i.ytimg.com/vi/vOawEz39yNY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=vOawEz39yNY" target="_blank" rel="noopener noreferrer">How TunnelCrack breaks most VPNs</a><time datetime="2023-08-08">2023-08-08</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="qLCTY3r3C1o" data-video-title="The Untold Secrets Behind FragAttacks" aria-label="Play: The Untold Secrets Behind FragAttacks"><img class="video-card__thumb" src="https://i.ytimg.com/vi/qLCTY3r3C1o/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=qLCTY3r3C1o" target="_blank" rel="noopener noreferrer">The Untold Secrets Behind FragAttacks</a><time datetime="2021-08-04">2021-08-04</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="OJ9nFeuitIU" data-video-title="FragAttacks: Presentation at USENIX Security &#x27;21" aria-label="Play: FragAttacks: Presentation at USENIX Security &#x27;21"><img class="video-card__thumb" src="https://i.ytimg.com/vi/OJ9nFeuitIU/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=OJ9nFeuitIU" target="_blank" rel="noopener noreferrer">FragAttacks: Presentation at USENIX Security &#x27;21</a><time datetime="2021-05-11">2021-05-11</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="88YZ4061tYw" data-video-title="FragAttacks: Demonstration of Flaws in WPA2/3" aria-label="Play: FragAttacks: Demonstration of Flaws in WPA2/3"><img class="video-card__thumb" src="https://i.ytimg.com/vi/88YZ4061tYw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=88YZ4061tYw" target="_blank" rel="noopener noreferrer">FragAttacks: Demonstration of Flaws in WPA2/3</a><time datetime="2021-05-11">2021-05-11</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="msTugNs8bnM" data-video-title="Dragonblood: Demo of downgrade attack against WPA3" aria-label="Play: Dragonblood: Demo of downgrade attack against WPA3"><img class="video-card__thumb" src="https://i.ytimg.com/vi/msTugNs8bnM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=msTugNs8bnM" target="_blank" rel="noopener noreferrer">Dragonblood: Demo of downgrade attack against WPA3</a><time datetime="2021-04-21">2021-04-21</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="vanhoefm@infosec.exchange" data-mastodon-url="https://infosec.exchange/@vanhoefm"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

@@ -1,0 +1,25 @@
+Title: Ciro Santilli
+Date: 2026-06-20
+Slug: ciro-santilli
+save_as: creator/ciro-santilli/index.html
+url: creator/ciro-santilli/
+status: hidden
+Summary: Technology & Computing creator Ciro Santilli on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCBrJjpKMpdrkA1VsAiR2wEg" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.social/@cirosantilli" target="_blank" rel="noopener noreferrer">@cirosantilli@mastodon.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>659</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>10</strong></p>
+<p class="creator-profile__bio"><a href="https://cirosantilli.com" target="_blank" rel="noopener noreferrer">https://cirosantilli.com</a></p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="cirosantilli@mastodon.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="V3KW8aouVDw" data-video-title="Peter Thiel diagnoses Martin Lorentzon with ADHD - The Playlist (2022)" aria-label="Play: Peter Thiel diagnoses Martin Lorentzon with ADHD - The Playlist (2022)"><img class="video-card__thumb" src="https://i.ytimg.com/vi/V3KW8aouVDw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=V3KW8aouVDw" target="_blank" rel="noopener noreferrer">Peter Thiel diagnoses Martin Lorentzon with ADHD - The Playlist (2022)</a><time datetime="2026-03-19">2026-03-19</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="eqbk9tYb7ek" data-video-title="the problem with education" aria-label="Play: the problem with education"><img class="video-card__thumb" src="https://i.ytimg.com/vi/eqbk9tYb7ek/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=eqbk9tYb7ek" target="_blank" rel="noopener noreferrer">the problem with education</a><time datetime="2025-11-03">2025-11-03</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="887jyJZnYkA" data-video-title="OurBigBook Project 2025 one year funded work debrief" aria-label="Play: OurBigBook Project 2025 one year funded work debrief"><img class="video-card__thumb" src="https://i.ytimg.com/vi/887jyJZnYkA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=887jyJZnYkA" target="_blank" rel="noopener noreferrer">OurBigBook Project 2025 one year funded work debrief</a><time datetime="2025-10-29">2025-10-29</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="thqdMjKUjWI" data-video-title="But Austria?! scene from Snowden (2016)" aria-label="Play: But Austria?! scene from Snowden (2016)"><img class="video-card__thumb" src="https://i.ytimg.com/vi/thqdMjKUjWI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=thqdMjKUjWI" target="_blank" rel="noopener noreferrer">But Austria?! scene from Snowden (2016)</a><time datetime="2025-05-29">2025-05-29</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="SCbat53DgSc" data-video-title="Those against raise their hands Xi Jinping remix" aria-label="Play: Those against raise their hands Xi Jinping remix"><img class="video-card__thumb" src="https://i.ytimg.com/vi/SCbat53DgSc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=SCbat53DgSc" target="_blank" rel="noopener noreferrer">Those against raise their hands Xi Jinping remix</a><time datetime="2025-05-15">2025-05-15</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="cirosantilli@mastodon.social" data-mastodon-url="https://mastodon.social/@cirosantilli"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

@@ -1,0 +1,25 @@
+Title: Kingsley Uyi Idehen
+Date: 2026-06-20
+Slug: kingsley-uyi-idehen
+save_as: creator/kingsley-uyi-idehen/index.html
+url: creator/kingsley-uyi-idehen/
+status: hidden
+Summary: Technology & Computing creator Kingsley Uyi Idehen on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UC9AZtu9mHK-sI4Qc9fnNlwQ" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.social/@kidehen" target="_blank" rel="noopener noreferrer">@kidehen@mastodon.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>240</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>868</strong></p>
+<p class="creator-profile__bio">Founder &amp; CEO, OpenLink Software (#VirtuosoRDBMS, # YouI , # OSDS , creator) # SSI : ni:///sha-256;xxdJ16bthZ724u0_xHvcNt0_Wu4ABxb56nPT50hNz-Q (denotes a SHA256 hash of a Public Key from a locally stored X.509 Cert) # Nostr : d9c8c00017a2a345c2f32132436a26e1c72cb7a57e7b6b316f62dee2f8bcf8dd Foci: # O…</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="kidehen@mastodon.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="Jd5wOGhQ5FU" data-video-title="Semantic Web vision in the age of AI" aria-label="Play: Semantic Web vision in the age of AI"><img class="video-card__thumb" src="https://i.ytimg.com/vi/Jd5wOGhQ5FU/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Jd5wOGhQ5FU" target="_blank" rel="noopener noreferrer">Semantic Web vision in the age of AI</a><time datetime="2026-05-08">2026-05-08</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="4OQEXG5JukU" data-video-title="The Semantic Web vision in the age of AI." aria-label="Play: The Semantic Web vision in the age of AI."><img class="video-card__thumb" src="https://i.ytimg.com/vi/4OQEXG5JukU/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=4OQEXG5JukU" target="_blank" rel="noopener noreferrer">The Semantic Web vision in the age of AI.</a><time datetime="2026-05-08">2026-05-08</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="NGOIyS4cOqI" data-video-title="Language, Context, and Digital Notebooks" aria-label="Play: Language, Context, and Digital Notebooks"><img class="video-card__thumb" src="https://i.ytimg.com/vi/NGOIyS4cOqI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=NGOIyS4cOqI" target="_blank" rel="noopener noreferrer">Language, Context, and Digital Notebooks</a><time datetime="2026-04-02">2026-04-02</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="dJSzi45REhs" data-video-title="Why Virtuoso Exists" aria-label="Play: Why Virtuoso Exists"><img class="video-card__thumb" src="https://i.ytimg.com/vi/dJSzi45REhs/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=dJSzi45REhs" target="_blank" rel="noopener noreferrer">Why Virtuoso Exists</a><time datetime="2026-03-23">2026-03-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="alR8dOlw5YQ" data-video-title="Steve Jobs presentation from 1983" aria-label="Play: Steve Jobs presentation from 1983"><img class="video-card__thumb" src="https://i.ytimg.com/vi/alR8dOlw5YQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=alR8dOlw5YQ" target="_blank" rel="noopener noreferrer">Steve Jobs presentation from 1983</a><time datetime="2026-03-15">2026-03-15</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="kidehen@mastodon.social" data-mastodon-url="https://mastodon.social/@kidehen"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

@@ -1,0 +1,25 @@
+Title: Astronomy Picture of the Day
+Date: 2026-06-20
+Slug: astronomy-picture-of-the-day
+save_as: creator/astronomy-picture-of-the-day/index.html
+url: creator/astronomy-picture-of-the-day/
+status: hidden
+Summary: Science & Education creator Astronomy Picture of the Day on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Science &amp; Education</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCWksELVw1LfYg6TiLQyjByw" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://reentry.codl.fr/@apod" target="_blank" rel="noopener noreferrer">@apod@reentry.codl.fr</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>5,520</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>70317</strong></p>
+<p class="creator-profile__bio">Discover the cosmos! A different image of our fascinating universe every day. 🌌 <a href="https://apod.nasa.gov/" target="_blank" rel="noopener noreferrer">https://apod.nasa.gov/</a> Formerly @ APoD , 2018 - 2024</p>
+
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="We1uEfRn3MM" data-video-title="2026 June 24 - SDO Observes a Coronal Mass Ejection" aria-label="Play: 2026 June 24 - SDO Observes a Coronal Mass Ejection"><img class="video-card__thumb" src="https://i.ytimg.com/vi/We1uEfRn3MM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=We1uEfRn3MM" target="_blank" rel="noopener noreferrer">2026 June 24 - SDO Observes a Coronal Mass Ejection</a><time datetime="2026-06-24">2026-06-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="gJn6D3J6tbU" data-video-title="2026 June 23 - Flying Past Neptune&#x27;s Moon Triton" aria-label="Play: 2026 June 23 - Flying Past Neptune&#x27;s Moon Triton"><img class="video-card__thumb" src="https://i.ytimg.com/vi/gJn6D3J6tbU/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=gJn6D3J6tbU" target="_blank" rel="noopener noreferrer">2026 June 23 - Flying Past Neptune&#x27;s Moon Triton</a><time datetime="2026-06-23">2026-06-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="F3K5KexBI4k" data-video-title="2026 June 22 - M27: The Dumbbell Nebula" aria-label="Play: 2026 June 22 - M27: The Dumbbell Nebula"><img class="video-card__thumb" src="https://i.ytimg.com/vi/F3K5KexBI4k/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=F3K5KexBI4k" target="_blank" rel="noopener noreferrer">2026 June 22 - M27: The Dumbbell Nebula</a><time datetime="2026-06-22">2026-06-22</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="mmm9ek0itF0" data-video-title="2026 June 21 - Keogram: The Sky in 2025" aria-label="Play: 2026 June 21 - Keogram: The Sky in 2025"><img class="video-card__thumb" src="https://i.ytimg.com/vi/mmm9ek0itF0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=mmm9ek0itF0" target="_blank" rel="noopener noreferrer">2026 June 21 - Keogram: The Sky in 2025</a><time datetime="2026-06-21">2026-06-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="nZQ-O3560Yc" data-video-title="2026 June 20 - Daytime Moon Meets Evening Star" aria-label="Play: 2026 June 20 - Daytime Moon Meets Evening Star"><img class="video-card__thumb" src="https://i.ytimg.com/vi/nZQ-O3560Yc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=nZQ-O3560Yc" target="_blank" rel="noopener noreferrer">2026 June 20 - Daytime Moon Meets Evening Star</a><time datetime="2026-06-20">2026-06-20</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="apod@reentry.codl.fr" data-mastodon-url="https://reentry.codl.fr/@apod"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

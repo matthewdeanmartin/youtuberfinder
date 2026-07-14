@@ -1,0 +1,25 @@
+Title: Kristina Gehrmann
+Date: 2026-06-20
+Slug: kristina-gehrmann
+save_as: creator/kristina-gehrmann/index.html
+url: creator/kristina-gehrmann/
+status: hidden
+Summary: Culture & Entertainment creator Kristina Gehrmann on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Culture &amp; Entertainment</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCEtYFrQc1sAnAb1WgDt8yiQ" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.art/@kristinagehrmann" target="_blank" rel="noopener noreferrer">@kristinagehrmann@mastodon.art</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>416</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>2555</strong></p>
+<p class="creator-profile__bio">Illustrator and graphic novelist (&quot;Im Eisland&quot;, &quot;The Jungle&quot;, &quot;Bloody Mary&quot;), she/her, deaf. # NoAI</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="kristinagehrmann@mastodon.art" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="ppH6Xh8vWyM" data-video-title="Kitty Howard Photoshop Painting timelapse" aria-label="Play: Kitty Howard Photoshop Painting timelapse"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ppH6Xh8vWyM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ppH6Xh8vWyM" target="_blank" rel="noopener noreferrer">Kitty Howard Photoshop Painting timelapse</a><time datetime="2026-04-19">2026-04-19</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="IAEA4XG6wws" data-video-title="Amulet of Sab-Sunen - timelapse painting process" aria-label="Play: Amulet of Sab-Sunen - timelapse painting process"><img class="video-card__thumb" src="https://i.ytimg.com/vi/IAEA4XG6wws/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=IAEA4XG6wws" target="_blank" rel="noopener noreferrer">Amulet of Sab-Sunen - timelapse painting process</a><time datetime="2025-10-16">2025-10-16</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="yLZWkii3CdI" data-video-title="Amaterasu - Photoshop painting timelapse" aria-label="Play: Amaterasu - Photoshop painting timelapse"><img class="video-card__thumb" src="https://i.ytimg.com/vi/yLZWkii3CdI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=yLZWkii3CdI" target="_blank" rel="noopener noreferrer">Amaterasu - Photoshop painting timelapse</a><time datetime="2025-06-14">2025-06-14</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="UuMD0uFyfr4" data-video-title="The Witcher promo art - timelapse painting process" aria-label="Play: The Witcher promo art - timelapse painting process"><img class="video-card__thumb" src="https://i.ytimg.com/vi/UuMD0uFyfr4/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=UuMD0uFyfr4" target="_blank" rel="noopener noreferrer">The Witcher promo art - timelapse painting process</a><time datetime="2023-01-13">2023-01-13</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="7Cynn49J230" data-video-title="Digitally painting gold texture in tapestry" aria-label="Play: Digitally painting gold texture in tapestry"><img class="video-card__thumb" src="https://i.ytimg.com/vi/7Cynn49J230/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=7Cynn49J230" target="_blank" rel="noopener noreferrer">Digitally painting gold texture in tapestry</a><time datetime="2021-04-19">2021-04-19</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="kristinagehrmann@mastodon.art" data-mastodon-url="https://mastodon.art/@kristinagehrmann"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

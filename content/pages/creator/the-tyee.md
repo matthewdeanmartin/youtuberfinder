@@ -1,0 +1,25 @@
+Title: The Tyee
+Date: 2026-06-20
+Slug: the-tyee
+save_as: creator/the-tyee/index.html
+url: creator/the-tyee/
+status: hidden
+Summary: News, Politics & Society creator The Tyee on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">News, Politics &amp; Society</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCfNcOPNCseYzc9fWwGdIRIw" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mstdn.ca/@thetyee" target="_blank" rel="noopener noreferrer">@thetyee@mstdn.ca</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>1,680</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>7043</strong></p>
+<p class="creator-profile__bio">Independent BC-based journalism that swims against the current. Paywall-free since 2003.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="thetyee@mstdn.ca" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="x_UthLx-gaE" data-video-title="Surviving the Next Heat Dome (with Michelle Gamage)" aria-label="Play: Surviving the Next Heat Dome (with Michelle Gamage)"><img class="video-card__thumb" src="https://i.ytimg.com/vi/x_UthLx-gaE/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=x_UthLx-gaE" target="_blank" rel="noopener noreferrer">Surviving the Next Heat Dome (with Michelle Gamage)</a><time datetime="2026-06-12">2026-06-12</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="hfRyNOWt4jE" data-video-title="How Do We Move Forward on DRIPA? (with Adam Olsen)" aria-label="Play: How Do We Move Forward on DRIPA? (with Adam Olsen)"><img class="video-card__thumb" src="https://i.ytimg.com/vi/hfRyNOWt4jE/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=hfRyNOWt4jE" target="_blank" rel="noopener noreferrer">How Do We Move Forward on DRIPA? (with Adam Olsen)</a><time datetime="2026-06-02">2026-06-02</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="ROrrY9a5uUw" data-video-title="Tearing Down Your Home? Try Deconstruction" aria-label="Play: Tearing Down Your Home? Try Deconstruction"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ROrrY9a5uUw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ROrrY9a5uUw" target="_blank" rel="noopener noreferrer">Tearing Down Your Home? Try Deconstruction</a><time datetime="2026-03-29">2026-03-29</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="U25ZH1_zVN0" data-video-title="This Local Farmer is Trying to Change How Flowers Are Made" aria-label="Play: This Local Farmer is Trying to Change How Flowers Are Made"><img class="video-card__thumb" src="https://i.ytimg.com/vi/U25ZH1_zVN0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=U25ZH1_zVN0" target="_blank" rel="noopener noreferrer">This Local Farmer is Trying to Change How Flowers Are Made</a><time datetime="2025-11-21">2025-11-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="sJgPszyEcPw" data-video-title="This business moves homes: Inside the world of the house relocation industry" aria-label="Play: This business moves homes: Inside the world of the house relocation industry"><img class="video-card__thumb" src="https://i.ytimg.com/vi/sJgPszyEcPw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=sJgPszyEcPw" target="_blank" rel="noopener noreferrer">This business moves homes: Inside the world of the house relocation industry</a><time datetime="2025-09-03">2025-09-03</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="thetyee@mstdn.ca" data-mastodon-url="https://mstdn.ca/@thetyee"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

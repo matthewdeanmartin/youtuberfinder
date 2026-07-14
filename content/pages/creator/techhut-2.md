@@ -1,0 +1,25 @@
+Title: TechHut
+Date: 2026-06-20
+Slug: techhut-2
+save_as: creator/techhut-2/index.html
+url: creator/techhut-2/
+status: hidden
+Summary: Culture & Entertainment creator TechHut on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Culture &amp; Entertainment</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/c/techhuthd" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://fosstodon.org/@techhut" target="_blank" rel="noopener noreferrer">@techhut@fosstodon.org</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>339</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>2904</strong></p>
+<p class="creator-profile__bio">Yes, I use this account and check it out frequently. No, you don&#x27;t need to tag an admin to try to get me in trouble. TechHut Media.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="techhut@fosstodon.org" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="1yrChg7XW-A" data-video-title="Share folders with other computers! Network Shares on Windows Guide" aria-label="Play: Share folders with other computers! Network Shares on Windows Guide"><img class="video-card__thumb" src="https://i.ytimg.com/vi/1yrChg7XW-A/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=1yrChg7XW-A" target="_blank" rel="noopener noreferrer">Share folders with other computers! Network Shares on Windows Guide</a><time datetime="2024-05-22">2024-05-22</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="Ipnnt6f7d4I" data-video-title="RAID in Windows? How to a Create Storage Pool" aria-label="Play: RAID in Windows? How to a Create Storage Pool"><img class="video-card__thumb" src="https://i.ytimg.com/vi/Ipnnt6f7d4I/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Ipnnt6f7d4I" target="_blank" rel="noopener noreferrer">RAID in Windows? How to a Create Storage Pool</a><time datetime="2024-05-22">2024-05-22</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="9kQ75FxxkUw" data-video-title="How to Enable OpenSSH and SFTP in Windows" aria-label="Play: How to Enable OpenSSH and SFTP in Windows"><img class="video-card__thumb" src="https://i.ytimg.com/vi/9kQ75FxxkUw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=9kQ75FxxkUw" target="_blank" rel="noopener noreferrer">How to Enable OpenSSH and SFTP in Windows</a><time datetime="2024-05-22">2024-05-22</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="vzxu9Vn6tJs" data-video-title="How to Enable Remote Desktop in Windows 11" aria-label="Play: How to Enable Remote Desktop in Windows 11"><img class="video-card__thumb" src="https://i.ytimg.com/vi/vzxu9Vn6tJs/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=vzxu9Vn6tJs" target="_blank" rel="noopener noreferrer">How to Enable Remote Desktop in Windows 11</a><time datetime="2024-05-22">2024-05-22</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="lTlGJC6irNQ" data-video-title="the BEST way to install Windows 11" aria-label="Play: the BEST way to install Windows 11"><img class="video-card__thumb" src="https://i.ytimg.com/vi/lTlGJC6irNQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=lTlGJC6irNQ" target="_blank" rel="noopener noreferrer">the BEST way to install Windows 11</a><time datetime="2024-05-22">2024-05-22</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="techhut@fosstodon.org" data-mastodon-url="https://fosstodon.org/@techhut"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

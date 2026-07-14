@@ -1,0 +1,25 @@
+Title: BUND Sachsen
+Date: 2026-06-20
+Slug: bund-sachsen
+save_as: creator/bund-sachsen/index.html
+url: creator/bund-sachsen/
+status: hidden
+Summary: Other creator BUND Sachsen on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Other</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCkwSgV38rLNtTUWlk2zLSiw" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://dresden.network/@bundsachsen" target="_blank" rel="noopener noreferrer">@bundsachsen@dresden.network</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>606</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>495</strong></p>
+<p class="creator-profile__bio">BUND für Umwelt &amp; Naturschutz Sachsen e.V. (NRO) # sachsen weit aktiv, # Naturschutz # Klimaschutz , # Energiewende , # Umweltschutz , # Wildbienen , # Feuersalamander , # Wildkatze <a href="https://www.bund-sachsen.de/service/links/" target="_blank" rel="noopener noreferrer">https://www.bund-sachsen.de/service/links/</a></p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="bundsachsen@dresden.network" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="DJXFHtK3frA" data-video-title="Klima-Talk VIII: Wasserstoff und Klimaschutz - passt das zusammen?" aria-label="Play: Klima-Talk VIII: Wasserstoff und Klimaschutz - passt das zusammen?"><img class="video-card__thumb" src="https://i.ytimg.com/vi/DJXFHtK3frA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=DJXFHtK3frA" target="_blank" rel="noopener noreferrer">Klima-Talk VIII: Wasserstoff und Klimaschutz - passt das zusammen?</a><time datetime="2023-11-06">2023-11-06</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="x-36gedO23Q" data-video-title="Rettungsnetz Wildkatze" aria-label="Play: Rettungsnetz Wildkatze"><img class="video-card__thumb" src="https://i.ytimg.com/vi/x-36gedO23Q/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=x-36gedO23Q" target="_blank" rel="noopener noreferrer">Rettungsnetz Wildkatze</a><time datetime="2023-11-02">2023-11-02</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="ESAAeVXKLuE" data-video-title="Trailer: Lausitz LEBEN neu gestalten" aria-label="Play: Trailer: Lausitz LEBEN neu gestalten"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ESAAeVXKLuE/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ESAAeVXKLuE" target="_blank" rel="noopener noreferrer">Trailer: Lausitz LEBEN neu gestalten</a><time datetime="2023-09-20">2023-09-20</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="oZtbArS8x9I" data-video-title="Fließgewässer in Sachsen" aria-label="Play: Fließgewässer in Sachsen"><img class="video-card__thumb" src="https://i.ytimg.com/vi/oZtbArS8x9I/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=oZtbArS8x9I" target="_blank" rel="noopener noreferrer">Fließgewässer in Sachsen</a><time datetime="2023-06-27">2023-06-27</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="JzIjSAsPToY" data-video-title="Lausitz LEBEN neu gestalten" aria-label="Play: Lausitz LEBEN neu gestalten"><img class="video-card__thumb" src="https://i.ytimg.com/vi/JzIjSAsPToY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=JzIjSAsPToY" target="_blank" rel="noopener noreferrer">Lausitz LEBEN neu gestalten</a><time datetime="2023-03-08">2023-03-08</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="bundsachsen@dresden.network" data-mastodon-url="https://dresden.network/@bundsachsen"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

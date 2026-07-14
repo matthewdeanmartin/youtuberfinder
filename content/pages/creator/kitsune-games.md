@@ -1,0 +1,25 @@
+Title: Kitsune Games
+Date: 2026-06-20
+Slug: kitsune-games
+save_as: creator/kitsune-games/index.html
+url: creator/kitsune-games/
+status: hidden
+Summary: Gaming & VTubers creator Kitsune Games on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Gaming &amp; VTubers</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCTdFEO_5f4wq2qgFkxrxkOw" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.social/@kitsunegames" target="_blank" rel="noopener noreferrer">@kitsunegames@mastodon.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>2,310</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>657</strong></p>
+<p class="creator-profile__bio">Kitsune Games is the inclusive indie game studio behind titles like Kitsune Tails, MidBoss, Super Bernie World, and Ultra Hat Dimension.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="kitsunegames@mastodon.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="_9uaIPrJghE" data-video-title="Kitsune Tails - Accolades Trailer [Official]" aria-label="Play: Kitsune Tails - Accolades Trailer [Official]"><img class="video-card__thumb" src="https://i.ytimg.com/vi/_9uaIPrJghE/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=_9uaIPrJghE" target="_blank" rel="noopener noreferrer">Kitsune Tails - Accolades Trailer [Official]</a><time datetime="2024-08-12">2024-08-12</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="jfhhm0DuJYs" data-video-title="Kitsune Tails - PC Release Trailer [Official]" aria-label="Play: Kitsune Tails - PC Release Trailer [Official]"><img class="video-card__thumb" src="https://i.ytimg.com/vi/jfhhm0DuJYs/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=jfhhm0DuJYs" target="_blank" rel="noopener noreferrer">Kitsune Tails - PC Release Trailer [Official]</a><time datetime="2024-08-01">2024-08-01</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="0EQkhejCoRs" data-video-title="Kitsune Tails - Minigames &amp; Modding Trailer [Official]" aria-label="Play: Kitsune Tails - Minigames &amp; Modding Trailer [Official]"><img class="video-card__thumb" src="https://i.ytimg.com/vi/0EQkhejCoRs/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=0EQkhejCoRs" target="_blank" rel="noopener noreferrer">Kitsune Tails - Minigames &amp; Modding Trailer [Official]</a><time datetime="2024-07-23">2024-07-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="eW3RF5QYzag" data-video-title="Kitsune Tails coming to PC August 1st, 2024!" aria-label="Play: Kitsune Tails coming to PC August 1st, 2024!"><img class="video-card__thumb" src="https://i.ytimg.com/vi/eW3RF5QYzag/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=eW3RF5QYzag" target="_blank" rel="noopener noreferrer">Kitsune Tails coming to PC August 1st, 2024!</a><time datetime="2024-06-08">2024-06-08</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="MRBcm5fagUU" data-video-title="Kitsune Tails - Steam Next Fest Boss Showcase" aria-label="Play: Kitsune Tails - Steam Next Fest Boss Showcase"><img class="video-card__thumb" src="https://i.ytimg.com/vi/MRBcm5fagUU/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=MRBcm5fagUU" target="_blank" rel="noopener noreferrer">Kitsune Tails - Steam Next Fest Boss Showcase</a><time datetime="2024-06-04">2024-06-04</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="kitsunegames@mastodon.social" data-mastodon-url="https://mastodon.social/@kitsunegames"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

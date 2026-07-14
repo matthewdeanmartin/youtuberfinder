@@ -1,0 +1,25 @@
+Title: Blacks In Cybersecurity HQ
+Date: 2026-06-20
+Slug: blacks-in-cybersecurity-hq
+save_as: creator/blacks-in-cybersecurity-hq/index.html
+url: creator/blacks-in-cybersecurity-hq/
+status: hidden
+Summary: Technology & Computing creator Blacks In Cybersecurity HQ on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/c/BlacksInCybersecurity" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://infosec.exchange/@blacksincyber" target="_blank" rel="noopener noreferrer">@blacksincyber@infosec.exchange</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>314</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>955</strong></p>
+<p class="creator-profile__bio">Blacks In # Cybersecurity ™️ Official HQ 🏠 | # LitLikeBIC |#BlacksInCyber | 34ch-0n3-734ch-M4ny | 2x DC Black Badge CTF 🏆💻🏴‍☠️ blacksincyber@infosec.exchange/defconsocial # ShareTheMicInCyber</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="blacksincyber@infosec.exchange" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="fXwk8lvWRY8" data-video-title="*SNEAK PEAK* VLOG_WEEKENDER_0.0" aria-label="Play: *SNEAK PEAK* VLOG_WEEKENDER_0.0"><img class="video-card__thumb" src="https://i.ytimg.com/vi/fXwk8lvWRY8/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=fXwk8lvWRY8" target="_blank" rel="noopener noreferrer">*SNEAK PEAK* VLOG_WEEKENDER_0.0</a><time datetime="2019-12-30">2019-12-30</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="2qNkqbJ2d-E" data-video-title="*SNEAK PEAK* Vlog_BSIDESCLT_0.4" aria-label="Play: *SNEAK PEAK* Vlog_BSIDESCLT_0.4"><img class="video-card__thumb" src="https://i.ytimg.com/vi/2qNkqbJ2d-E/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=2qNkqbJ2d-E" target="_blank" rel="noopener noreferrer">*SNEAK PEAK* Vlog_BSIDESCLT_0.4</a><time datetime="2019-12-01">2019-12-01</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="AG5-B045rsE" data-video-title="*SNEAK PEAK* Vlog_BSIDESDC_0.3" aria-label="Play: *SNEAK PEAK* Vlog_BSIDESDC_0.3"><img class="video-card__thumb" src="https://i.ytimg.com/vi/AG5-B045rsE/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=AG5-B045rsE" target="_blank" rel="noopener noreferrer">*SNEAK PEAK* Vlog_BSIDESDC_0.3</a><time datetime="2019-11-11">2019-11-11</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="7la6JX5iUVY" data-video-title="*SNEAK PEAK* Vlog_NASA_0.2" aria-label="Play: *SNEAK PEAK* Vlog_NASA_0.2"><img class="video-card__thumb" src="https://i.ytimg.com/vi/7la6JX5iUVY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=7la6JX5iUVY" target="_blank" rel="noopener noreferrer">*SNEAK PEAK* Vlog_NASA_0.2</a><time datetime="2019-10-25">2019-10-25</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="FCdlWs2jiLY" data-video-title="Conferences: &quot;What&#x27;s in my Conference Bag?&quot;" aria-label="Play: Conferences: &quot;What&#x27;s in my Conference Bag?&quot;"><img class="video-card__thumb" src="https://i.ytimg.com/vi/FCdlWs2jiLY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=FCdlWs2jiLY" target="_blank" rel="noopener noreferrer">Conferences: &quot;What&#x27;s in my Conference Bag?&quot;</a><time datetime="2019-10-15">2019-10-15</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="blacksincyber@infosec.exchange" data-mastodon-url="https://infosec.exchange/@blacksincyber"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

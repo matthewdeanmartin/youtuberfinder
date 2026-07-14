@@ -1,0 +1,25 @@
+Title: KDE
+Date: 2026-06-20
+Slug: kde
+save_as: creator/kde/index.html
+url: creator/kde/
+status: hidden
+Summary: Technology & Computing creator KDE on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCF3I1gf7GcbmAb0mR6vxkZQ" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://floss.social/@kde" target="_blank" rel="noopener noreferrer">@kde@floss.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>20,000</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>35810</strong></p>
+<p class="creator-profile__bio">A worldwide technology community 🌍 Creators of the Plasma desktop &amp; a variety of Free and open source applications that let you control your digital life.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="kde@floss.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="YXxbhJ6ixkY" data-video-title="The State of (the) Union - Arjen Hiemstra" aria-label="Play: The State of (the) Union - Arjen Hiemstra"><img class="video-card__thumb" src="https://i.ytimg.com/vi/YXxbhJ6ixkY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=YXxbhJ6ixkY" target="_blank" rel="noopener noreferrer">The State of (the) Union - Arjen Hiemstra</a><time datetime="2025-09-26">2025-09-26</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="yEZnwkCLa44" data-video-title="The Role of New Languages in the Future of the Qt Ecosystem - Cristián Maureira-Fredes" aria-label="Play: The Role of New Languages in the Future of the Qt Ecosystem - Cristián Maureira-Fredes"><img class="video-card__thumb" src="https://i.ytimg.com/vi/yEZnwkCLa44/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=yEZnwkCLa44" target="_blank" rel="noopener noreferrer">The Role of New Languages in the Future of the Qt Ecosystem - Cristián Maureira-Fredes</a><time datetime="2025-09-26">2025-09-26</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="8fMFSDk33ss" data-video-title="Pursuing KDE Neon Core" aria-label="Play: Pursuing KDE Neon Core"><img class="video-card__thumb" src="https://i.ytimg.com/vi/8fMFSDk33ss/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=8fMFSDk33ss" target="_blank" rel="noopener noreferrer">Pursuing KDE Neon Core</a><time datetime="2025-09-26">2025-09-26</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="1USV6f7u7WM" data-video-title="Language Bindings: The Future of KDE?" aria-label="Play: Language Bindings: The Future of KDE?"><img class="video-card__thumb" src="https://i.ytimg.com/vi/1USV6f7u7WM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=1USV6f7u7WM" target="_blank" rel="noopener noreferrer">Language Bindings: The Future of KDE?</a><time datetime="2025-09-26">2025-09-26</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="iQcVhg2nMKw" data-video-title="From Misunderstood to CEO – Breaking Bias and Building Inclusion" aria-label="Play: From Misunderstood to CEO – Breaking Bias and Building Inclusion"><img class="video-card__thumb" src="https://i.ytimg.com/vi/iQcVhg2nMKw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=iQcVhg2nMKw" target="_blank" rel="noopener noreferrer">From Misunderstood to CEO – Breaking Bias and Building Inclusion</a><time datetime="2025-09-26">2025-09-26</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="kde@floss.social" data-mastodon-url="https://floss.social/@kde"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

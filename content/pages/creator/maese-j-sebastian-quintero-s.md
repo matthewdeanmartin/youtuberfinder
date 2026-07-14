@@ -1,0 +1,25 @@
+Title: Maese J Sebastian Quintero S
+Date: 2026-06-20
+Slug: maese-j-sebastian-quintero-s
+save_as: creator/maese-j-sebastian-quintero-s/index.html
+url: creator/maese-j-sebastian-quintero-s/
+status: hidden
+Summary: Science & Education creator Maese J Sebastian Quintero S on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Science &amp; Education</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCfVTq-CBK9faOKnNn288r1Q" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://metalhead.club/@Siriox" target="_blank" rel="noopener noreferrer">@Siriox@metalhead.club</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>185</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>46</strong></p>
+<p class="creator-profile__bio">Teacher of Natural Sciences, Friki de los Idiomas, Esperantisto, Wikimedian, Asturófilo, SciFi</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="Siriox@metalhead.club" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="11NjeNwlysc" data-video-title="Duermedela — Saurom Acústico en Monterrey 🇲🇽" aria-label="Play: Duermedela — Saurom Acústico en Monterrey 🇲🇽"><img class="video-card__thumb" src="https://i.ytimg.com/vi/11NjeNwlysc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=11NjeNwlysc" target="_blank" rel="noopener noreferrer">Duermedela — Saurom Acústico en Monterrey 🇲🇽</a><time datetime="2026-04-27">2026-04-27</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="SHXssciXbQY" data-video-title="Para siempre — Saurom Acústico en Monterrey 🇲🇽" aria-label="Play: Para siempre — Saurom Acústico en Monterrey 🇲🇽"><img class="video-card__thumb" src="https://i.ytimg.com/vi/SHXssciXbQY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=SHXssciXbQY" target="_blank" rel="noopener noreferrer">Para siempre — Saurom Acústico en Monterrey 🇲🇽</a><time datetime="2026-04-27">2026-04-27</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="r59-gJjOmzM" data-video-title="La musa y el espíritu — Saurom Acústico en Monterrey 🇲🇽" aria-label="Play: La musa y el espíritu — Saurom Acústico en Monterrey 🇲🇽"><img class="video-card__thumb" src="https://i.ytimg.com/vi/r59-gJjOmzM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=r59-gJjOmzM" target="_blank" rel="noopener noreferrer">La musa y el espíritu — Saurom Acústico en Monterrey 🇲🇽</a><time datetime="2026-04-27">2026-04-27</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="wmUXuYwMrcA" data-video-title="Soñando contigo — Saurom Acústico en Monterrey 🇲🇽" aria-label="Play: Soñando contigo — Saurom Acústico en Monterrey 🇲🇽"><img class="video-card__thumb" src="https://i.ytimg.com/vi/wmUXuYwMrcA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=wmUXuYwMrcA" target="_blank" rel="noopener noreferrer">Soñando contigo — Saurom Acústico en Monterrey 🇲🇽</a><time datetime="2026-04-27">2026-04-27</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="ToqsZ5kDzm8" data-video-title="Estrella sin luz — Saurom Acústico en Monterrey 🇲🇽" aria-label="Play: Estrella sin luz — Saurom Acústico en Monterrey 🇲🇽"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ToqsZ5kDzm8/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ToqsZ5kDzm8" target="_blank" rel="noopener noreferrer">Estrella sin luz — Saurom Acústico en Monterrey 🇲🇽</a><time datetime="2026-04-27">2026-04-27</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="Siriox@metalhead.club" data-mastodon-url="https://metalhead.club/@Siriox"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

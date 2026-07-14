@@ -1,0 +1,25 @@
+Title: rebeccawatson
+Date: 2026-06-20
+Slug: rebeccawatson
+save_as: creator/rebeccawatson/index.html
+url: creator/rebeccawatson/
+status: hidden
+Summary: Other creator rebeccawatson on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Other</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCFJxE0l3cVYU4kHzi4qVEkw" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mstdn.social/@rebeccawatson" target="_blank" rel="noopener noreferrer">@rebeccawatson@mstdn.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>269,000</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>12412</strong></p>
+<p class="creator-profile__bio"></p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="rebeccawatson@mstdn.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="n-IHJK1CVeI" data-video-title="Gwyneth Paltrow Pivots to Genocide" aria-label="Play: Gwyneth Paltrow Pivots to Genocide"><img class="video-card__thumb" src="https://i.ytimg.com/vi/n-IHJK1CVeI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=n-IHJK1CVeI" target="_blank" rel="noopener noreferrer">Gwyneth Paltrow Pivots to Genocide</a><time datetime="2026-06-24">2026-06-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="aKQW_J20ReM" data-video-title="Peter Thiel&#x27;s &quot;Secret Society&quot;" aria-label="Play: Peter Thiel&#x27;s &quot;Secret Society&quot;"><img class="video-card__thumb" src="https://i.ytimg.com/vi/aKQW_J20ReM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=aKQW_J20ReM" target="_blank" rel="noopener noreferrer">Peter Thiel&#x27;s &quot;Secret Society&quot;</a><time datetime="2026-06-23">2026-06-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="uHBRKq0-S70" data-video-title="Trump&#x27;s &quot;Open-Border&quot; Policy for Parasitic Worms that Make Hamburgers More Expensive" aria-label="Play: Trump&#x27;s &quot;Open-Border&quot; Policy for Parasitic Worms that Make Hamburgers More Expensive"><img class="video-card__thumb" src="https://i.ytimg.com/vi/uHBRKq0-S70/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=uHBRKq0-S70" target="_blank" rel="noopener noreferrer">Trump&#x27;s &quot;Open-Border&quot; Policy for Parasitic Worms that Make Hamburgers More Expensive</a><time datetime="2026-06-19">2026-06-19</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="44E0riMlRFE" data-video-title="Try Too Hard, End up Disappointed? New Study" aria-label="Play: Try Too Hard, End up Disappointed? New Study"><img class="video-card__thumb" src="https://i.ytimg.com/vi/44E0riMlRFE/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=44E0riMlRFE" target="_blank" rel="noopener noreferrer">Try Too Hard, End up Disappointed? New Study</a><time datetime="2026-06-18">2026-06-18</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="5s_YuCwvwoQ" data-video-title="Is Your Phone Spying on Your Conversations? No." aria-label="Play: Is Your Phone Spying on Your Conversations? No."><img class="video-card__thumb" src="https://i.ytimg.com/vi/5s_YuCwvwoQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=5s_YuCwvwoQ" target="_blank" rel="noopener noreferrer">Is Your Phone Spying on Your Conversations? No.</a><time datetime="2026-05-30">2026-05-30</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="rebeccawatson@mstdn.social" data-mastodon-url="https://mstdn.social/@rebeccawatson"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

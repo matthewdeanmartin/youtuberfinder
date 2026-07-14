@@ -1,0 +1,25 @@
+Title: Surveillance Report
+Date: 2026-06-20
+Slug: surveillance-report
+save_as: creator/surveillance-report/index.html
+url: creator/surveillance-report/
+status: hidden
+Summary: Technology & Computing creator Surveillance Report on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UC0W_BIuwk8D0Bv4THbVZZOQ" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://social.lol/@sr" target="_blank" rel="noopener noreferrer">@sr@social.lol</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>34,800</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>2791</strong></p>
+<p class="creator-profile__bio">Has now become the Techlore Surveillance Report! All future content, updates, and analysis have moved to the official account: @ techlore</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="sr@social.lol" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="He23NeRG2Eg" data-video-title="Nate Steps Down + What Happens to Surveillance Report" aria-label="Play: Nate Steps Down + What Happens to Surveillance Report"><img class="video-card__thumb" src="https://i.ytimg.com/vi/He23NeRG2Eg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=He23NeRG2Eg" target="_blank" rel="noopener noreferrer">Nate Steps Down + What Happens to Surveillance Report</a><time datetime="2025-11-20">2025-11-20</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="3J0SnNkMZjg" data-video-title="AI Browsers Are Already Risky" aria-label="Play: AI Browsers Are Already Risky"><img class="video-card__thumb" src="https://i.ytimg.com/vi/3J0SnNkMZjg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=3J0SnNkMZjg" target="_blank" rel="noopener noreferrer">AI Browsers Are Already Risky</a><time datetime="2025-11-14">2025-11-14</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="f2Y5t8SRW7Y" data-video-title="Q&amp;A: Why Don&#x27;t People Care About Privacy?" aria-label="Play: Q&amp;A: Why Don&#x27;t People Care About Privacy?"><img class="video-card__thumb" src="https://i.ytimg.com/vi/f2Y5t8SRW7Y/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=f2Y5t8SRW7Y" target="_blank" rel="noopener noreferrer">Q&amp;A: Why Don&#x27;t People Care About Privacy?</a><time datetime="2025-11-01">2025-11-01</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="v67s2uzi3Ew" data-video-title="The UK Orders an Apple Backdoor - AGAIN!" aria-label="Play: The UK Orders an Apple Backdoor - AGAIN!"><img class="video-card__thumb" src="https://i.ytimg.com/vi/v67s2uzi3Ew/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=v67s2uzi3Ew" target="_blank" rel="noopener noreferrer">The UK Orders an Apple Backdoor - AGAIN!</a><time datetime="2025-10-21">2025-10-21</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="6Ye9v17ctBw" data-video-title="Windows 10&#x27;s Extra Year of Updates Has a Catch..." aria-label="Play: Windows 10&#x27;s Extra Year of Updates Has a Catch..."><img class="video-card__thumb" src="https://i.ytimg.com/vi/6Ye9v17ctBw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=6Ye9v17ctBw" target="_blank" rel="noopener noreferrer">Windows 10&#x27;s Extra Year of Updates Has a Catch...</a><time datetime="2025-10-11">2025-10-11</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="sr@social.lol" data-mastodon-url="https://social.lol/@sr"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

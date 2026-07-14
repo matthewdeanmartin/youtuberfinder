@@ -1,0 +1,25 @@
+Title: The Incredible Herrengedeck
+Date: 2026-06-20
+Slug: the-incredible-herrengedeck
+save_as: creator/the-incredible-herrengedeck/index.html
+url: creator/the-incredible-herrengedeck/
+status: hidden
+Summary: Music creator The Incredible Herrengedeck on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Music</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/@Herrengedeck44" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.social/@herrengedeck" target="_blank" rel="noopener noreferrer">@herrengedeck@mastodon.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>531</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>202</strong></p>
+<p class="creator-profile__bio">Chanson-Punk aus Berlin</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="herrengedeck@mastodon.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="2KI-KyAs_2U" data-video-title="Esels Alptraum | Forever Yodel-Punk!" aria-label="Play: Esels Alptraum | Forever Yodel-Punk!"><img class="video-card__thumb" src="https://i.ytimg.com/vi/2KI-KyAs_2U/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=2KI-KyAs_2U" target="_blank" rel="noopener noreferrer">Esels Alptraum | Forever Yodel-Punk!</a><time datetime="2025-09-12">2025-09-12</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="GvbOZ3-ruPk" data-video-title="Esels Alptraum | Eichelheer-Kommando live@SO36" aria-label="Play: Esels Alptraum | Eichelheer-Kommando live@SO36"><img class="video-card__thumb" src="https://i.ytimg.com/vi/GvbOZ3-ruPk/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=GvbOZ3-ruPk" target="_blank" rel="noopener noreferrer">Esels Alptraum | Eichelheer-Kommando live@SO36</a><time datetime="2025-09-10">2025-09-10</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="indrecCHBDU" data-video-title="Esels Alptraum | Wer, wenn nicht wir? (Earth Song) live@SO36" aria-label="Play: Esels Alptraum | Wer, wenn nicht wir? (Earth Song) live@SO36"><img class="video-card__thumb" src="https://i.ytimg.com/vi/indrecCHBDU/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=indrecCHBDU" target="_blank" rel="noopener noreferrer">Esels Alptraum | Wer, wenn nicht wir? (Earth Song) live@SO36</a><time datetime="2025-09-10">2025-09-10</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="GqH9cLy5wc8" data-video-title="JOGIDA - Tutorial#6 &quot;Marienberger&quot;" aria-label="Play: JOGIDA - Tutorial#6 &quot;Marienberger&quot;"><img class="video-card__thumb" src="https://i.ytimg.com/vi/GqH9cLy5wc8/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=GqH9cLy5wc8" target="_blank" rel="noopener noreferrer">JOGIDA - Tutorial#6 &quot;Marienberger&quot;</a><time datetime="2025-09-04">2025-09-04</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="yNERpOBSTLg" data-video-title="JOGIDA - Tutorial#5 &quot;Neuberger&quot; -- FCKAFD Jodler" aria-label="Play: JOGIDA - Tutorial#5 &quot;Neuberger&quot; -- FCKAFD Jodler"><img class="video-card__thumb" src="https://i.ytimg.com/vi/yNERpOBSTLg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=yNERpOBSTLg" target="_blank" rel="noopener noreferrer">JOGIDA - Tutorial#5 &quot;Neuberger&quot; -- FCKAFD Jodler</a><time datetime="2025-09-04">2025-09-04</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="herrengedeck@mastodon.social" data-mastodon-url="https://mastodon.social/@herrengedeck"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

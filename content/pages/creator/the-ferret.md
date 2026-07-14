@@ -1,0 +1,25 @@
+Title: The Ferret
+Date: 2026-06-20
+Slug: the-ferret
+save_as: creator/the-ferret/index.html
+url: creator/the-ferret/
+status: hidden
+Summary: Culture & Entertainment creator The Ferret on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Culture &amp; Entertainment</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCW3-ry-RwjWWOwQ4HZXvaZQ" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.scot/@theferret" target="_blank" rel="noopener noreferrer">@theferret@mastodon.scot</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>447</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>2594</strong></p>
+<p class="creator-profile__bio">The Ferret is an award-winning investigative journalism platform based in Scotland. We are a # coop owned by our readers and writers. Join us! * This account is mainly automated. Don&#x27;t send story tips through Mastodon. Send them here: <a href="https://theferret.scot/contact/" target="_blank" rel="noopener noreferrer">https://theferret.scot/contact/</a></p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="theferret@mastodon.scot" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="I5aJh-DBMP0" data-video-title="West Strome, November and December 2025" aria-label="Play: West Strome, November and December 2025"><img class="video-card__thumb" src="https://i.ytimg.com/vi/I5aJh-DBMP0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=I5aJh-DBMP0" target="_blank" rel="noopener noreferrer">West Strome, November and December 2025</a><time datetime="2026-03-09">2026-03-09</time></div></li><li class="video-card video-card--link"><a href="https://www.youtube.com/shorts/BUY5NftZrXI" target="_blank" rel="noopener noreferrer">House 88: Next to Auschwitz</a><time datetime="2026-01-28">2026-01-28</time></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="8V8BYHVIeRA" data-video-title="Footage of trout being clubbed and slaughtered prompts complaint to regulator" aria-label="Play: Footage of trout being clubbed and slaughtered prompts complaint to regulator"><img class="video-card__thumb" src="https://i.ytimg.com/vi/8V8BYHVIeRA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=8V8BYHVIeRA" target="_blank" rel="noopener noreferrer">Footage of trout being clubbed and slaughtered prompts complaint to regulator</a><time datetime="2025-10-27">2025-10-27</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="fSr8TKV_VlQ" data-video-title="Help us investigate... Who Runs Scotland" aria-label="Play: Help us investigate... Who Runs Scotland"><img class="video-card__thumb" src="https://i.ytimg.com/vi/fSr8TKV_VlQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=fSr8TKV_VlQ" target="_blank" rel="noopener noreferrer">Help us investigate... Who Runs Scotland</a><time datetime="2024-05-02">2024-05-02</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="fs4JqX6LiBQ" data-video-title="Podcast trailer - A place to heal: saving lives in Toronto&#x27;s toxic drug death crisis" aria-label="Play: Podcast trailer - A place to heal: saving lives in Toronto&#x27;s toxic drug death crisis"><img class="video-card__thumb" src="https://i.ytimg.com/vi/fs4JqX6LiBQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=fs4JqX6LiBQ" target="_blank" rel="noopener noreferrer">Podcast trailer - A place to heal: saving lives in Toronto&#x27;s toxic drug death crisis</a><time datetime="2024-04-24">2024-04-24</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="theferret@mastodon.scot" data-mastodon-url="https://mastodon.scot/@theferret"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

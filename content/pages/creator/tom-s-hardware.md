@@ -1,0 +1,25 @@
+Title: Tom's Hardware
+Date: 2026-06-20
+Slug: tom-s-hardware
+save_as: creator/tom-s-hardware/index.html
+url: creator/tom-s-hardware/
+status: hidden
+Summary: Technology & Computing creator Tom's Hardware on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCVWz7VUp9PtgUes838TJpAw" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.online/@tomshardware" target="_blank" rel="noopener noreferrer">@tomshardware@mastodon.online</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>43,500</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>841</strong></p>
+<p class="creator-profile__bio">RSS feed from tomshardware.com If you&#x27;d rather buy a laptop or desktop, you&#x27;re on your first PC build or you want to share your love of tech with your family, we&#x27;re there to empower you with accessible editorial and a helpful, supportive community.</p>
+
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="ZICUotT73H4" data-video-title="$2,000 PC Build Spotlight: Rising Phoenix" aria-label="Play: $2,000 PC Build Spotlight: Rising Phoenix"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ZICUotT73H4/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ZICUotT73H4" target="_blank" rel="noopener noreferrer">$2,000 PC Build Spotlight: Rising Phoenix</a><time datetime="2025-10-30">2025-10-30</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="h3r7m7fZj0k" data-video-title="Xreal One Pro" aria-label="Play: Xreal One Pro"><img class="video-card__thumb" src="https://i.ytimg.com/vi/h3r7m7fZj0k/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=h3r7m7fZj0k" target="_blank" rel="noopener noreferrer">Xreal One Pro</a><time datetime="2025-06-18">2025-06-18</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="TqLW7lk8zm0" data-video-title="Linux gaming PC with a 4060 Ti" aria-label="Play: Linux gaming PC with a 4060 Ti"><img class="video-card__thumb" src="https://i.ytimg.com/vi/TqLW7lk8zm0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=TqLW7lk8zm0" target="_blank" rel="noopener noreferrer">Linux gaming PC with a 4060 Ti</a><time datetime="2025-06-18">2025-06-18</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="PNlbR-aNpPI" data-video-title="The Pi Cast (3/25) The Psion 5MX Raspberry Pi Conversion Project" aria-label="Play: The Pi Cast (3/25) The Psion 5MX Raspberry Pi Conversion Project"><img class="video-card__thumb" src="https://i.ytimg.com/vi/PNlbR-aNpPI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=PNlbR-aNpPI" target="_blank" rel="noopener noreferrer">The Pi Cast (3/25) The Psion 5MX Raspberry Pi Conversion Project</a><time datetime="2025-03-26">2025-03-26</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="N4tOVg56ITA" data-video-title="Meet the World&#x27;s Largest Keyboard: Hyper7 R4 Has 178 keys" aria-label="Play: Meet the World&#x27;s Largest Keyboard: Hyper7 R4 Has 178 keys"><img class="video-card__thumb" src="https://i.ytimg.com/vi/N4tOVg56ITA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=N4tOVg56ITA" target="_blank" rel="noopener noreferrer">Meet the World&#x27;s Largest Keyboard: Hyper7 R4 Has 178 keys</a><time datetime="2025-03-14">2025-03-14</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="tomshardware@mastodon.online" data-mastodon-url="https://mastodon.online/@tomshardware"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

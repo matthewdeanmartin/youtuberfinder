@@ -1,0 +1,25 @@
+Title: Chris Long
+Date: 2026-06-20
+Slug: chris-long
+save_as: creator/chris-long/index.html
+url: creator/chris-long/
+status: hidden
+Summary: Science & Education creator Chris Long on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Science &amp; Education</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCpFtPQgqWsxmr7jGM3DOJ2w" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://hcommons.social/@cplong" target="_blank" rel="noopener noreferrer">@cplong@hcommons.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>90</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>407</strong></p>
+<p class="creator-profile__bio">Provost and Senior Vice President, University of Oregon | Co-founder, @ publicphilosophyjournal | Co-PI, @ humetricshss | Husband &amp; Father | he/him.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="cplong@hcommons.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="SC_hiUkH6qM" data-video-title="MSU Honors Students Thank Dean Christopher P. Long" aria-label="Play: MSU Honors Students Thank Dean Christopher P. Long"><img class="video-card__thumb" src="https://i.ytimg.com/vi/SC_hiUkH6qM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=SC_hiUkH6qM" target="_blank" rel="noopener noreferrer">MSU Honors Students Thank Dean Christopher P. Long</a><time datetime="2024-06-02">2024-06-02</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="-5CRG6tupcQ" data-video-title="Darcy Comes Home" aria-label="Play: Darcy Comes Home"><img class="video-card__thumb" src="https://i.ytimg.com/vi/-5CRG6tupcQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=-5CRG6tupcQ" target="_blank" rel="noopener noreferrer">Darcy Comes Home</a><time datetime="2018-08-20">2018-08-20</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="L-AvtvjkprY" data-video-title="Creating and Sustaining Digital Scholarly Communities" aria-label="Play: Creating and Sustaining Digital Scholarly Communities"><img class="video-card__thumb" src="https://i.ytimg.com/vi/L-AvtvjkprY/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=L-AvtvjkprY" target="_blank" rel="noopener noreferrer">Creating and Sustaining Digital Scholarly Communities</a><time datetime="2018-07-05">2018-07-05</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="MRrRRsDt2I0" data-video-title="The Meaning &amp; Value of Digital Scholarly Communities" aria-label="Play: The Meaning &amp; Value of Digital Scholarly Communities"><img class="video-card__thumb" src="https://i.ytimg.com/vi/MRrRRsDt2I0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=MRrRRsDt2I0" target="_blank" rel="noopener noreferrer">The Meaning &amp; Value of Digital Scholarly Communities</a><time datetime="2018-07-03">2018-07-03</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="AicG_zorzys" data-video-title="Christopher Long Live Stream" aria-label="Play: Christopher Long Live Stream"><img class="video-card__thumb" src="https://i.ytimg.com/vi/AicG_zorzys/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=AicG_zorzys" target="_blank" rel="noopener noreferrer">Christopher Long Live Stream</a><time datetime="2017-05-08">2017-05-08</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="cplong@hcommons.social" data-mastodon-url="https://hcommons.social/@cplong"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

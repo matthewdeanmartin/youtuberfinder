@@ -1,0 +1,25 @@
+Title: Rinse FM
+Date: 2026-06-20
+Slug: rinse-fm
+save_as: creator/rinse-fm/index.html
+url: creator/rinse-fm/
+status: hidden
+Summary: Music creator Rinse FM on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Music</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/@rinsefm" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://rss-mstdn.studiofreesia.com/@youtube_rinsefm" target="_blank" rel="noopener noreferrer">@youtube_rinsefm@rss-mstdn.studiofreesia.com</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>199,000</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>57</strong></p>
+<p class="creator-profile__bio">Rinse has dominated London’s radio airwaves for over a decade as a hub of the capital’s thriving urban music community. From Dubstep to Grime to House and ev... このアカウントはRSSフィードの内容を投稿するbotアカウントです。 このアカウントの投稿に関するお問い合わせは @ owner までお願いします。</p>
+
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="TfQGHQz2hbk" data-video-title="Todd Edwards | Rinse Live From GALA 2026 | House &amp; Garage Set" aria-label="Play: Todd Edwards | Rinse Live From GALA 2026 | House &amp; Garage Set"><img class="video-card__thumb" src="https://i.ytimg.com/vi/TfQGHQz2hbk/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=TfQGHQz2hbk" target="_blank" rel="noopener noreferrer">Todd Edwards | Rinse Live From GALA 2026 | House &amp; Garage Set</a><time datetime="2026-06-02">2026-06-02</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="UxIEo1SiL1Y" data-video-title="CONDUCTA | Rinse Live From GALA 2026 | Multi-Genre Set" aria-label="Play: CONDUCTA | Rinse Live From GALA 2026 | Multi-Genre Set"><img class="video-card__thumb" src="https://i.ytimg.com/vi/UxIEo1SiL1Y/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=UxIEo1SiL1Y" target="_blank" rel="noopener noreferrer">CONDUCTA | Rinse Live From GALA 2026 | Multi-Genre Set</a><time datetime="2026-06-02">2026-06-02</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="byD70HVyYUQ" data-video-title="Novelist | Rinse Live From GALA 2026 | Grime Set" aria-label="Play: Novelist | Rinse Live From GALA 2026 | Grime Set"><img class="video-card__thumb" src="https://i.ytimg.com/vi/byD70HVyYUQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=byD70HVyYUQ" target="_blank" rel="noopener noreferrer">Novelist | Rinse Live From GALA 2026 | Grime Set</a><time datetime="2026-06-02">2026-06-02</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="YdFq3bvlzV0" data-video-title="IZCO | Rinse Live From GALA 2026 | Bruk Set" aria-label="Play: IZCO | Rinse Live From GALA 2026 | Bruk Set"><img class="video-card__thumb" src="https://i.ytimg.com/vi/YdFq3bvlzV0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=YdFq3bvlzV0" target="_blank" rel="noopener noreferrer">IZCO | Rinse Live From GALA 2026 | Bruk Set</a><time datetime="2026-06-02">2026-06-02</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="ZSBZyUc7wMM" data-video-title="D Double E | Rinse Live From GALA 2026 | Grime Set" aria-label="Play: D Double E | Rinse Live From GALA 2026 | Grime Set"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ZSBZyUc7wMM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ZSBZyUc7wMM" target="_blank" rel="noopener noreferrer">D Double E | Rinse Live From GALA 2026 | Grime Set</a><time datetime="2026-06-02">2026-06-02</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="youtube_rinsefm@rss-mstdn.studiofreesia.com" data-mastodon-url="https://rss-mstdn.studiofreesia.com/@youtube_rinsefm"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

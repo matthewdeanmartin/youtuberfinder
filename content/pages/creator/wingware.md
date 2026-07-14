@@ -1,0 +1,25 @@
+Title: Wingware
+Date: 2026-06-20
+Slug: wingware
+save_as: creator/wingware/index.html
+url: creator/wingware/
+status: hidden
+Summary: Technology & Computing creator Wingware on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCqxQ9os5iU912PrVPmnKIaA" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://masto.ai/@wingware" target="_blank" rel="noopener noreferrer">@wingware@masto.ai</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>297</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>24</strong></p>
+<p class="creator-profile__bio">We&#x27;re makers of Wing Python IDE, which was designed from the ground up for the Python programming language. Our goal is to provide a more productive development experience for Python programmers. We&#x27;ll be posting new release and other news here, for those that prefer to follow us on Mastodon. Feel f…</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="wingware@masto.ai" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="4kiK2hnpdIA" data-video-title="Active Ranges: New Feature in Wing IDE 5.0.9" aria-label="Play: Active Ranges: New Feature in Wing IDE 5.0.9"><img class="video-card__thumb" src="https://i.ytimg.com/vi/4kiK2hnpdIA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=4kiK2hnpdIA" target="_blank" rel="noopener noreferrer">Active Ranges: New Feature in Wing IDE 5.0.9</a><time datetime="2014-09-15">2014-09-15</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="-iYBkft39KM" data-video-title="Wing IDE Pro v5 Feature Overview" aria-label="Play: Wing IDE Pro v5 Feature Overview"><img class="video-card__thumb" src="https://i.ytimg.com/vi/-iYBkft39KM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=-iYBkft39KM" target="_blank" rel="noopener noreferrer">Wing IDE Pro v5 Feature Overview</a><time datetime="2014-06-20">2014-06-20</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="TdcdhLV1zd4" data-video-title="Auto-completion in Wing IDE 5" aria-label="Play: Auto-completion in Wing IDE 5"><img class="video-card__thumb" src="https://i.ytimg.com/vi/TdcdhLV1zd4/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=TdcdhLV1zd4" target="_blank" rel="noopener noreferrer">Auto-completion in Wing IDE 5</a><time datetime="2014-05-26">2014-05-26</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="lJFtGm6_Qh4" data-video-title="Source Assistant in Wing IDE 5" aria-label="Play: Source Assistant in Wing IDE 5"><img class="video-card__thumb" src="https://i.ytimg.com/vi/lJFtGm6_Qh4/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=lJFtGm6_Qh4" target="_blank" rel="noopener noreferrer">Source Assistant in Wing IDE 5</a><time datetime="2014-05-26">2014-05-26</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="UjN75Aujt_Q" data-video-title="Turbo-completion mode in Wing IDE Pro 5" aria-label="Play: Turbo-completion mode in Wing IDE Pro 5"><img class="video-card__thumb" src="https://i.ytimg.com/vi/UjN75Aujt_Q/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=UjN75Aujt_Q" target="_blank" rel="noopener noreferrer">Turbo-completion mode in Wing IDE Pro 5</a><time datetime="2014-05-23">2014-05-23</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="wingware@masto.ai" data-mastodon-url="https://masto.ai/@wingware"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

@@ -1,0 +1,25 @@
+Title: resnijars
+Date: 2026-06-20
+Slug: resnijars
+save_as: creator/resnijars/index.html
+url: creator/resnijars/
+status: hidden
+Summary: Other creator resnijars on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Other</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCTK1T9OdkzAioZNSLEd54Og" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.gamedev.place/@resnijars" target="_blank" rel="noopener noreferrer">@resnijars@mastodon.gamedev.place</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>236</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>41</strong></p>
+<p class="creator-profile__bio">18+ only two queer furries making games (Stardust Demon on Steam: <a href="https://store.steampowered.com/app/281" target="_blank" rel="noopener noreferrer">https://store.steampowered.com/app/281</a> 5500/Stardust_Demon/ ) (Spice Sacrifice demo (18+): <a href="https://resnijars.itch.io/spice-sacrif" target="_blank" rel="noopener noreferrer">https://resnijars.itch.io/spice-sacrif</a> ice-showcase )</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="resnijars@mastodon.gamedev.place" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="APF20Awvqdo" data-video-title="Crescent Break DEMO Trailer" aria-label="Play: Crescent Break DEMO Trailer"><img class="video-card__thumb" src="https://i.ytimg.com/vi/APF20Awvqdo/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=APF20Awvqdo" target="_blank" rel="noopener noreferrer">Crescent Break DEMO Trailer</a><time datetime="2026-06-06">2026-06-06</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="WxrulDxRUb8" data-video-title="Crescent Break - Reveal Trailer" aria-label="Play: Crescent Break - Reveal Trailer"><img class="video-card__thumb" src="https://i.ytimg.com/vi/WxrulDxRUb8/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=WxrulDxRUb8" target="_blank" rel="noopener noreferrer">Crescent Break - Reveal Trailer</a><time datetime="2026-02-05">2026-02-05</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="ycJ9i60gB-g" data-video-title="Videonauts Release Trailer" aria-label="Play: Videonauts Release Trailer"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ycJ9i60gB-g/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ycJ9i60gB-g" target="_blank" rel="noopener noreferrer">Videonauts Release Trailer</a><time datetime="2025-09-27">2025-09-27</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="TQWoKuohQi4" data-video-title="Videonauts Reveal Trailer" aria-label="Play: Videonauts Reveal Trailer"><img class="video-card__thumb" src="https://i.ytimg.com/vi/TQWoKuohQi4/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=TQWoKuohQi4" target="_blank" rel="noopener noreferrer">Videonauts Reveal Trailer</a><time datetime="2025-06-09">2025-06-09</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="vxesIvdKMsM" data-video-title="Mythic Mire Launch Trailer" aria-label="Play: Mythic Mire Launch Trailer"><img class="video-card__thumb" src="https://i.ytimg.com/vi/vxesIvdKMsM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=vxesIvdKMsM" target="_blank" rel="noopener noreferrer">Mythic Mire Launch Trailer</a><time datetime="2025-05-21">2025-05-21</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="resnijars@mastodon.gamedev.place" data-mastodon-url="https://mastodon.gamedev.place/@resnijars"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

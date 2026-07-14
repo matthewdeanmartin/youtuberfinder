@@ -1,0 +1,25 @@
+Title: Scott Hanselman 👸🏽🐝🌮
+Date: 2026-06-20
+Slug: scott-hanselman
+save_as: creator/scott-hanselman/index.html
+url: creator/scott-hanselman/
+status: hidden
+Summary: Technology & Computing creator Scott Hanselman 👸🏽🐝🌮 on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCL-fHOdarou-CR2XUmK48Og" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://hachyderm.io/@shanselman" target="_blank" rel="noopener noreferrer">@shanselman@hachyderm.io</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>186,000</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>40996</strong></p>
+<p class="creator-profile__bio">VP of Developer Community @ MSFT - Code, OSS, STEM, Beyoncé, 🏴󠁧󠁢󠁳󠁣󠁴󠁿🇿🇼#T1D, # DevRel YouTube+TikTok listen to the @Hanselminutes inclusive tech podcast! My opinions. <a href="https://hanselman.com" target="_blank" rel="noopener noreferrer">https://hanselman.com</a></p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="shanselman@hachyderm.io" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card video-card--link"><a href="https://www.youtube.com/shorts/5SwxcIMTKu4" target="_blank" rel="noopener noreferrer">I don&#x27;t want my panic attacks in the git history</a><time datetime="2026-06-24">2026-06-24</time></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="9pEw0sBNukw" data-video-title="The space between the Commits with Zed and DeltaDB&#x27;s Nathan Sobo" aria-label="Play: The space between the Commits with Zed and DeltaDB&#x27;s Nathan Sobo"><img class="video-card__thumb" src="https://i.ytimg.com/vi/9pEw0sBNukw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=9pEw0sBNukw" target="_blank" rel="noopener noreferrer">The space between the Commits with Zed and DeltaDB&#x27;s Nathan Sobo</a><time datetime="2026-06-23">2026-06-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="suYuiR-nr_k" data-video-title="Braille Is Freedom with Bristol Braille&#x27;s Ed Rogers" aria-label="Play: Braille Is Freedom with Bristol Braille&#x27;s Ed Rogers"><img class="video-card__thumb" src="https://i.ytimg.com/vi/suYuiR-nr_k/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=suYuiR-nr_k" target="_blank" rel="noopener noreferrer">Braille Is Freedom with Bristol Braille&#x27;s Ed Rogers</a><time datetime="2026-06-23">2026-06-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="c_YwzERxU4k" data-video-title="&quot;Observabilitying&quot; the Future of Software with Charity Majors" aria-label="Play: &quot;Observabilitying&quot; the Future of Software with Charity Majors"><img class="video-card__thumb" src="https://i.ytimg.com/vi/c_YwzERxU4k/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=c_YwzERxU4k" target="_blank" rel="noopener noreferrer">&quot;Observabilitying&quot; the Future of Software with Charity Majors</a><time datetime="2026-06-23">2026-06-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="F0lCI3lulSo" data-video-title="The space between the Commits with Zed and DeltaDB&#x27;s Nathan Sobo" aria-label="Play: The space between the Commits with Zed and DeltaDB&#x27;s Nathan Sobo"><img class="video-card__thumb" src="https://i.ytimg.com/vi/F0lCI3lulSo/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=F0lCI3lulSo" target="_blank" rel="noopener noreferrer">The space between the Commits with Zed and DeltaDB&#x27;s Nathan Sobo</a><time datetime="2026-06-21">2026-06-21</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="shanselman@hachyderm.io" data-mastodon-url="https://hachyderm.io/@shanselman"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

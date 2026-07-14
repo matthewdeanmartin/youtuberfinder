@@ -1,0 +1,25 @@
+Title: BNO News
+Date: 2026-06-20
+Slug: bno-news
+save_as: creator/bno-news/index.html
+url: creator/bno-news/
+status: hidden
+Summary: News, Politics & Society creator BNO News on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">News, Politics &amp; Society</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCOwAf0r6kIOj8783xDye2pQ" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mastodon.social/@BNONews" target="_blank" rel="noopener noreferrer">@BNONews@mastodon.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>26,300</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>1452</strong></p>
+<p class="creator-profile__bio">This account is currently inactive. Follow us on X/Twitter, Threads, Bluesky or Facebook for breaking news and updates.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="BNONews@mastodon.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="nh4M8NZoCg4" data-video-title="CDC Briefing on Ebola and Hantavirus Outbreaks" aria-label="Play: CDC Briefing on Ebola and Hantavirus Outbreaks"><img class="video-card__thumb" src="https://i.ytimg.com/vi/nh4M8NZoCg4/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=nh4M8NZoCg4" target="_blank" rel="noopener noreferrer">CDC Briefing on Ebola and Hantavirus Outbreaks</a><time datetime="2026-05-20">2026-05-20</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="s93urRBWErg" data-video-title="CDC briefing on hantavirus outbreak" aria-label="Play: CDC briefing on hantavirus outbreak"><img class="video-card__thumb" src="https://i.ytimg.com/vi/s93urRBWErg/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=s93urRBWErg" target="_blank" rel="noopener noreferrer">CDC briefing on hantavirus outbreak</a><time datetime="2026-05-13">2026-05-13</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="USpqWvkTer8" data-video-title="Trump press conference on U.S. operation to capture Maduro" aria-label="Play: Trump press conference on U.S. operation to capture Maduro"><img class="video-card__thumb" src="https://i.ytimg.com/vi/USpqWvkTer8/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=USpqWvkTer8" target="_blank" rel="noopener noreferrer">Trump press conference on U.S. operation to capture Maduro</a><time datetime="2026-01-03">2026-01-03</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="3VC5ERQ79A8" data-video-title="Dubai fireworks 2026 LIVE: UAE rings in the new year" aria-label="Play: Dubai fireworks 2026 LIVE: UAE rings in the new year"><img class="video-card__thumb" src="https://i.ytimg.com/vi/3VC5ERQ79A8/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=3VC5ERQ79A8" target="_blank" rel="noopener noreferrer">Dubai fireworks 2026 LIVE: UAE rings in the new year</a><time datetime="2025-12-31">2025-12-31</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="jsV6Oa1eKoc" data-video-title="Hong Kong New Year&#x27;s Eve 2026 LIVE: Countdown and light show" aria-label="Play: Hong Kong New Year&#x27;s Eve 2026 LIVE: Countdown and light show"><img class="video-card__thumb" src="https://i.ytimg.com/vi/jsV6Oa1eKoc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=jsV6Oa1eKoc" target="_blank" rel="noopener noreferrer">Hong Kong New Year&#x27;s Eve 2026 LIVE: Countdown and light show</a><time datetime="2025-12-31">2025-12-31</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="BNONews@mastodon.social" data-mastodon-url="https://mastodon.social/@BNONews"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

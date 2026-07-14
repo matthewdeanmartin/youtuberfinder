@@ -1,0 +1,25 @@
+Title: Unseen Japan
+Date: 2026-06-20
+Slug: unseen-japan
+save_as: creator/unseen-japan/index.html
+url: creator/unseen-japan/
+status: hidden
+Summary: News, Politics & Society creator Unseen Japan on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">News, Politics &amp; Society</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/c/unseenjapan" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mstdn.jp/@unseenjapan" target="_blank" rel="noopener noreferrer">@unseenjapan@mstdn.jp</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>23,200</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>466</strong></p>
+<p class="creator-profile__bio">The Japan you don&#x27;t learn about in anime.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="unseenjapan@mstdn.jp" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="P5rIAFl1R_Y" data-video-title="How Tokyo&#x27;s Shinjuku Became the World&#x27;s Biggest Nightlife District" aria-label="Play: How Tokyo&#x27;s Shinjuku Became the World&#x27;s Biggest Nightlife District"><img class="video-card__thumb" src="https://i.ytimg.com/vi/P5rIAFl1R_Y/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=P5rIAFl1R_Y" target="_blank" rel="noopener noreferrer">How Tokyo&#x27;s Shinjuku Became the World&#x27;s Biggest Nightlife District</a><time datetime="2026-05-24">2026-05-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="uDB5mZfzSEc" data-video-title="Kitano Takeshi: The Complete Ranked Filmography" aria-label="Play: Kitano Takeshi: The Complete Ranked Filmography"><img class="video-card__thumb" src="https://i.ytimg.com/vi/uDB5mZfzSEc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=uDB5mZfzSEc" target="_blank" rel="noopener noreferrer">Kitano Takeshi: The Complete Ranked Filmography</a><time datetime="2025-11-25">2025-11-25</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="ALsNI9HaL5g" data-video-title="The Last Time Mount Fuji Erupted  - And What Might Happen Next" aria-label="Play: The Last Time Mount Fuji Erupted  - And What Might Happen Next"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ALsNI9HaL5g/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ALsNI9HaL5g" target="_blank" rel="noopener noreferrer">The Last Time Mount Fuji Erupted  - And What Might Happen Next</a><time datetime="2025-05-27">2025-05-27</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="UUArT40okkQ" data-video-title="Japan is Covered in Electrical Wires - Why?" aria-label="Play: Japan is Covered in Electrical Wires - Why?"><img class="video-card__thumb" src="https://i.ytimg.com/vi/UUArT40okkQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=UUArT40okkQ" target="_blank" rel="noopener noreferrer">Japan is Covered in Electrical Wires - Why?</a><time datetime="2025-05-09">2025-05-09</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="PghVL_DLC3k" data-video-title="The Story of the Japanese Peruvians" aria-label="Play: The Story of the Japanese Peruvians"><img class="video-card__thumb" src="https://i.ytimg.com/vi/PghVL_DLC3k/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=PghVL_DLC3k" target="_blank" rel="noopener noreferrer">The Story of the Japanese Peruvians</a><time datetime="2025-02-24">2025-02-24</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="unseenjapan@mstdn.jp" data-mastodon-url="https://mstdn.jp/@unseenjapan"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

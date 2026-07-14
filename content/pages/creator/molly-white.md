@@ -1,0 +1,25 @@
+Title: Molly White
+Date: 2026-06-20
+Slug: molly-white
+save_as: creator/molly-white/index.html
+url: creator/molly-white/
+status: hidden
+Summary: Science & Education creator Molly White on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Science &amp; Education</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCJcWDNh9E6AoVW4nsMXyVCw" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://hachyderm.io/@molly0xfff" target="_blank" rel="noopener noreferrer">@molly0xfff@hachyderm.io</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>14,000</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>131791</strong></p>
+<p class="creator-profile__bio">crypto researcher &amp; critic, software engineer, wikipedian • @ web3isgreat creator • newsletter: <a href="https://www.citationneeded.news/" target="_blank" rel="noopener noreferrer">https://www.citationneeded.news/</a> she/her • :QueerCat_Bisexual:</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="molly0xfff@hachyderm.io" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="tGiVK2m-AQc" data-video-title="Citation Needed: Issue 106 – A tremendous birthday present" aria-label="Play: Citation Needed: Issue 106 – A tremendous birthday present"><img class="video-card__thumb" src="https://i.ytimg.com/vi/tGiVK2m-AQc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=tGiVK2m-AQc" target="_blank" rel="noopener noreferrer">Citation Needed: Issue 106 – A tremendous birthday present</a><time datetime="2026-06-19">2026-06-19</time></div></li><li class="video-card video-card--link"><a href="https://www.youtube.com/shorts/WfPPAKcFImE" target="_blank" rel="noopener noreferrer">The staggering scale of crypto and AI political spending</a><time datetime="2026-06-10">2026-06-10</time></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="oZAhNJbsPcA" data-video-title="The Fight to Get Money Out of Politics | Tiffany Muller, End Citizens United" aria-label="Play: The Fight to Get Money Out of Politics | Tiffany Muller, End Citizens United"><img class="video-card__thumb" src="https://i.ytimg.com/vi/oZAhNJbsPcA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=oZAhNJbsPcA" target="_blank" rel="noopener noreferrer">The Fight to Get Money Out of Politics | Tiffany Muller, End Citizens United</a><time datetime="2026-06-10">2026-06-10</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="LHt6LV0M2c0" data-video-title="Citation Needed: I’m launching Tech Influence Watch as AI follows crypto into politics" aria-label="Play: Citation Needed: I’m launching Tech Influence Watch as AI follows crypto into politics"><img class="video-card__thumb" src="https://i.ytimg.com/vi/LHt6LV0M2c0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=LHt6LV0M2c0" target="_blank" rel="noopener noreferrer">Citation Needed: I’m launching Tech Influence Watch as AI follows crypto into politics</a><time datetime="2026-06-08">2026-06-08</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="JIUppD0Clhw" data-video-title="Citation Needed: Issue 105 – The new boogeyman" aria-label="Play: Citation Needed: Issue 105 – The new boogeyman"><img class="video-card__thumb" src="https://i.ytimg.com/vi/JIUppD0Clhw/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=JIUppD0Clhw" target="_blank" rel="noopener noreferrer">Citation Needed: Issue 105 – The new boogeyman</a><time datetime="2026-05-08">2026-05-08</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="molly0xfff@hachyderm.io" data-mastodon-url="https://hachyderm.io/@molly0xfff"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

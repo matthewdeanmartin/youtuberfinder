@@ -1,0 +1,25 @@
+Title: Daily Tech News Show
+Date: 2026-06-20
+Slug: daily-tech-news-show
+save_as: creator/daily-tech-news-show/index.html
+url: creator/daily-tech-news-show/
+status: hidden
+Summary: News, Politics & Society creator Daily Tech News Show on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">News, Politics &amp; Society</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCCd3-JX7e8uGZx00i5646jg" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mstdn.social/@dtnsshow" target="_blank" rel="noopener noreferrer">@dtnsshow@mstdn.social</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>28,500</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>788</strong></p>
+<p class="creator-profile__bio">DTNS - Helping each other understand. <a href="http://dailytechnewsshow.com/" target="_blank" rel="noopener noreferrer">http://dailytechnewsshow.com/</a></p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="dtnsshow@mstdn.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="HnFFpSo7xpI" data-video-title="Was the Google Home Speaker Worth the Wait? - DTNS 5296" aria-label="Play: Was the Google Home Speaker Worth the Wait? - DTNS 5296"><img class="video-card__thumb" src="https://i.ytimg.com/vi/HnFFpSo7xpI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=HnFFpSo7xpI" target="_blank" rel="noopener noreferrer">Was the Google Home Speaker Worth the Wait? - DTNS 5296</a><time datetime="2026-06-24">2026-06-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="dPO6O-Kyg9Q" data-video-title="China&#x27;s Alibaba Sues to be Removed from US Blacklist - DTH" aria-label="Play: China&#x27;s Alibaba Sues to be Removed from US Blacklist - DTH"><img class="video-card__thumb" src="https://i.ytimg.com/vi/dPO6O-Kyg9Q/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=dPO6O-Kyg9Q" target="_blank" rel="noopener noreferrer">China&#x27;s Alibaba Sues to be Removed from US Blacklist - DTH</a><time datetime="2026-06-24">2026-06-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="zbhDVM8eGOc" data-video-title="Android Summer - Android Faithful #155" aria-label="Play: Android Summer - Android Faithful #155"><img class="video-card__thumb" src="https://i.ytimg.com/vi/zbhDVM8eGOc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=zbhDVM8eGOc" target="_blank" rel="noopener noreferrer">Android Summer - Android Faithful #155</a><time datetime="2026-06-24">2026-06-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="-RZO28pStOI" data-video-title="Android Faithful #156" aria-label="Play: Android Faithful #156"><img class="video-card__thumb" src="https://i.ytimg.com/vi/-RZO28pStOI/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=-RZO28pStOI" target="_blank" rel="noopener noreferrer">Android Faithful #156</a><time datetime="2026-06-24">2026-06-24</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="2Pwe9aqX4_A" data-video-title="The Steam Box is Here… And It’s Expensive - DTNS 5295" aria-label="Play: The Steam Box is Here… And It’s Expensive - DTNS 5295"><img class="video-card__thumb" src="https://i.ytimg.com/vi/2Pwe9aqX4_A/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=2Pwe9aqX4_A" target="_blank" rel="noopener noreferrer">The Steam Box is Here… And It’s Expensive - DTNS 5295</a><time datetime="2026-06-23">2026-06-23</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="dtnsshow@mstdn.social" data-mastodon-url="https://mstdn.social/@dtnsshow"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

@@ -1,0 +1,25 @@
+Title: Tech Tales Podcast
+Date: 2026-06-20
+Slug: tech-tales-podcast
+save_as: creator/tech-tales-podcast/index.html
+url: creator/tech-tales-podcast/
+status: hidden
+Summary: Technology & Computing creator Tech Tales Podcast on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Technology &amp; Computing</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/channel/UCoJhtqauQgAykvSLQSyu7UQ" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mas.to/@techtales" target="_blank" rel="noopener noreferrer">@techtales@mas.to</a>
+</p>
+<p class="creator-stat">YouTube subscribers: <strong>279</strong></p>
+<p class="creator-stat">Mastodon followers: <strong>923</strong></p>
+<p class="creator-profile__bio">Tech Tales is a podcast exploring the technology world&#x27;s epic failures, forgotten successes, and everything in between. Hosted by @ corbin . Made without generative AI.</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="techtales@mas.to" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="4kZNTihC-bA" data-video-title="Movie Club - Tron Ares (2025) - Tech Tales Podcast" aria-label="Play: Movie Club - Tron Ares (2025) - Tech Tales Podcast"><img class="video-card__thumb" src="https://i.ytimg.com/vi/4kZNTihC-bA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=4kZNTihC-bA" target="_blank" rel="noopener noreferrer">Movie Club - Tron Ares (2025) - Tech Tales Podcast</a><time datetime="2026-03-23">2026-03-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="IFkWKKxZEIU" data-video-title="Microsoft Kin - Tech Tales Podcast" aria-label="Play: Microsoft Kin - Tech Tales Podcast"><img class="video-card__thumb" src="https://i.ytimg.com/vi/IFkWKKxZEIU/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=IFkWKKxZEIU" target="_blank" rel="noopener noreferrer">Microsoft Kin - Tech Tales Podcast</a><time datetime="2025-10-08">2025-10-08</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="-Ylhbm24a0Y" data-video-title="Movie Club - Pirates of Silicon Valley - Tech Tales Podcast" aria-label="Play: Movie Club - Pirates of Silicon Valley - Tech Tales Podcast"><img class="video-card__thumb" src="https://i.ytimg.com/vi/-Ylhbm24a0Y/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=-Ylhbm24a0Y" target="_blank" rel="noopener noreferrer">Movie Club - Pirates of Silicon Valley - Tech Tales Podcast</a><time datetime="2025-07-22">2025-07-22</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="pEfNs67rjc4" data-video-title="Internet Time and Sputnik 99 - Tech Tales Podcast" aria-label="Play: Internet Time and Sputnik 99 - Tech Tales Podcast"><img class="video-card__thumb" src="https://i.ytimg.com/vi/pEfNs67rjc4/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=pEfNs67rjc4" target="_blank" rel="noopener noreferrer">Internet Time and Sputnik 99 - Tech Tales Podcast</a><time datetime="2025-05-04">2025-05-04</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="7Lx6jyb6OL8" data-video-title="WannaCry - Tech Tales Podcast" aria-label="Play: WannaCry - Tech Tales Podcast"><img class="video-card__thumb" src="https://i.ytimg.com/vi/7Lx6jyb6OL8/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=7Lx6jyb6OL8" target="_blank" rel="noopener noreferrer">WannaCry - Tech Tales Podcast</a><time datetime="2024-12-26">2024-12-26</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="techtales@mas.to" data-mastodon-url="https://mas.to/@techtales"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>

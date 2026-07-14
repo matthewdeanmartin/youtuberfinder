@@ -1,0 +1,24 @@
+Title: gregandcin
+Date: 2026-06-20
+Slug: gregandcin
+save_as: creator/gregandcin/index.html
+url: creator/gregandcin/
+status: hidden
+Summary: Gaming & VTubers creator gregandcin on YouTube and Mastodon.
+
+<article class="creator-profile" data-lang="en">
+<header class="creator-profile__header">
+<p class="creator-profile__category">Gaming &amp; VTubers</p>
+<p class="creator-profile__links">
+<a href="https://www.youtube.com/gregandcin" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+ · <a href="https://mindly.social/@gregandcin" target="_blank" rel="noopener noreferrer">@gregandcin@mindly.social</a>
+</p>
+<p class="creator-stat">Mastodon followers: <strong>1025</strong></p>
+<p class="creator-profile__bio">I kinda like games and tech. Local connoAsseur. Rested and Sleeppilled. Admin #2 of Mindly.Social # fedi22 # tech # gaming # anime # manga # keyboards</p>
+<p class="creator-follow-line"><button type="button" class="creator-follow" data-mastodon-acct="gregandcin@mindly.social" hidden>Follow on Mastodon</button></p>
+</header>
+
+<section class="video-cards"><h2>Recent uploads (5)</h2><ul class="video-cards__grid"><li class="video-card"><button type="button" class="video-card__play" data-video-id="dcksMdWlmXA" data-video-title="I&#x27;M NOT EVEN MAD" aria-label="Play: I&#x27;M NOT EVEN MAD"><img class="video-card__thumb" src="https://i.ytimg.com/vi/dcksMdWlmXA/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=dcksMdWlmXA" target="_blank" rel="noopener noreferrer">I&#x27;M NOT EVEN MAD</a><time datetime="2017-06-23">2017-06-23</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="2op2CCg1xZ0" data-video-title="I just bought this - Overwatch Livestream May 22, 2017" aria-label="Play: I just bought this - Overwatch Livestream May 22, 2017"><img class="video-card__thumb" src="https://i.ytimg.com/vi/2op2CCg1xZ0/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=2op2CCg1xZ0" target="_blank" rel="noopener noreferrer">I just bought this - Overwatch Livestream May 22, 2017</a><time datetime="2017-05-26">2017-05-26</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="Q8u8lGMQx8E" data-video-title="1v1 Scrub - Overwatch Livestream May 23, 2017" aria-label="Play: 1v1 Scrub - Overwatch Livestream May 23, 2017"><img class="video-card__thumb" src="https://i.ytimg.com/vi/Q8u8lGMQx8E/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=Q8u8lGMQx8E" target="_blank" rel="noopener noreferrer">1v1 Scrub - Overwatch Livestream May 23, 2017</a><time datetime="2017-05-26">2017-05-26</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="ULaOkdACeWQ" data-video-title="NEW OPERATION GUYS - CS:GO Livestream May 23, 2017" aria-label="Play: NEW OPERATION GUYS - CS:GO Livestream May 23, 2017"><img class="video-card__thumb" src="https://i.ytimg.com/vi/ULaOkdACeWQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=ULaOkdACeWQ" target="_blank" rel="noopener noreferrer">NEW OPERATION GUYS - CS:GO Livestream May 23, 2017</a><time datetime="2017-05-26">2017-05-26</time></div></li><li class="video-card"><button type="button" class="video-card__play" data-video-id="LAEMjzC4HtU" data-video-title="gregandcin Live Live Stream" aria-label="Play: gregandcin Live Live Stream"><img class="video-card__thumb" src="https://i.ytimg.com/vi/LAEMjzC4HtU/mqdefault.jpg" alt="" loading="lazy" width="320" height="180" /><span class="video-card__badge" aria-hidden="true">▶</span></button><div class="video-card__meta"><a class="video-card__title" href="https://www.youtube.com/watch?v=LAEMjzC4HtU" target="_blank" rel="noopener noreferrer">gregandcin Live Live Stream</a><time datetime="2017-05-25">2017-05-25</time></div></li></ul></section>
+
+<section class="creator-live" data-creator-live data-mastodon-acct="gregandcin@mindly.social" data-mastodon-url="https://mindly.social/@gregandcin"><h2>Recent posts on Mastodon</h2><p class="creator-live__hint" data-creator-live-hint>Log in (top-right) to load this creator's recent Mastodon posts.</p><div class="creator-live__feed" data-creator-live-feed hidden></div></section>
+</article>
