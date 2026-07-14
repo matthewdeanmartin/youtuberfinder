@@ -56,6 +56,11 @@ categorize-mastodon:
 publish-candidates:
     uv run python -m pipeline.publish_candidates
 
+# Preview or apply the monthly Mastodon Collection reconciliation.
+# Dry-run is the default; pass --apply only when live changes are intended.
+sync-collections *args:
+    uv run python scripts/sync_mastodon_collections.py {{args}}
+
 # Generate stub articles for all unreviewed YouTubers
 stubs:
     uv run python generate_review_stubs.py
@@ -68,7 +73,7 @@ stubs-force:
 
 # Build the Pelican site
 html:
-    uv run pelican content -o output -s pelicanconf.py
+    uv run python -m pelican content -o output -s pelicanconf.py
 
 # Copy hand-crafted static pages into output/ after Pelican runs.
 # HTML files have {{SITEURL}} placeholders substituted with the real base URL
@@ -89,15 +94,15 @@ clean:
 
 # Serve with live reload (Ctrl-C to stop)
 serve:
-    uv run pelican --listen content -o output -s pelicanconf.py
+    uv run python -m pelican --listen content -o output -s pelicanconf.py
 
 # Serve and auto-regenerate on content changes
 devserver:
-    uv run pelican --listen --autoreload content -o output -s pelicanconf.py
+    uv run python -m pelican --listen --autoreload content -o output -s pelicanconf.py
 
 # Generate production HTML (publishconf uses DELETE_OUTPUT_DIRECTORY=True)
 publish: generate-pages
-    uv run pelican content -o output -s publishconf.py
+    uv run python -m pelican content -o output -s publishconf.py
     just copy-static "/youtuberfinder"
 
 # ── Quality gates ─────────────────────────────────────────────────────────────

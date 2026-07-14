@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+from collections import Counter
 import html
 import json
 import re
@@ -22,6 +23,7 @@ CONTENT_DIR = Path(__file__).parent / "content"
 PAGES_DIR = CONTENT_DIR / "pages"
 ARTICLES_DIR = CONTENT_DIR / "articles"
 FOLLOW_TOOL_PATH = Path(__file__).parent / "static" / "mastodon-follow" / "index.html"
+COLLECTIONS_PATH = Path(__file__).parent / "data" / "mastodon_collections.json"
 
 PAGES_DIR.mkdir(parents=True, exist_ok=True)
 ARTICLES_DIR.mkdir(parents=True, exist_ok=True)
@@ -116,6 +118,19 @@ def nonempty_categories(youtubers: list[dict]) -> list[str]:
         if creator.get("account_type") not in BOT_ACCOUNT_TYPES
     }
     return [slug for slug in CATEGORY_SORTORDER if slug in present]
+
+
+def load_collection_config() -> dict:
+    if not COLLECTIONS_PATH.exists():
+        return {"account": "youtuberfinder@mastodon.social", "collections": []}
+    return json.loads(COLLECTIONS_PATH.read_text(encoding="utf-8"))
+
+
+def collection_for_category(category: str) -> dict | None:
+    return next(
+        (item for item in load_collection_config().get("collections", []) if item.get("category") == category),
+        None,
+    )
 
 
 def sync_follow_tool(youtubers: list[dict]) -> None:
@@ -639,6 +654,17 @@ def generate_category_page(category: str, youtubers: list[dict]) -> str:
         feeds_block = "\n" + _section("feeds", f"Bridged accounts ({len(feeds)})", feed_items)
 
     bulk_block = _bulk_follow_block(native, category, label)
+    collection = collection_for_category(category)
+    collection_block = ""
+    if collection and collection.get("url"):
+        url = html.escape(collection["url"], quote=True)
+        collection_block = (
+            '<aside class="topic-collection">'
+            '<p><strong>Prefer a smaller starter set?</strong> '
+            f'<a href="{url}" rel="external">Follow the {html.escape(collection["name"])} Collection on Mastodon</a>. '
+            "It contains up to 25 recently active creators from this topic.</p>"
+            "</aside>\n"
+        )
 
     return f"""Title: {label} YouTubers
 Date: 2026-06-20
@@ -646,8 +672,52 @@ Slug: {category}
 sortorder: {CATEGORY_SORTORDER.index(category) + 10}
 Summary: {label} YouTube creators and channel feeds on Mastodon.
 
-{native_block}{feeds_block}
+{collection_block}{native_block}{feeds_block}
 {bulk_block}{BULK_FOLLOW_SCRIPT if bulk_block else ""}
+"""
+
+
+def generate_collections_page(youtubers: list[dict]) -> str:
+    config = load_collection_config()
+    counts = Counter(item.get("category") for item in youtubers if item.get("account_type") == "native")
+    cards = []
+    for item in config.get("collections", []):
+        category = item["category"]
+        label = CATEGORY_LABELS.get(category, item["name"])
+        url = item.get("url")
+        collection_link = (
+            f'<a class="collection-card__follow" href="{html.escape(url, quote=True)}" rel="external">Open Collection on Mastodon</a>'
+            if url
+            else '<span class="collection-card__pending">Collection link appears after the first live sync.</span>'
+        )
+        cards.append(
+            '<article class="collection-card">'
+            f'<h2>{html.escape(item["name"])}</h2>'
+            f'<p>{html.escape(item["description"])}</p>'
+            '<p class="collection-card__meta">Up to 25 active accounts · refreshed monthly</p>'
+            f'{collection_link}'
+            f'<a class="collection-card__browse" href="{{filename}}{html.escape(category, quote=True)}.md">Browse all {counts[category]} {html.escape(label)} creators</a>'
+            "</article>"
+        )
+    account_url = "https://mastodon.social/@youtuberfinder"
+    return f"""Title: Mastodon Collections
+Date: 2026-07-14
+Slug: collections
+sortorder: 2
+Summary: Curated, regularly refreshed Collections of active YouTubers on Mastodon.
+
+## Follow a Collection
+
+Collections are compact recommendations of up to 25 accounts. Every included creator uploaded to
+YouTube within the last year, posted on Mastodon within the last three months, and allowed their
+account to be featured. Membership is checked monthly.
+
+Want more choice? Each card links to the complete topic directory, where you can browse every
+matching creator. You can also follow [@youtuberfinder]({account_url}) for Collection updates.
+
+<div class="collection-grid">
+{chr(10).join(cards)}
+</div>
 """
 
 
@@ -828,6 +898,7 @@ def main() -> None:
         "youtubers.md": generate_youtubers_page(youtubers),
         "bots.md": generate_bots_page(youtubers),
         "bulk-follow.md": generate_bulk_follow_page(youtubers),
+        "collections.md": generate_collections_page(youtubers),
         **{
             f"{category}.md": generate_category_page(category, youtubers)
             for category in CATEGORY_SORTORDER

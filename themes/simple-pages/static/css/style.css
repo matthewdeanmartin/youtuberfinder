@@ -869,3 +869,46 @@ p, ul, ol, pre, table, blockquote {
     color: var(--muted);
     font-size: 0.85rem;
 }
+
+/* ── Mastodon Collections ───────────────────────────────────────── */
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.collection-card,
+.topic-collection {
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--panel);
+}
+
+.collection-card h2 {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.collection-card__meta,
+.collection-card__pending {
+    color: var(--muted);
+    font-size: 0.88rem;
+}
+
+.collection-card__follow,
+.collection-card__browse {
+    display: block;
+    margin-top: 0.7rem;
+    font-weight: 600;
+}
+
+.topic-collection {
+    margin-bottom: 1.5rem;
+    border-color: var(--accent);
+}
+
+.topic-collection p {
+    margin: 0;
+}

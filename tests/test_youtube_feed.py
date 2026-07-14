@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import unittest
+from unittest.mock import patch
 
 from pipeline import youtube_feed
 
@@ -55,6 +56,20 @@ class FeedParsingTests(unittest.TestCase):
 
     def test_malformed_feed_returns_empty(self) -> None:
         self.assertEqual(youtube_feed._parse_feed("not xml", limit=5), [])
+
+    def test_latest_upload_distinguishes_outage_from_empty_feed(self) -> None:
+        with patch.object(youtube_feed, "_get", return_value=None):
+            self.assertEqual(
+                youtube_feed.latest_upload_observation("https://youtube.example/channel", "UCtest"),
+                (None, False),
+            )
+
+        response = type("Response", (), {"text": SAMPLE_FEED})()
+        with patch.object(youtube_feed, "_get", return_value=response):
+            self.assertEqual(
+                youtube_feed.latest_upload_observation("https://youtube.example/channel", "UCtest"),
+                ("2026-06-20", True),
+            )
 
 
 if __name__ == "__main__":

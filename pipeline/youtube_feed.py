@@ -182,3 +182,22 @@ def recent_videos(youtube_url: str, limit: int = 5) -> list[Video]:
     if response is None:
         return []
     return _parse_feed(response.text, limit)
+
+
+def latest_upload_observation(
+    youtube_url: str, channel_id: str | None = None
+) -> tuple[str | None, bool]:
+    """Return ``(latest_date, observed)`` for activity checks.
+
+    ``observed`` is false when channel resolution or the HTTP request failed, so
+    callers do not confuse a temporary outage with an inactive channel. A valid
+    feed with no entries returns ``(None, True)``.
+    """
+    channel_id = channel_id or channel_id_from_url(youtube_url)
+    if not channel_id:
+        return None, False
+    response = _get(FEED_URL.format(channel_id=channel_id))
+    if response is None:
+        return None, False
+    videos = _parse_feed(response.text, 1)
+    return (videos[0].published if videos else None), True

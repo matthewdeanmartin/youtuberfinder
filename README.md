@@ -9,6 +9,7 @@ profiles from automated channel feeds.
 
 - **Topic categories**: Browse technology, gaming, education, music, art, news, culture, and hobbies.
 - **Bulk Follow lists**: Copy-paste handle lists or download a CSV to upload directly to Mastodon.
+- **Mastodon Collections**: Nine topic Collections of up to 25 recently active creators.
 - **Honest account labels**: Native profiles are separated from RSS feeds, bots, and bridges.
 - **Comprehensive Quality Gates**: Built-in HTML validation, link checking, browser compatibility audit, and accessibility (WCAG2AA) verification.
 
@@ -99,6 +100,33 @@ packs; automated channel feeds remain discoverable in the directory but are clea
 Automatic categories are intentionally reviewable. Add durable human corrections to
 `data/category_overrides.json`, keyed by the full `user@server` Mastodon address; publishing marks
 those classifications as `curated`.
+
+## Mastodon Collections
+
+The `@youtuberfinder@mastodon.social` account publishes one Collection for each directory topic.
+Membership is intentionally selective: a creator must use a native account, upload to YouTube
+within the last 365 days, post on Mastodon within the last 90 days, and permit public automatic
+Collection inclusion. Eligible incumbents remain in place; vacancies are filled by a balanced
+score using Mastodon followers and YouTube subscribers.
+
+Preview a reconciliation without changing Mastodon:
+
+```bash
+just sync-collections
+```
+
+For the first live sync, create an access token with `read:accounts`, `read:collections`, and
+`write:collections`, set `MASTODON_ACCESS_TOKEN` in `.env`, and run:
+
+```bash
+just sync-collections --apply
+just generate-pages
+```
+
+The live run writes stable Collection IDs and public URLs to `data/mastodon_collections.json`.
+Commit that file so the site can link directly to every Collection. Subsequent reconciliation is
+idempotent. GitHub Actions runs it on the first day of each month; add the same token as the
+`MASTODON_ACCESS_TOKEN` repository secret.
 
 ## Contributing
 

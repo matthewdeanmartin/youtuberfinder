@@ -1,0 +1,81 @@
+{
+  "account": "youtuberfinder@mastodon.social",
+  "base_url": "https://mastodon.social",
+  "max_size": 25,
+  "youtube_active_days": 365,
+  "mastodon_active_days": 90,
+  "collections": [
+    {
+      "category": "technology",
+      "name": "Technology YouTubers",
+      "description": "Active technology YouTubers who also post on Mastodon.",
+      "tag_name": "technology",
+      "id": null,
+      "url": null
+    },
+    {
+      "category": "gaming",
+      "name": "Gaming YouTubers",
+      "description": "Active gaming YouTubers who also post on Mastodon.",
+      "tag_name": "gaming",
+      "id": null,
+      "url": null
+    },
+    {
+      "category": "science-education",
+      "name": "Science & Education YouTubers",
+      "description": "Active science and education YouTubers on Mastodon.",
+      "tag_name": "science",
+      "id": null,
+      "url": null
+    },
+    {
+      "category": "music",
+      "name": "Music YouTubers",
+      "description": "Active music YouTubers who also post on Mastodon.",
+      "tag_name": "music",
+      "id": null,
+      "url": null
+    },
+    {
+      "category": "art-making",
+      "name": "Art & Making YouTubers",
+      "description": "Active art, craft, and maker YouTubers on Mastodon.",
+      "tag_name": "art",
+      "id": null,
+      "url": null
+    },
+    {
+      "category": "news-society",
+      "name": "News & Society YouTubers",
+      "description": "Active news and society YouTubers on Mastodon.",
+      "tag_name": "news",
+      "id": null,
+      "url": null
+    },
+    {
+      "category": "culture-entertainment",
+      "name": "Culture YouTubers",
+      "description": "Active culture and entertainment YouTubers on Mastodon.",
+      "tag_name": "culture",
+      "id": null,
+      "url": null
+    },
+    {
+      "category": "lifestyle-hobbies",
+      "name": "Lifestyle & Hobbies YouTubers",
+      "description": "Active lifestyle and hobby YouTubers on Mastodon.",
+      "tag_name": "hobbies",
+      "id": null,
+      "url": null
+    },
+    {
+      "category": "other",
+      "name": "More YouTubers",
+      "description": "More active YouTubers to discover on Mastodon.",
+      "tag_name": "youtube",
+      "id": null,
+      "url": null
+    }
+  ]
+}
