@@ -4,6 +4,8 @@ Slug: music
 sortorder: 13
 Summary: Music YouTube creators and channel feeds on Mastodon.
 
+<aside class="topic-collection"><p><strong>Prefer a smaller starter set?</strong> <a href="https://mastodon.social/collections/116921660592372749" rel="external">Follow the Music YouTubers Collection on Mastodon</a>. It contains up to 25 recently active creators from this topic.</p></aside>
+
 <div class="list-controls" data-controls="native" hidden><input type="search" class="list-controls__search" placeholder="Filter by name…" aria-label="Filter accounts by name" data-controls-search /><div class="list-controls__buttons"><button type="button" class="list-controls__btn" data-controls-sort="score">Top picks</button><button type="button" class="list-controls__btn" data-controls-sort="subscribers">Most subscribers</button><button type="button" class="list-controls__btn" data-controls-sort="followers">Most followed</button><button type="button" class="list-controls__btn" data-controls-sort="alpha">A–Z</button><button type="button" class="list-controls__btn" data-controls-sort="shuffle">Shuffle</button></div><p class="list-controls__empty" data-controls-empty hidden>No accounts match your search.</p></div>
 <div data-lang-section="native">
 <h2>Native Mastodon accounts (27)</h2>

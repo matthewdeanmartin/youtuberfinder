@@ -10,13 +10,18 @@ import os
 import sys
 import time
 from collections import Counter
-from dataclasses import dataclass
 from pathlib import Path
 
-import requests
+import requests_cache
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
+# A creator display name may contain emoji that the Windows cp1252 console
+# cannot encode. Reporting must never abort an otherwise valid reconciliation.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(errors="backslashreplace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(errors="backslashreplace")
 
 from pipeline import collections as policy
 from pipeline import youtuber_store, youtube_feed
@@ -25,13 +30,23 @@ DEFAULT_CONFIG = ROOT / "data" / "mastodon_collections.json"
 
 
 class MastodonAPIError(RuntimeError):
-    pass
+    def __init__(self, message: str, status_code: int) -> None:
+        super().__init__(message)
+        self.status_code = status_code
 
 
 class MastodonAPI:
     def __init__(self, base_url: str, token: str | None = None) -> None:
         self.base_url = base_url.rstrip("/")
-        self.session = requests.Session()
+        cache_path = ROOT / ".cache" / "mastodon_collections"
+        cache_path.parent.mkdir(parents=True, exist_ok=True)
+        self.session = requests_cache.CachedSession(
+            str(cache_path),
+            backend="sqlite",
+            expire_after=6 * 60 * 60,
+            stale_if_error=True,
+            allowable_methods=("GET",),
+        )
         self.session.headers.update({"User-Agent": "youtuberfinder-collections/1.0"})
         if token:
             self.session.headers["Authorization"] = f"Bearer {token}"
@@ -53,24 +68,36 @@ class MastodonAPI:
             response = self.session.request(method, self.base_url + path, timeout=30, **kwargs)
         if not response.ok:
             detail = response.text[:500]
-            raise MastodonAPIError(f"{method} {path}: HTTP {response.status_code}: {detail}")
+            raise MastodonAPIError(
+                f"{method} {path}: HTTP {response.status_code}: {detail}", response.status_code
+            )
         return response.json() if response.content else None
+
+    def uncached_request(self, method: str, path: str, **kwargs):
+        # Ownership and membership state must never come from the short-lived
+        # activity cache, especially immediately after a live reconciliation.
+        with self.session.cache_disabled():
+            return self.request(method, path, **kwargs)
 
     def lookup(self, acct: str) -> dict:
         return self.request("GET", "/api/v1/accounts/lookup", params={"acct": acct})
 
     def verify_credentials(self) -> dict:
-        return self.request("GET", "/api/v1/accounts/verify_credentials")
+        return self.uncached_request("GET", "/api/v1/accounts/verify_credentials")
 
     def instance(self) -> dict:
         return self.request("GET", "/api/v2/instance")
 
     def collections_for(self, account_id: str) -> list[dict]:
-        payload = self.request("GET", f"/api/v1/accounts/{account_id}/collections", params={"limit": 80})
+        payload = self.uncached_request(
+            "GET", f"/api/v1/accounts/{account_id}/collections", params={"limit": 80}
+        )
         return payload.get("collections", [])
 
     def collection(self, collection_id: str) -> dict:
-        return self.request("GET", f"/api/v1/collections/{collection_id}").get("collection", {})
+        return self.uncached_request("GET", f"/api/v1/collections/{collection_id}").get(
+            "collection", {}
+        )
 
     def create_collection(self, metadata: dict) -> dict:
         return self.request("POST", "/api/v1/collections", json=metadata).get("collection", {})
@@ -102,6 +129,20 @@ def collection_metadata(item: dict) -> dict:
         "sensitive": False,
         "discoverable": True,
     }
+
+
+def metadata_differs(remote: dict, desired: dict) -> bool:
+    remote_tag = (remote.get("tag") or {}).get("name")
+    return any(
+        (
+            remote.get("name") != desired["name"],
+            remote.get("description") != desired["description"],
+            remote.get("language") != desired["language"],
+            remote_tag != desired["tag_name"].removeprefix("#"),
+            bool(remote.get("sensitive")) != desired["sensitive"],
+            bool(remote.get("discoverable")) != desired["discoverable"],
+        )
+    )
 
 
 def youtube_last_upload(creator: dict):
@@ -164,9 +205,13 @@ def main() -> int:
         try:
             account = api.lookup(creator["mastodon_acct"])
         except MastodonAPIError as exc:
-            skipped["Mastodon lookup failed"] += 1
-            lookup_failures.append(creator["mastodon_acct"])
-            print(f"  warning: {creator['mastodon_acct']}: {exc}")
+            if exc.status_code in {404, 410}:
+                skipped["Mastodon account unavailable"] += 1
+                print(f"  unavailable: {creator['mastodon_acct']}")
+            else:
+                skipped["Mastodon lookup failed"] += 1
+                lookup_failures.append(creator["mastodon_acct"])
+                print(f"  warning: {creator['mastodon_acct']}: {exc}")
             continue
         accounts[creator["mastodon_acct"].casefold()] = account
         if index % 100 == 0:
@@ -227,6 +272,10 @@ def main() -> int:
         remove = [item for item in existing_items if str(item.get("account_id")) not in selected_ids]
         add = [account_id for account_id in selected_ids if account_id not in existing_ids]
         action = "create" if not remote else "update"
+        metadata = collection_metadata(spec)
+        metadata_change = bool(remote and metadata_differs(remote, metadata))
+        if remote and not metadata_change and not remove and not add:
+            action = "unchanged"
         print(f"\n{spec['name']}: {action}; keep {len(existing_ids) - len(remove)}, remove {len(remove)}, add {len(add)} -> {len(selected)}")
         for item in remove:
             print(f"  - account {item.get('account_id')}")
@@ -235,10 +284,9 @@ def main() -> int:
 
         if not args.apply:
             continue
-        metadata = collection_metadata(spec)
         if not remote:
             remote = api.create_collection(metadata)
-        else:
+        elif metadata_change:
             api.update_collection(str(remote["id"]), metadata)
         # Remove first so a full Collection has room for replacements.
         for item in remove:

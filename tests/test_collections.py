@@ -4,6 +4,7 @@ import unittest
 from datetime import UTC, date, datetime
 
 from pipeline.collections import Candidate, allows_public_collection, choose_members, strength
+from scripts.sync_mastodon_collections import metadata_differs
 
 NOW = datetime(2026, 7, 14, tzinfo=UTC)
 
@@ -64,6 +65,24 @@ class CollectionPolicyTests(unittest.TestCase):
             [tiny, balanced], [], limit=1, youtube_days=365, mastodon_days=90, now=NOW
         )
         self.assertEqual([item.account_id for item in chosen], ["balanced"])
+
+    def test_unchanged_metadata_does_not_trigger_monthly_update(self) -> None:
+        desired = {
+            "name": "Technology YouTubers",
+            "description": "Active technology creators.",
+            "language": "en",
+            "tag_name": "technology",
+            "sensitive": False,
+            "discoverable": True,
+        }
+        remote = {
+            **desired,
+            "tag": {"name": "technology"},
+        }
+        remote.pop("tag_name")
+        self.assertFalse(metadata_differs(remote, desired))
+        remote["description"] = "Old description"
+        self.assertTrue(metadata_differs(remote, desired))
 
 
 if __name__ == "__main__":
